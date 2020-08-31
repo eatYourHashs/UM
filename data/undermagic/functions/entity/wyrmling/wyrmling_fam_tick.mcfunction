@@ -1,6 +1,6 @@
 execute as @a if score @s um.familiar_id = @e[sort=nearest,limit=1,tag=um_wyrmling_fam] um.familiar_id run scoreboard players operation temp um.dummy = @s um.familiar_id
 execute as @a if score @s um.familiar_id = temp um.dummy run scoreboard players operation temp2 um.dummy = @s um.wyrmling_lvl
-execute as @a[nbt=!{SelectedItem:{id:"minecraft:bow",Count:1b}},distance=..5] if score @s um.familiar_id = temp um.dummy if score temp2 um.dummy matches 9..10 if entity @e[type=arrow,distance=..4,tag=!um_deflected] run function undermagic:wyrmling_block
+execute as @a[nbt=!{SelectedItem:{id:"minecraft:bow",Count:1b}},distance=..5] if score @s um.familiar_id = temp um.dummy if score temp2 um.dummy matches 9..10 if entity @e[type=arrow,distance=..4,tag=!um_deflected] run function undermagic:entity/wyrmling/wyrmling_block
 execute as @a[distance=..5] if score @s um.familiar_id = temp um.dummy if score temp2 um.dummy matches 9..10 run effect give @s resistance 1 1 true
 execute as @a[scores={um.sneak=0}] if score @s um.familiar_id = temp um.dummy run scoreboard players set temp5 um.dummy 0
 execute as @a[scores={um.sneak=1..}] if score @s um.familiar_id = temp um.dummy run scoreboard players set temp5 um.dummy 1
@@ -38,9 +38,9 @@ execute if score temp2 um.dummy matches 10 if score @s um.dummy_three matches 1.
 execute if score temp2 um.dummy matches 4 if score @s um.dummy_three matches 1..30 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..32] run summon armor_stand ~ ~10 ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["global.ignore","um_entity","um_fam_marker"]}
 execute if score temp2 um.dummy matches 5..9 if score @s um.dummy_three matches 1..30 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..48] run summon armor_stand ~ ~10 ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["global.ignore","um_entity","um_fam_marker"]}
 execute if score temp2 um.dummy matches 10 if score @s um.dummy_three matches 1..30 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..64] run summon armor_stand ~ ~10 ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["global.ignore","um_entity","um_fam_marker"]}
-execute if score temp2 um.dummy matches 4 if score @s um.dummy_three matches ..1 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..32] facing entity @e[limit=1,sort=nearest,tag=um_hostile] feet run function undermagic:wyrmling_fam_fireball
-execute if score temp2 um.dummy matches 5..9 if score @s um.dummy_three matches ..1 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..48] facing entity @e[limit=1,sort=nearest,tag=um_hostile] feet run function undermagic:wyrmling_fam_fireball
-execute if score temp2 um.dummy matches 10 if score @s um.dummy_three matches ..1 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..64] facing entity @e[limit=1,sort=nearest,tag=um_hostile] feet run function undermagic:wyrmling_fam_fireball
+execute if score temp2 um.dummy matches 4 if score @s um.dummy_three matches ..1 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..32] facing entity @e[limit=1,sort=nearest,tag=um_hostile] feet run function undermagic:entity/wyrmling/wyrmling_fam_fireball
+execute if score temp2 um.dummy matches 5..9 if score @s um.dummy_three matches ..1 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..48] facing entity @e[limit=1,sort=nearest,tag=um_hostile] feet run function undermagic:entity/wyrmling/wyrmling_fam_fireball
+execute if score temp2 um.dummy matches 10 if score @s um.dummy_three matches ..1 if entity @e[limit=1,sort=nearest,tag=um_hostile,distance=..64] facing entity @e[limit=1,sort=nearest,tag=um_hostile] feet run function undermagic:entity/wyrmling/wyrmling_fam_fireball
 execute facing entity @e[limit=1,tag=um_fam_marker,sort=nearest] feet if score temp2 um.dummy matches 1 run tp ^ ^ ^0.4
 execute facing entity @e[limit=1,tag=um_fam_marker,sort=nearest] feet if score temp2 um.dummy matches 2..4 run tp ^ ^ ^0.6
 execute facing entity @e[limit=1,tag=um_fam_marker,sort=nearest] feet if score temp2 um.dummy matches 5..7 run tp ^ ^ ^0.8
@@ -52,4 +52,4 @@ kill @e[tag=um_fam_marker]
 execute if score @s um.dummy_two matches 400.. run scoreboard players set @s um.dummy_two 0
 scoreboard players operation temp3 um.dummy = temp2 um.dummy
 scoreboard players operation temp3 um.dummy *= 100 um.dummy
-execute unless score temp2 um.dummy matches 10 as @a if score @s um.familiar_id = temp um.dummy if score @s um.wyrmling_xp >= temp3 um.dummy run function undermagic:wyrmling_lvlup
+execute unless score temp2 um.dummy matches 10 as @a if score @s um.familiar_id = temp um.dummy if score @s um.wyrmling_xp >= temp3 um.dummy run function undermagic:entity/wyrmling/wyrmling_lvlup

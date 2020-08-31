@@ -1,4 +1,5 @@
-tellraw @a ["",{"text":"Loaded and installed ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs.","color":"red","bold":false}]
+
+#Scoreboard objective Init
 scoreboard objectives add um.erpg_loot dummy
 scoreboard objectives add um.dummy dummy
 scoreboard objectives add um.dummy_two dummy
@@ -59,9 +60,12 @@ scoreboard objectives add um.wyrmling_lvl dummy
 scoreboard objectives add um.wyrmling_xp dummy
 scoreboard objectives add um.mana dummy
 scoreboard objectives add um.kill_count totalKillCount
+
+#scoreboard players init
 scoreboard players set five um.dummy 5
 scoreboard players set 100 um.dummy 100
-tellraw @a ["",{"text":"To begin, place an item frame with a book in it above a netherrack-lit fire.","color":"red"}]
+
+#bossbard
 bossbar add undermagic:pit_lord "Pit Lord"
 bossbar set undermagic:pit_lord max 400
 bossbar set undermagic:pit_lord style progress
@@ -97,3 +101,8 @@ forceload add ~ ~ ~ ~
 
 #set load version
 scoreboard players set undermagic load 1
+
+#Load Messages
+tellraw @a ["",{"text":"Loaded and installed ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs.","color":"red","bold":false}]
+tellraw @a ["",{"text":"To begin, place an item frame with a book in it above a netherrack-lit fire.","color":"red"}]
+

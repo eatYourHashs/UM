@@ -35,7 +35,7 @@ execute as @s[tag=um_shadebeast] at @s run function undermagic:shadebeast_tick
 execute unless entity @s[tag=um_shadebeast_alpha] run bossbar set undermagic:sb_alpha visible false
 execute as @s[tag=um_shadebeast_alpha] at @s run function undermagic:shadebeast_alpha_tick
 execute as @s[tag=um_salamander] at @s run function undermagic:salamander_tick
-execute as @s[tag=um_wyrmling] at @s run function undermagic:wyrmling_tick
+execute as @s[tag=um_wyrmling] at @s run function undermagic:entity/wyrmling/tick
 execute as @s[tag=um_abyss_spawning] at @s run function undermagic:spawn_abyss_spread
 execute as @s[tag=um_voidling] at @s run function undermagic:voidling_tick
 execute as @s[tag=um_shadesull] at @s run function undermagic:shadesull_tick
@@ -50,7 +50,7 @@ execute as @s[tag=um_blood_cloud_3] at @s run function undermagic:blood_cloud_3
 execute as @s[tag=um_blood_drop_1] at @s run function undermagic:blood_drop_1
 execute as @s[tag=um_blood_drop_3] at @s run function undermagic:blood_drop_3
 execute as @s[tag=um_elder_wall] at @s run function undermagic:elder_wall_tick
-execute as @s[tag=um_wyrmling_fam] at @s run function undermagic:wyrmling_fam_tick
+execute as @s[tag=um_wyrmling_fam] at @s run function undermagic:entity/wyrmling/wyrmling_fam_tick
 execute as @s[tag=um_fireshot] at @s run scoreboard players add @s um.dummy_three 1
 execute as @s[tag=um_fireshot,scores={um.dummy_three=100..}] at @s run kill @s
 effect give @s[tag=um_abyssal_revenant] invisibility 1 1 true
