@@ -1,0 +1,8 @@
+{
+    "parent": "item/template_spawn_egg",
+	"overrides": [
+		{ "predicate": {"custom_model_data": 420080}, "model": "item/um/charm_table"},
+		{ "predicate": {"custom_model_data": 420081}, "model": "item/um/teleporter"}
+		]
+
+}

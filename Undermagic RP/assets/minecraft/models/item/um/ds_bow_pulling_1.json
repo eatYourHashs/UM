@@ -1,0 +1,6 @@
+{
+    "parent": "item/um/ds_bow",
+    "textures": {
+        "layer0": "um_gear/ds_bow_pulling_1"
+    }
+}

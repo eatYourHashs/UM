@@ -1,0 +1,13 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/iron_sword"
+	},
+	"overrides": [
+		{ "predicate": {"custom_model_data": 420003}, "model": "item/um/demon_sword_arm"},
+		{ "predicate": {"custom_model_data": 420030}, "model": "item/um/bloody_edge_1"},
+		{ "predicate": {"custom_model_data": 420031}, "model": "item/um/bloody_edge_2"},
+		{ "predicate": {"custom_model_data": 420032}, "model": "item/um/bloody_edge_3"},
+		{ "predicate": {"custom_model_data": 420125}, "model": "item/um/reaper_scythe"}
+	]
+}

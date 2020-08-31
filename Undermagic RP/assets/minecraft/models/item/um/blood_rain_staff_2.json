@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld_rod",
+	"textures": {
+		"layer0": "um_gear/blood_rain_staff_2"
+	}
+}
