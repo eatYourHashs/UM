@@ -94,3 +94,6 @@ bossbar set undermagic:disciple_of_death max 300
 bossbar set undermagic:disciple_of_death style progress
 bossbar set undermagic:disciple_of_death color purple
 forceload add ~ ~ ~ ~
+
+#set load version
+scoreboard players set undermagic load 1
