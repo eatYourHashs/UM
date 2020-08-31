@@ -1,0 +1,2 @@
+replaceitem entity @s weapon.offhand carrot_on_a_stick{um_id:"longsword_shadow_sheathed",display:{Name:"{\"text\":\"Shadow Longsword\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Use while sheathed to Quick Draw!\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"Swap to offhand to sheath!\",\"color\":\"gray\",\"italic\":false}"]},Unbreakable:1b,CustomModelData:420068,AttributeModifiers:[]}
+playsound minecraft:entity.player.attack.sweep player @a ^ ^1 ^1 1 0.5

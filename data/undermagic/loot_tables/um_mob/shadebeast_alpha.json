@@ -1,0 +1,156 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 30,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_pearl",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:looting_enchant",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:clock",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:420061,um_id:\"shadow_base\",display:{Name:'{\"text\":\"Shadow Base\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"Used to create a greater metal.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Useless in this form.\",\"color\":\"gray\",\"italic\":false}']}}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:clock",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:420062,um_id:\"tenebrous_base\",display:{Name:'{\"text\":\"Tenebrous Base\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"Used to create an extreme material.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Useless in this form.\",\"color\":\"gray\",\"italic\":false}']}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+          "rolls": 1,
+          "entries": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "undermagic:charm_drop"
+            }
+          ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "minecraft:entities/generichostile",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 10,
+                  "max": 15
+                }
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "um.erpg_loot": {
+                "min": 1,
+                "max": 999
+              }
+            }
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "minecraft:entities/genericprotector",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 10,
+                  "max": 15
+                }
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "um.erpg_loot": {
+                "min": 1,
+                "max": 999
+              }
+            }
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "minecraft:entities/genericfarm",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 10,
+                  "max": 15
+                }
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "um.erpg_loot": {
+                "min": 1,
+                "max": 999
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

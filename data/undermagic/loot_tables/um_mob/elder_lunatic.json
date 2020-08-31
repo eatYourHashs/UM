@@ -1,0 +1,143 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 8,
+                "max": 10
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Omega Rune\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},CustomModelData:420081,um_id:omega_rune}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Staff of the Elder\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\",Lore:[\"[{\\\"text\\\":\\\"a\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false,\\\"obfuscated\\\":true},{\\\"text\\\":\\\" Lunatic Drop \\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false,\\\"obfuscated\\\":false},{\\\"text\\\":\\\"b\\\",\\\"color\\\":\\\"red\\\",\\\"italic\\\":false,\\\"obfuscated\\\":true}]\",\"{\\\"text\\\":\\\"Rapidly fires dark orbs,\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"similar to the Elder bolts.\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"Sneak-click to fire a giant death orb.\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]},Unbreakable:1b,CustomModelData:420081,um_id:elder_staff,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-3.1,Operation:0,UUID:[I;0,153009,0,92733],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:6,Operation:0,UUID:[I;0,182825,0,300322],Slot:\"mainhand\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/generichostile",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 60,
+                "max": 80
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "um.erpg_loot": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/genericprotector",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 60,
+                "max": 80
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "um.erpg_loot": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/genericfarm",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 60,
+                "max": 80
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "um.erpg_loot": {
+              "min": 1,
+              "max": 999
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

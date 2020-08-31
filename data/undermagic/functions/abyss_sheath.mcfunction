@@ -1,0 +1,2 @@
+replaceitem entity @s weapon.offhand carrot_on_a_stick{um_id:"longsword_abyss_sheathed",display:{Name:"{\"text\":\"Abyssal Longsword\",\"color\":\"light_purple\",\"italic\":false}",Lore:["{\"text\":\"Use while sheathed to Quick Draw!\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"Swap to offhand to sheath!\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"Quickdraws fire an abyssal orb!\",\"color\":\"gray\",\"italic\":false}"]},Unbreakable:1b,CustomModelData:420108,AttributeModifiers:[]}
+playsound minecraft:entity.player.attack.sweep player @a ^ ^1 ^1 1 0.5

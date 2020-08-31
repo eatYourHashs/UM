@@ -1,0 +1,5 @@
+kill @e[tag=um_wyrmling_target,distance=..2]
+kill @e[tag=um_wyrmling_focus,distance=..60]
+execute facing entity @e[type=minecraft:end_crystal,sort=nearest,distance=..100,limit=1] feet run summon armor_stand ^6 ^ ^20 {Marker:1b,NoGravity:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_wyrmling_target"]}
+execute unless entity @e[type=minecraft:end_crystal,distance=..100] at @p[distance=..60] unless entity @e[type=armor_stand,tag=um_wyrmling_focus,sort=nearest,limit=1,distance=..20] run summon armor_stand ~ ~30 ~ {Marker:1b,NoGravity:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_wyrmling_focus"]}
+execute unless entity @e[type=minecraft:end_crystal,distance=..100] facing entity @e[type=armor_stand,tag=um_wyrmling_focus,sort=nearest,limit=1] feet run summon armor_stand ^4 ^ ^12 {Marker:1b,NoGravity:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_wyrmling_target"]}

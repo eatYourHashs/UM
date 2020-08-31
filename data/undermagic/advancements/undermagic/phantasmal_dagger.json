@@ -1,0 +1,33 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Dagger of Dimensions"
+        },
+        "description": {
+            "text": "Craft a Phantasmal Dagger"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:420073}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "phantasmal_dagger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:carrot_on_a_stick",
+                        "nbt": "{um_id:phantasmal_dagger}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "undermagic:undermagic/shadecloth"
+}

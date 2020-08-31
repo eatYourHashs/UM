@@ -1,0 +1,115 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 8
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 15,
+                    "name": "minecraft:apple",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 15,
+                    "name": "minecraft:coal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:gold_nugget",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:stone_axe"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:rotten_flesh"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:emerald"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:wheat",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:golden_apple"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.15
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:\"{\\\"text\\\":\\\"Undercrafter Blueprint\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Bow of Niflheim\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":true,\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"Drop on your Undercrafter to\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"enable this item's recipe!\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}\"]},CustomModelData:420017,um_id:blueprint_ice_bow}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

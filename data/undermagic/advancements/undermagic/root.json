@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Undermagic"
+        },
+        "description": {
+            "text": "Delving into darkness's depths..."
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:420107}"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/nether_bricks.png"
+    },
+    "criteria": {
+        "undercrafter": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

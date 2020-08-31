@@ -1,0 +1,61 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "bonus_rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:420004,um_id:\"demon_skin\",display:{Name:\"{\\\"text\\\":\\\"Demon Skin\\\",\\\"italic\\\":false}\"}}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:420005,um_id:\"demon_bone\",display:{Name:\"{\\\"text\\\":\\\"Demon Bone\\\",\\\"italic\\\":false}\"}}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.2,
+                    "looting_multiplier": 0.1
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:420009,um_id:\"demon_sword_shard\",display:{Name:\"{\\\"text\\\":\\\"Demon Sword Shard\\\",\\\"italic\\\":false}\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "The Abyss Beckons"
+        },
+        "description": {
+            "text": "Slay the first five progression bosses. Something may happen when you do this..."
+        },
+        "icon": {
+            "item": "minecraft:obsidian"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "dragon": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ender_dragon"
+                }
+            }
+        },
+        "wither": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither"
+                }
+            }
+        },
+        "pit_lord": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither_skeleton",
+                    "equipment": {
+                        "head": {
+                            "item": "minecraft:carrot_on_a_stick",
+                            "nbt": "{CustomModelData:420020}"
+                        }
+                    }
+                }
+            }
+        },
+        "blood_amalgam": {
+            "trigger": "minecraft:impossible"
+        },
+        "elder": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:skeleton",
+                    "equipment": {
+                        "head": {
+                            "item": "minecraft:carrot_on_a_stick",
+                            "nbt": "{CustomModelData:420076}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "dragon"
+        ],
+        [
+            "wither"
+        ],
+        [
+            "pit_lord"
+        ],
+        [
+            "blood_amalgam"
+        ],
+        [
+            "elder"
+        ]
+    ],
+    "rewards": {
+        "function": "undermagic:spawn_abyss_trigger"
+    },
+    "parent": "undermagic:undermagic/root"
+}

@@ -1,0 +1,36 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Dimensional Regicide"
+        },
+        "description": {
+            "text": "Slay the Pit Lord."
+        },
+        "icon": {
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:420022}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "pit_lord": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither_skeleton",
+                    "equipment": {
+                        "head": {
+                            "item": "minecraft:carrot_on_a_stick",
+                            "nbt": "{CustomModelData:420020}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "parent": "undermagic:undermagic/heartstone"
+}

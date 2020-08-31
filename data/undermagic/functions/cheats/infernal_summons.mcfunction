@@ -1,0 +1,1 @@
+give @p minecraft:clock{display:{Name:"{\"text\":\"Infernal Summons\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Throw into a demon portal\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"to call the most powerful demon.\",\"color\":\"gray\",\"italic\":false}"]},CustomModelData:420021,um_id:"infernal_summons"} 1

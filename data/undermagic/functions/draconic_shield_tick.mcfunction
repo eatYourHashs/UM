@@ -1,0 +1,9 @@
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=arrow,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=fireball,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=dragon_fireball,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=small_fireball,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=wither_skull,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=spectral_arrow,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=potion,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=llama_spit,distance=..4,tag=!um_deflected] run function undermagic:draconic_block
+execute if entity @s[scores={um.drac_sh_chg=1..}] if entity @e[type=shulker_bullet,distance=..4] run function undermagic:draconic_block

@@ -1,0 +1,45 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "It's Alive!"
+        },
+        "description": {
+            "text": "Create a suit of Bloodstained Armor."
+        },
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+            "nbt": "{CustomModelData:420010,display:{color:7340032}}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bloodstained_armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{um_id:bloodstained_helmet}"
+                    },
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{um_id:bloodstained_chestplate}"
+                    },
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{um_id:bloodstained_leggings}"
+                    },
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{um_id:bloodstained_boots}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "undermagic:undermagic/bloodstone"
+}

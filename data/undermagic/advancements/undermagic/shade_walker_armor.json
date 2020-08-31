@@ -1,0 +1,45 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Armor of the Assassin"
+        },
+        "description": {
+            "text": "Create a full set of Shade Walker armor."
+        },
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+            "nbt": "{CustomModelData:420010,display:{color:3014763}}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "shade_walker_armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:leather_helmet",
+                        "nbt": "{um_id:shade_helmet}"
+                    },
+                    {
+                        "item": "minecraft:leather_chestplate",
+                        "nbt": "{um_id:shade_chestplate}"
+                    },
+                    {
+                        "item": "minecraft:leather_leggings",
+                        "nbt": "{um_id:shade_leggings}"
+                    },
+                    {
+                        "item": "minecraft:leather_boots",
+                        "nbt": "{um_id:shade_boots}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "undermagic:undermagic/shadecloth"
+}

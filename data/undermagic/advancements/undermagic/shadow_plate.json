@@ -1,0 +1,33 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Shadow Strength"
+        },
+        "description": {
+            "text": "Craft Shadow Plates."
+        },
+        "icon": {
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:420066}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "shadow_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:clock",
+                        "nbt": "{um_id:shadow_plate}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "undermagic:undermagic/base_metals"
+}

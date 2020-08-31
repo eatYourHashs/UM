@@ -1,0 +1,10 @@
+{"pools":[{"rolls":1,"entries":[{"type":"item","weight":1,"name":"minecraft:clock","functions":[{"function":"set_count","count":{"min":8,"max":12}},{"function":"set_nbt","tag":"{CustomModelData:420048,um_id:cbe}"},{"function":"set_name","name":{"text":"Crystallized Blood Essence","color":"light_purple","italic":false}}]}]},{"rolls":1,"entries":[{"type":"item","weight":1,"name":"minecraft:clock","functions":[{"function":"set_count","count":1},{"function":"set_nbt","tag":"{CustomModelData:420055,um_id:\"bloodstained_heart\"}"},{"function":"set_name","name":{"text":"Bloodstained Heart","color":"light_purple","italic":false}},{"function":"set_lore","lore":[[{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"a","color":"red","italic":false,"obfuscated":true}],{"text":"Used to upgrade a Bloodstained","color":"gray","italic":false},{"text":"Chestplate.","color":"gray","italic":false}]}]}]},
+{
+    "rolls": 5,
+    "entries": [
+      {
+        "type": "minecraft:loot_table",
+        "name": "undermagic:charm_drop"
+      }
+    ]
+}]}

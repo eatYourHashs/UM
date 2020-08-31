@@ -1,0 +1,24 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Seeing Red"
+        },
+        "description": {
+            "text": "Create a basic Blood Chalice."
+        },
+        "icon": {
+            "item": "minecraft:cauldron"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "blood_chalice": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "undermagic:undermagic/root"
+}

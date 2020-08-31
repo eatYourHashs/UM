@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Bloodthirsty"
+        },
+        "description": {
+            "text": "Slay the Blood Amalgam."
+        },
+        "icon": {
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:420047}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "blood_amalgam": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "undermagic:undermagic/bloodstone"
+}

@@ -1,0 +1,33 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Charmed"
+        },
+        "description": {
+            "text": "Obtain any charm."
+        },
+        "icon": {
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:420080}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "charm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:clock",
+                        "nbt": "{um_id:charm}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "undermagic:undermagic/base_metals"
+}

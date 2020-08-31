@@ -1,0 +1,2 @@
+summon tnt
+kill @s
