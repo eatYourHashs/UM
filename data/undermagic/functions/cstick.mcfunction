@@ -17,7 +17,7 @@ execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{
 execute as @s[nbt={Dimension:"minecraft:the_nether",SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"abyssal_mirror"}}}] at @s run function undermagic:abyss_warp
 execute as @s[tag=!um_abyss_warped,nbt={Dimension:"undermagic:abyss",SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"abyssal_mirror"}}}] at @s run function undermagic:nether_abyss_warp
 tag @s remove um_abyss_warped
-execute as @s[nbt={Dimension:"undermagic:abyss",SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"crown_of_ruin"}}}] at @s run function undermagic:shadesull_summon
+execute as @s[nbt={Dimension:"undermagic:abyss",SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"crown_of_ruin"}}}] at @s run function undermagic:entity/shadesull/summon
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"oblivion_staff"}}}] at @s if score @s um.orb_cooldown matches ..0 run scoreboard players set temp um.dummy 0
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"oblivion_staff"}}}] at @s if score @s um.orb_cooldown matches ..0 positioned ^ ^ ^3 run function undermagic:oblivion_staff
 execute as @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"iron_rod"}}}] at @s if score @s um.orb_cooldown matches ..0 run scoreboard players set temp um.dummy 0

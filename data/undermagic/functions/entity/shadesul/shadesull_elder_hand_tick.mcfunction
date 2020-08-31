@@ -15,12 +15,12 @@ execute if entity @s[scores={um.dummy=..-100}] if score difficulty um.dummy matc
 execute if entity @s[scores={um.dummy=..-100}] unless entity @e[distance=1..,tag=um_shadesull_elder_hand] run scoreboard players set @s um.dummy 50
 execute if entity @s[scores={um.dummy=-50}] run function undermagic:shadesull_hand_bolt
 execute if entity @s[scores={um.dummy=-250}] run function undermagic:shadesull_hand_bolt
-execute if entity @s[scores={um.dummy=-25}] unless entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:shadesull_hand_bolt
-execute if entity @s[scores={um.dummy=-25}] if score difficulty um.dummy matches 2.. if entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:shadesull_hand_bolt
+execute if entity @s[scores={um.dummy=-25}] unless entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:entity/shadesull/shadesull_hand_bolt
+execute if entity @s[scores={um.dummy=-25}] if score difficulty um.dummy matches 2.. if entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:entity/shadesull/shadesull_hand_bolt
 execute if entity @s[scores={um.dummy=-60}] if score difficulty um.dummy matches 2.. run function undermagic:shadesull_hand_bolt
 execute if entity @s[scores={um.dummy=-50}] if score difficulty um.dummy matches 2.. run function undermagic:shadesull_hand_bolt
 execute if entity @s[scores={um.dummy=-40}] if score difficulty um.dummy matches 2.. run function undermagic:shadesull_hand_bolt
-execute if entity @s[scores={um.dummy=-75}] unless entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:shadesull_hand_bolt
-execute if entity @s[scores={um.dummy=-75}] if score difficulty um.dummy matches 2.. if entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:shadesull_hand_bolt
+execute if entity @s[scores={um.dummy=-75}] unless entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:entity/shadesull/shadesull_hand_bolt
+execute if entity @s[scores={um.dummy=-75}] if score difficulty um.dummy matches 2.. if entity @e[distance=1..,tag=um_shadesull_elder_hand] run function undermagic:entity/shadesull/shadesull_hand_bolt
 scoreboard players remove @s um.dummy 1
 execute at @s facing entity @p feet run tp ^ ^ ^
