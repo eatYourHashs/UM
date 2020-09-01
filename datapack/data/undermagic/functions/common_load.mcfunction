@@ -64,6 +64,7 @@ scoreboard objectives add um.kill_count totalKillCount
 #scoreboard players init
 scoreboard players set five um.dummy 5
 scoreboard players set 100 um.dummy 100
+execute unless score difficulty um.dummy matches 0.. run scoreboard players set difficulty um.dummy 1
 
 #bossbard
 bossbar add undermagic:pit_lord "Pit Lord"
@@ -83,7 +84,6 @@ bossbar set undermagic:elder max 600
 execute if score difficulty um.dummy matches 2.. run bossbar set undermagic:elder max 1000
 bossbar set undermagic:elder style progress
 bossbar set undermagic:elder color purple
-execute unless score difficulty um.dummy matches 0.. run scoreboard players set difficulty um.dummy 1
 
 bossbar add undermagic:sb_alpha "Shadebeast Alpha"
 bossbar set undermagic:sb_alpha max 100

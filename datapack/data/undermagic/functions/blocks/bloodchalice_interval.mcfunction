@@ -102,4 +102,4 @@ execute if entity @s[scores={um.dummy_two=1..16}] run playsound minecraft:block.
 execute if entity @s[scores={um.dummy_two=17..19}] run playsound minecraft:block.end_portal_frame.fill block @a ~ ~ ~ 0.6 1.4
 execute if entity @s[scores={um.dummy_two=1..19}] run particle minecraft:portal ~ ~ ~ 0 0 0 1 30
 execute if entity @s[scores={um.dummy_two=1..19}] run scoreboard players add @s um.dummy_two 1
-execute if entity @s[scores={um.dummy_two=20..}] run function undermagic:bloodchalice_finish
+execute if entity @s[scores={um.dummy_two=20..}] run function undermagic:block/bloodchalice_finish

@@ -13,7 +13,7 @@ execute if entity @s[tag=um_dsbow_proc] if score success um.dummy matches 1.. ru
 execute if entity @s[tag=um_dsbow_proc] if score success um.dummy matches 1.. run playsound minecraft:entity.tnt.primed player @a ~ ~ ~ 1 1
 execute if entity @s[tag=um_dsbow_proc] if score success um.dummy matches 1.. run scoreboard players set success um.dummy 0
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"bow_ice"}}}] run tag @s add um_icebow_proc
-execute if entity @s[tag=um_icebow_proc] as @p at @s run function undermagic:shoot_ice_bolt
+execute if entity @s[tag=um_icebow_proc] as @p at @s run function undermagic:entity/projectile/shoot_ice_bolt
 execute if entity @s[tag=um_icebow_proc] run kill @s
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"dragons_wrath"}}}] run tag @s add um_dragons_proc
 execute if entity @s[tag=um_dragons_proc] run data merge entity @s {PierceLevel:1b}
