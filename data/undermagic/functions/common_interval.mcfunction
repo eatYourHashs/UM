@@ -1,4 +1,7 @@
 
+execute as @e[type=item_frame,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if block ~ ~-1 ~ fire if block ~ ~-2 ~ netherrack run scoreboard players add @s um.dummy 1
+execute as @e[type=item_frame,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if block ~ ~-1 ~ fire if block ~ ~-2 ~ netherrack if score @s um.dummy matches 20.. run function undermagic:book_conversion
+
 
 execute as @e[tag=um_undercrafter] at @s if entity @p[distance=..8] run function undermagic:undercrafter_interval
 execute as @e[tag=um_bloodchalice] at @s if entity @p[distance=..24] run function undermagic:bloodchalice_interval
@@ -60,10 +63,9 @@ execute as @e[tag=um_teleporter] at @s run function undermagic:teleporter_interv
 
 execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"relic_of_ruin"}}}] at @s run function undermagic:elder_summon
 effect give @e[tag=um_shadebeast] invisibility 2 1 true
-execute as @e[type=zombified_piglin,tag=!um_processed] at @s run function undermagic:pigman_processing
-execute as @e[type=magma_cube,tag=!um_processed] at @s run function undermagic:cube_processing
 execute as @e[tag=um_salamander] at @s run function undermagic:salamander_interval
 
+#wyrmling spawn
 execute store result score rand um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_100
 execute store result score rand1 um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_100
 execute if score difficulty um.dummy matches 2.. if score rand um.dummy matches 1 if entity @e[type=ender_dragon] at @e[sort=random,tag=um_crystal_marker,limit=1] unless entity @e[type=end_crystal,distance=..2] run function undermagic:respawn_crystal
