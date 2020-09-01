@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Demonic Steel Longsword","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Use while sheathed to Quick Draw!","color":"gray","italic":false},
+			    {"text":"Swap to offhand to sheath!","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420005,um_id:\"longsword_demonic_steel\"}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":9,
+				  "slot":"mainhand"
+				},
+				{
+				  "name":"generic.attack_speed",
+				  "attribute":"generic.attack_speed",
+				  "operation":"addition",
+				  "amount":-2.6,
+				  "slot":"mainhand"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

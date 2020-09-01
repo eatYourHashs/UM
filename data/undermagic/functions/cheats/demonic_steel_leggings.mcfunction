@@ -1,1 +1,2 @@
-give @p minecraft:leather_leggings{display:{Name:"{\"text\":\"Demonic Steel Leggings\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Protects its wearer with dark energy.\",\"color\":\"gray\",\"italic\":false}"],color:16742520},Unbreakable:1b,CustomModelData:420012,um_id:leggings_demonic_steel,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;0,389423,0,832515],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;0,878730,0,373511],Slot:"legs"}]} 1
+
+loot give @s loot undermagic:items/leggings_demonic_steel

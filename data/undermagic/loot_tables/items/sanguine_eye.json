@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Sanguine Eye","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Throw into a Blood Crucible","color":"gray","italic":false},
+			    {"text":"to battle the Blood Amalgam!","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{HideFlags:4,Unbreakable:1b,CustomModelData:420047,um_id:\"sanguine_eye\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

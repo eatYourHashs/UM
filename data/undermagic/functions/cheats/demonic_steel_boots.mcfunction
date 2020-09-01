@@ -1,1 +1,2 @@
-give @p minecraft:leather_boots{display:{Name:"{\"text\":\"Demonic Steel Boots\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Protects its wearer with dark energy.\",\"color\":\"gray\",\"italic\":false}"],color:16742520},Unbreakable:1b,CustomModelData:420011,um_id:boots_demonic_steel,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;0,296289,0,536011],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;0,687847,0,689359],Slot:"feet"}]} 1
+
+loot give @s loot undermagic:items/boots_demonic_steel

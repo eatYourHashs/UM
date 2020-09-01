@@ -1,2 +1,3 @@
-replaceitem entity @s weapon.offhand carrot_on_a_stick{um_id:"longsword_demonic_steel_sheathed",display:{Name:"{\"text\":\"Demonic Steel Longsword\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Use while sheathed to Quick Draw!\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"Swap to offhand to sheath!\",\"color\":\"gray\",\"italic\":false}"]},Unbreakable:1b,CustomModelData:420004,AttributeModifiers:[]}
+
+loot replace entity @s weapon.mainhand loot undermagic:items/longsword_demonic_steel_sheathed
 playsound minecraft:entity.player.attack.sweep player @a ^ ^1 ^1 1 0.5

@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:bow",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Dragon's Wrath","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"a","color":"red","italic":false,"obfuscated":true}],
+				{"text":"Shoots dragon-charged arrows.","color":"gray","italic":false},
+				{"text":"Hold it in your hand to charge the bow.","color":"gray","italic":false},
+				{"text":"Shoot while fully charged to unleash","color":"gray","italic":false},
+				{"text":"draconic fury!","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420050,um_id:\"dragons_wrath\"}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":6,
+				  "slot":"mainhand"
+				},
+				{
+				  "name":"generic.attack_speed",
+				  "attribute":"generic.attack_speed",
+				  "operation":"addition",
+				  "amount":-2,
+				  "slot":"mainhand"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

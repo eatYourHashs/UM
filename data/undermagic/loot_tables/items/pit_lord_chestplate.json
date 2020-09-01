@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Pit Lord's Chestplate","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Provides supreme protection.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420010,um_id:\"bloodstained_chestplate\",display:{color:16750351}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.armor",
+				  "attribute":"generic.armor",
+				  "operation":"addition",
+				  "amount":8,
+				  "slot":"chest"
+				},
+				{
+				  "name":"generic.armor_toughness",
+				  "attribute":"generic.armor_toughness",
+				  "operation":"addition",
+				  "amount":4,
+				  "slot":"chest"
+				},
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":2,
+				  "slot":"chest"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

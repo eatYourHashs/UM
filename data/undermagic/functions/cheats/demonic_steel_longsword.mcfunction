@@ -1,1 +1,2 @@
-give @p minecraft:carrot_on_a_stick{um_id:"longsword_demonic_steel_sheathed",display:{Name:"{\"text\":\"Demonic Steel Longsword\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Use while sheathed to Quick Draw!\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"Swap to offhand to sheath!\",\"color\":\"gray\",\"italic\":false}"]},Unbreakable:1b,CustomModelData:420004,AttributeModifiers:[]} 1
+
+loot give @s loot undermagic:items/longsword_demonic_steel_sheathed

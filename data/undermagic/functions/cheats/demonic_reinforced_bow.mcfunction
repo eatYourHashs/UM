@@ -1,1 +1,2 @@
-give @p minecraft:bow{display:{Name:"{\"text\":\"Demonic Reinforced Bow\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Advanced bow that shoots stronger shots.\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"When you have gunpowder, consumes 1 per shot\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"to fire explosive arrows.\",\"color\":\"gray\",\"italic\":false}"]},Unbreakable:1b,CustomModelData:420015,um_id:"bow_demonic_steel"} 1
+
+loot give @s loot undermagic:items/bow_demonic_steel

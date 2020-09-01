@@ -1,1 +1,2 @@
-give @p minecraft:clock{display:{Name:"{\"text\":\"Demon Portal Stabilizer\",\"color\":\"yellow\",\"italic\":false}",Lore:["{\"text\":\"Creates and stabilizes a Demon Portal.\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"The portal spawns demons at a fast rate.\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"Warning: May cause the apocalypse!\",\"color\":\"red\",\"italic\":false}","{\"text\":\"Throw on top of Obsidian to activate.\",\"color\":\"gray\",\"italic\":true}"]},CustomModelData:420018,um_id:demon_portal_stabilizer} 1
+
+loot give @s loot undermagic:items/demon_portal_stabilizer

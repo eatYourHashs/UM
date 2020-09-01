@@ -1,4 +1,5 @@
-replaceitem entity @s weapon.mainhand minecraft:carrot_on_a_stick{display:{Name:'{"text":"Mythical Dragon Egg","color":"light_purple","italic":false}',Lore:['[{"text":"a","color":"dark_red","italic":false,"obfuscated":true},{"text":" Infernal Drop ","color":"dark_red","italic":false,"obfuscated":false},{"text":"a","color":"dark_red","italic":false,"obfuscated":true}]','{"text":"Summons a wyrmling familiar.","color":"gray","italic":false}','{"text":"Right click to dismiss!","color":"gray","italic":false}']},HideFlags:1,Unbreakable:1b,CustomModelData:420110,um_id:mythical_dragon_egg_summoned,Enchantments:[{id:"minecraft:unbreaking",lvl:1s}]} 1
+
+loot replace entity @s weapon.mainhand loot undermagic:items/mythical_dragon_egg_summoned
 scoreboard players operation temp um.dummy = @s um.familiar_id
 summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:["global.ignore","um_entity","um_wyrmling_fam","um_new_fam"],Silent:1b}
 scoreboard players operation @e[limit=1,tag=um_new_fam,sort=nearest] um.familiar_id = temp um.dummy
