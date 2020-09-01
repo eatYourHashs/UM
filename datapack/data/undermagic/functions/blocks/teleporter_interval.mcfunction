@@ -1,3 +1,6 @@
+
+data merge entity @s {Rotation:[90F,0F],Fire:100}
+
 execute unless score @s um.dummy_two matches 1.. store result score @s um.dummy run scoreboard players get tele_id um.dummy
 execute unless score @s um.dummy_two matches 1.. run scoreboard players add @s um.dummy 1
 execute unless score @s um.dummy_two matches 1.. run scoreboard players add tele_id um.dummy 1

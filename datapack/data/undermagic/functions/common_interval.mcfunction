@@ -13,14 +13,19 @@ execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:clock",Count:1b,tag
 execute as @e[tag=um_undercrafter] at @s if entity @p[distance=..8] run function undermagic:block/undercrafter_interval
 execute as @e[tag=um_bloodchalice] at @s if entity @p[distance=..24] run function undermagic:block/bloodchalice_interval
 execute as @e[tag=um_pedestal] at @s if entity @p[distance=..24] run function undermagic:block/pedestal_interval
+execute as @e[tag=um_teleporter] at @s run function undermagic:block/teleporter_interval
+execute as @e[tag=um_charm_table] at @s run function undermagic:block/charm_table_interval
 
-execute as @e[tag=um_charm_table] at @s run data merge entity @s {Rotation:[90F,0F],Fire:100}
-execute as @e[tag=um_teleporter] at @s run data merge entity @s {Rotation:[90F,0F],Fire:100}
-execute as @e[tag=um_charm_table,tag=!um_processed] at @s run setblock ~ ~ ~ minecraft:dropper[facing=down]{CustomName:'{"text":"Charm Table","italic":false}'} replace
-execute as @e[tag=um_charm_table,tag=!um_processed] at @s run tag @s add um_processed
-execute as @e[tag=um_charm_table] at @s run function undermagic:charm_table_interval
-execute as @e[tag=um_teleporter] at @s run function undermagic:teleporter_interval
+#10 sec counter
+scoreboard players add 10sec_counter um.dummy 1
+execute if score 10sec_counter um.dummy matches 19 as @a unless score @s um.drac_sh_chg matches 0..5 run scoreboard players add @s um.drac_sh_chg 1
+execute if score 10sec_counter um.dummy matches 19 run scoreboard players add @a[scores={um.drac_sh_chg=..4},nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] um.drac_sh_chg 1
+execute if score 10sec_counter um.dummy matches 20.. run scoreboard players set 10sec_counter um.dummy 0
 
+scoreboard players add swap_clock um.dummy 1
+execute if score swap_clock um.dummy matches 100.. as @a at @a run function undermagic:item/tool/swap_charms
+
+#entities
 effect give @e[tag=um_elemental] invisibility 8 2 true
 
 execute as @e[tag=um_blood_monolith] at @s rotated 0 0 run tp @s ^ ^ ^
@@ -32,17 +37,6 @@ execute as @e[tag=um_dragon_wings] at @s unless entity @a[distance=..10,predicat
 
 effect give @e[tag=um_shadebeast] invisibility 2 1 true
 execute as @e[tag=um_salamander] at @s run function undermagic:salamander_interval
-
-
-#10 sec counter
-scoreboard players add 10sec_counter um.dummy 1
-execute if score 10sec_counter um.dummy matches 19 as @a unless score @s um.drac_sh_chg matches 0..5 run scoreboard players add @s um.drac_sh_chg 1
-execute if score 10sec_counter um.dummy matches 19 run scoreboard players add @a[scores={um.drac_sh_chg=..4},nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] um.drac_sh_chg 1
-execute if score 10sec_counter um.dummy matches 20.. run scoreboard players set 10sec_counter um.dummy 0
-
-scoreboard players add swap_clock um.dummy 1
-execute if score swap_clock um.dummy matches 100.. as @a at @a run function undermagic:item/tool/swap_charms
-
 
 ### TODO: Add Boss Handler
 execute unless entity @e[tag=um_pit_lord_boss] run stopsound @a * undermagic:boss_music.pit_lord

@@ -9,6 +9,7 @@
 		"minecraft:item",
 		"minecraft:ender_dragon",
 		"minecraft:wither",
-		"minecraft:end_crystal"
+		"minecraft:end_crystal",
+		"minecraft:shulker"
 	]
 }
