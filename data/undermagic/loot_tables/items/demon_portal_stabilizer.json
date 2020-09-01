@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:clock",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Demon Portal Stabilizer","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Creates and stabilizes a Demon Portal.","color":"gray","italic":false},
+			    {"text":"The portal spawns demons at a fast rate.","color":"gray","italic":false},
+			    {"text":"Warning: May cause the apocalypse!","color":"gray","italic":false},
+			    {"text":"Throw on top of Obsidian to activate.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420018,um_id:\"demon_portal_stabilizer\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

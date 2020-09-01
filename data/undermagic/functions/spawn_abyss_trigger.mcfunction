@@ -1,1 +1,2 @@
-give @s minecraft:carrot_on_a_stick{display:{Name:'{"text":"Abyssal Mirror","color":"light_purple","italic":false}',Lore:['{"text":"Use in the Nether to go to the Abyss.","color":"gray","italic":false}']},Unbreakable:1b,CustomModelData:420122,um_id:"abyssal_mirror"} 1
+
+loot give @s loot undermagic:items/abyssal_mirror

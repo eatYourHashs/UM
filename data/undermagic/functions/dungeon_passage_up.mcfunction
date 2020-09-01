@@ -41,7 +41,7 @@ execute unless score stop um.dummy matches 1 if score rand um.dummy matches 50..
 execute unless score stop um.dummy matches 1 if score rand um.dummy matches 50..90 positioned ^ ^3 ^9 if entity @e[tag=um_dungeon_intersection,distance=..24] unless score succ um.dummy matches 8.. run function undermagic:dungeon_passage
 execute unless score stop um.dummy matches 1 if score rand um.dummy matches 50..90 positioned ^ ^3 ^9 if entity @e[tag=um_dungeon_intersection,distance=..24] if score succ um.dummy matches 8.. run function undermagic:dungeon_passage
 execute unless score stop um.dummy matches 1 if score rand um.dummy matches 91..100 positioned ^ ^3 ^9 unless entity @e[tag=um_dungeon_spawn,distance=..96] if entity @e[tag=um_shadesull_arena] run fill ^-1 ^ ^1 ^1 ^2 ^1 polished_blackstone_bricks 
-execute unless score stop um.dummy matches 1 if score rand um.dummy matches 91..100 positioned ^ ^3 ^9 unless entity @e[tag=um_dungeon_spawn,distance=..96] unless entity @e[tag=um_shadesull_arena] run function undermagic:shadesull_arena
+execute unless score stop um.dummy matches 1 if score rand um.dummy matches 91..100 positioned ^ ^3 ^9 unless entity @e[tag=um_dungeon_spawn,distance=..96] unless entity @e[tag=um_shadesull_arena] run function undermagic:entity/shadesull/shadesull_arena
 execute unless score stop um.dummy matches 1 if score rand um.dummy matches 91..100 positioned ^ ^3 ^9 if entity @e[tag=um_dungeon_spawn,distance=..96] run function undermagic:dungeon_passage
 execute if score stop um.dummy matches 1 run fill ^-1 ^ ^1 ^1 ^2 ^1 polished_blackstone_bricks
 scoreboard players set stop um.dummy 0

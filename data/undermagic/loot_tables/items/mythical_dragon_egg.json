@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Mythical Dragon Egg","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"text":"a","color":"dark_red","italic":false,"obfuscated":true},{"text":" Infernal Drop ","color":"dark_red","italic":false,"obfuscated":false},{"text":"a","color":"dark_red","italic":false,"obfuscated":true}],
+				{"text":"Summons a wyrmling familiar.","color":"gray","italic":false},
+				{"text":"Right clicking binds this item to you and you alone!","color":"gray","italic":true}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420110,um_id:\"mythical_dragon_egg\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

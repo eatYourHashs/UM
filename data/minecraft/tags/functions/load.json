@@ -1,3 +1,5 @@
 {
-    "values": ["undermagic:common_load"]
+    "values": [
+		"#load:__init"
+	]
 }

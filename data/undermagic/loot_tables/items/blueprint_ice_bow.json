@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:clock",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Undercrafter Blueprint","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Bow of Niflheim","color":"gray","italic":false,"bold":true},
+			    {"text":"Drop on your Undercrafter to","color":"gray","italic":false,"bold":false},
+			    {"text":"enable this item's recipe!","color":"gray","italic":false,"bold":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420017,um_id:\"blueprint_ice_bow\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

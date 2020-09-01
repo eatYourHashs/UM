@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Blood Rain Staff","color":"aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Tier 2 - 250 Blood to next tier","color":"gold","italic":false},
+			    {"text":"Drips harmful blood and may be upgraded via Blood Infusion.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420105,um_id:\"blood_rain_staff_2\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
