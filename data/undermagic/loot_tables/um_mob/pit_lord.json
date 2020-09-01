@@ -30,7 +30,7 @@
           "entries": [
             {
               "type": "minecraft:loot_table",
-              "name": "minecraft:entities/generichostile",
+              "name": "undermagic:generic/generichostile",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -60,7 +60,7 @@
           "entries": [
             {
               "type": "minecraft:loot_table",
-              "name": "minecraft:entities/genericprotector",
+              "name": "undermagic:generic/genericprotector",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -90,7 +90,7 @@
           "entries": [
             {
               "type": "minecraft:loot_table",
-              "name": "minecraft:entities/genericfarm",
+              "name": "undermagic:generic/genericfarm",
               "functions": [
                 {
                   "function": "minecraft:set_count",

@@ -5,4 +5,4 @@ scoreboard players add temp um.dummy 1
 effect give @e[distance=..2,type=!#undermagic:undead] instant_damage 1 2 true
 effect give @e[distance=..2,type=#undermagic:undead] instant_health 1 2 true
 scoreboard players set @e[distance=..2] um.aw_mark 100
-execute unless score temp um.dummy matches 201.. positioned ^ ^ ^0.5 run function undermagic:doom_desire
+execute unless score temp um.dummy matches 201.. positioned ^ ^ ^0.5 run function undermagic:item/weapon/doom_desire

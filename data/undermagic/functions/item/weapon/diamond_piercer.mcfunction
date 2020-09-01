@@ -4,5 +4,5 @@ playsound minecraft:entity.bat.death player @a ~ ~ ~ 0.5 2
 scoreboard players add temp um.dummy 1
 effect give @e[distance=..2,type=!#undermagic:undead] instant_damage 1 1 true
 effect give @e[distance=..2,type=#undermagic:undead] instant_health 1 1 true
-execute unless score temp um.dummy matches 301.. positioned ^ ^ ^0.5 run function undermagic:diamond_piercer
+execute unless score temp um.dummy matches 301.. positioned ^ ^ ^0.5 run function undermagic:item/weapon/diamond_piercer
 scoreboard players set @s um.orb_cooldown 60

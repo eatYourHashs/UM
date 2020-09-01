@@ -106,7 +106,7 @@ execute if score 5s 6tic matches 1.. run effect give @e[tag=um_shadesull] resist
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_blood_minion] resistance 2 1 true
 
 scoreboard players add swap_clock um.dummy 1
-execute if score swap_clock um.dummy matches 100.. as @a at @a run function undermagic:swap_charms
+execute if score swap_clock um.dummy matches 100.. as @a at @a run function undermagic:item/tool/swap_charms
 
 execute as @e[tag=um_pit_abs] at @s unless entity @e[tag=um_pit_lord_boss,distance=..5] run kill @s
 execute if entity @e[tag=um_pit_lord_boss] run scoreboard players set pit_lord_alive um.dummy 1
