@@ -38,7 +38,6 @@ execute as @s[tag=um_wyrmling_fam] run function undermagic:entity/wyrmling/wyrml
 execute as @s[tag=um_healing_soul] run function undermagic:healing_soul_tick
 execute as @s[tag=um_offense_soul] run function undermagic:offense_soul_tick
 execute as @s[tag=um_abyssal_revenant] run particle smoke ~ ~1 ~ 0.2 0.4 0.2 0 10
-effect give @s[tag=um_abyssal_revenant] invisibility 1 1 true
 
 execute as @s[tag=um_disciple_of_destruction_model] unless entity @e[tag=um_disciple_of_destruction,distance=..5] run kill @s
 execute as @s[tag=um_disciple_of_destruction] run function undermagic:disciple_of_destruction_tick
