@@ -9,19 +9,23 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"dem
 execute as @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"demon_portal_stabilizer"}}}] at @s if block ~ ~-0.2 ~ obsidian run kill @s
 execute as @e[tag=um_demon_portal] at @s unless block ~ ~-0.5 ~ obsidian run kill @s
 scoreboard players add @e[tag=um_demon_portal] um.dummy 1
+
 execute as @e[tag=um_demon_portal,scores={um.dummy=20..}] at @s if entity @p[distance=..24] run function undermagic:demon_spawn_processing
 execute as @e[tag=um_demon_portal,scores={um.dummy=20..}] at @s run scoreboard players set @s um.dummy 0
 execute as @e[tag=um_demon_portal] at @s if entity @e[type=item,distance=..2,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"infernal_summons"}}}] run function undermagic:summon_pit_lord
 execute as @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{um_id:"netheric_book"}}}] at @s if block ~ ~ ~ cauldron unless entity @e[tag=um_bloodchalice,distance=..2] run function undermagic:bloodchalice_init
 execute as @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{um_id:"netheric_book"}}}] at @s if block ~ ~-0.9 ~ quartz_pillar run function undermagic:pedestal_init
 effect give @e[tag=um_elemental] invisibility 8 2 true
+
 execute unless entity @e[tag=um_pit_lord_boss] run stopsound @a * undermagic:boss_music.pit_lord
 execute unless entity @e[tag=um_elder_eye] run stopsound @a * undermagic:boss_music.elder
 execute unless entity @e[tag=um_shadesull] run stopsound @a * undermagic:boss_music.shadesull_p1
 execute unless entity @e[tag=um_shadesull] run stopsound @a * undermagic:boss_music.shadesull_p2
+
 execute if score difficulty um.dummy matches 1.. run scoreboard players add @e[type=wither] um.dummy 1
 execute if score difficulty um.dummy matches 1.. run effect give @e[type=wither] resistance 1 0 true
 execute if score difficulty um.dummy matches 1.. run scoreboard players set @e[type=wither,scores={um.dummy=21..}] um.dummy 0
+
 execute as @e[type=wither] if score difficulty um.dummy matches 1.. store result score @s um.boss_hp run data get entity @s Health
 execute as @e[type=wither,scores={um.boss_hp=..150,um.dummy=10}] at @s if score difficulty um.dummy matches 1.. run scoreboard players add @s um.boss_hp 10
 execute as @e[type=wither,scores={um.boss_hp=..150,um.dummy=10}] at @s if score difficulty um.dummy matches 2.. run scoreboard players add @s um.boss_hp 15
@@ -80,11 +84,7 @@ execute unless entity @e[tag=um_elder_eye] run bossbar set undermagic:elder visi
 execute unless entity @e[tag=um_shadebeast_alpha] run bossbar set undermagic:sb_alpha visible false
 execute unless entity @e[tag=um_disciple_of_destruction] run bossbar set undermagic:disciple_of_destruction visible false
 execute unless entity @e[tag=um_disciple_of_death] run bossbar set undermagic:disciple_of_death visible false
-execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_pit_lord_boss] um.erpg_loot 1
-execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_elder_eye] um.erpg_loot 1
-execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_shadesull] um.erpg_loot 1
-execute if score 5s 6tic matches 1.. run scoreboard players set @e[type=ender_dragon] um.erpg_loot 1
-execute if score 5s 6tic matches 1.. run scoreboard players set @e[type=wither] um.erpg_loot 1
+
 tag @e[tag=um_pit_lord_boss] add bosshostile
 tag @e[tag=um_elder_eye] add bosshostile
 tag @e[tag=um_shadesull] add bosshostile
@@ -92,6 +92,13 @@ tag @e[tag=um_elemental] add bosshostile
 tag @e[tag=um_sb_alpha] add bosshostile
 tag @e[tag=um_disciple_of_destruction] add bosshostile
 tag @e[tag=um_disciple_of_death] add bosshostile
+
+execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_pit_lord_boss] um.erpg_loot 1
+execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_elder_eye] um.erpg_loot 1
+execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_shadesull] um.erpg_loot 1
+execute if score 5s 6tic matches 1.. run scoreboard players set @e[type=ender_dragon] um.erpg_loot 1
+execute if score 5s 6tic matches 1.. run scoreboard players set @e[type=wither] um.erpg_loot 1
+
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_pit_lord_boss] resistance 2 1 true
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_elder_eye] resistance 2 1 true
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_elder_hand] resistance 2 1 true
@@ -108,6 +115,7 @@ execute if entity @e[tag=um_elder_eye] run scoreboard players set elder_alive um
 execute if score elder_alive um.dummy matches 1 unless entity @e[tag=um_elder_eye] run advancement grant @a only undermagic:undermagic/elder
 execute if score elder_alive um.dummy matches 1 unless entity @e[tag=um_elder_eye] run advancement grant @a only undermagic:undermagic/abyss elder
 execute if score elder_alive um.dummy matches 1 unless entity @e[tag=um_elder_eye] run scoreboard players set elder_alive um.dummy 0
+
 execute if score pit_lord_alive um.dummy matches 1 unless entity @e[tag=um_pit_lord_boss] run advancement grant @a only undermagic:undermagic/pit_lord
 execute if score pit_lord_alive um.dummy matches 1 unless entity @e[tag=um_pit_lord_boss] run advancement grant @a only undermagic:undermagic/abyss pit_lord
 execute if score pit_lord_alive um.dummy matches 1 unless entity @e[tag=um_pit_lord_boss] run scoreboard players set pit_lord_alive um.dummy 0
