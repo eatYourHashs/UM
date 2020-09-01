@@ -15,11 +15,9 @@ execute if score $timer_10 um.dummy matches 0 run function undermagic:common_int
 #run main player function
 execute as @a at @s run function undermagic:player/main
 
-#Entity Initialization
+#Entities
 execute as @e[type=#undermagic:needs_processing,tag=!um_processed] at @s run function undermagic:entity/processing/process
-
-#Entity Tick
-execute as @e[tag=um_entity] at @s run function undermagic:um_entity_tick
+execute as @e[tag=um_entity] at @s run function undermagic:entity/entity_tick
 
 #other stuff
 scoreboard players remove @e[scores={um.aw_mark=1..}] um.aw_mark 1

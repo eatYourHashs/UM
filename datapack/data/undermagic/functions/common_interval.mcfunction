@@ -22,8 +22,8 @@ effect give @e[tag=um_elemental] invisibility 8 2 true
 
 execute unless entity @e[tag=um_pit_lord_boss] run stopsound @a * undermagic:boss_music.pit_lord
 execute unless entity @e[tag=um_elder_eye] run stopsound @a * undermagic:boss_music.elder
-execute unless entity @e[tag=um_shadesull] run stopsound @a * undermagic:boss_music.shadesull_p1
-execute unless entity @e[tag=um_shadesull] run stopsound @a * undermagic:boss_music.shadesull_p2
+execute unless entity @e[tag=um_shadesull_boss] run stopsound @a * undermagic:boss_music.shadesull_p1
+execute unless entity @e[tag=um_shadesull_boss] run stopsound @a * undermagic:boss_music.shadesull_p2
 
 execute if score difficulty um.dummy matches 1.. run scoreboard players add @e[type=wither] um.dummy 1
 execute if score difficulty um.dummy matches 1.. run effect give @e[type=wither] resistance 1 0 true
@@ -61,7 +61,7 @@ execute as @e[tag=um_charm_table,tag=!um_processed] at @s run tag @s add um_proc
 execute as @e[tag=um_charm_table] at @s run function undermagic:charm_table_interval
 execute as @e[tag=um_teleporter] at @s run function undermagic:teleporter_interval
 
-execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"relic_of_ruin"}}}] at @s run function undermagic:elder_summon
+execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"relic_of_ruin"}}}] at @s run function undermagic:entity/elder/summon
 effect give @e[tag=um_shadebeast] invisibility 2 1 true
 execute as @e[tag=um_salamander] at @s run function undermagic:salamander_interval
 
@@ -86,10 +86,11 @@ execute unless entity @e[tag=um_elder_eye] run bossbar set undermagic:elder visi
 execute unless entity @e[tag=um_shadebeast_alpha] run bossbar set undermagic:sb_alpha visible false
 execute unless entity @e[tag=um_disciple_of_destruction] run bossbar set undermagic:disciple_of_destruction visible false
 execute unless entity @e[tag=um_disciple_of_death] run bossbar set undermagic:disciple_of_death visible false
+execute unless entity @e[tag=um_shadebeast_alpha] run bossbar set undermagic:sb_alpha visible false
 
 tag @e[tag=um_pit_lord_boss] add bosshostile
 tag @e[tag=um_elder_eye] add bosshostile
-tag @e[tag=um_shadesull] add bosshostile
+tag @e[tag=um_shadesull_boss] add bosshostile
 tag @e[tag=um_elemental] add bosshostile
 tag @e[tag=um_sb_alpha] add bosshostile
 tag @e[tag=um_disciple_of_destruction] add bosshostile
@@ -97,14 +98,14 @@ tag @e[tag=um_disciple_of_death] add bosshostile
 
 execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_pit_lord_boss] um.erpg_loot 1
 execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_elder_eye] um.erpg_loot 1
-execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_shadesull] um.erpg_loot 1
+execute if score 5s 6tic matches 1.. run scoreboard players set @e[tag=um_shadesull_boss] um.erpg_loot 1
 execute if score 5s 6tic matches 1.. run scoreboard players set @e[type=ender_dragon] um.erpg_loot 1
 execute if score 5s 6tic matches 1.. run scoreboard players set @e[type=wither] um.erpg_loot 1
 
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_pit_lord_boss] resistance 2 1 true
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_elder_eye] resistance 2 1 true
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_elder_hand] resistance 2 1 true
-execute if score 5s 6tic matches 1.. run effect give @e[tag=um_shadesull] resistance 2 1 true
+execute if score 5s 6tic matches 1.. run effect give @e[tag=um_shadesull_boss] resistance 2 1 true
 execute if score 5s 6tic matches 1.. run effect give @e[tag=um_blood_minion] resistance 2 1 true
 
 scoreboard players add swap_clock um.dummy 1
