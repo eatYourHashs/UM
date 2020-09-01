@@ -1,0 +1,6 @@
+{
+    "parent": "item/um/entropic_greatbow",
+    "textures": {
+        "layer0": "um_gear/entropic_greatbow_pulling_1"
+    }
+}
