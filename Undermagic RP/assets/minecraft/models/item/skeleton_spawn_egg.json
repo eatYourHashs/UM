@@ -1,6 +1,0 @@
-{
-    "parent": "item/template_spawn_egg",
-	"overrides": [
-		{ "predicate": {"custom_model_data": 420053}, "model": "item/um/blood_monolith_item"}	]
-
-}
