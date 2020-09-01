@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld_rod",
+	"textures": {
+		"layer0": "um_gear/dragon_staff"
+	}
+}
