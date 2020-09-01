@@ -100,7 +100,7 @@ bossbar set undermagic:disciple_of_death color purple
 forceload add ~ ~ ~ ~
 
 #set load version
-scoreboard players set undermagic load 1
+scoreboard players set undermagic load 10
 
 #Load Messages
 tellraw @a ["",{"text":"Loaded and installed ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs.","color":"red","bold":false}]

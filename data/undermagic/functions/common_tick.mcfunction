@@ -1,10 +1,22 @@
 
-#run main player function
-scoreboard players add interval um.dummy 1
-execute if score interval um.dummy matches 10.. run function undermagic:common_interval
+#scoreboard timers
+scoreboard players add $timer_2 um.dummy 1
+execute if score $timer_2 um.dummy matches 2.. run scoreboard players set $timer_2 um.dummy 0
 
+scoreboard players add $timer_10 um.dummy 1
+execute if score $timer_10 um.dummy matches 10.. run scoreboard players set $timer_10 um.dummy 0
+
+scoreboard players add $timer_20 um.dummy 1
+execute if score $timer_20 um.dummy matches 20.. run scoreboard players set $timer_20 um.dummy 0
+
+#common tick 10
+execute if score $timer_10 um.dummy matches 0 run function undermagic:common_interval
+
+
+#run main player function
 execute as @a at @s run function undermagic:player/main
 
+#other stuff
 execute as @e[type=item_frame,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if block ~ ~-1 ~ fire if block ~ ~-2 ~ netherrack run scoreboard players add @s um.dummy 1
 execute as @e[type=item_frame,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if block ~ ~-1 ~ fire if block ~ ~-2 ~ netherrack if score @s um.dummy matches 20.. run function undermagic:book_conversion
 execute as @e[type=ghast,tag=!um_processed] at @s run function undermagic:ghast_processing

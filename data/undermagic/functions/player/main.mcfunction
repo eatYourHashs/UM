@@ -4,7 +4,6 @@ execute if entity @s SelectedItem.tag.um_id run function undermagic:player/check
 execute if entity @s Inventory[{Slot:-106b}].tag.um_id run function undermagic:player/check_offhand_item
 execute if entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor
 
-
 #charms
 execute if score @s um.slowfa_charms matches 1.. run function undermagic:player/charms/slowfa
 execute if score @s um.dedstr_charms matches 1.. run function undermagic:player/charms/dedstr
@@ -20,8 +19,11 @@ execute as @s[scores={um.sneak=1..,um.jump=1..,um.ender_charms=2..}] at @s run f
 execute if score @s um.flame_grasp matches 1.. run function undermagic:player/charms/flame_grasp
 
 #damage
-execute as @s[scores={um.take_damage=1..}] run function undermagic:player_take_damage
-execute as @s[scores={um.kill_count=1..}] at @s run function undermagic:player_kill
+execute as @s[scores={um.take_damage=1..}] run function undermagic:player/take_damage
+execute as @s[scores={um.kill_count=1..}] at @s run function undermagic:player/kill
+
+#interval
+execute if score $timer_10 um.dummy matches 0 run function undermagic:player/main_interval
 
 #reset scores
 scoreboard players add @s um.airtime 1
