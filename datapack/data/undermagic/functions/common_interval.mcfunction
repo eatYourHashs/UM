@@ -1,20 +1,7 @@
 
-#Crafting: Redo
+#Crafting
 execute as @e[type=item_frame,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if block ~ ~-1 ~ fire if block ~ ~-2 ~ netherrack run scoreboard players add @s um.dummy 1
 execute as @e[type=item_frame,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if block ~ ~-1 ~ fire if block ~ ~-2 ~ netherrack if score @s um.dummy matches 20.. run function undermagic:book_conversion
-
-execute as @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"demon_portal_stabilizer"}}}] at @s if block ~ ~-0.2 ~ obsidian run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_demon_portal"]}
-execute as @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"demon_portal_stabilizer"}}}] at @s if block ~ ~-0.2 ~ obsidian run kill @s
-execute as @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{um_id:"netheric_book"}}}] at @s if block ~ ~ ~ cauldron unless entity @e[tag=um_bloodchalice,distance=..2] run function undermagic:block/bloodchalice_init
-execute as @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{um_id:"netheric_book"}}}] at @s if block ~ ~-0.9 ~ quartz_pillar run function undermagic:block/pedestal_init
-execute as @e[type=item,nbt={OnGround:1b,Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"relic_of_ruin"}}}] at @s run function undermagic:entity/elder/summon
-
-#Crafting Blocks
-execute as @e[tag=um_undercrafter] at @s if entity @p[distance=..8] run function undermagic:block/undercrafter_interval
-execute as @e[tag=um_bloodchalice] at @s if entity @p[distance=..24] run function undermagic:block/bloodchalice_interval
-execute as @e[tag=um_pedestal] at @s if entity @p[distance=..24] run function undermagic:block/pedestal_interval
-execute as @e[tag=um_teleporter] at @s run function undermagic:block/teleporter_interval
-execute as @e[tag=um_charm_table] at @s run function undermagic:block/charm_table_interval
 
 #10 sec counter
 scoreboard players add 10sec_counter um.dummy 1
@@ -24,19 +11,6 @@ execute if score 10sec_counter um.dummy matches 20.. run scoreboard players set 
 
 scoreboard players add swap_clock um.dummy 1
 execute if score swap_clock um.dummy matches 100.. as @a at @a run function undermagic:item/tool/swap_charms
-
-#entities
-effect give @e[tag=um_elemental] invisibility 8 2 true
-
-execute as @e[tag=um_blood_monolith] at @s rotated 0 0 run tp @s ^ ^ ^
-effect give @e[tag=um_blood_monolith] invisibility 2 1 true
-execute as @e[tag=um_shadow_rift] at @s run function undermagic:rift_interval
-execute as @e[tag=um_shadow_guardian] at @s unless entity @a[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"shadow_shield"}}]},distance=..10] run kill @s
-execute as @e[tag=um_warlock_hand] at @s unless entity @a[distance=..10,predicate=undermagic:armor_sets/abyss_warlock] run kill @s
-execute as @e[tag=um_dragon_wings] at @s unless entity @a[distance=..10,predicate=undermagic:armor_sets/dragon] run kill @s
-
-effect give @e[tag=um_shadebeast] invisibility 2 1 true
-execute as @e[tag=um_salamander] at @s run function undermagic:salamander_interval
 
 ### TODO: Add Boss Handler
 execute unless entity @e[tag=um_pit_lord_boss] run stopsound @a * undermagic:boss_music.pit_lord
