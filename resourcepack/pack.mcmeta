@@ -1,6 +1,6 @@
 {
-   "pack": {
-      "pack_format": 5,
-      "description": "The resource pack for Undermagic."
-   }
+  "pack": {
+    "pack_format": 6,
+    "description": [{"text":"Undermagic","color":"#179699"},{"text":"\n"},{"text":"Beta 34","color":"#c6fdfe"}]
+  }
 }
