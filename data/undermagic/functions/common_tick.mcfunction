@@ -9,9 +9,8 @@ execute if score $timer_10 um.dummy matches 10.. run scoreboard players set $tim
 scoreboard players add $timer_20 um.dummy 1
 execute if score $timer_20 um.dummy matches 20.. run scoreboard players set $timer_20 um.dummy 0
 
-#common tick 10
+#common tick interval
 execute if score $timer_10 um.dummy matches 0 run function undermagic:common_interval
-
 
 #run main player function
 execute as @a at @s run function undermagic:player/main
@@ -21,7 +20,6 @@ execute as @e[type=#undermagic:needs_processing,tag=!um_processed] at @s run fun
 
 #Entity Tick
 execute as @e[tag=um_entity] at @s run function undermagic:um_entity_tick
-execute as @e[type=ender_dragon] if data entity @s DragonPhase at @s run function undermagic:entity/ender_dragon/tick
 
 #other stuff
 scoreboard players remove @e[scores={um.aw_mark=1..}] um.aw_mark 1

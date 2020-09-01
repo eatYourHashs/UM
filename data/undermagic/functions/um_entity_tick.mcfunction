@@ -1,3 +1,6 @@
+
+execute if entity @s[tag=um_ender_dragon] run function undermagic:entity/ender_dragon/tick
+
 execute as @s[tag=um_greater_demon] run function undermagic:greater_demon_tick
 execute as @s[tag=um_lesser_demon] run function undermagic:lesser_demon_tick
 execute as @s[tag=um_undercrafter] run function undermagic:undercrafter_tick

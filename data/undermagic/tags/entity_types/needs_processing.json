@@ -5,6 +5,8 @@
 		"minecraft:wither_skeleton",
 		"minecraft:creeper",
 		"minecraft:zombified_piglin",
-		"minecraft:magma_cube"
+		"minecraft:magma_cube",
+		"minecraft:item",
+		"minecraft:ender_dragon"
 	]
 }
