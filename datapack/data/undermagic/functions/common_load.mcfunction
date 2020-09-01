@@ -69,30 +69,37 @@ scoreboard players set 100 um.dummy 100
 bossbar add undermagic:pit_lord "Pit Lord"
 bossbar set undermagic:pit_lord max 400
 bossbar set undermagic:pit_lord style progress
+
 bossbar add undermagic:elemental "Bloodstone Elemental"
 bossbar set undermagic:elemental max 200
 bossbar set undermagic:elemental style progress
+
 bossbar add undermagic:blood_amalgam "Blood Amalgam"
 bossbar set undermagic:blood_amalgam max 12
 bossbar set undermagic:blood_amalgam style notched_6
+
 bossbar add undermagic:elder "The Elder"
 bossbar set undermagic:elder max 600
 execute if score difficulty um.dummy matches 2.. run bossbar set undermagic:elder max 1000
 bossbar set undermagic:elder style progress
 bossbar set undermagic:elder color purple
 execute unless score difficulty um.dummy matches 0.. run scoreboard players set difficulty um.dummy 1
+
 bossbar add undermagic:sb_alpha "Shadebeast Alpha"
 bossbar set undermagic:sb_alpha max 100
 bossbar set undermagic:sb_alpha style progress
 bossbar set undermagic:sb_alpha color purple
+
 bossbar add undermagic:shadesull "Shadesull"
 bossbar set undermagic:shadesull max 800
 bossbar set undermagic:shadesull style progress
 bossbar set undermagic:shadesull color purple
+
 bossbar add undermagic:disciple_of_destruction "Disciple of Destruction"
 bossbar set undermagic:disciple_of_destruction max 400
 bossbar set undermagic:disciple_of_destruction style progress
 bossbar set undermagic:disciple_of_destruction color purple
+
 bossbar add undermagic:disciple_of_death "Disciple of Death"
 bossbar set undermagic:disciple_of_death max 300
 bossbar set undermagic:disciple_of_death style progress
@@ -100,7 +107,7 @@ bossbar set undermagic:disciple_of_death color purple
 forceload add ~ ~ ~ ~
 
 #set load version
-scoreboard players set undermagic load 10
+scoreboard players set undermagic load 34
 
 #Load Messages
 tellraw @a ["",{"text":"Loaded and installed ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs.","color":"red","bold":false}]

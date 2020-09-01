@@ -7,6 +7,8 @@
 		"minecraft:zombified_piglin",
 		"minecraft:magma_cube",
 		"minecraft:item",
-		"minecraft:ender_dragon"
+		"minecraft:ender_dragon",
+		"minecraft:wither",
+		"minecraft:end_crystal"
 	]
 }

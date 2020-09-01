@@ -1,4 +1,6 @@
 
+execute if score $timer_10 um.dummy matches 0 run function undermagic:entity/entity_interval
+
 execute if entity @s[type=ender_dragon] run function undermagic:entity/generic/ender_dragon_tick
 execute if entity @s[type=arrow] run function undermagic:entity/generic/arrow_tick
 execute if entity @s[tag=um_shadow_guardian] run function undermagic:entity/generic/shadow_guardian_tick
