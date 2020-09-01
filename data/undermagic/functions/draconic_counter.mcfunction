@@ -9,6 +9,6 @@ execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inve
 execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
 execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
 execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
-effect give @e[tag=!um_undead,distance=1..8] instant_damage 1 1
-effect give @e[tag=um_undead,distance=..8] instant_health 1 1
+effect give @e[type=!#undermagic:undead,distance=1..8] instant_damage 1 1
+effect give @e[type=#undermagic:undead,distance=..8] instant_health 1 1
 scoreboard players remove @s um.drac_sh_chg 1

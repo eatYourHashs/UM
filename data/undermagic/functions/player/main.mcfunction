@@ -1,8 +1,8 @@
 
 #check items
-execute if entity @s SelectedItem.tag.um_id run function undermagic:player/check_held_item
-execute if entity @s Inventory[{Slot:-106b}].tag.um_id run function undermagic:player/check_offhand_item
-execute if entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor
+execute if data entity @s SelectedItem.tag.um_id run function undermagic:player/check_held_item
+execute if data entity @s Inventory[{Slot:-106b}].tag.um_id run function undermagic:player/check_offhand_item
+execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor
 
 #charms
 execute if score @s um.slowfa_charms matches 1.. run function undermagic:player/charms/slowfa

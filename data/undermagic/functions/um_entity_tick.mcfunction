@@ -25,8 +25,8 @@ execute as @s[tag=um_elemental] at @s run function undermagic:elemental_tick
 execute as @s[tag=um_shadow_rift] at @s run function undermagic:rift_tick
 execute as @s[tag=um_shadow_guardian] at @s run particle minecraft:smoke ~ ~1 ~ 0.3 0.5 0.3 0 1
 execute as @s[tag=um_shadow_guardian] at @s facing entity @e[limit=1,sort=nearest,tag=um_guardian_target,distance=..10] feet run tp @s ^ ^ ^0.4
-execute as @s[tag=um_shadow_guardian] at @s run effect give @e[tag=um_guardian_target,tag=!um_undead,distance=..1] instant_damage 1 1
-execute as @s[tag=um_shadow_guardian] at @s run effect give @e[tag=um_guardian_target,tag=um_undead,distance=..1] instant_health 1 1
+execute as @s[tag=um_shadow_guardian] at @s run effect give @e[tag=um_guardian_target,type=!#undermagic:undead,distance=..1] instant_damage 1 1
+execute as @s[tag=um_shadow_guardian] at @s run effect give @e[tag=um_guardian_target,type=#undermagic:undead,distance=..1] instant_health 1 1
 execute as @s[tag=um_shadow_guardian] at @s run tag @e[tag=um_guardian_target,distance=..1] remove um_guardian_target
 tag @s[tag=um_shadow_guardian] remove um_guardian_target
 execute as @s[tag=um_elder_eye] at @s run function undermagic:elder_eye_tick

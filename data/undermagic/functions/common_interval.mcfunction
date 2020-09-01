@@ -46,49 +46,7 @@ execute as @e[tag=um_shadow_rift] at @s run function undermagic:rift_interval
 execute as @e[tag=um_shadow_guardian] at @s unless entity @e[type=player,nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"shadow_shield"}}]},distance=..10] run kill @s
 execute as @e[tag=um_warlock_hand] at @s unless entity @e[type=player,nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"abyss_warlock_hood"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"abyss_warlock_robe"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"abyss_warlock_pants"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"abyss_warlock_boots"}}]},distance=..10] run kill @s
 execute as @e[tag=um_dragon_wings] at @s unless entity @a[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"dragon_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"dragon_chestplate"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"dragon_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"dragon_boots"}}]},distance=..10] run kill @s
-tag @e[type=skeleton] add um_undead
-tag @e[type=stray] add um_undead
-tag @e[type=zombie] add um_undead
-tag @e[type=zombie_villager] add um_undead
-tag @e[type=husk] add um_undead
-tag @e[type=drowned] add um_undead
-tag @e[type=wither_skeleton] add um_undead
-tag @e[type=zombified_piglin] add um_undead
-tag @e[type=wither] add um_undead
-tag @e[type=ghast] add um_undead
-tag @e[type=phantom] add um_undead
-tag @e[type=zoglin] add um_undead
-tag @e[type=skeleton] add um_hostile
-tag @e[type=stray] add um_hostile
-tag @e[type=zombie] add um_hostile
-tag @e[type=zombie_villager] add um_hostile
-tag @e[type=husk] add um_hostile
-tag @e[type=drowned] add um_hostile
-tag @e[type=wither_skeleton] add um_hostile
-tag @e[type=zombified_piglin] add um_hostile
-tag @e[type=wither] add um_hostile
-tag @e[type=ghast] add um_hostile
-tag @e[type=phantom] add um_hostile
-tag @e[type=blaze] add um_hostile
-tag @e[type=creeper] add um_hostile
-tag @e[type=elder_guardian] add um_hostile
-tag @e[type=endermite] add um_hostile
-tag @e[type=evoker] add um_hostile
-tag @e[type=guardian] add um_hostile
-tag @e[type=magma_cube] add um_hostile
-tag @e[type=pillager] add um_hostile
-tag @e[type=ravager] add um_hostile
-tag @e[type=shulker] add um_hostile
-tag @e[type=silverfish] add um_hostile
-tag @e[type=slime] add um_hostile
-tag @e[type=spider] add um_hostile
-tag @e[type=cave_spider] add um_hostile
-tag @e[type=vex] add um_hostile
-tag @e[type=vindicator] add um_hostile
-tag @e[type=witch] add um_hostile
-tag @e[type=piglin] add um_hostile
-tag @e[type=hoglin] add um_hostile
-tag @e[type=zoglin] add um_hostile
+
 execute as @e[tag=um_charm_table] at @s run data merge entity @s {Rotation:[90F,0F],Fire:100}
 execute as @e[tag=um_teleporter] at @s run data merge entity @s {Rotation:[90F,0F],Fire:100}
 execute as @e[tag=um_charm_table,tag=!um_processed] at @s run setblock ~ ~ ~ minecraft:dropper[facing=down]{CustomName:'{"text":"Charm Table","italic":false}'} replace
