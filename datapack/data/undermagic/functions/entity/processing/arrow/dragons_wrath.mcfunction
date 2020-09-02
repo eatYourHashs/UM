@@ -1,4 +1,7 @@
 
+tag @s add um_dragons_proc
+tag @s add um_entity
+
 data merge entity @s {PierceLevel:1b}
 
 execute store result score a um.dummy run data get entity @s Motion[0] 16000

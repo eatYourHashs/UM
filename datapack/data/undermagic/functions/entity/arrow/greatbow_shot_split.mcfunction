@@ -1,7 +1,7 @@
-summon arrow ^0.8 ^ ^-0.3 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot"]}
-summon arrow ^-0.8 ^ ^-0.3 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot"]}
-summon arrow ^1.6 ^ ^-0.6 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot"]}
-summon arrow ^-1.6 ^ ^-0.6 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot"]}
+summon arrow ^0.8 ^ ^-0.3 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot","um_entity"]}
+summon arrow ^-0.8 ^ ^-0.3 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot","um_entity"]}
+summon arrow ^1.6 ^ ^-0.6 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot","um_entity"]}
+summon arrow ^-1.6 ^ ^-0.6 {pickup:2b,crit:0b,ShotFromCrossbow:0b,PierceLevel:0b,Tags:["um_processed","um_split_shot","um_entity"]}
 execute store result score a um.dummy run data get entity @s Motion[0] 10000
 execute store result score b um.dummy run data get entity @s Motion[1] 10000
 execute store result score c um.dummy run data get entity @s Motion[2] 10000

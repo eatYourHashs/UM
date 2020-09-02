@@ -9,5 +9,6 @@ execute store result entity @s Motion[1] double 0.0001 run scoreboard players ge
 execute store result entity @s Motion[2] double 0.0001 run scoreboard players get c um.dummy
 execute store success score success um.dummy run clear @p gunpowder 1
 execute if score success um.dummy matches 1.. run tag @s add um_explosive
+execute if score success um.dummy matches 1.. run tag @s add um_entity
 execute if score success um.dummy matches 1.. run playsound minecraft:entity.tnt.primed player @a ~ ~ ~ 1 1
 execute if score success um.dummy matches 1.. run scoreboard players set success um.dummy 0

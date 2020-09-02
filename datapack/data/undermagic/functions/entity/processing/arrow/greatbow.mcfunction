@@ -1,4 +1,7 @@
 
+tag @s add um_greatbow_proc
+tag @s add um_entity
+
 data merge entity @s {PierceLevel:10b}
 
 execute store result score a um.dummy run data get entity @s Motion[0] 12000
