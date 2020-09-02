@@ -7,4 +7,4 @@ effect give @e[distance=..2,type=!#undermagic:undead,tag=!global.ignore] instant
 effect give @e[distance=..2,type=#undermagic:undead,tag=!global.ignore] instant_health 1 1 true
 scoreboard players set @e[distance=..2,tag=!global.ignore] um.oathbow_mark 100
 execute if entity @e[distance=..2,tag=!global.ignore,type=!player] run scoreboard players set temp um.dummy 202
-execute unless score temp um.dummy matches 201.. positioned ^ ^ ^0.5 run function undermagic:oathbow
+execute unless score temp um.dummy matches 201.. positioned ^ ^ ^0.5 run function undermagic:entity/projectile/oathbow

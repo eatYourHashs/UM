@@ -6,7 +6,7 @@ execute if entity @p[distance=..2,predicate=undermagic:armor/abyss_ranger_one] r
 
 scoreboard players set temp um.dummy 0
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"forbidden_oathbow"}}}] run tag @s add um_oathbow_proc
-execute if entity @s[tag=um_oathbow_proc,nbt={crit:1b}] as @p at @s positioned ^ ^1.2 ^2.1 run function undermagic:entity/projectile/oathbow
+execute if entity @s[tag=um_oathbow_proc,nbt={crit:1b}] as @p at @s positioned ^ ^1.8 ^3.1 run function undermagic:entity/projectile/oathbow
 execute if entity @s[tag=um_oathbow_proc] run kill @s
 
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"bow_ice"}}}] run tag @s add um_icebow_proc
