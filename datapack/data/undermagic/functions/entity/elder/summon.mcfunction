@@ -16,6 +16,5 @@ scoreboard players set @e[tag=um_hand3] um.dummy -50
 scoreboard players set @e[tag=um_hand5] um.dummy -50
 playsound undermagic:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 particle minecraft:portal ~ ~ ~ 0 0.5 0 1 500
-execute if entity @s[type=item] run kill @s
 
 data modify storage undermagic:common boss_status.elder set value 1b
