@@ -1,4 +1,4 @@
-scoreboard players set swap_clock um.dummy 0
+
 scoreboard players set @s um.speed_charms 0
 scoreboard players set @s um.resist_charms 0
 scoreboard players set @s um.streng_charms 0

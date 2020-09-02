@@ -3,7 +3,7 @@ execute if entity @s[type=wither] run function undermagic:entity/generic/wither_
 
 execute if entity @s[tag=um_demon_portal] run function undermagic:entity/generic/demon_portal
 execute if entity @s[tag=um_shadow_rift] run function undermagic:rift_interval
-execute if entity @e[tag=um_salamander] run function undermagic:salamander_interval
+execute if entity @e[tag=um_salamander] run function undermagic:entity/salamander/interval
 
 effect give @s[tag=um_blood_monolith] invisibility 2 1 true
 effect give @s[tag=um_shadebeast] invisibility 2 1 true

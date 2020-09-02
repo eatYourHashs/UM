@@ -37,4 +37,8 @@ scoreboard players remove @s um.tp_cooldown 1
 scoreboard players set @s um.wither_killed 0
 scoreboard players set @s um.dragon_killed 0
 
+#delayed tick
+execute if score $timer_200 um.dummy matches 0..9 unless score @s um.drac_sh_chg matches 0..5 run scoreboard players add @s um.drac_sh_chg 1
+execute if score $timer_200 um.dummy matches 0..9 run scoreboard players add @a[scores={um.drac_sh_chg=..4},nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] um.drac_sh_chg 1
+execute if score $timer_200 um.dummy matches 0..9 run function undermagic:item/tool/swap_charms
 

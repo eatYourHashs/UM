@@ -17,8 +17,6 @@ execute if entity @p[distance=..10] if entity @e[tag=um_elder_hand] run tp ~ ~0.
 execute if entity @p[distance=..10] unless entity @e[tag=um_elder_hand] run tp ~ ~0.1 ~
 particle minecraft:portal ~ ~1 ~ 0 0 0 1 10
 execute store result score @s um.boss_hp run data get entity @s Health 1
-bossbar set undermagic:elder players @a[distance=..64]
-bossbar set undermagic:elder visible true
 execute if entity @e[tag=um_elder_hand] run effect give @s resistance 1 99 true
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_four 1
@@ -80,3 +78,7 @@ execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.boss_hp
 scoreboard players add @s um.music 1
 execute if score @s um.music matches 1960 run playsound undermagic:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1960.. run scoreboard players set @s um.music 0
+
+bossbar set undermagic:elder players @a[distance=..64]
+bossbar set undermagic:elder visible true
+execute store result bossbar undermagic:elder value run scoreboard players get @s um.boss_hp
