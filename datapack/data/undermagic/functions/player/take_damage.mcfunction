@@ -1,10 +1,11 @@
+
 scoreboard players set @s um.since_damaged 0
 execute at @s if score @s um.dark_energy matches 1.. run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 1 0.5
 execute if score @s um.dark_energy matches 1.. run scoreboard players remove @s um.dark_energy 500
-execute if entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"bloodstained_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"bloodstained_chestplate"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"bloodstained_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"bloodstained_boots"}}]},scores={um.blood=12..}] run effect give @s instant_health
-execute if entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"bloodstained_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"bloodstained_chestplate",um_extra:"bloodstained_upgrade"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"bloodstained_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"bloodstained_boots"}}]},scores={um.blood=12..}] run effect give @s regeneration 5 2
-execute if entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"bloodstained_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"bloodstained_chestplate"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"bloodstained_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"bloodstained_boots"}}]},scores={um.blood=12..}] run scoreboard players remove @s um.blood 2
-execute if entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"shade_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"shade_chestplate"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"shade_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"shade_boots"}}]}] run effect clear @s resistance
-execute if entity @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"shade_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"shade_chestplate"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"shade_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"shade_boots"}}]}] run effect clear @s strength
+execute if entity @s[scores={um.blood=12..},predicate=undermagic:armor_sets/bloodstained] run effect give @s instant_health
+execute if entity @s[scores={um.blood=12..},predicate=undermagic:armor_sets/bloodstained_upgraded] run effect give @s regeneration 5 2
+execute if entity @s[scores={um.blood=12..},predicate=undermagic:armor_sets/bloodstained] run scoreboard players remove @s um.blood 2
+execute if entity @s[predicate=undermagic:armor_sets/shade] run effect clear @s resistance
+execute if entity @s[predicate=undermagic:armor_sets/shade] run effect clear @s strength
 scoreboard players add @s um.shade_invi 100
 scoreboard players set @s um.take_damage 0
