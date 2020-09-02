@@ -16,7 +16,7 @@ execute if entity @s[tag=um_dragon_wings] unless entity @a[distance=..10,predica
 
 #Crafting Blocks
 execute if entity @s[tag=um_undercrafter] if entity @p[distance=..8] run function undermagic:block/undercrafter_interval
-execute if entity @s[tag=um_bloodchalice] if entity @p[distance=..24] run function undermagic:block/bloodchalice_interval
+execute if entity @s[tag=um_bloodchalice] if entity @p[distance=..24] run function undermagic:block/bloodchalice/interval
 execute if entity @s[tag=um_pedestal] if entity @p[distance=..24] run function undermagic:block/pedestal_interval
 execute if entity @s[tag=um_teleporter] run function undermagic:block/teleporter_interval
 execute if entity @s[tag=um_charm_table] run function undermagic:block/charm_table_interval
