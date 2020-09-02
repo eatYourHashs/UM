@@ -1,5 +1,6 @@
 scoreboard players add @s um.dummy 1
-execute facing entity @p feet run tp @s ~ ~ ~
+execute facing entity @p feet run tp @s ^ ^ ^
+execute if score @s um.dummy matches
 execute if score @s um.dummy matches 401.. run scoreboard players set @s um.dummy 1
 bossbar set undermagic:disciple_of_death players @a[distance=..50]
 bossbar set undermagic:disciple_of_death visible true
