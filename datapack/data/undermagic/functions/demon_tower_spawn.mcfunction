@@ -5,6 +5,7 @@ fill ~-2 ~7 ~2 ~-2 1 ~2 nether_brick_fence keep
 fill ~2 ~7 ~-2 ~2 1 ~-2 nether_brick_fence keep
 fill ~-2 ~7 ~-2 ~-2 1 ~-2 nether_brick_fence keep
 setblock ~ ~5 ~ obsidian
+fill ~1 ~6 ~1 ~-1 ~8 ~-1 air
 execute align xyz run summon armor_stand ~0.5 ~6 ~0.5 {NoGravity:0b,Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_demon_portal"]}
 fill ~3 ~5 ~1 ~3 ~6 ~-1 nether_bricks
 fill ~-3 ~5 ~1 ~-3 ~6 ~-1 nether_bricks
