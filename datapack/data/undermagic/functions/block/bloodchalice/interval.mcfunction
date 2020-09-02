@@ -9,8 +9,8 @@ execute as @e[type=item,distance=..1,tag=!um_chalice_check] at @s if block ~ ~0.
 scoreboard players operation @s um.dummy += out um.dummy
 
 #recipes
-execute if block ~3 ~ ~3 redstone_block if block ~-3 ~ ~3 redstone_block if block ~3 ~ ~-3 redstone_block if block ~-3 ~ ~-3 redstone_block if block ~3 ~ ~ run function undermagic:block/bloodchalice/recipes_redstone
-execute if block ~3 ~ ~3 diamond_block if block ~-3 ~ ~3 diamond_block if block ~3 ~ ~-3 diamond_block if block ~-3 ~ ~-3 diamond_block if block ~3 ~ ~ run function undermagic:block/bloodchalice/recipes_diamond
+execute if block ~3 ~ ~3 redstone_block if block ~-3 ~ ~3 redstone_block if block ~3 ~ ~-3 redstone_block if block ~-3 ~ ~-3 redstone_block if block ~3 ~ ~ redstone_block run function undermagic:block/bloodchalice/recipes_redstone
+execute if block ~3 ~ ~3 diamond_block if block ~-3 ~ ~3 diamond_block if block ~3 ~ ~-3 diamond_block if block ~-3 ~ ~-3 diamond_block if block ~3 ~ ~ diamond_block run function undermagic:block/bloodchalice/recipes_diamond
 execute if block ~3 ~ ~3 beacon if block ~-3 ~ ~3 beacon if block ~3 ~ ~-3 beacon if block ~-3 ~ ~-3 beacon run function undermagic:block/bloodchalice/recipes_beacon
 execute positioned ~3 ~ ~3 if entity @e[distance=..1,tag=um_blood_monolith] at @s positioned ~3 ~ ~-3 if entity @e[distance=..1,tag=um_blood_monolith] at @s positioned ~-3 ~ ~3 if entity @e[distance=..1,tag=um_blood_monolith] at @s positioned ~-3 ~ ~-3 if entity @e[distance=..1,tag=um_blood_monolith] at @s run function undermagic:block/bloodchalice/recipes_monolith
 
