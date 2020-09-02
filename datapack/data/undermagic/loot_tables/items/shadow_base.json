@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:clock",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Shadow Base","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Used to create a greater metal.","color":"gray","italic":false},
+			    {"text":"Useless in this form.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420061,um_id:\"shadow_base\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

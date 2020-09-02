@@ -1,6 +1,5 @@
 
 #Scoreboard objective Init
-scoreboard objectives add um.erpg_loot dummy
 scoreboard objectives add um.dummy dummy
 scoreboard objectives add um.dummy_two dummy
 scoreboard objectives add um.dummy_three dummy
@@ -108,6 +107,9 @@ forceload add ~ ~ ~ ~
 
 #set load version
 scoreboard players set undermagic load 34
+
+#init storage
+data merge storage undermagic:common {list:[],obj:[],var:""}
 
 #Load Messages
 tellraw @a ["",{"text":"Loaded and installed ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs.","color":"red","bold":false}]

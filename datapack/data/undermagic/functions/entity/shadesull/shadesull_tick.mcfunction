@@ -47,8 +47,8 @@ execute if entity @s[scores={um.dummy=580}] as @r[distance=..50] at @s run funct
 execute if entity @s[scores={um.dummy=601..680,um.boss_hp=..400}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 800
 execute if entity @s[scores={um.dummy=601..720,um.boss_hp=..400}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 800
 execute if entity @s[scores={um.dummy=660}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 601
-execute if entity @s[scores={um.dummy=602}] run function undermagic:shadesull_warp
-execute if entity @s[scores={um.dummy=622}] facing entity @p feet run function undermagic:shadesull_elder_bolt
+execute if entity @s[scores={um.dummy=602}] run function undermagic:entity/shadesull/shadesull_warp
+execute if entity @s[scores={um.dummy=622}] facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=627}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=632}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=637}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
@@ -66,7 +66,7 @@ execute if entity @s[scores={um.dummy=1001..1080,um.boss_hp=..300}] if score dif
 execute if entity @s[scores={um.dummy=1001..1120,um.boss_hp=..300}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 1200
 execute if entity @s[scores={um.dummy=1060}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 1001
 execute if entity @s[scores={um.dummy=1002}] run function undermagic:entity/shadesull/shadesull_warp
-execute if entity @s[scores={um.dummy=1022}] facing entity @p feet run function undermagic:shadesull_elder_bolt
+execute if entity @s[scores={um.dummy=1022}] facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=1027}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=1032}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=1037}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt

@@ -1,100 +1,31 @@
-{"pools":[{"rolls":1,"entries":[{"type":"item","weight":1,"name":"minecraft:clock","functions":[{"function":"set_count","count":1},{"function":"set_nbt","tag":"{CustomModelData:420022,um_id:pit_lord_heart}"},{"function":"set_name","name":{"text":"Pit Lord's Heart","color":"light_purple","italic":false}}]}]},{"rolls":1,"entries":[{"type":"item","weight":1,"name":"minecraft:carrot_on_a_stick","functions":[{"function":"set_count","count":1},{"function":"set_nbt","tag":"{Unbreakable:1b,CustomModelData:420052,um_id:inferno_staff,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-3.1,Operation:0,UUID:[I;0,153009,0,92733],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:7,Operation:0,UUID:[I;0,182825,0,300322],Slot:\"mainhand\"}]}"},{"function":"set_name","name":{"text":"Inferno Staff","color":"light_purple","italic":false}},{"function":"set_lore","lore":[[{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"b","color":"red","italic":false,"obfuscated":true}],{"text":"Burn your enemies with hellfire!","color":"gray","italic":false},{"text":"Also grants fire resistance when held,","color":"gray","italic":false},{"text":"and absorption on melee hits.","color":"gray","italic":false}]}]}]},
 {
-    "rolls": 5,
-    "entries": [
-      {
-        "type": "minecraft:loot_table",
-        "name": "undermagic:charm_drop"
-      }
-    ]
-},
-{
-  "rolls": 1,
-  "entries": [
+  "pools":[
     {
-      "type": "minecraft:loot_table",
-      "name": "undermagic:generic/generichostile",
-      "functions": [
+	  "rolls":1,
+	  "entries":[
+	    {
+		  "type":"loot_table",
+		  "name":"undermagic:items/pit_lord_heart"
+		}
+	  ]
+	},
+	{
+	  "rolls":1,
+	  "entries":[
+	    {
+		  "type":"loot_table",
+		  "name":"undermagic:items/inferno_staff"
+		}
+	  ]
+	},
+    {
+      "rolls": 5,
+      "entries": [
         {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 30,
-            "max": 45
-          }
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop"
         }
       ]
     }
-  ],
-  "conditions": [
-    {
-      "condition": "minecraft:entity_scores",
-      "entity": "this",
-      "scores": {
-        "um.erpg_loot": {
-          "min": 1,
-          "max": 999
-        }
-      }
-    }
   ]
-},
-{
-  "rolls": 1,
-  "entries": [
-    {
-      "type": "minecraft:loot_table",
-      "name": "undermagic:generic/genericprotector",
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 30,
-            "max": 45
-          }
-        }
-      ]
-    }
-  ],
-  "conditions": [
-    {
-      "condition": "minecraft:entity_scores",
-      "entity": "this",
-      "scores": {
-        "um.erpg_loot": {
-          "min": 1,
-          "max": 999
-        }
-      }
-    }
-  ]
-},
-{
-  "rolls": 1,
-  "entries": [
-    {
-      "type": "minecraft:loot_table",
-      "name": "undermagic:generic/genericfarm",
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 30,
-            "max": 45
-          }
-        }
-      ]
-    }
-  ],
-  "conditions": [
-    {
-      "condition": "minecraft:entity_scores",
-      "entity": "this",
-      "scores": {
-        "um.erpg_loot": {
-          "min": 1,
-          "max": 999
-        }
-      }
-    }
-  ]
-}]}
+}

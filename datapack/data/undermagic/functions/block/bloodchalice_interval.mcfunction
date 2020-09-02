@@ -52,7 +52,7 @@ execute if entity @e[type=item,nbt={Item:{id:"minecraft:feather",Count:1b}},dist
 execute if entity @e[type=item,nbt={Item:{id:"minecraft:feather",Count:64b}},distance=..1] run scoreboard players add @s um.dummy 64
 execute if entity @e[type=item,nbt={Item:{id:"minecraft:nautilus_shell",Count:1b}},distance=..1] run scoreboard players add @s um.dummy 1
 execute if entity @e[type=item,nbt={Item:{id:"minecraft:nautilus_shell",Count:64b}},distance=..1] run scoreboard players add @s um.dummy 64
-execute if entity @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"sanguine_eye"}}},distance=..1] run function undermagic:blood_amalgam_summon
+execute if entity @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"sanguine_eye"}}},distance=..1] run function undermagic:entity/blood_amalgam/summon
 execute if entity @e[type=item,distance=..1] run kill @e[type=item,distance=..1]
 execute if block ~3 ~ ~3 redstone_block run particle minecraft:enchant ~3 ~0.5 ~3 0.4 0.4 0.4 0 4
 execute if block ~-3 ~ ~3 redstone_block run particle minecraft:enchant ~-3 ~0.5 ~3 0.4 0.4 0.4 0 4

@@ -61,19 +61,18 @@
       ]
     },
     {
-      "rolls": {
-        "min": 3,
-        "max": 7
-      },
+      "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:clock",
-          "weight": 1,
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/abyss_shard",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:420091,um_id:\"abyss_shard\",display:{Name:\"{\\\"text\\\":\\\"Abyss Shard\\\",\\\"italic\\\":false}\"}}"
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              }
             }
           ]
         }

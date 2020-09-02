@@ -4,15 +4,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
-          "name": "minecraft:clock",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:420092,um_id:\"dark_crystal_heart\",display:{Name:\"{\\\"text\\\":\\\"Dark Crystal Heart\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"}}"
-            }
-          ]
+          "type": "loot_table",
+          "name": "undermagic:items/dark_crystal_heart"
         }
       ]
     },
@@ -22,134 +15,6 @@
         {
           "type": "minecraft:loot_table",
           "name": "undermagic:charm_drop"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "undermagic:generic/generichostile",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 120,
-                "max": 150
-              }
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "um.erpg_loot": {
-              "min": 1,
-              "max": 999
-            }
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "undermagic:generic/genericprotector",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 120,
-                "max": 150
-              }
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "um.erpg_loot": {
-              "min": 1,
-              "max": 999
-            }
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "undermagic:generic/genericfarm",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 120,
-                "max": 150
-              }
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "um.erpg_loot": {
-              "min": 1,
-              "max": 999
-            }
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_sword",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{um_id: \"reaper_scythe\", Unbreakable: 1b, CustomModelData: 420125, display: {Lore: ['{\"text\":\"Slain mobs return as souls that\",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"aid you and other players.\",\"color\":\"gray\",\"italic\":false}'], Name: '{\"text\":\"Reaper Scythe\",\"color\":\"dark_red\",\"italic\":false}'}, Damage: 0, AttributeModifiers: [{Amount: 20, Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Operation: 0, UUID: [I; 88991058, 794315143, -2136782046, -452202869], Name: \"generic.attack_damage\"}, {Amount: -3.0d, Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Operation: 0, UUID: [I; -1323833664, 905530613, -1190935989, -388601739], Name: \"generic.attack_speed\"}]}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Doom Desire\",\"color\":\"dark_red\",\"italic\":false}',Lore:['{\"text\":\"Contains the Warlock\\'s corrupted soul.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Channel it to fire a devastating beam.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420126,um_id:\"doom_desire\"}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Forbidden Oathbow\",\"color\":\"dark_red\",\"italic\":false}',Lore:['{\"text\":\"Cannot fire arrows. Fully charge to fire beams.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Beams deal more damage to mobs previously\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"hit by them.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420127,um_id:\"forbidden_oathbow\"}"
-            }
-          ]
         }
       ]
     }

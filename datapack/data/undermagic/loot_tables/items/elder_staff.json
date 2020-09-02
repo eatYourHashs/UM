@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Staff of the Elder","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"b","color":"red","italic":false,"obfuscated":true}],
+			    {"text":"Rapidly fires dark orbs,","color":"gray","italic":false},
+			    {"text":"similar to the Elder bolts.","color":"gray","italic":false},
+			    {"text":"Sneak-click to fire a giant death orb.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420081,um_id:\"elder_staff\"}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":6,
+				  "slot":"mainhand"
+				},
+				{
+				  "name":"generic.attack_speed",
+				  "attribute":"generic.attack_speed",
+				  "operation":"addition",
+				  "amount":-3.1,
+				  "slot":"mainhand"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

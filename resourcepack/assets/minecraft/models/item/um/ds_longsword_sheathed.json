@@ -1,6 +1,0 @@
-{
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "um_gear/ds_longsword_sheathed"
-	}
-}
