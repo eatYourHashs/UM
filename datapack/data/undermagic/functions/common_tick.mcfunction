@@ -9,11 +9,10 @@ execute if score $timer_10 um.dummy matches 10.. run scoreboard players set $tim
 scoreboard players add $timer_20 um.dummy 1
 execute if score $timer_20 um.dummy matches 20.. run scoreboard players set $timer_20 um.dummy 0
 
-#common tick interval
+#ticking functions
 execute if score $timer_10 um.dummy matches 0 run function undermagic:common_interval
-
-#run main player function
 execute as @a at @s run function undermagic:player/main
+function undermagic:boss/tick
 
 #Entities
 execute as @e[type=#undermagic:needs_processing,tag=!um_processed] at @s run function undermagic:entity/processing/process

@@ -20,9 +20,7 @@ execute as @s[tag=um_greatbow_proc] run function undermagic:greatbow_shot_tick
 execute as @s[tag=um_demon_portal] run particle witch ~ ~1.5 ~ 0.2 0.5 0.2 0 2
 execute as @s[tag=um_demon_portal] run particle flame ~ ~1.5 ~ 0.2 0.5 0.2 0 1
 
-execute as @s[tag=um_pit_lord_boss] run function undermagic:pit_lord_tick
 execute as @s[tag=um_blood_boss] run function undermagic:blood_amalgam_tick
-execute as @s[tag=um_elemental] run function undermagic:elemental_tick
 execute as @s[tag=um_shadow_rift] run function undermagic:rift_tick
 
 execute as @s[tag=um_shadebeast] run function undermagic:shadebeast_tick
