@@ -1,0 +1,6 @@
+{
+  "parent": "um:item/niflheim_bow/pulling_0",
+  "textures": {
+    "layer0": "um:item/niflheim_bow/pulling_1"
+  }
+}
