@@ -82,7 +82,7 @@
         ]
     ],
     "rewards": {
-        "function": "undermagic:spawn_abyss_trigger"
+        "function": "undermagic:abyss_mirror_trigger"
     },
     "parent": "undermagic:undermagic/root"
 }
