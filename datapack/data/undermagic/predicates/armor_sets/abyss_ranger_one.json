@@ -1,0 +1,53 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "head": {
+            "item": "leather_helmet",
+            "nbt": "{um_id:\"abyss_ranger_hood\"}"
+          }
+        }
+      }
+    },
+	{
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+		  "chest": {
+			"item": "leather_chestplate",
+			"nbt": "{um_id:\"abyss_ranger_tunic\"}"
+		  }
+        }
+      }
+    },
+	{
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+			  "legs": {
+			"item": "leather_leggings",
+			"nbt": "{um_id:\"abyss_ranger_pants\"}"
+		  }
+        }
+      }
+    },
+	{
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+		  "feet": {
+			"item": "leather_boots",
+			"nbt": "{um_id:\"abyss_ranger_boots\"}"
+		  }
+        }
+      }
+    }
+  ]
+}
