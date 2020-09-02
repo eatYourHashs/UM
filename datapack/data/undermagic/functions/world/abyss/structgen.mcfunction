@@ -21,7 +21,7 @@ execute if score chunkgen_rand um.dummy matches 20 run fill ~ 1 ~ ~6 45 ~6 bone_
 execute if score chunkgen_rand um.dummy matches 20 run fill ~1 46 ~1 ~5 60 ~5 bone_block
 execute if score chunkgen_rand um.dummy matches 20 run fill ~2 61 ~2 ~4 75 ~4 bone_block
 execute if score chunkgen_rand um.dummy matches 20 run fill ~3 76 ~3 ~3 90 ~3 bone_block
-execute if score chunkgen_rand um.dummy matches 100 if score structgen_rand um.dummy matches 1..50 run function undermagic:spire_init
+execute if score chunkgen_rand um.dummy matches 100 if score structgen_rand um.dummy matches 1..50 run function undermagic:world/abyss/spire_init
 execute store result score chunkgen_rand um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_100
 execute if score chunkgen_rand um.dummy matches 1..6 run fill ~ 127 ~ ~4 100 ~4 blackstone
 execute if score chunkgen_rand um.dummy matches 1..6 run fill ~1 99 ~1 ~3 85 ~3 blackstone

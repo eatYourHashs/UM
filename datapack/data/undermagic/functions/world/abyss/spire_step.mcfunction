@@ -19,4 +19,4 @@ execute if score spawn_rand um.dummy matches 1..33 run summon zombie ~6 ~1 ~7 {S
 execute if score spawn_rand um.dummy matches 34..66 run setblock ~6 ~1 ~7 chest{LootTable:"undermagic:abyssal_spire"} replace
 execute if score spawn_rand um.dummy matches 67..99 run function undermagic:entity/voidling/summon
 scoreboard players remove spire_height um.dummy 1
-execute if score spire_height um.dummy matches 1.. positioned ~ ~10 ~ run function undermagic:spire_step
+execute if score spire_height um.dummy matches 1.. positioned ~ ~10 ~ run function undermagic:world/abyss/spire_step

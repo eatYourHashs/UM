@@ -7,7 +7,7 @@ execute if entity @s[tag=!um_processed] run function undermagic:player/processin
 execute if score @s version < undermagic load run function undermagic:player/update
 
 #in abyss
-execute if predicate undermagic:in_abyss run function undermagic:abyss_player_int
+execute if predicate undermagic:in_abyss run function undermagic:world/abyss/player
 
 #effects
 execute if score @s um.dark_energy matches 1.. run function undermagic:player/effects/dark_energy

@@ -1,4 +1,4 @@
-summon fireball ^ ^1 ^4 {direction:[0.0d,0.0d,0.0d],Tags:["um_entity","um_fireshot"],ExplosionPower:2b}
+summon fireball ^ ^1 ^4 {direction:[0.0d,0.0d,0.0d],Tags:["um_entity","um_fireshot","um_projectile"],ExplosionPower:2b}
 execute as @e[sort=nearest,limit=1,tag=um_fireshot] positioned ^ ^1 ^-6 facing entity @p eyes run tp ^ ^ ^6
 playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 1 1
 scoreboard players set @s um.orb_cooldown 20

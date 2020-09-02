@@ -12,8 +12,8 @@ execute if score @s um.drain_charms matches 1.. run function undermagic:player/c
 execute if score @s um.reviv_cd matches 1.. run function undermagic:player/charms/revive
 execute if score @s um.flight matches 1.. run function undermagic:player/charms/flight
 execute if entity @s[tag=um_drac_aspect] run function undermagic:player/charms/drac_aspect
-execute as @s[tag=um_enderlord,scores={um.sneak=1..,um.jump=1..}] at @s run function undermagic:enderlord_warp
-execute as @s[scores={um.sneak=1..,um.jump=1..,um.ender_charms=2..}] at @s run function undermagic:enderlord_warp
+execute as @s[tag=um_enderlord,scores={um.sneak=1..,um.jump=1..}] at @s run function undermagic:player/effects/enderlord_warp
+execute as @s[scores={um.sneak=1..,um.jump=1..,um.ender_charms=2..}] at @s run function undermagic:player/effects/enderlord_warp
 
 #effects
 execute if score @s um.flame_grasp matches 1.. run function undermagic:player/charms/flame_grasp
