@@ -14,7 +14,7 @@ scoreboard players set @e[tag=um_hand1] um.dummy -201
 execute if score difficulty um.dummy matches 1.. run scoreboard players set @e[tag=um_hand1] um.dummy -50
 scoreboard players set @e[tag=um_hand3] um.dummy -50
 scoreboard players set @e[tag=um_hand5] um.dummy -50
-playsound undermagic:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+playsound um:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 particle minecraft:portal ~ ~ ~ 0 0.5 0 1 500
 
 data modify storage undermagic:common boss_status.elder set value 1b

@@ -1,7 +1,7 @@
 
 data modify storage undermagic:common boss_status.pit_lord set value 0b
 
-stopsound @a * undermagic:boss_music.pit_lord
+stopsound @a * um:boss_music.pit_lord
 bossbar set undermagic:pit_lord visible false
 bossbar set undermagic:pit_lord players @s
 

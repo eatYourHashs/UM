@@ -27,7 +27,7 @@ execute if entity @s[scores={um.dummy=201..280,um.boss_hp=..600}] if score diffi
 execute if entity @s[scores={um.dummy=201..320,um.boss_hp=..600}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 400
 execute if entity @s[scores={um.dummy=280}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 201
 execute if entity @s[scores={um.dummy=320}] run scoreboard players set @s um.dummy 201
-execute if entity @s[scores={um.dummy=202}] run function undermagic:shadesull_warp
+execute if entity @s[scores={um.dummy=202}] run function undermagic:entity/shadesull/shadesull_warp
 execute if entity @s[scores={um.dummy=222}] facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=227}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=232}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
@@ -128,7 +128,7 @@ execute if score @s um.boss_hp matches ..100 if score @s um.dummy matches ..1999
 execute if score @s um.boss_hp matches ..100 if score @s um.dummy matches ..1999 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 0.5
 execute if score @s um.boss_hp matches ..100 if score @s um.dummy matches ..1999 run particle explosion_emitter
 execute if score @s um.boss_hp matches ..100 if score @s um.dummy matches ..1999 run scoreboard players set @s um.dummy 2000
-execute if score @s um.boss_hp matches ..100 run stopsound @a * undermagic:boss_music.shadesull_p2
+execute if score @s um.boss_hp matches ..100 run stopsound @a * um:boss_music.shadesull_p2
 execute if score @s um.dummy matches 2020 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 0.5
 execute if score @s um.dummy matches 2020 run particle explosion_emitter
 execute if score @s um.dummy matches 2060 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 0.5
@@ -144,9 +144,9 @@ bossbar set undermagic:shadesull visible true
 execute store result score @s um.boss_hp run data get entity @s Health 1
 execute store result bossbar undermagic:shadesull value run data get entity @s Health 1
 execute if score @s um.boss_hp matches ..100 run bossbar set undermagic:shadesull value 0
-execute if score @s um.music matches 1260 unless entity @s[tag=um_shadesull_p2] run playsound undermagic:boss_music.shadesull_p1 master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 1260 unless entity @s[tag=um_shadesull_p2] run playsound um:boss_music.shadesull_p1 master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1260.. unless entity @s[tag=um_shadesull_p2] run scoreboard players set @s um.music 0
-execute if score @s um.music matches 2020 if entity @s[tag=um_shadesull_p2] run playsound undermagic:boss_music.shadesull_p2 master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 2020 if entity @s[tag=um_shadesull_p2] run playsound um:boss_music.shadesull_p2 master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 2020.. if entity @s[tag=um_shadesull_p2] run scoreboard players set @s um.music 0
 execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp matches 301..400 run effect give @s resistance 2 0 true
 execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp matches 201..300 run effect give @s resistance 2 1 true

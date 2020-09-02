@@ -20,7 +20,7 @@ execute store result score @s um.boss_hp run data get entity @s Health 1
 execute if entity @e[tag=um_elder_hand] run effect give @s resistance 1 99 true
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_four 1
-scoreboard players set @s[scores={um.dummy_four=11..}] um.dummy_four 0
+scoreboard players set @s[scores={um.dummy_four=6..}] um.dummy_four 0
 scoreboard players set @s[scores={um.dummy=460..}] um.dummy 0
 execute if score @s um.boss_hp matches ..100 if score difficulty um.dummy matches 1.. if score @s um.dummy matches 1 run scoreboard players set @s um.dummy 55
 execute if entity @s[scores={um.dummy=60}] run function undermagic:entity/elder/elder_eye_bolt
@@ -76,9 +76,10 @@ execute if entity @s[scores={um.dummy=455,um.dummy_two=0}] run kill @e[tag=um_el
 execute if score difficulty um.dummy matches 1.. if entity @s[scores={um.boss_hp=..150},tag=!um_spawned_hands] run function undermagic:entity/elder/elder_spawn_hands
 execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.boss_hp=..20},tag=!um_spawned_hands2] run function undermagic:entity/elder/elder_spawn_hands2
 scoreboard players add @s um.music 1
-execute if score @s um.music matches 1960 run playsound undermagic:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 1960 run playsound um:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1960.. run scoreboard players set @s um.music 0
 
+execute as @e[tag=um_elder_hand] at @s run function undermagic:entity/elder/elder_hand_tick
 bossbar set undermagic:elder players @a[distance=..64]
 bossbar set undermagic:elder visible true
 execute store result bossbar undermagic:elder value run scoreboard players get @s um.boss_hp

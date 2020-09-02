@@ -4,6 +4,6 @@ execute if score difficulty um.dummy matches 1.. run summon wither_skeleton ~ ~ 
 summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["um_pit_abs","um_pit_lord","global.ignore"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:420128}}]}
 
 kill @e[type=item,distance=..2,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"infernal_summons"}}},limit=1]
-playsound undermagic:boss_music.pit_lord master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+playsound um:boss_music.pit_lord master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 
 data modify storage undermagic:common boss_status.pit_lord set value 1b
