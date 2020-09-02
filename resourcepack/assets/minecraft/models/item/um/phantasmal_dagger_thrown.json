@@ -1,6 +1,0 @@
-{
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "um_gear/phantasmal_dagger_thrown"
-	}
-}

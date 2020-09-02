@@ -1,0 +1,6 @@
+{
+  "parent": "um:item/forbidden_oathbow/pulling_0",
+  "textures": {
+    "layer0": "um:item/forbidden_oathbow/pulling_2"
+  }
+}

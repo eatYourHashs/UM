@@ -1,13 +1,37 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "item/iron_sword"
-	},
-	"overrides": [
-		{ "predicate": {"custom_model_data": 420003}, "model": "item/um/demon_sword_arm"},
-		{ "predicate": {"custom_model_data": 420030}, "model": "item/um/bloody_edge_1"},
-		{ "predicate": {"custom_model_data": 420031}, "model": "item/um/bloody_edge_2"},
-		{ "predicate": {"custom_model_data": 420032}, "model": "item/um/bloody_edge_3"},
-		{ "predicate": {"custom_model_data": 420125}, "model": "item/um/reaper_scythe"}
-	]
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/iron_sword"
+  },
+  "overrides": [{
+      "predicate": {
+        "custom_model_data": 420003
+      },
+      "model": "um:entity/demon/sword_arm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420030
+      },
+      "model": "um:item/bloody_edge/1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420031
+      },
+      "model": "um:item/bloody_edge/2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420032
+      },
+      "model": "um:item/bloody_edge/3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420125
+      },
+      "model": "um:item/reaper_scythe"
+    }
+  ]
 }
