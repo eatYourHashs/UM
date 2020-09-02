@@ -1,4 +1,4 @@
-tp @s ~ ~-0.8 ~
+tp @s ~ ~-0.4 ~
 execute if score difficulty um.dummy matches 1.. run tp @s ~ ~-0.3 ~
 execute if score difficulty um.dummy matches 2.. run tp @s ~ ~-0.3 ~
 particle minecraft:witch ~ ~ ~ 0.15 0.15 0.15 0 6
