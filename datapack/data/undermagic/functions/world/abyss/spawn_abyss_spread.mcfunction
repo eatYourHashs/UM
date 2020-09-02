@@ -26,25 +26,25 @@ execute if score @s um.dummy_two matches 6 run fill ~-6 19 ~-6 ~6 0 ~6 minecraft
 execute if score @s um.dummy_two matches 6 run fill ~-6 19 ~-6 ~6 0 ~6 minecraft:lava replace minecraft:magma_block
 #execute store result score temp2 um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_100
 #execute if score temp2 um.dummy matches 1..3 store result score temp um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_3
-#execute if score temp2 um.dummy matches 1..3 if score temp um.dummy matches 1 positioned ~ 80 ~ run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 1..3 if score temp um.dummy matches 2 positioned ~ 60 ~ run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 1..3 if score temp um.dummy matches 3 positioned ~ 40 ~ run function undermagic:spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 1..3 if score temp um.dummy matches 1 positioned ~ 80 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 1..3 if score temp um.dummy matches 2 positioned ~ 60 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 1..3 if score temp um.dummy matches 3 positioned ~ 40 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
 #execute if score temp2 um.dummy matches 4..6 store result score temp um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_3
-#execute if score temp2 um.dummy matches 4..6 if score temp um.dummy matches 1 positioned ~3 80 ~ run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 4..6 if score temp um.dummy matches 2 positioned ~3 60 ~ run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 4..6 if score temp um.dummy matches 3 positioned ~3 40 ~ run function undermagic:spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 4..6 if score temp um.dummy matches 1 positioned ~3 80 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 4..6 if score temp um.dummy matches 2 positioned ~3 60 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 4..6 if score temp um.dummy matches 3 positioned ~3 40 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
 #execute if score temp2 um.dummy matches 7..10 store result score temp um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_3
-#execute if score temp2 um.dummy matches 7..10 if score temp um.dummy matches 1 positioned ~ 80 ~3 run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 7..10 if score temp um.dummy matches 2 positioned ~ 60 ~3 run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 7..10 if score temp um.dummy matches 3 positioned ~ 40 ~3 run function undermagic:spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 7..10 if score temp um.dummy matches 1 positioned ~ 80 ~3 run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 7..10 if score temp um.dummy matches 2 positioned ~ 60 ~3 run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 7..10 if score temp um.dummy matches 3 positioned ~ 40 ~3 run function undermagic:world/abyss/spawn_abyss_feature_recur
 #execute if score temp2 um.dummy matches 11..14 store result score temp um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_3
-#execute if score temp2 um.dummy matches 11..14 if score temp um.dummy matches 1 positioned ~-3 80 ~ run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 11..14 if score temp um.dummy matches 2 positioned ~-3 60 ~ run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 11..14 if score temp um.dummy matches 3 positioned ~-3 40 ~ run function undermagic:spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 11..14 if score temp um.dummy matches 1 positioned ~-3 80 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 11..14 if score temp um.dummy matches 2 positioned ~-3 60 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 11..14 if score temp um.dummy matches 3 positioned ~-3 40 ~ run function undermagic:world/abyss/spawn_abyss_feature_recur
 #execute if score temp2 um.dummy matches 15..18 store result score temp um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_3
-#execute if score temp2 um.dummy matches 15..18 if score temp um.dummy matches 1 positioned ~ 80 ~-3 run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 15..18 if score temp um.dummy matches 2 positioned ~ 60 ~-3 run function undermagic:spawn_abyss_feature_recur
-#execute if score temp2 um.dummy matches 15..18 if score temp um.dummy matches 3 positioned ~ 40 ~-3 run function undermagic:spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 15..18 if score temp um.dummy matches 1 positioned ~ 80 ~-3 run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 15..18 if score temp um.dummy matches 2 positioned ~ 60 ~-3 run function undermagic:world/abyss/spawn_abyss_feature_recur
+#execute if score temp2 um.dummy matches 15..18 if score temp um.dummy matches 3 positioned ~ 40 ~-3 run function undermagic:world/abyss/spawn_abyss_feature_recur
 execute if score @s um.dummy_two matches 6 run tp @s ^ ^ ^-2
 execute if score @s um.dummy_two matches 6 run scoreboard players set @s um.dummy_two 0
 execute if score @s um.dummy matches 600.. run kill @s

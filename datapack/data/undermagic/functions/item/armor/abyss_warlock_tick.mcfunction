@@ -8,4 +8,4 @@ execute unless entity @e[tag=um_warlock_hand_r,distance=..10] run summon minecra
 tp @e[tag=um_warlock_hand_r,distance=..10,sort=nearest,limit=1] @s
 tp @e[tag=um_warlock_hand_r,distance=..10,sort=nearest,limit=1] ^-3 ^0.5 ^
 execute if score $timer_10 um.dummy matches 8 as @e[tag=um_warlock_hand,distance=..4,sort=nearest] at @s facing entity @e[scores={um.aw_mark=1..},distance=..40,sort=nearest,limit=1] feet run tp @s
-execute if score $timer_10 um.dummy matches 8 as @e[tag=um_warlock_hand,distance=..4,sort=nearest] at @s facing entity @e[scores={um.aw_mark=1..},distance=..40,sort=nearest,limit=1,tag=!item] feet run function undermagic:aw_hand_bolt
+execute if score $timer_10 um.dummy matches 8 as @e[tag=um_warlock_hand,distance=..4,sort=nearest] at @s facing entity @e[scores={um.aw_mark=1..},distance=..40,sort=nearest,limit=1,tag=!item] feet run function undermagic:item/armor/abyss_warlock_hand_bolt

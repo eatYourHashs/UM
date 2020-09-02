@@ -1,4 +1,4 @@
-summon fireball ^ ^1 ^4 {direction:[0.01d,0.01d,0.01d],Tags:["um_entity","um_fireshot"],ExplosionPower:1b}
+summon fireball ^ ^1 ^4 {direction:[0.01d,0.01d,0.01d],Tags:["um_entity","um_fireshot","um_projectile"],ExplosionPower:1b}
 execute as @e[sort=nearest,limit=1,tag=um_fireshot] positioned ^ ^1 ^-6 facing entity @e[sort=nearest,limit=1,tag=um_salamander] eyes run tp ^ ^ ^6
 playsound minecraft:entity.spider.hurt hostile @a ~ ~ ~ 1 0.5
 execute store result score x_delta um.dummy run data get entity @e[sort=nearest,limit=1,tag=um_fireshot] Pos[0] 100
