@@ -10,8 +10,6 @@ execute if entity @s[tag=um_projectile] run function undermagic:entity/projectil
 execute as @s[tag=um_greater_demon] run function undermagic:entity/greater_demon/tick
 execute as @s[tag=um_lesser_demon] run function undermagic:entity/lesser_demon/tick
 
-execute as @s[tag=um_abyss_spawning] run function undermagic:world/abyss/spawn_abyss_spread
-
 execute as @s[tag=um_demon_portal] run particle witch ~ ~1.5 ~ 0.2 0.5 0.2 0 2
 execute as @s[tag=um_demon_portal] run particle flame ~ ~1.5 ~ 0.2 0.5 0.2 0 1
 
