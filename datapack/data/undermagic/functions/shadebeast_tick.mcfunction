@@ -7,4 +7,4 @@ scoreboard players remove @s um.dummy 1
 execute store result score @s um.dummy_two run data get entity @s Health
 execute if score @s um.dummy_two matches ..10 unless entity @s[tag=um_alpha_sb_processed] run scoreboard players add alpha_sb_spawn um.dummy 1
 execute if score @s um.dummy_two matches ..10 run tag @s add um_alpha_sb_processed
-execute if score alpha_sb_spawn um.dummy matches 5.. run function undermagic:spawn_alpha_shadebeast
+execute if score alpha_sb_spawn um.dummy matches 5.. run function undermagic:entity/alpha_shadebeast/summon

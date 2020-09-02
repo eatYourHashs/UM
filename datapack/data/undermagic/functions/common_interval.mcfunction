@@ -13,26 +13,8 @@ scoreboard players add swap_clock um.dummy 1
 execute if score swap_clock um.dummy matches 100.. as @a at @a run function undermagic:item/tool/swap_charms
 
 ### TODO: Add Boss Handler
-execute unless entity @e[tag=um_elder_eye] run stopsound @a * undermagic:boss_music.elder
-execute unless entity @e[tag=um_shadesull_boss] run stopsound @a * undermagic:boss_music.shadesull_p1
-execute unless entity @e[tag=um_shadesull_boss] run stopsound @a * undermagic:boss_music.shadesull_p2
-
 execute store result score rand um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_100
 execute store result score rand1 um.dummy run loot spawn ~ -10 ~ loot undermagic:um_rand/rand1_100
 execute if score difficulty um.dummy matches 2.. if score rand um.dummy matches 1 if entity @e[type=ender_dragon] at @e[sort=random,tag=um_crystal_marker,limit=1] unless entity @e[type=end_crystal,distance=..2] run function undermagic:respawn_crystal
 execute if score difficulty um.dummy matches 2.. if score rand um.dummy matches 1..3 if entity @e[type=ender_dragon] at @r in minecraft:the_end run function undermagic:entity/wyrmling/spawn
 execute if score rand um.dummy matches 1 if score rand1 um.dummy matches ..10 if score dragon_dead um.dummy matches 1 at @r in minecraft:the_end run function undermagic:entity/wyrmling/spawn
-
-execute unless entity @e[tag=um_blood_boss] run bossbar set undermagic:blood_amalgam visible false
-execute unless entity @e[tag=um_shadesull] run bossbar set undermagic:shadesull visible false
-execute unless entity @e[tag=um_elder_eye] run bossbar set undermagic:elder visible false
-execute unless entity @e[tag=um_shadebeast_alpha] run bossbar set undermagic:sb_alpha visible false
-execute unless entity @e[tag=um_disciple_of_destruction] run bossbar set undermagic:disciple_of_destruction visible false
-execute unless entity @e[tag=um_disciple_of_death] run bossbar set undermagic:disciple_of_death visible false
-execute unless entity @e[tag=um_shadebeast_alpha] run bossbar set undermagic:sb_alpha visible false
-
-execute if entity @e[tag=um_elder_eye] run scoreboard players set elder_alive um.dummy 1
-
-execute if score elder_alive um.dummy matches 1 unless entity @e[tag=um_elder_eye] run advancement grant @a only undermagic:undermagic/elder
-execute if score elder_alive um.dummy matches 1 unless entity @e[tag=um_elder_eye] run advancement grant @a only undermagic:undermagic/abyss_elder
-execute if score elder_alive um.dummy matches 1 unless entity @e[tag=um_elder_eye] run scoreboard players set elder_alive um.dummy 0
