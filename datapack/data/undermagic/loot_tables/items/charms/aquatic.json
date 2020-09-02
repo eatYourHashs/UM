@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:clock",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Charm - Aquatic","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Can be used to charm armor.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420080,um_id:\"charm\",um_id:\"aquatic\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

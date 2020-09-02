@@ -1,119 +1,22 @@
 {
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:clock",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{CustomModelData:420022,um_id:\"pit_lord_heart\",display:{Name:\"{\\\"text\\\":\\\"Pit Lord's Heart\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 5,
-            "entries": [
-              {
-                "type": "minecraft:loot_table",
-                "name": "undermagic:charm_drop"
-              }
-            ]
-        },
-        {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:loot_table",
-              "name": "undermagic:generic/generichostile",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 30,
-                    "max": 45
-                  }
-                }
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "um.erpg_loot": {
-                  "min": 1,
-                  "max": 999
-                }
-              }
-            }
-          ]
-        },
-        {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:loot_table",
-              "name": "undermagic:generic/genericprotector",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 30,
-                    "max": 45
-                  }
-                }
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "um.erpg_loot": {
-                  "min": 1,
-                  "max": 999
-                }
-              }
-            }
-          ]
-        },
-        {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:loot_table",
-              "name": "undermagic:generic/genericfarm",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 30,
-                    "max": 45
-                  }
-                }
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:entity_scores",
-              "entity": "this",
-              "scores": {
-                "um.erpg_loot": {
-                  "min": 1,
-                  "max": 999
-                }
-              }
-            }
-          ]
-        }
-    ]
+  "pools": [
+    {
+	  "rolls":1,
+	  "entries":[
+	    {
+		  "type":"loot_table",
+		  "name":"undermagic:items/pit_lord_heart"
+		}
+	  ]
+	},
+    {
+      "rolls": 5,
+	  "entries": [
+	    {
+		  "type": "minecraft:loot_table",
+		  "name": "undermagic:charm_drop"
+		}
+	  ]
+	}
+  ]
 }

@@ -16,8 +16,8 @@
             ]
           },
           {
-            "type": "minecraft:item",
-            "name": "minecraft:clock",
+            "type": "minecraft:loot_table",
+            "name": "undermagic:items/shadow_base",
             "weight": 2,
             "functions": [
               {
@@ -26,16 +26,12 @@
                   "min": 2,
                   "max": 4
                 }
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:420061,um_id:\"shadow_base\",display:{Name:'{\"text\":\"Shadow Base\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"Used to create a greater metal.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Useless in this form.\",\"color\":\"gray\",\"italic\":false}']}}"
               }
             ]
           },
           {
-            "type": "minecraft:item",
-            "name": "minecraft:clock",
+            "type": "minecraft:loot_table",
+            "name": "undermagic:items/tenebrous_base",
             "weight": 1,
             "functions": [
               {
@@ -44,10 +40,6 @@
                   "min": 1,
                   "max": 2
                 }
-              },
-              {
-                "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:420062,um_id:\"tenebrous_base\",display:{Name:'{\"text\":\"Tenebrous Base\",\"color\":\"white\",\"italic\":false}',Lore:['{\"text\":\"Used to create an extreme material.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Useless in this form.\",\"color\":\"gray\",\"italic\":false}']}}"
               }
             ]
           }
@@ -61,96 +53,6 @@
               "name": "undermagic:charm_drop"
             }
           ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "name": "undermagic:generic/generichostile",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 10,
-                  "max": 15
-                }
-              }
-            ]
-          }
-        ],
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "um.erpg_loot": {
-                "min": 1,
-                "max": 999
-              }
-            }
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "name": "undermagic:generic/genericprotector",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 10,
-                  "max": 15
-                }
-              }
-            ]
-          }
-        ],
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "um.erpg_loot": {
-                "min": 1,
-                "max": 999
-              }
-            }
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "name": "undermagic:generic/genericfarm",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 10,
-                  "max": 15
-                }
-              }
-            ]
-          }
-        ],
-        "conditions": [
-          {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-              "um.erpg_loot": {
-                "min": 1,
-                "max": 999
-              }
-            }
-          }
-        ]
       }
     ]
   }

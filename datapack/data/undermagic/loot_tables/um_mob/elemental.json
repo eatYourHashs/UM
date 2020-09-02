@@ -1,121 +1,25 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": {
+        "min": 6,
+        "max": 10
+      },
+      "entries": [
         {
-            "rolls": {
-                "min": 6,
-                "max": 10
-            },
-            "entries": [
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:clock",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{CustomModelData:420034,um_id:\"Bloodstone\",display:{Name:\"{\\\"text\\\":\\\"Bloodstone\\\",\\\"italic\\\":false,\\\"color\\\":\\\"light_purple\\\"}\"}}"
-                        }
-                    ]
-                }
-            ]
-        },{
-            "rolls": 1,
-            "entries": [
-              {
-                "type": "minecraft:loot_table",
-                "name": "undermagic:charm_drop"
-              }
-            ]
-          },
-          {
-            "rolls": 1,
-            "entries": [
-              {
-                "type": "minecraft:loot_table",
-                "name": "undermagic:generic/generichostile",
-                "functions": [
-                  {
-                    "function": "minecraft:set_count",
-                    "count": {
-                      "min": 10,
-                      "max": 15
-                    }
-                  }
-                ]
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "um.erpg_loot": {
-                    "min": 1,
-                    "max": 999
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "rolls": 1,
-            "entries": [
-              {
-                "type": "minecraft:loot_table",
-                "name": "undermagic:generic/genericprotector",
-                "functions": [
-                  {
-                    "function": "minecraft:set_count",
-                    "count": {
-                      "min": 10,
-                      "max": 15
-                    }
-                  }
-                ]
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "um.erpg_loot": {
-                    "min": 1,
-                    "max": 999
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "rolls": 1,
-            "entries": [
-              {
-                "type": "minecraft:loot_table",
-                "name": "undermagic:generic/genericfarm",
-                "functions": [
-                  {
-                    "function": "minecraft:set_count",
-                    "count": {
-                      "min": 10,
-                      "max": 15
-                    }
-                  }
-                ]
-              }
-            ],
-            "conditions": [
-              {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "um.erpg_loot": {
-                    "min": 1,
-                    "max": 999
-                  }
-                }
-              }
-            ]
-          }
-    ]
+          "type": "loot_table",
+          "name": "undermagic:items/bloodstone"
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop"
+        }
+      ]
+    }
+  ]
 }
