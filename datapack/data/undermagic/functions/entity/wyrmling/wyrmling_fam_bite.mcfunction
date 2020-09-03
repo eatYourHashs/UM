@@ -4,7 +4,7 @@ execute if score difficulty um.dummy matches 1.. run effect give @e[tag=um_blood
 execute if score difficulty um.dummy matches 1.. run effect give @e[tag=um_elder_hand,distance=..3.5] resistance 1 3 true
 execute if score difficulty um.dummy matches 1.. run effect give @e[tag=um_elder_eye,distance=..3.5] resistance 1 2 true
 execute if score difficulty um.dummy matches 1.. run effect give @e[tag=um_shadesull_elder_hand,distance=..3.5] resistance 1 2 true
-execute if score difficulty um.dummy matches 1.. run effect give @e[tag=um_shadesull,distance=..3.5] resistance 1 2 true
+execute if score difficulty um.dummy matches 1.. run effect give @e[tag=um_shadesull,distance=..3.5] resistance 1 3 true
 execute if score temp2 um.dummy matches 1..2 run effect give @e[type=#undermagic:hostile,sort=nearest,limit=1,type=!#undermagic:undead,distance=..3.5] instant_damage 1 0
 execute if score temp2 um.dummy matches 1..2 run effect give @e[type=#undermagic:hostile,sort=nearest,limit=1,type=#undermagic:undead,distance=..3.5] instant_health 1 0
 execute if score temp2 um.dummy matches 3..5 run effect give @e[type=#undermagic:hostile,sort=nearest,limit=1,type=!#undermagic:undead,distance=..3.5] instant_damage 1 1
