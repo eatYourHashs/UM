@@ -17,5 +17,5 @@ effect give @e[type=#undermagic:hostile,sort=nearest,limit=1] nausea 5 0
 playsound minecraft:entity.phantom.bite hostile @a ~ ~ ~ 1 1.5
 tp @s ~ ~1 ~
 scoreboard players set @s um.dummy_two 1
-execute if score temp5 um.dummy matches 0 if score temp2 um.dummy matches 10 run scoreboard players set @s um.dummy_two 195
+execute if score temp5 um.dummy matches 0 if score temp2 um.dummy matches 10 run scoreboard players set @s um.dummy_two 190
 execute as @a if score @s um.familiar_id = temp4 um.dummy run scoreboard players add @s um.wyrmling_xp 20
