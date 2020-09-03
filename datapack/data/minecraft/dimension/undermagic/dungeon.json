@@ -8,6 +8,7 @@
 		"biome": "minecraft:the_void"
 	  },
 	  "settings": {
+		"coordinate_scale": 1,
 		"bedrock_roof_position": -10,
 		"bedrock_floor_position": 0,
 		"sea_level": 63,

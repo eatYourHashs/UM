@@ -8,6 +8,7 @@
 			"biome": "minecraft:basalt_deltas"
 	  	},
 	  	"settings": {
+			"coordinate_scale": 1,
 			"bedrock_roof_position": 0,
 			"bedrock_floor_position": 0,
 			"sea_level": 10,

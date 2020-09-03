@@ -1,6 +1,6 @@
 {
   "condition": "minecraft:location_check",
   "predicate": {
-    "dimension": "undermagic:abyss"
+    "dimension": "minecraft:undermagic/abyss"
   }
 }
