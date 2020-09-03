@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:clock",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Demonic Steel Ingot","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Strong metal made from demon parts.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420007,um_id:\"demonic_steel_ingot\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

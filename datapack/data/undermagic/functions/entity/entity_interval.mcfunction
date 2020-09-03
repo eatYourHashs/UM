@@ -15,7 +15,7 @@ execute if entity @s[tag=um_warlock_hand] unless entity @a[distance=..10,predica
 execute if entity @s[tag=um_dragon_wings] unless entity @a[distance=..10,predicate=undermagic:armor_sets/dragon] run kill @s
 
 #Crafting Blocks
-execute if entity @s[tag=um_undercrafter] if entity @p[distance=..8] run function undermagic:block/undercrafter_interval
+execute if entity @s[tag=um_undercrafter] if entity @p[distance=..8] run function undermagic:block/undercrafter/interval
 execute if entity @s[tag=um_bloodchalice] if entity @p[distance=..24] run function undermagic:block/bloodchalice/interval
 execute if entity @s[tag=um_pedestal] if entity @p[distance=..24] run function undermagic:block/pedestal_interval
 execute if entity @s[tag=um_teleporter] run function undermagic:block/teleporter_interval
