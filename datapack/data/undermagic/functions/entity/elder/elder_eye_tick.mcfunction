@@ -18,6 +18,8 @@ execute if entity @p[distance=..10] unless entity @e[tag=um_elder_hand] run tp ~
 particle minecraft:portal ~ ~1 ~ 0 0 0 1 10
 execute store result score @s um.boss_hp run data get entity @s Health 1
 execute if entity @e[tag=um_elder_hand] run effect give @s resistance 1 99 true
+execute if entity @e[tag=um_elder_hand] run tag @s add um_untargetable
+execute unless entity @e[tag=um_elder_hand] run tag @s remove um_untargetable
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_four 1
 scoreboard players set @s[scores={um.dummy_four=6..}] um.dummy_four 0

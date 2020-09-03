@@ -4,7 +4,9 @@ execute if score @s um.dummy matches ..99 run particle flame ~ ~1 ~ 0.2 0.3 0.2 
 execute if score @s um.dummy matches ..30 run tp ~ ~0.13 ~
 execute if score @s um.dummy matches ..99 run playsound minecraft:entity.ender_dragon.shoot hostile @a ~ ~ ~ 1 2
 execute if score @s um.dummy matches ..99 run effect give @s resistance 1 4 true
+execute if score @s um.dummy matches ..99 run tag @s add um_untargetable
 execute if score @s um.dummy matches ..99 run effect give @s instant_damage 1 0 true
+execute if score @s um.dummy matches 100 run tag @s remove um_untargetable
 particle flame ~ ~1 ~ 0.2 0.3 0.2 0 2
 execute if score @s um.dummy matches 100.. unless score @s um.dummy matches 320..400 facing entity @p[distance=..64,gamemode=!creative,gamemode=!spectator] feet if block ^ ^ ^2 #undermagic:passable run tp ^ ^ ^0.2
 execute if score difficulty um.dummy matches 1.. unless score @s um.dummy matches 320..400 facing entity @p[distance=..64,gamemode=!creative,gamemode=!spectator] feet if block ^ ^ ^2 #undermagic:passable run tp ^ ^ ^0.3
@@ -32,6 +34,8 @@ execute if score @s um.dummy matches 370 at @p[distance=..8,gamemode=!creative,g
 execute if score difficulty um.dummy matches 2.. if score @s um.dummy matches 380 at @p[distance=..8,gamemode=!creative,gamemode=!spectator] run summon fireball ~ ~7 ~ {ExplosionPower:2,direction:[0.0,-0.2,0.0],power:[0.0,-0.2,0.0],CustomName:'{"text":"Pit Lord","color":"red","italic":false}'}
 execute if score @s um.dummy matches 390 at @p[distance=..8,gamemode=!creative,gamemode=!spectator] run summon fireball ~ ~7 ~ {ExplosionPower:2,direction:[0.0,-0.2,0.0],power:[0.0,-0.2,0.0],CustomName:'{"text":"Pit Lord","color":"red","italic":false}'}
 execute if score difficulty um.dummy matches 2.. if score @s um.boss_hp matches ..200 if entity @e[tag=um_pit_minion] run effect give @s resistance 2 4
+execute if score difficulty um.dummy matches 2.. if score @s um.boss_hp matches ..200 if entity @e[tag=um_pit_minion] run tag @s add um_untargetable
+execute if score difficulty um.dummy matches 2.. if score @s um.boss_hp matches ..200 unless entity @e[tag=um_pit_minion] run tag @s remove um_untargetable
 execute if score difficulty um.dummy matches ..1 if score @s um.dummy matches 400 if score @s um.boss_hp matches ..200 run playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 1 2
 execute if score difficulty um.dummy matches ..1 if score @s um.dummy matches 400 if score @s um.boss_hp matches ..200 unless entity @s[tag=um_absorp_1] run effect give @s absorption 10 7 true
 execute if score difficulty um.dummy matches ..1 if score @s um.dummy matches 400 if score @s um.boss_hp matches ..200 unless entity @s[tag=um_absorp_1] run tag @s add um_absorp_1
