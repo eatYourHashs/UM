@@ -29,7 +29,7 @@ execute as @s[tag=um_abyssal_revenant] run particle smoke ~ ~1 ~ 0.2 0.4 0.2 0 1
 
 #crafting
 execute as @s[tag=um_iron_block] run function undermagic:block/iron_block
-execute as @s[tag=um_undercrafter] run function undermagic:block/undercrafter_tick
+execute as @s[tag=um_undercrafter] run function undermagic:block/undercrafter/tick
 execute as @s[tag=um_bloodchalice] run function undermagic:block/bloodchalice/tick
 execute as @s[tag=um_ichorbasin] run function undermagic:block/ichorbasin_tick
 execute as @s[tag=um_pedestal] run function undermagic:block/pedestal_tick

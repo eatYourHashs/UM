@@ -14,7 +14,7 @@ execute if score @s um.dark_energy matches 1.. run function undermagic:player/ef
 execute if score @s um.since_damaged matches 1.. if score @s um.dark_energy matches ..9996 run function undermagic:player/effects/dark_energy_add
 
 #vanilla boss loot
-loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragon_scale_8
+loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/multiples/dragon_scale_8
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragons_wrath
 execute if score difficulty um.dummy matches 2.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragons_wrath
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.wither_killed=1..}] loot undermagic:items/bone_of_wither
