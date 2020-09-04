@@ -1,8 +1,6 @@
 {
 	"textures": {
-		"0": "um:block/undercrafter_side",
-		"1": "um:block/undercrafter_top",
-		"particle": "um:block/undercrafter_side"
+		"0": "um:block/tenebrous_block"
 	},
 	"elements": [
 		{
@@ -13,7 +11,7 @@
 				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"}
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
 	],

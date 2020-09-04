@@ -1,8 +1,6 @@
 {
 	"textures": {
-		"0": "um:block/undercrafter_side",
-		"1": "um:block/undercrafter_top",
-		"particle": "um:block/undercrafter_side"
+		"0": "um:block/magic_crystal_block"
 	},
 	"elements": [
 		{
