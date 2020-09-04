@@ -6,9 +6,6 @@ execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermag
 execute if entity @s[tag=!um_processed] run function undermagic:player/processing
 execute if score @s version < undermagic load run function undermagic:player/update
 
-#in abyss
-execute if predicate undermagic:in_abyss run function undermagic:world/abyss/player
-
 #effects
 execute if score @s um.dark_energy matches 1.. run function undermagic:player/effects/dark_energy
 execute if score @s um.since_damaged matches 1.. if score @s um.dark_energy matches ..9996 run function undermagic:player/effects/dark_energy_add
