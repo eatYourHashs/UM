@@ -137,8 +137,9 @@
 	],
 	"display": {
 		"head": {
-			"translation": [0, -5, 0],
-			"scale": [1.65, 1.65, 1.65]
+			"rotation": [0, -180, 0],
+			"translation": [0, -14.75, 0],
+			"scale": [3.3, 3.2, 3.2]
 		}
 	},
 	"groups": [
