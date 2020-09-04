@@ -61,8 +61,7 @@ scoreboard objectives add um.mana dummy
 scoreboard objectives add um.kill_count totalKillCount
 
 #scoreboard players init
-scoreboard players set five um.dummy 5
-scoreboard players set 100 um.dummy 100
+function undermagic:utils/init
 execute unless score difficulty um.dummy matches 0.. run scoreboard players set difficulty um.dummy 1
 
 #bossbard

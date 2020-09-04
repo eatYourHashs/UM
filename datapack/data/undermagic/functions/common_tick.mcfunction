@@ -17,6 +17,7 @@ execute if score $timer_200 um.dummy matches 200.. run scoreboard players set $t
 
 #ticking functions
 execute if score $timer_10 um.dummy matches 0 run function undermagic:common_interval
+execute if score $timer_2 um.dummy matches 0 run function undermagic:world/abyss/generation
 execute as @a at @s run function undermagic:player/main
 function undermagic:boss/tick
 
