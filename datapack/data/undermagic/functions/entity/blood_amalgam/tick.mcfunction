@@ -6,8 +6,8 @@ execute unless entity @s[scores={um.dummy=250..270,um.boss_hp=..6}] facing entit
 execute if entity @s[scores={um.dummy=301..,um.boss_hp=8..}] run scoreboard players set @s um.dummy 1
 execute if entity @s[scores={um.dummy=501..,um.boss_hp=4..7}] run scoreboard players set @s um.dummy 1
 execute if entity @s[scores={um.dummy=501..,um.boss_hp=2}] if score difficulty um.dummy matches 0 run scoreboard players set @s um.dummy 170
-execute if entity @s[scores={um.dummy=31,um.boss_hp=2}] if score difficulty um.dummy matches 1 run scoreboard players set @s um.dummy 0
-execute if entity @s[scores={um.dummy=21,um.boss_hp=2}] if score difficulty um.dummy matches 2.. run scoreboard players set @s um.dummy 0
+execute if entity @s[scores={um.dummy=21,um.boss_hp=2}] if score difficulty um.dummy matches 1 run scoreboard players set @s um.dummy 0
+execute if entity @s[scores={um.dummy=16,um.boss_hp=2}] if score difficulty um.dummy matches 2.. run scoreboard players set @s um.dummy 0
 execute if entity @s[scores={um.boss_hp=4..10,um.dummy=100}] at @p[distance=5..64,gamemode=!creative,gamemode=!spectator] run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_blood_laser_target","um_blood_amalgam"]}
 execute if entity @s[scores={um.boss_hp=4..10,um.dummy=100}] run playsound minecraft:entity.lightning_bolt.thunder hostile @a ~ ~ ~ 1 2
 execute if entity @s[scores={um.boss_hp=4..10,um.dummy=105}] positioned ~ ~1 ~ facing entity @e[sort=nearest,limit=1,tag=um_blood_laser_target] feet run particle minecraft:dust 1 0 0 1 ^ ^ ^0.5 0 0 0 0 1
@@ -70,12 +70,12 @@ execute if entity @s[scores={um.boss_hp=..4,um.dummy=330}] run playsound minecra
 execute if entity @s[scores={um.boss_hp=..4,um.dummy=350}] if score difficulty um.dummy matches 0 facing entity @p feet run function undermagic:entity/blood_amalgam/blood_amalgam_shotgun
 execute if entity @s[scores={um.boss_hp=4,um.dummy=350}] if score difficulty um.dummy matches 1.. facing entity @p feet run function undermagic:entity/blood_amalgam/blood_amalgam_shotgun
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. run playsound minecraft:entity.enderman.scream hostile @a ~ ~ ~ 1 0.7
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. facing entity @p[distance=5..64,gamemode=!spectator] feet run summon minecraft:armor_stand ^ ^ ^64 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_ba_dash","um_blood_amalgam"]}
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. facing entity @p[distance=..50,gamemode=!spectator] feet run summon minecraft:armor_stand ^ ^ ^64 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_ba_dash","um_blood_amalgam"]}
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. run effect give @p[distance=..1] instant_damage 1 2
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.5
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 2.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.3
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=30}] if score difficulty um.dummy matches 1 run kill @e[tag=um_ba_dash]
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=20}] if score difficulty um.dummy matches 2.. run kill @e[tag=um_ba_dash]
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.8
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 2.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.4
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=20}] if score difficulty um.dummy matches 1 run kill @e[tag=um_ba_dash]
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=15}] if score difficulty um.dummy matches 2.. run kill @e[tag=um_ba_dash]
 bossbar set undermagic:blood_amalgam players @a[distance=..50]
 bossbar set undermagic:blood_amalgam visible true
 bossbar set undermagic:blood_amalgam color red
