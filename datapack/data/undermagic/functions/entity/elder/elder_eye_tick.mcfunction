@@ -78,7 +78,7 @@ execute if entity @s[scores={um.dummy=455}] run kill @e[tag=um_elder_ray]
 execute if score difficulty um.dummy matches 1.. if entity @s[scores={um.boss_hp=..150},tag=!um_spawned_hands] run function undermagic:entity/elder/elder_spawn_hands
 execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.boss_hp=..20},tag=!um_spawned_hands2] run function undermagic:entity/elder/elder_spawn_hands2
 scoreboard players add @s um.music 1
-execute if score @s um.music matches 1960 run playsound um:boss_music.elder master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 1960 run playsound um:boss_music.elder music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1960.. run scoreboard players set @s um.music 0
 
 execute as @e[tag=um_elder_hand] at @s run function undermagic:entity/elder/elder_hand_tick
