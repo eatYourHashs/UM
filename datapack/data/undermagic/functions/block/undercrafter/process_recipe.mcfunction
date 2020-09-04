@@ -10,3 +10,5 @@ execute store result block ~ ~ ~ Items[{Slot:13b}].Count byte 1 run data get blo
 execute store result block ~ ~ ~ Items[{Slot:20b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:20b}].Count 0.999
 execute store result block ~ ~ ~ Items[{Slot:21b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:21b}].Count 0.999
 execute store result block ~ ~ ~ Items[{Slot:22b}].Count byte 1 run data get block ~ ~ ~ Items[{Slot:22b}].Count 0.999
+
+playsound minecraft:block.enchantment_table.use block @a ~ ~ ~ 1 0.5
