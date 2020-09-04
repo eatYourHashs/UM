@@ -66,9 +66,9 @@ execute if entity @s[scores={um.boss_hp=..6,um.dummy=250..270}] if score difficu
 execute if entity @s[scores={um.boss_hp=..6,um.dummy=250..270}] run effect give @p[distance=..1] instant_damage 1 1
 execute if entity @s[scores={um.boss_hp=..6,um.dummy=271}] run kill @e[tag=um_ba_dash]
 execute if score difficulty um.dummy matches 1.. if score @s um.dummy matches 280 run scoreboard players set @s um.dummy 320
-execute if entity @s[scores={um.boss_hp=..4,um.dummy=330}] run playsound minecraft:entity.ghast.warn hostile @a ~ ~ ~ 2 2
-execute if entity @s[scores={um.boss_hp=..4,um.dummy=350}] if score difficulty um.dummy matches 0 facing entity @p feet run function undermagic:entity/blood_amalgam/blood_amalgam_shotgun
-execute if entity @s[scores={um.boss_hp=4,um.dummy=350}] if score difficulty um.dummy matches 1.. facing entity @p feet run function undermagic:entity/blood_amalgam/blood_amalgam_shotgun
+execute if entity @s[scores={um.boss_hp=..6,um.dummy=330}] run playsound minecraft:entity.ghast.warn hostile @a ~ ~ ~ 2 2
+execute if entity @s[scores={um.boss_hp=..6,um.dummy=350}] if score difficulty um.dummy matches 0 facing entity @p feet run function undermagic:entity/blood_amalgam/blood_amalgam_shotgun
+execute if entity @s[scores={um.boss_hp=6,um.dummy=350}] if score difficulty um.dummy matches 1.. facing entity @p feet run function undermagic:entity/blood_amalgam/blood_amalgam_shotgun
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. run playsound minecraft:entity.enderman.scream hostile @a ~ ~ ~ 1 0.7
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. facing entity @p[distance=..50,gamemode=!spectator] feet run summon minecraft:armor_stand ^ ^ ^64 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_ba_dash","um_blood_amalgam"]}
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. run effect give @p[distance=..1] instant_damage 1 2
