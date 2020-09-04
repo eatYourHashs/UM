@@ -1,4 +1,5 @@
 scoreboard players add @s um.dummy 1
+scoreboard players add @s um.music 1
 particle minecraft:dust 1 0 0 1 ~ ~1 ~ 0 0 0 0 1
 execute if score difficulty um.dummy matches 0 facing entity @p[distance=5..64,gamemode=!creative,gamemode=!spectator] feet facing ^ ^-0.2 ^-1 run tp ^ ^ ^-0.08
 execute if entity @s[scores={um.boss_hp=4..}] if score difficulty um.dummy matches 1.. facing entity @p[distance=5..64,gamemode=!creative,gamemode=!spectator] feet facing ^ ^-0.2 ^-1 run tp ^ ^ ^-0.08
@@ -79,6 +80,8 @@ execute if entity @s[scores={um.boss_hp=..2,um.dummy=15}] if score difficulty um
 bossbar set undermagic:blood_amalgam players @a[distance=..50]
 bossbar set undermagic:blood_amalgam visible true
 bossbar set undermagic:blood_amalgam color red
+execute if score @s um.music matches 2060 run playsound um:boss_music.blood_amalgam music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 2060.. run scoreboard players set @s um.music 0
 execute store result bossbar undermagic:blood_amalgam value run scoreboard players get @s um.boss_hp
 effect give @e[tag=um_blood_minion] invisibility 2 2 true
 execute unless entity @e[tag=um_blood_minion] run function undermagic:entity/blood_amalgam/blood_amalgam_hurt
