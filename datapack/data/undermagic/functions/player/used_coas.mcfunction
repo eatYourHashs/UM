@@ -3,12 +3,9 @@
 execute store result score temp_0 um.dummy run data get entity @s SelectedItem.tag.um_id
 
 #use items
-execute if score $length um.dummy matches 32 if data entity @s Inventory[{Slot:-106b,tag:{um_id:"longsword_demonic_steel_sheathed"}}] unless data entity @s SelectedItem run function undermagic:item/weapon/ds_quickdraw
-execute if score $length um.dummy matches 25 if data entity @s Inventory[{Slot:-106b,tag:{um_id:"longsword_shadow_sheathed"}}] unless data entity @s SelectedItem run function undermagic:item/weapon/shadow_quickdraw
-execute if score $length um.dummy matches 24 if data entity @s Inventory[{Slot:-106b,tag:{um_id:"longsword_abyss_sheathed"}}] unless data entity @s SelectedItem run function undermagic:item/weapon/abyss_quickdraw
-execute if score $length um.dummy matches 32 if data entity @s SelectedItem.tag{um_id:"longsword_demonic_steel_sheathed"} run loot replace entity @s weapon.mainhand loot undermagic:items/longsword_demonic_steel
-execute if score $length um.dummy matches 25 if data entity @s SelectedItem.tag{um_id:"longsword_shadow_sheathed"} run loot replace entity @s weapon.mainhand loot undermagic:items/longsword_shadow
-execute if score $length um.dummy matches 24 if data entity @s SelectedItem.tag{um_id:"longsword_abyss_sheathed"} run loot replace entity @s weapon.mainhand loot undermagic:items/longsword_abyss
+execute if score $length um.dummy matches 32 if data entity @s SelectedItem.tag{um_id:"longsword_demonic_steel_sheathed"} run function undermagic:item/weapon/ds_quickdraw
+execute if score $length um.dummy matches 25 if data entity @s SelectedItem.tag{um_id:"longsword_shadow_sheathed"} run function undermagic:item/weapon/shadow_quickdraw
+execute if score $length um.dummy matches 24 if data entity @s SelectedItem.tag{um_id:"longsword_abyss_sheathed"} run function undermagic:item/weapon/abyss_quickdraw
 execute if score $length um.dummy matches 20 if data entity @s SelectedItem.tag{um_id:"charm_swapping_sigil"} run function undermagic:item/tool/swap_charms
 execute if score $length um.dummy matches 17 if data entity @s SelectedItem.tag{um_id:"phantasmal_dagger"} run function undermagic:item/weapon/throw_dagger
 execute if score $length um.dummy matches 19 if data entity @s SelectedItem.tag{um_id:"recall_locator_card"} run function undermagic:item/tool/recall_card

@@ -15,4 +15,4 @@ execute if entity @s[type=item] if data entity @s Item.tag.um_id run function un
 
 execute if entity @s[type=wither] run tag @s add um_entity
 execute if entity @s[type=ender_dragon] if data entity @s DragonPhase run tag @s add um_entity
-execute if entity @e[tag=um_charm_table] run setblock ~ ~ ~ minecraft:dropper[facing=down]{CustomName:'{"text":"Charm Table","italic":false}'} replace
+
