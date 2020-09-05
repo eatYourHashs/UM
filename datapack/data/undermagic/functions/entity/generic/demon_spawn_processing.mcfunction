@@ -1,9 +1,7 @@
-tag @e[tag=selected] remove selected
-tag @s add random
-summon armor_stand ~ ~ ~2 {Tags:["global.ignore","um_entity","random"]}
-tag @e[sort=random,limit=1,tag=random] add selected
-execute if entity @s[tag=selected] run function undermagic:entity/spawn_lesser/demon
-execute unless entity @s[tag=selected] run function undermagic:entity/greater_demon/summon
-kill @e[tag=random,type=armor_stand,tag=!um_demon_portal]
-tag @e[tag=random] remove random
-tag @e[tag=selected] remove selected
+execute store result score @s um.dummy if entity @e[tag=um_demon,distance=..100]
+# ONLY SUMMON DEMONS IF THERE ARE LESS THAN 10 DEMONS!!!!
+tag @s[scores={um.dummy=..10},predicate=undermagic:probability/0.5] add um.tag
+execute if entity @s[tag=um.tag] run function undermagic:entity/lesser_demon/summon
+execute unless entity @s[tag=um.tag] run function undermagic:entity/greater_demon/summon
+tag @s remove um.tag
+scoreboard players reset @s um.dummy
