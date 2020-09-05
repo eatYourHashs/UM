@@ -7,7 +7,7 @@
       "predicate": {
         "custom_model_data": 420001
       },
-      "model": "um:entity/demon/head"
+      "model": "um:entity/demon/lesser_head"
     },
     {
       "predicate": {
@@ -133,13 +133,13 @@
       "predicate": {
         "custom_model_data": 420076
       },
-      "model": "um:entity/elder/eye"
+      "model": "um:entity/elder/head"
     },
     {
       "predicate": {
         "custom_model_data": 420077
       },
-      "model": "um:entity/elder/hand"
+      "model": "um:entity/elder/left_hand"
     },
     {
       "predicate": {
