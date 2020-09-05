@@ -24,9 +24,9 @@
     "preload": "true"
   },
   "boss_music.blood_amalgam": {
-    "subtitle": "Blood Boil Boss plays",
+    "subtitle": "Blood Amalgam plays",
     "sounds": [
-      "um:boss_music/blood_boil_boss"
+      "um:boss_music/blood_amalgam"
     ],
     "stream": "true",
     "preload": "true"
