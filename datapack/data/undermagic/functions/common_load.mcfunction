@@ -79,7 +79,7 @@ bossbar set undermagic:blood_amalgam style notched_6
 
 bossbar add undermagic:elder "The Elder"
 bossbar set undermagic:elder max 600
-execute if score difficulty um.dummy matches 2.. run bossbar set undermagic:elder max 1000
+execute if score difficulty um.dummy matches 2.. run bossbar set undermagic:elder max 800
 bossbar set undermagic:elder style progress
 bossbar set undermagic:elder color purple
 
