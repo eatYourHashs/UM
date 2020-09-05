@@ -9,4 +9,8 @@ execute if entity @s[predicate=undermagic:armor_sets/shade] run effect clear @s 
 execute if entity @s[predicate=undermagic:armor_sets/shade] run effect clear @s strength
 scoreboard players add @s um.shade_invi 100
 scoreboard players set @s um.take_damage 0
+execute if score nohit um.dummy matches 1 run function undermagic:boss/elder/elder_end
+execute if score nohit um.dummy matches 1 run function undermagic:boss/pit_lord/pit_lord_end
+execute if score nohit um.dummy matches 1 run function undermagic:boss/shadesull/shadesull_end
+execute if score nohit um.dummy matches 1 run function undermagic:boss/blood_amalgam/blood_amalgam_end
 execute if score nohit um.dummy matches 1 run kill @s

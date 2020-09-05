@@ -72,7 +72,7 @@ execute if score @s um.boss_hp matches ..100 if score difficulty um.dummy matche
 execute if entity @s[scores={um.dummy=300}] at @p[distance=..30] run summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_elder_ray"]}
 execute if entity @s[scores={um.dummy=321..454}] as @e[limit=1,sort=nearest,tag=um_elder_ray] at @s run function undermagic:entity/elder/elder_ray_tick
 scoreboard players set @s um.dummy_three 0
-execute if entity @s[scores={um.dummy=321..454}] facing entity @e[sort=nearest,limit=1,tag=um_elder_ray] feet run tp @s ~ ~ ~
+execute if entity @s[scores={um.dummy=321..454}] facing entity @e[sort=nearest,limit=1,tag=um_elder_ray] feet run tp ^ ^ ^
 execute if entity @s[scores={um.dummy=321..454,um.dummy_four=2}] facing entity @e[sort=nearest,limit=1,tag=um_elder_ray] feet run function undermagic:entity/elder/elder_ray_cast
 execute if entity @s[scores={um.dummy=455}] run kill @e[tag=um_elder_ray]
 execute if score difficulty um.dummy matches 1.. if entity @s[scores={um.boss_hp=..150},tag=!um_spawned_hands] run function undermagic:entity/elder/elder_spawn_hands

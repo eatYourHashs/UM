@@ -35,6 +35,12 @@
     },
     {
       "predicate": {
+        "custom_model_data": 420007
+      },
+      "model": "um:entity/demon/greater_head"
+    },
+    {
+      "predicate": {
         "custom_model_data": 420020
       },
       "model": "um:entity/pit_lord/head"

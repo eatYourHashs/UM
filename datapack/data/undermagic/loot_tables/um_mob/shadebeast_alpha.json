@@ -1,58 +1,40 @@
 {
-    "type": "minecraft:entity",
-    "pools": [
-      {
-        "rolls": 30,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:ender_pearl",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:looting_enchant",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "name": "undermagic:items/shadow_base",
-            "weight": 2,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 4
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "name": "undermagic:items/tenebrous_base",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 2
-                }
-              }
-            ]
-          }
-        ]
+  "type": "minecraft:entity",
+  "pools": [{
+    "rolls": 30,
+    "entries": [{
+        "type": "minecraft:item",
+        "name": "minecraft:ender_pearl",
+        "weight": 1,
+        "functions": [{
+          "function": "minecraft:looting_enchant",
+          "count": 1
+        }]
       },
       {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:loot_table",
-              "name": "undermagic:charm_drop"
-            }
-          ]
+        "type": "minecraft:loot_table",
+        "name": "undermagic:items/shadow_base",
+        "weight": 2,
+        "functions": [{
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 2,
+            "max": 4
+          }
+        }]
+      },
+      {
+        "type": "minecraft:loot_table",
+        "name": "undermagic:items/tenebrous_base",
+        "weight": 1,
+        "functions": [{
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 1,
+            "max": 2
+          }
+        }]
       }
     ]
-  }
+  }]
+}
