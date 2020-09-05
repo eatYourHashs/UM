@@ -4,7 +4,7 @@ execute if score $timer_10 um.dummy matches 0 run function undermagic:entity/ent
 execute if entity @s[type=ender_dragon] run function undermagic:entity/ender_dragon/tick
 execute if entity @s[type=arrow] run function undermagic:entity/arrow/tick
 execute if entity @s[tag=um_shadow_guardian] run function undermagic:entity/generic/shadow_guardian_tick
-execute if entity @s[tag=um_blood_cloud] run function undermagic:entity/generic/blood_cloud_tick
+execute if entity @s[tag=um_blood_cloud] run function undermagic:entity/blood_cloud/blood_cloud_tick
 execute if entity @s[tag=um_projectile] run function undermagic:entity/projectile/tick
 
 execute as @s[tag=um_greater_demon] run function undermagic:entity/greater_demon/tick
