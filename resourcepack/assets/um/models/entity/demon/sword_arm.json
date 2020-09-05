@@ -269,7 +269,11 @@
 			}
 		}
 	],
-	"display": {},
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [1.25, 0, 0]
+		}
+	},
 	"groups": [
 		{
 			"name": "demon_arm",
