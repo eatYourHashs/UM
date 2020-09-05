@@ -578,6 +578,12 @@
         "custom_model_data": 420093
       },
       "model": "um:item/magic_crystal"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420094
+      },
+      "model": "um:item/empty"
     }
   ]
 }
