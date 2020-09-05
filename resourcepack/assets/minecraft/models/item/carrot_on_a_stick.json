@@ -61,13 +61,13 @@
       "predicate": {
         "custom_model_data": 420045
       },
-      "model": "um:entity/blood_amalgam"
+      "model": "um:entity/blood_amalgam/blood_amalgam"
     },
     {
       "predicate": {
         "custom_model_data": 420046
       },
-      "model": "um:entity/blood_nodule"
+      "model": "um:entity/blood_nodule/blood_nodule"
     },
     {
       "predicate": {
