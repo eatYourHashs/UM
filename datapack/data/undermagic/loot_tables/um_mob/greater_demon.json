@@ -1,56 +1,43 @@
 {
-    "pools": [
-        {
-            "rolls": 3,
-            "bonus_rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "undermagic:items/demon_skin"
-                }
-            ]
-        },
-        {
-            "rolls": 2,
-            "bonus_rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "undermagic:items/demon_bone"
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "conditions": [
-                {
-                    "condition": "random_chance_with_looting",
-                    "chance": 0.3,
-                    "looting_multiplier": 0.1
-                }
-            ],
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "undermagic:items/demon_sword_shard"
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "conditions": [
-                {
-                    "condition": "random_chance_with_looting",
-                    "chance": 0.05,
-                    "looting_multiplier": 0.025
-                }
-            ],
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "undermagic:items/demon_heart_stone"
-                }
-            ]
-        }
-    ]
+  "pools": [{
+      "rolls": 3,
+      "bonus_rolls": 1,
+      "entries": [{
+        "type": "loot_table",
+        "name": "undermagic:items/demon_skin"
+      }]
+    },
+    {
+      "rolls": 2,
+      "bonus_rolls": 1,
+      "entries": [{
+        "type": "loot_table",
+        "name": "undermagic:items/demon_bone"
+      }]
+    },
+    {
+      "rolls": 1,
+      "conditions": [{
+        "condition": "random_chance_with_looting",
+        "chance": 0.3,
+        "looting_multiplier": 0.1
+      }],
+      "entries": [{
+        "type": "loot_table",
+        "name": "undermagic:items/demon_sword_shard"
+      }]
+    },
+    {
+      "rolls": 1,
+      "conditions": [{
+        "condition": "random_chance_with_looting",
+        "chance": 0.05,
+        "looting_multiplier": 0.025
+      }],
+      "entries": [{
+        "type": "loot_table",
+        "name": "undermagic:items/demon_heart_stone"
+      }]
+    }
+  ]
 }

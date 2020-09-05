@@ -1,22 +1,9 @@
 {
-  "pools": [
-    {
-	  "rolls":1,
-	  "entries":[
-	    {
-		  "type":"loot_table",
-		  "name":"undermagic:items/pit_lord_heart"
-		}
-	  ]
-	},
-    {
-      "rolls": 5,
-	  "entries": [
-	    {
-		  "type": "minecraft:loot_table",
-		  "name": "undermagic:charm_drop"
-		}
-	  ]
-	}
-  ]
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "loot_table",
+      "name": "undermagic:items/pit_lord_heart"
+    }]
+  }]
 }

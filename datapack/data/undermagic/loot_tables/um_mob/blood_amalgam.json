@@ -1,31 +1,16 @@
 {
-  "pools": [
-    {
-	  "rolls":1,
-	  "entries":[
-	    {
-		  "type":"loot_table",
-		  "name":"undermagic:items/crystallized_blood_essence",
-		  "functions":[
-		    {
-			  "function":"set_count",
-			  "count":{
-			    "min":8,
-				"max":12
-			  }
-			}
-		  ]
-		}
-	  ]
-	},
-    {
-      "rolls": 5,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "undermagic:charm_drop"
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "loot_table",
+      "name": "undermagic:items/crystallized_blood_essence",
+      "functions": [{
+        "function": "set_count",
+        "count": {
+          "min": 8,
+          "max": 12
         }
-      ]
-    }
-  ]
+      }]
+    }]
+  }]
 }

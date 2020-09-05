@@ -1,25 +1,12 @@
 {
-  "pools": [
-    {
-      "rolls": {
-        "min": 6,
-        "max": 10
-      },
-      "entries": [
-        {
-          "type": "loot_table",
-          "name": "undermagic:items/bloodstone"
-        }
-      ]
+  "pools": [{
+    "rolls": {
+      "min": 6,
+      "max": 10
     },
-	{
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "undermagic:charm_drop"
-        }
-      ]
-    }
-  ]
+    "entries": [{
+      "type": "loot_table",
+      "name": "undermagic:items/bloodstone"
+    }]
+  }]
 }
