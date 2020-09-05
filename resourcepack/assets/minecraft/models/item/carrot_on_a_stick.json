@@ -149,6 +149,12 @@
     },
     {
       "predicate": {
+        "custom_model_data": 420078
+      },
+      "model": "um:entity/elder/right_hand"
+    },
+    {
+      "predicate": {
         "custom_model_data": 420081
       },
       "model": "um:item/elder_staff"
