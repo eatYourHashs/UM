@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420014,um_id:\"boots_demonic_helmet\",display:{color:16742520}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420014,um_id:\"helmet_demonic_steel\",display:{color:16742520}}"
             },
 			{
 			  "function":"set_attributes",
