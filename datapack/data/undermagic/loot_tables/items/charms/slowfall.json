@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420080,um_id:\"charm\",um_id:\"slowfall\"}"
+              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"slowfall\"}"
             }
           ]
         }

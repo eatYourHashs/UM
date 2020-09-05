@@ -73,8 +73,8 @@ execute if entity @s[scores={um.boss_hp=6,um.dummy=350}] if score difficulty um.
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. run playsound minecraft:entity.enderman.scream hostile @a ~ ~ ~ 1 0.7
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1}] if score difficulty um.dummy matches 1.. facing entity @p[distance=..50,gamemode=!spectator] feet run summon minecraft:armor_stand ^ ^ ^64 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_ba_dash","um_blood_amalgam"]}
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. run effect give @p[distance=..1] instant_damage 1 2
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.8
-execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 2.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.4
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 1.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-1.2
+execute if entity @s[scores={um.boss_hp=..2,um.dummy=1..30}] if score difficulty um.dummy matches 2.. facing entity @e[sort=nearest,tag=um_ba_dash] feet facing ^ ^ ^-1 run tp ^ ^ ^-0.8
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=20}] if score difficulty um.dummy matches 1 run kill @e[tag=um_ba_dash]
 execute if entity @s[scores={um.boss_hp=..2,um.dummy=15}] if score difficulty um.dummy matches 2.. run kill @e[tag=um_ba_dash]
 bossbar set undermagic:blood_amalgam players @a[distance=..50]
