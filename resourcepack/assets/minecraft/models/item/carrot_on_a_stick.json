@@ -13,7 +13,13 @@
       "predicate": {
         "custom_model_data": 420002
       },
-      "model": "um:entity/demon/arm"
+      "model": "um:entity/demon/left_arm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420003
+      },
+      "model": "um:entity/demon/riht_arm"
     },
     {
       "predicate": {
@@ -146,6 +152,12 @@
         "custom_model_data": 420077
       },
       "model": "um:entity/elder/left_hand"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420078
+      },
+      "model": "um:entity/elder/right_hand"
     },
     {
       "predicate": {
