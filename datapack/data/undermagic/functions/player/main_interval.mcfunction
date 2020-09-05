@@ -8,7 +8,7 @@ execute if score @s version < undermagic load run function undermagic:player/upd
 
 #effects
 execute if score @s um.dark_energy matches 1.. run function undermagic:player/effects/dark_energy
-execute if score @s um.since_damaged matches 1.. if score @s um.dark_energy matches ..9996 run function undermagic:player/effects/dark_energy_add
+execute if score @s um.since_damaged matches 1.. unless score @s um.dark_energy matches 9997.. run function undermagic:player/effects/dark_energy_add
 
 #vanilla boss loot
 loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/multiples/dragon_scale_8
