@@ -2,7 +2,6 @@
 execute if score difficulty um.dummy matches 1.. run scoreboard players add @s um.dummy 1
 execute if score difficulty um.dummy matches 1.. run effect give @s resistance 1 0 true
 execute if score difficulty um.dummy matches 1.. run scoreboard players set @s[scores={um.dummy=21..}] um.dummy 0
-execute if score difficulty um.dummy matches 1.. run tp @a[distance=100..105] @s
 
 execute if score difficulty um.dummy matches 1.. store result score @s um.boss_hp run data get entity @s Health
 execute if entity @s[scores={um.boss_hp=..150,um.dummy=10}] if score difficulty um.dummy matches 1.. run scoreboard players add @s um.boss_hp 10
