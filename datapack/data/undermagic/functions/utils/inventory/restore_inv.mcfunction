@@ -1,0 +1,2 @@
+execute in minecraft:overworld run data remove block -29999998 0 1601 Items.[{tag:{um_gui:1b}}]
+execute in minecraft:overworld run loot replace entity @s inventory.0 mine -29999998 0 1601 minecraft:air{drop_contents:1b}

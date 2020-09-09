@@ -1,4 +1,5 @@
 
+# Define Constants
 scoreboard players set five um.dummy 5
 scoreboard players set 100 um.dummy 100
 
@@ -13,4 +14,8 @@ scoreboard players set $cons.16 um.dummy 16
 scoreboard players set $cons.25 um.dummy 25
 scoreboard players set $cons.100 um.dummy 100
 
-
+# Init Static Region
+execute in minecraft:overworld run forceload add -29999999 1600
+execute in minecraft:overworld run setblock -29999998 0 1601 minecraft:black_shulker_box
+execute in minecraft:overworld run setblock -29999998 0 1602 minecraft:oak_wall_sign[facing=south]
+execute in minecraft:overworld run fill -29999998 1 1600 -29999998 1 1615 minecraft:bedrock
