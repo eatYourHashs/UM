@@ -17,7 +17,7 @@
 			  "lore": [
 			    [{"text":"a","color":"dark_red","italic":false,"obfuscated":true},{"text":" Infernal Drop ","color":"dark_red","italic":false,"obfuscated":false},{"text":"a","color":"dark_red","italic":false,"obfuscated":true}],
 				{"text":"Summons a wyrmling familiar.","color":"gray","italic":false},
-				{"text":"Right clicking binds this item to you and you alone!","color":"gray","italic":true}
+				{"text":"Right click to summon!","color":"gray","italic":true}
 			  ]
 			},
 			{
