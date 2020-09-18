@@ -43,12 +43,18 @@ execute if entity @s[scores={um.dummy=305,um.dummy_two=1}] run function undermag
 execute if entity @s[scores={um.dummy=310,um.dummy_two=1}] run function undermagic:entity/elder/elder_eye_bolt
 execute if entity @s[scores={um.dummy=365,um.dummy_two=1}] run function undermagic:entity/elder/elder_eye_bolt
 execute if entity @s[scores={um.dummy=370,um.dummy_two=1}] run function undermagic:entity/elder/elder_eye_bolt
-execute if entity @s[scores={um.dummy=90,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_laser_wall_attack
-execute if entity @s[scores={um.dummy=110,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_laser_wall_attack
-execute if entity @s[scores={um.dummy=130,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_laser_wall_attack
-execute if entity @s[scores={um.dummy=100,um.dummy_two=0}] if score difficulty um.dummy matches 2.. run function undermagic:entity/elder/elder_laser_wall_attack
-execute if entity @s[scores={um.dummy=120,um.dummy_two=0}] if score difficulty um.dummy matches 2.. run function undermagic:entity/elder/elder_laser_wall_attack
-execute if entity @s[scores={um.dummy=140,um.dummy_two=0}] if score difficulty um.dummy matches 2.. run function undermagic:entity/elder/elder_laser_wall_attack
+#execute if entity @s[scores={um.dummy=90,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_laser_wall_attack
+#execute if entity @s[scores={um.dummy=110,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_laser_wall_attack
+#execute if entity @s[scores={um.dummy=130,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_laser_wall_attack
+#execute if entity @s[scores={um.dummy=100,um.dummy_two=0}] if score difficulty um.dummy matches 2.. run function undermagic:entity/elder/elder_laser_wall_attack
+#execute if entity @s[scores={um.dummy=120,um.dummy_two=0}] if score difficulty um.dummy matches 2.. run function undermagic:entity/elder/elder_laser_wall_attack
+#execute if entity @s[scores={um.dummy=140,um.dummy_two=0}] if score difficulty um.dummy matches 2.. run function undermagic:entity/elder/elder_laser_wall_attack
+execute if entity @s[scores={um.dummy=90,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/spawn_eyes
+execute if entity @s[scores={um.dummy=91,um.dummy_two=0}] as @e[tag=um_elder_beam_hand] at @s facing entity @p feet run tp ^ ^ ^
+execute if entity @s[scores={um.dummy=110,um.dummy_two=0}] if score difficulty um.dummy matches 1.. as @e[tag=um_elder_beam_hand] at @s run function undermagic:entity/elder/hand_beams
+execute if entity @s[scores={um.dummy=120,um.dummy_two=0}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/spawn_eyes
+execute if entity @s[scores={um.dummy=121,um.dummy_two=0}] as @e[tag=um_elder_beam_hand] at @s facing entity @p feet run tp ^ ^ ^
+execute if entity @s[scores={um.dummy=140,um.dummy_two=0}] if score difficulty um.dummy matches 1.. as @e[tag=um_elder_beam_hand] at @s run function undermagic:entity/elder/hand_beams
 execute if entity @s[scores={um.dummy=75,um.dummy_two=0}] run function undermagic:entity/elder/elder_warp
 execute if entity @s[scores={um.dummy=80,um.dummy_two=0}] run function undermagic:entity/elder/elder_warp
 execute if entity @s[scores={um.dummy=85,um.boss_hp=..250}] if score difficulty um.dummy matches 1.. run function undermagic:entity/elder/elder_warp
@@ -70,6 +76,7 @@ execute if entity @s[scores={um.dummy=300..320,um.dummy_two=0}] run tp @s ~ ~0.2
 execute if score @s um.boss_hp matches ..100 if score difficulty um.dummy matches 1 if score @s um.dummy matches 321 run effect give @s resistance 4 1 true
 execute if score @s um.boss_hp matches ..100 if score difficulty um.dummy matches 2.. if score @s um.dummy matches 321 run effect give @s resistance 4 2 true
 execute if entity @s[scores={um.dummy=300}] facing entity @p[distance=..50] feet run summon minecraft:armor_stand ^ ^ ^2 {Marker:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_elder_ray"]}
+execute if entity @s[scores={um.dummy=300,um.dummy_two=0}] as @e[tag=um_elder_ray] at @s run tp @s ~ ~4 ~
 execute if entity @s[scores={um.dummy=321..454}] facing entity @p[distance=..50] feet run summon minecraft:armor_stand ^ ^ ^2 {Marker:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_elder_ray_target"]}
 execute if entity @s[scores={um.dummy=321..454}] as @e[limit=1,sort=nearest,tag=um_elder_ray] at @s run function undermagic:entity/elder/elder_ray_tick
 scoreboard players set @s um.dummy_three 0
