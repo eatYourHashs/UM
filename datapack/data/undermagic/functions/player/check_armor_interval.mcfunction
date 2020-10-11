@@ -14,5 +14,4 @@ execute if score $length um.dummy matches 16 if entity @s[predicate=undermagic:a
 execute if score $length um.dummy matches 16 if score @s um.shade_invi matches ..0 if entity @s[predicate=undermagic:armor_sets/shade] run effect give @s resistance 1 4 true
 execute if score $length um.dummy matches 16 if score @s um.shade_invi matches ..0 if entity @s[predicate=undermagic:armor_sets/shade] run effect give @s strength 1 1 true
 
-execute if score $length um.dummy matches 23 if entity @s[predicate=undermagic:armor_sets/abyss_knight] run effect give @s resistance 2 1 true
 execute if score $length um.dummy matches 16 if entity @s[predicate=undermagic:armor_sets/omega] run particle minecraft:end_rod ~ ~1 ~ 0.2 0.4 0.2 0.03 2

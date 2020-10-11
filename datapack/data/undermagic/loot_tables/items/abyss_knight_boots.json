@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_boots",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Abyss Knight Boots","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"text":"Ancient knowledge of blades seems to seep into your soul.","color":"gray","italic":false},
+				{"text":"Buffs melee strikes and summons blades when you strike foes.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"abyss_knight_boots\",display:{color:1048596}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.armor",
+				  "attribute":"generic.armor",
+				  "operation":"addition",
+				  "amount":3,
+				  "slot":"feet"
+				},
+				{
+				  "name":"generic.armor_toughness",
+				  "attribute":"generic.armor_toughness",
+				  "operation":"addition",
+				  "amount":5,
+				  "slot":"feet"
+				},
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":2.5,
+				  "slot":"feet"
+				},
+				{
+				  "name":"generic.attack_speed",
+				  "attribute":"generic.attack_speed",
+				  "operation":"addition",
+				  "amount":0.1,
+				  "slot":"feet"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}
