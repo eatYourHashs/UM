@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:shulker_spawn_egg",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Teleporter","color":"yellow","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{display:{Lore:['{\"text\":\"Insert a linked Locator Card and walk in\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"to teleport to the linked Teleporter.\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:420081,um_id:teleporter,EntityTag:{id:\"minecraft:armor_stand\",NoGravity:1b,Invulnerable:1b,Fire:1000,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:[\"global.ignore\",\"um_entity\",\"um_teleporter\"],Rotation:[90F,0F],ArmorItems:[{},{},{},{id:\"minecraft:shulker_spawn_egg\",Count:1b,tag:{display:{Name:'{\"text\":\"Teleporter\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420081,um_id:charm_table}}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

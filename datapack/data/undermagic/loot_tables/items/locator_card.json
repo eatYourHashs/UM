@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Locator Card","color":"yellow","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{display:{Lore:['{\"text\":\"Right click to bind the card\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"to a nearby Teleporter.\",\"color\":\"gray\",\"italic\":false}']},HideFlags:4,Unbreakable:1b,CustomModelData:420085,um_id:locator_card}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
