@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:leather_chestplate",
+		  "name": "minecraft:leather_leggings",
           "functions": [
             {
 			  "function": "minecraft:set_name",
@@ -44,7 +44,7 @@
 				  "name":"generic.movement_speed",
 				  "attribute":"generic.movement_speed",
 				  "operation":"multiply_base",
-				  "amount":1.025,
+				  "amount":0.025,
 				  "slot":"legs"
 				}
 			  ]
