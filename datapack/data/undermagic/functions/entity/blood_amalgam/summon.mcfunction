@@ -1,4 +1,4 @@
-
+function undermagic:boss/blood_amalgam/blood_amalgam_end
 playsound minecraft:entity.ender_dragon.growl hostile @a ~ ~ ~ 1 0.5
 summon minecraft:armor_stand ~ ~2 ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_blood_boss","um_blood_amalgam"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:420045}}]}
 scoreboard players set @e[tag=um_blood_boss] um.boss_hp 12

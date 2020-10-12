@@ -1,3 +1,4 @@
+function undermagic:boss/shadesull/shadesull_end
 clear @s carrot_on_a_stick{um_id:"crown_of_ruin"} 1
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.music 1

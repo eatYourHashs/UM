@@ -1,3 +1,4 @@
+function undermagic:boss/elder/elder_end
 playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 1 2
 playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.5
 
