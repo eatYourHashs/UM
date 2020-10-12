@@ -34,11 +34,6 @@ execute if entity @s[scores={um.dummy=202}] run function undermagic:entity/shade
 execute if entity @s[scores={um.dummy=222}] facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=227}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=232}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=237}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=242}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=247}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=252}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=257}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=401..600}] run effect give @s resistance 1 5 true
 execute if entity @s[scores={um.dummy=401..600}] run tag @s add um_untargetable
 execute if entity @s[scores={um.dummy=401..600,um.dummy_two=2..}] if score difficulty um.dummy matches 1.. as @r[distance=..50] at @s run function undermagic:entity/shadesull/shadesull_spawn_basic_bullet
@@ -56,10 +51,6 @@ execute if entity @s[scores={um.dummy=622}] facing entity @p feet run function u
 execute if entity @s[scores={um.dummy=627}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=632}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=637}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=642}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=647}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=652}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=657}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=700}] run scoreboard players set @s um.dummy 601
 execute if entity @s[scores={um.dummy=801..1000}] run effect give @s resistance 1 5 true
 execute if entity @s[scores={um.dummy=801..1000}] run tag @s add um_untargetable
