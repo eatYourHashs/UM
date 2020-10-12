@@ -31,9 +31,15 @@ execute if entity @s[scores={um.dummy=201..320,um.boss_hp=..600}] unless score d
 execute if entity @s[scores={um.dummy=280}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 201
 execute if entity @s[scores={um.dummy=320}] run scoreboard players set @s um.dummy 201
 execute if entity @s[scores={um.dummy=202}] run function undermagic:entity/shadesull/shadesull_warp
-execute if entity @s[scores={um.dummy=222}] facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=227}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
-execute if entity @s[scores={um.dummy=232}] if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
+execute if entity @s[scores={um.dummy=202}] run scoreboard players add @s um.dummy_three 1
+execute if entity @s[scores={um.dummy=202,um.dummy_three=4..}] run scoreboard players set @s um.dummy_three 0
+execute if entity @s[scores={um.dummy=222}] if score @s um.dummy_three matches 1..3 facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
+execute if entity @s[scores={um.dummy=227}] if score @s um.dummy_three matches 1..3 if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
+execute if entity @s[scores={um.dummy=232}] if score @s um.dummy_three matches 1..3 if score difficulty um.dummy matches 2.. facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
+execute if entity @s[scores={um.dummy=221,um.dummy_three=0}] as @p at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:["global.ignore","um_entity","um_move_predict"]}
+execute if entity @s[scores={um.dummy=222,um.dummy_three=0}] as @p at @s run function undermagic:entity/shadesull/predict_movement
+execute if entity @s[scores={um.dummy=222,um.dummy_three=0}] facing entity @e[sort=nearest,limit=1,tag=um_move_predict] feet run tp ~ ~ ~
+execute if entity @s[scores={um.dummy=222,um.dummy_three=0}] run function undermagic:entity/shadesull/fire_soul_wisp
 execute if entity @s[scores={um.dummy=401..600}] run effect give @s resistance 1 5 true
 execute if entity @s[scores={um.dummy=401..600}] run tag @s add um_untargetable
 execute if entity @s[scores={um.dummy=401..600,um.dummy_two=2..}] if score difficulty um.dummy matches 1.. as @r[distance=..50] at @s run function undermagic:entity/shadesull/shadesull_spawn_basic_bullet
