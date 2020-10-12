@@ -131,6 +131,15 @@ execute if entity @s[scores={um.dummy=1607}] run function undermagic:entity/shad
 execute if entity @s[scores={um.dummy=1612}] run function undermagic:entity/shadesull/shadesull_warp
 execute if entity @s[scores={um.dummy=1612}] run scoreboard players add @s um.dummy_three 1
 execute if entity @s[scores={um.dummy=1612,um.dummy_three=3..}] run scoreboard players set @s um.dummy_three 0
+execute if entity @s[scores={um.dummy=1613}] facing ~1 ~ ~ run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1613}] facing ~-1 ~ ~ run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1613}] facing ~ ~ ~1 run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1613}] facing ~ ~ ~-1 run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1632,um.dummy_three=3..}] run scoreboard players set @s um.dummy_three 0
+execute if entity @s[scores={um.dummy=1632}] facing ~1 ~ ~1 run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1632}] facing ~-1 ~ ~1 run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1632}] facing ~1 ~ ~-1 run function undermagic:entity/shadesull/final_bullet
+execute if entity @s[scores={um.dummy=1632}] facing ~-1 ~ ~-1 run function undermagic:entity/shadesull/final_bullet
 execute if entity @s[scores={um.dummy=1617,um.dummy_three=1..2}] at @p positioned ~ ~20 ~ facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=1617,um.dummy_three=1..2}] if score difficulty um.dummy matches 1.. at @p positioned ~6 ~20 ~ facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt
 execute if entity @s[scores={um.dummy=1617,um.dummy_three=1..2}] if score difficulty um.dummy matches 1.. at @p positioned ~-6 ~20 ~ facing entity @p feet run function undermagic:entity/shadesull/shadesull_elder_bolt

@@ -253,7 +253,7 @@
       "predicate": {
         "custom_model_data": 420096
       },
-      "model": "um:entity/abyss_boss"
+      "model": "um:entity/shadesull/shadesull"
     },
     {
       "predicate": {
@@ -446,6 +446,12 @@
         "custom_model_data": 420131
       },
       "model": "um:item/spectral_sickle"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420132
+      },
+      "model": "um:entity/shadesull/shadesull_p2"
     }
   ]
 }
