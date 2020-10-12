@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Crown of Ruin","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+          {"text":"Call upon the overlord of the Abyss...","color":"gray","italic":false},
+          {"text":"Must be used inside it.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420093,um_id:\"crown_of_ruin\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
