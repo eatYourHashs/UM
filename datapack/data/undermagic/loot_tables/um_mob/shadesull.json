@@ -16,7 +16,7 @@
         "functions": [
           {
             "function": "minecraft:set_nbt",
-            "tag": "{um_id: \"reaper_scythe\", Unbreakable: 1b, CustomModelData: 420125, display: {Lore: ['{\"text\":\"Slain mobs return as souls that\",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"aid you and other players.\",\"color\":\"gray\",\"italic\":false}'], Name: '{\"text\":\"Reaper Scythe\",\"color\":\"dark_red\",\"italic\":false}'}, Damage: 0, AttributeModifiers: [{Amount: 20, Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Operation: 0, UUID: [I; 88991058, 794315143, -2136782046, -452202869], Name: \"generic.attack_damage\"}, {Amount: -3.0d, Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Operation: 0, UUID: [I; -1323833664, 905530613, -1190935989, -388601739], Name: \"generic.attack_speed\"}]}"
+            "tag": "{um_id: \"reaper_scythe\", Unbreakable: 1b, CustomModelData: 420125, display: {Lore: ['{\"text\":\"Slain mobs return as souls that\",\"color\":\"gray\",\"italic\":false}', '{\"text\":\"aid you and other players.\",\"color\":\"gray\",\"italic\":false}'], Name: '{\"text\":\"Reaper Scythe\",\"color\":\"dark_red\",\"italic\":false}'}, Damage: 0, AttributeModifiers: [{Amount: 21, Slot: \"mainhand\", AttributeName: \"generic.attack_damage\", Operation: 0, UUID: [I; 88991058, 794315143, -2136782046, -452202869], Name: \"generic.attack_damage\"}, {Amount: -3.0d, Slot: \"mainhand\", AttributeName: \"generic.attack_speed\", Operation: 0, UUID: [I; -1323833664, 905530613, -1190935989, -388601739], Name: \"generic.attack_speed\"}]}"
           }
         ]
       },
