@@ -9,6 +9,8 @@ execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inve
 execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
 execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
 execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
-effect give @e[type=!#undermagic:undead,distance=1..8] instant_damage 1 1
-effect give @e[type=#undermagic:undead,distance=..8] instant_health 1 1
+scoreboard players set $math.in_0 um.dummy 190
+scoreboard players set $math.in_1 um.dummy 0
+scoreboard players set $math.in_2 um.dummy 3
+execute as @e[tag=!global.ignore,distance=0.05..8] run function undermagic:utils/damage_entity
 scoreboard players remove @s um.drac_sh_chg 1
