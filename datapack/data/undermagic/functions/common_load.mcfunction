@@ -4,6 +4,7 @@ scoreboard objectives add um.dummy dummy
 scoreboard objectives add um.dummy_two dummy
 scoreboard objectives add um.dummy_three dummy
 scoreboard objectives add um.dummy_four dummy
+scoreboard objectives add um.dummy_five dummy
 scoreboard objectives add um.familiar_id dummy
 scoreboard objectives add um.boss_hp dummy
 scoreboard objectives add um.version dummy

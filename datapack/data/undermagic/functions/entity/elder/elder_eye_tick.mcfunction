@@ -13,6 +13,7 @@ summon armor_stand ^4 ^-3 ^1 {Marker:1b,Invisible:1b,Tags:["global.ignore","um_e
 summon armor_stand ^-5 ^-1 ^1 {Marker:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_hand_marker_l3"]}
 summon armor_stand ^5 ^-1 ^1 {Marker:1b,Invisible:1b,Tags:["global.ignore","um_entity","um_hand_marker_r3"]}
 execute facing entity @p[distance=8..64] feet unless score @s um.dummy matches 300.. run tp ^ ^ ^0.4
+execute facing entity @p[distance=8..64] feet if score um.dummy_five matches ..200 unless score @s um.dummy matches 300.. run tp ^ ^ ^0.4
 execute if entity @p[distance=..10] if entity @e[tag=um_elder_hand] run tp ~ ~0.3 ~
 execute if entity @p[distance=..10] unless entity @e[tag=um_elder_hand] run tp ~ ~0.1 ~
 particle minecraft:portal ~ ~1 ~ 0 0 0 1 10
@@ -22,6 +23,7 @@ execute if entity @e[tag=um_elder_hand] run tag @s add um_untargetable
 execute unless entity @e[tag=um_elder_hand] run tag @s remove um_untargetable
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_four 1
+scoreboard players add @s um.dummy_five 1
 scoreboard players set @s[scores={um.dummy_four=6..}] um.dummy_four 0
 scoreboard players set @s[scores={um.dummy=460..}] um.dummy 0
 execute if score @s um.boss_hp matches ..100 if score difficulty um.dummy matches 1.. if score @s um.dummy matches 1 run scoreboard players set @s um.dummy 55

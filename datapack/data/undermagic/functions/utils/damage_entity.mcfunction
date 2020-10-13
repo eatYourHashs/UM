@@ -1,7 +1,7 @@
 
 # $math.in_0 um.dummy: damage to add to entity, to 1 decimal place
 # $math.in_1 um.dummy: 1 if should ignore armor, 2 if should ignore armor + enchants, 3 if should ignore armor, enchants, and resistance
-# Note: enchantments are currently not implemented
+# $math.in_2 um.dummy: 1 for fire damage, 2 for projectile damage, 3 for blast damage (only relevant if enchantments are not ignored)
 # Note 2: not always accurate on wither skeleton, wither, and ender dragon
 
 #calculate armor redux
@@ -29,6 +29,29 @@ scoreboard players operation $math.out_0 um.dummy -= $math.temp_2 um.dummy
 execute if score $math.in_1 um.dummy matches 0 run scoreboard players operation $math.out_0 um.dummy *= $math.in_0 um.dummy
 execute if score $math.in_1 um.dummy matches 0 run scoreboard players operation $math.out_0 um.dummy /= $cons.100 um.dummy
 execute if score $math.in_1 um.dummy matches 1..3 run scoreboard players operation $math.out_0 um.dummy = $math.in_0 um.dummy
+
+#apply enchs
+execute store result score $math.temp_0 um.dummy run data get entity @s Inventory[{Slot:100b}].tag.Enchantments[{id:"minecraft:protection"}].lvl 4
+execute store result score $math.temp_1 um.dummy run data get entity @s Inventory[{Slot:101b}].tag.Enchantments[{id:"minecraft:protection"}].lvl 4
+execute store result score $math.temp_2 um.dummy run data get entity @s Inventory[{Slot:102b}].tag.Enchantments[{id:"minecraft:protection"}].lvl 4
+execute store result score $math.temp_3 um.dummy run data get entity @s Inventory[{Slot:103b}].tag.Enchantments[{id:"minecraft:protection"}].lvl 4
+
+execute if score $math.in_2 um.dummy matches 1 run function undermagic:utils/damage/calc_fireprot
+execute if score $math.in_2 um.dummy matches 2 run function undermagic:utils/damage/calc_projprot
+execute if score $math.in_2 um.dummy matches 3 run function undermagic:utils/damage/calc_blastprot
+
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_1
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_2
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_3
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_4
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_5
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_6
+scoreboard players operation $math.temp_0 um.dummy += $math.temp_7
+scoreboard players set $math.temp_1 um.dummy 100
+scoreboard players operation $math.temp_1 um.dummy -= $math.temp_0
+
+execute if score $math.in_1 um.dummy matches 0..1 run scoreboard players operation $math.out_0 um.dummy *= $math.temp_1 um.dummy
+execute if score $math.in_1 um.dummy matches 0..1 run scoreboard players operation $math.out_0 um.dummy /= $cons.100 um.dummy
 
 #apply resistance
 execute store result score $math.temp_0 um.dummy run data get entity @s ActiveEffects[{Id:11b}].Amplifier

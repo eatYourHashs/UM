@@ -3,7 +3,7 @@ particle minecraft:witch ~ ~1 ~ 0.2 0.5 0.2 0 1
 execute unless score @s um.dummy matches 2121..2122 run scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_two 1
 scoreboard players add @s um.music 1
-tp @a[distance=40..50] @s
+execute unless score @s um.dummy matches 2121..2122 run tp @a[distance=40..50] @s
 execute facing entity @p feet run tp ^ ^ ^
 kill @e[tag=um_hand_marker_l]
 kill @e[tag=um_hand_marker_r]
