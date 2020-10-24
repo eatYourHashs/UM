@@ -4,5 +4,9 @@ execute if score difficulty um.dummy matches 2.. run tp @s ~ ~-0.2 ~
 particle minecraft:witch ~ ~ ~ 0.1 0.1 0.1 0 4
 scoreboard players add @s um.dummy 1
 execute if score @s um.dummy matches 120.. run kill @s
-effect give @a[distance=..2,nbt={Inventory:[{id:"minecraft:leather_helmet",Slot:103b,tag:{Unbreakable:1,HideFlags:1,Enchantments:[{id:respiration,lvl:3},{id:aqua_affinity,lvl:1}]}}]}] instant_damage 1 4
-effect give @a[distance=..2] instant_damage 1 2
+execute if score difficulty um.dummy matches 0 run scoreboard players set $math.in_0 um.dummy 300
+execute if score difficulty um.dummy matches 1 run scoreboard players set $math.in_0 um.dummy 400
+execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 500
+scoreboard players set $math.in_1 um.dummy 0
+scoreboard players set $math.in_2 um.dummy 0
+execute as @a[tag=!global.ignore,scores={um.invuln=10..},distance=..2] run function undermagic:utils/damage_entity

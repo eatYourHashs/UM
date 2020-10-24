@@ -1,5 +1,8 @@
 particle minecraft:dragon_breath ^ ^0.5 ^1 0 0 0 0.1 40
-effect give @p instant_damage 1 1
+scoreboard players set $math.in_0 um.dummy 120
+scoreboard players set $math.in_1 um.dummy 0
+scoreboard players set $math.in_2 um.dummy 0
+execute as @p run function undermagic:utils/damage_entity
 effect give @p nausea 5 0
 playsound minecraft:entity.phantom.bite hostile @a ~ ~ ~ 1 1.5
 kill @e[tag=um_wyrmling_target,distance=..35]

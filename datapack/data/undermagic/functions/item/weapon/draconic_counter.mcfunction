@@ -12,5 +12,5 @@ execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inve
 scoreboard players set $math.in_0 um.dummy 190
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 3
-execute as @e[tag=!global.ignore,distance=0.05..8] run function undermagic:utils/damage_entity
+execute as @e[tag=!global.ignore,scores={um.invuln=10..},distance=0.05..8] run function undermagic:utils/damage_entity
 scoreboard players remove @s um.drac_sh_chg 1

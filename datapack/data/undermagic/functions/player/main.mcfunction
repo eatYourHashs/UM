@@ -1,3 +1,5 @@
+#remove iframe
+scoreboard players add @s um.invuln 1
 
 #check items
 execute if data entity @s SelectedItem.tag.um_id run function undermagic:player/check_held_item

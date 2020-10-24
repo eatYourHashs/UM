@@ -7,5 +7,9 @@ execute if score @s um.dummy matches 140.. run kill @s
 execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air run summon tnt ~ ~0.1 ~
 execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air run kill @s
 execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air if score @e[tag=um_shadesull_boss,limit=1,sort=nearest] um.boss_hp matches ..400 run function undermagic:entity/shadesull/explosive_orb
-effect give @a[distance=..2,nbt={Inventory:[{id:"minecraft:leather_helmet",Slot:103b,tag:{Unbreakable:1,HideFlags:1,Enchantments:[{id:respiration,lvl:3},{id:aqua_affinity,lvl:1}]}}]}] instant_damage 1 4
-effect give @a[distance=..2] instant_damage 1 2
+execute if score difficulty um.dummy matches 0 run scoreboard players set $math.in_0 um.dummy 300
+execute if score difficulty um.dummy matches 1 run scoreboard players set $math.in_0 um.dummy 400
+execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 500
+scoreboard players set $math.in_1 um.dummy 0
+scoreboard players set $math.in_2 um.dummy 0
+execute as @a[tag=!global.ignore,scores={um.invuln=10..},distance=..2] run function undermagic:utils/damage_entity

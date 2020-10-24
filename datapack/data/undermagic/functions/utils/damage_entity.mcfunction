@@ -2,7 +2,7 @@
 # $math.in_0 um.dummy: damage to add to entity, to 1 decimal place
 # $math.in_1 um.dummy: 1 if should ignore armor, 2 if should ignore armor + enchants, 3 if should ignore armor, enchants, and resistance
 # $math.in_2 um.dummy: 1 for fire damage, 2 for projectile damage, 3 for blast damage (only relevant if enchantments are not ignored)
-# Note 2: not always accurate on wither skeleton, wither, and ender dragon
+# Note: not always accurate on wither and ender dragon
 
 #calculate armor redux
 execute store result score $math.temp_0 um.dummy run attribute @s minecraft:generic.armor get 10
@@ -88,7 +88,7 @@ scoreboard players operation $math.temp_0 um.dummy -= $math.temp_1 um.dummy
 
 tag @s add um_damage_reset
 schedule function undermagic:utils/damage/damage_reset 1t
-execute if score $math.temp_0 um.dummy >= $math.out_1 um.dummy run kill @s
+execute if score $math.temp_0 um.dummy >= $math.out_1 um.dummy run kill @s[gamemode=!creative,gamemode=!spectator]
 
 execute if score $timer_10 um.dummy matches 0 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_0
 execute if score $timer_10 um.dummy matches 1 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_1
@@ -101,3 +101,4 @@ execute if score $timer_10 um.dummy matches 7 if entity @s[tag=um_damage_reset] 
 execute if score $timer_10 um.dummy matches 8 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_8
 execute if score $timer_10 um.dummy matches 9 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_9
 
+scoreboard players set @s[type=player] um.invuln 0

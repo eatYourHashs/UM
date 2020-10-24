@@ -7,8 +7,12 @@ execute if entity @s[tag=um_hand6,scores={um.dummy=..0}] facing entity @e[tag=um
 execute if entity @s[scores={um.dummy=1..}] facing entity @p feet run tp ^ ^ ^0.3
 execute if score difficulty um.dummy matches 1.. if entity @s[scores={um.dummy=1..}] facing entity @p feet run tp ^ ^ ^0.2
 execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.dummy=1..}] facing entity @p feet run tp ^ ^ ^0.3
-execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.dummy=1..}] if entity @p[distance=..1] run effect give @p instant_damage 1 2
-execute if entity @s[scores={um.dummy=1..}] if entity @p[distance=..1] run effect give @p instant_damage 1 1
+execute if score difficulty um.dummy matches 0 run scoreboard players set $math.in_0 um.dummy 160
+execute if score difficulty um.dummy matches 1 run scoreboard players set $math.in_0 um.dummy 200
+execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 240
+scoreboard players set $math.in_1 um.dummy 0
+scoreboard players set $math.in_2 um.dummy 0
+execute as @a[tag=!global.ignore,scores={um.invuln=10..},distance=..1] run function undermagic:utils/damage_entity
 execute if entity @s[scores={um.dummy=1..}] if entity @p[distance=..1] run scoreboard players set @s um.dummy 0
 execute if entity @s[scores={um.dummy=..-400}] run scoreboard players set @s um.dummy 70
 execute if entity @s[scores={um.dummy=..-100}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 70
