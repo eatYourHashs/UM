@@ -1,0 +1,17 @@
+execute if score $math.temp_2 um.dummy matches 0..20 run effect give @s resistance 1 4 true
+execute if score $math.temp_2 um.dummy matches 21..40 run effect give @s resistance 2 4 true
+execute if score $math.temp_2 um.dummy matches 41..60 run effect give @s resistance 3 4 true
+execute if score $math.temp_2 um.dummy matches 61..80 run effect give @s resistance 4 4 true
+execute if score $math.temp_2 um.dummy matches 81..100 run effect give @s resistance 5 4 true
+execute if score $math.temp_2 um.dummy matches 101..200 run effect give @s resistance 10 4 true
+execute if score $math.temp_2 um.dummy matches 201..300 run effect give @s resistance 15 4 true
+execute if score $math.temp_2 um.dummy matches 301..400 run effect give @s resistance 20 4 true
+execute if score $math.temp_2 um.dummy matches 401..600 run effect give @s resistance 30 4 true
+execute if score $math.temp_2 um.dummy matches 601..1200 run effect give @s resistance 60 4 true
+execute if score $math.temp_2 um.dummy matches 1201..1800 run effect give @s resistance 90 4 true
+execute if score $math.temp_2 um.dummy matches 1801..2400 run effect give @s resistance 120 4 true
+execute if score $math.temp_2 um.dummy matches 2401..3000 run effect give @s resistance 150 4 true
+execute if score $math.temp_2 um.dummy matches 3001..3600 run effect give @s resistance 210 4 true
+execute if score $math.temp_2 um.dummy matches 3601..4200 run effect give @s resistance 240 4 true
+execute if score $math.temp_2 um.dummy matches 4201..4800 run effect give @s resistance 270 4 true
+execute if score $math.temp_2 um.dummy matches 4801.. run effect give @s resistance 300 4 true

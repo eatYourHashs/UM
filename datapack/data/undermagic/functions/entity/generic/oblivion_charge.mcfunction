@@ -16,5 +16,6 @@ execute if score @s um.dummy matches 12.. run scoreboard players set @e[tag=um_o
 execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_0 um.dummy 500
 execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_1 um.dummy 0
 execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_2 um.dummy 0
-execute if score @s um.dummy matches 12.. as @e[tag=um_oblivion_hit] run function undermagic:util/damage_entity
+execute if score @s um.dummy matches 12.. as @e[tag=um_oblivion_hit] run function undermagic:utils/damage_entity
+execute if score @s um.dummy matches 12.. as @e[tag=um_oblivion_hit] run tag @s remove um_oblivion_hit
 execute if score @s um.dummy matches 12.. run kill @s
