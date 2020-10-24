@@ -28,6 +28,7 @@ execute as @e[tag=um_entity] at @s run function undermagic:entity/entity_tick
 #interval
 execute if score $timer_10 um.dummy matches 0 if predicate undermagic:probability/0.001 if score dragon_dead um.dummy matches 1 in minecraft:the_end at @r[distance=0..] run function undermagic:entity/wyrmling/spawn
 execute if score $timer_20 um.dummy matches 0 as @e[type=item_frame] at @s if block ~ ~-1 ~ minecraft:fire if block ~ ~-2 ~ minecraft:netherrack if data entity @s Item{id:"minecraft:book"} run function undermagic:item/tool/book_conversion
+execute if score $timer_20 um.dummy matches 0 run scoreboard players set @e[tag=!global.ignore,type=!player] um.invuln 11
 
 #other stuff
 scoreboard players remove @e[scores={um.aw_mark=1..}] um.aw_mark 1
