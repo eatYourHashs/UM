@@ -63,7 +63,7 @@ execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operati
 execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operation $math.out_0 um.dummy *= $math.temp_1 um.dummy
 execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operation $math.out_0 um.dummy /= $cons.5 um.dummy
 
-tellraw @p {"score":{"name":"$math.out_0","objective":"um.dummy"}}
+#tellraw @p {"score":{"name":"$math.out_0","objective":"um.dummy"}}
 
 #modify health
 execute store result score $math.out_1 um.dummy run attribute @s minecraft:generic.max_health get 10
