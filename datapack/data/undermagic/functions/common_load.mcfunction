@@ -60,6 +60,7 @@ scoreboard objectives add um.oathbow_mark dummy
 scoreboard objectives add um.wyrmling_lvl dummy
 scoreboard objectives add um.wyrmling_xp dummy
 scoreboard objectives add um.mana dummy
+scoreboard objectives add um.mana_cd dummy
 scoreboard objectives add um.kill_count totalKillCount
 
 #scoreboard players init
