@@ -31,20 +31,6 @@
 				  "operation":"addition",
 				  "amount":8,
 				  "slot":"chest"
-				},
-				{
-				  "name":"generic.armor_toughness",
-				  "attribute":"generic.armor_toughness",
-				  "operation":"addition",
-				  "amount":4,
-				  "slot":"chest"
-				},
-				{
-				  "name":"generic.attack_damage",
-				  "attribute":"generic.attack_damage",
-				  "operation":"addition",
-				  "amount":2,
-				  "slot":"chest"
 				}
 			  ]
 			}

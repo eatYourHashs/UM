@@ -31,13 +31,6 @@
 				  "operation":"addition",
 				  "amount":3,
 				  "slot":"head"
-				},
-				{
-				  "name":"generic.armor_toughness",
-				  "attribute":"generic.armor_toughness",
-				  "operation":"addition",
-				  "amount":2,
-				  "slot":"head"
 				}
 			  ]
 			}
