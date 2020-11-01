@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Greatblade of Destruction\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"A massive blade that deals immense knockback.\",\"color\":\"gray\",\"italic\":false}']},HideFlags:1,RepairCost:50,Unbreakable:1b,CustomModelData:420001,um_id:\"greatblade_of_destruction\",Enchantments:[{id:\"minecraft:knockback\",lvl:10s}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/abyss_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 10
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

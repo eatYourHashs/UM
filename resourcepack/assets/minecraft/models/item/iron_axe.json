@@ -1,0 +1,13 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/iron_axe"
+  },
+  "overrides": [{
+      "predicate": {
+        "custom_model_data": 420001
+      },
+      "model": "um:item/greatblade_of_destruction"
+    }
+  ]
+}
