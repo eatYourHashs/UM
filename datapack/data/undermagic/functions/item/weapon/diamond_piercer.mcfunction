@@ -9,3 +9,4 @@ execute as @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2] run funct
 execute unless score temp um.dummy matches 301.. positioned ^ ^ ^0.5 run function undermagic:item/weapon/diamond_piercer
 execute if score temp um.dummy matches 301.. run scoreboard players remove @s um.mana 60
 execute if score temp um.dummy matches 301.. run scoreboard players set @s um.mana_cd 0
+execute if score temp um.dummy matches 301.. run scoreboard players set temp um.dummy 0
