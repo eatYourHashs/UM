@@ -52,4 +52,5 @@ scoreboard players add @s um.since_attack 1
 #check mana
 scoreboard players add @s um.mana_cd 1
 scoreboard players add @s[scores={um.mana_cd=20..,um.mana=..99}] um.mana 1
-title @s[scores=!{um.mana=100..}] actionbar ["",{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"um.mana"},"color":"dark_aqua"},{"text":"/100","color":"aqua"}]
+title @s[scores={um.mana=..99}] actionbar ["",{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"um.mana"},"color":"dark_aqua"},{"text":"/100","color":"aqua"}]
+title @s[scores={um.mana_cd=..120}] actionbar ["",{"text":"Mana: ","color":"aqua"},{"score":{"name":"@s","objective":"um.mana"},"color":"dark_aqua"},{"text":"/100","color":"aqua"}]

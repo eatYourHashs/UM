@@ -25,21 +25,21 @@ tag @s remove um_abyss_warped
 
 #staves
 scoreboard players set temp um.dummy 0
-execute if score $length um.dummy matches 14 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"oblivion_staff"} positioned ^ ^ ^3 run function undermagic:item/weapon/oblivion_staff
-execute if score $length um.dummy matches 08 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"iron_rod"} positioned ^ ^ ^3 run function undermagic:item/weapon/iron_rod
-execute if score $length um.dummy matches 15 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"diamond_piercer"} positioned ^ ^ ^3 run function undermagic:item/weapon/diamond_piercer
-execute if score $length um.dummy matches 17 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"prismatic_scepter"} positioned ^ ^ ^3 run function undermagic:item/weapon/prismatic_scepter
-execute if score $length um.dummy matches 11 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"doom_desire"} run function undermagic:item/weapon/doom_desire
-execute if score $length um.dummy matches 11 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"elder_staff"} if score @s um.sneak matches ..0 run function undermagic:item/weapon/dark_orb
-execute if score $length um.dummy matches 11 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"elder_staff"} if score @s um.sneak matches 1.. run function undermagic:item/weapon/large_dark_orb
-execute if score $length um.dummy matches 14 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"bone_of_wither"} run function undermagic:item/weapon/wither_skull
-execute if score $length um.dummy matches 13 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"inferno_staff"} if score @s um.sneak matches ..0 run function undermagic:item/weapon/is_fireball
+execute if score $length um.dummy matches 14 if score @s um.mana matches 35.. if data entity @s SelectedItem.tag{um_id:"oblivion_staff"} positioned ^ ^ ^3 run function undermagic:item/weapon/oblivion_staff
+execute if score $length um.dummy matches 08 if score @s um.mana matches 20.. if data entity @s SelectedItem.tag{um_id:"iron_rod"} positioned ^ ^ ^3 run function undermagic:item/weapon/iron_rod
+execute if score $length um.dummy matches 15 if score @s um.mana matches 60.. if data entity @s SelectedItem.tag{um_id:"diamond_piercer"} positioned ^ ^ ^3 run function undermagic:item/weapon/diamond_piercer
+execute if score $length um.dummy matches 17 if score @s um.mana matches 8.. if data entity @s SelectedItem.tag{um_id:"prismatic_scepter"} positioned ^ ^ ^3 run function undermagic:item/weapon/prismatic_scepter
+execute if score $length um.dummy matches 11 if score @s um.mana matches 10.. if data entity @s SelectedItem.tag{um_id:"doom_desire"} positioned ^ ^ ^3 run function undermagic:item/weapon/doom_desire
+execute if score $length um.dummy matches 11 if score @s um.mana matches 5.. if data entity @s SelectedItem.tag{um_id:"elder_staff"} if score @s um.sneak matches ..0 run function undermagic:item/weapon/dark_orb
+execute if score $length um.dummy matches 11 if score @s um.mana matches 50.. if data entity @s SelectedItem.tag{um_id:"elder_staff"} if score @s um.sneak matches 1.. run function undermagic:item/weapon/large_dark_orb
+#execute if score $length um.dummy matches 14 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"bone_of_wither"} run function undermagic:item/weapon/wither_skull
+execute if score $length um.dummy matches 13 if score @s um.mana matches 50.. if data entity @s SelectedItem.tag{um_id:"inferno_staff"} if score @s um.sneak matches ..0 run function undermagic:item/weapon/is_fireball
 execute if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"inferno_staff"} if score @s um.sneak matches 1.. run function undermagic:item/weapon/is_flamethrower
-execute if score $length um.dummy matches 08 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"fire_orb"} at @s if score @s um.sneak matches ..0 run function undermagic:item/weapon/fo_fireball
+execute if score $length um.dummy matches 08 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"fire_orb"} at @s if score @s um.sneak matches ..0 run function undermagic:item/weapon/fo_fireball
 execute if score $length um.dummy matches 08 if data entity @s SelectedItem.tag{um_id:"fire_orb"} if score @s um.sneak matches 1.. run function undermagic:item/weapon/fo_flamethrower
 
-execute if score $length um.dummy matches 12 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"dragon_staff"} run function undermagic:item/weapon/dragon_staff
-execute if score $length um.dummy matches 19 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"demon_flame_scepter"} run function undermagic:item/weapon/demon_flame_scepter
-execute if score $length um.dummy matches 18 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_1"} run function undermagic:item/weapon/blood_rain_staff_1
-execute if score $length um.dummy matches 18 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_2"} run function undermagic:item/weapon/blood_rain_staff_2
-execute if score $length um.dummy matches 18 if score @s um.orb_cooldown matches ..0 if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_3"} run function undermagic:item/weapon/blood_rain_staff_3
+execute if score $length um.dummy matches 12 if score @s um.mana matches 10.. if data entity @s SelectedItem.tag{um_id:"dragon_staff"} run function undermagic:item/weapon/dragon_staff
+execute if score $length um.dummy matches 19 if score @s um.mana matches 8.. if data entity @s SelectedItem.tag{um_id:"demon_flame_scepter"} run function undermagic:item/weapon/demon_flame_scepter
+execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_1"} run function undermagic:item/weapon/blood_rain_staff_1
+execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_2"} run function undermagic:item/weapon/blood_rain_staff_2
+execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_3"} run function undermagic:item/weapon/blood_rain_staff_3

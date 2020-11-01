@@ -1,7 +1,8 @@
 summon fireball ^ ^1 ^4 {direction:[0.0d,0.0d,0.0d],Tags:["um_entity","um_fireshot","um_projectile"],ExplosionPower:2b}
 execute as @e[sort=nearest,limit=1,tag=um_fireshot] positioned ^ ^1 ^-6 facing entity @p eyes run tp ^ ^ ^6
 playsound minecraft:entity.ghast.shoot player @a ~ ~ ~ 1 1
-scoreboard players set @s um.orb_cooldown 20
+scoreboard players remove @s um.mana 50
+scoreboard players set @s um.mana_cd 0
 execute store result score x_delta um.dummy run data get entity @e[sort=nearest,limit=1,tag=um_fireshot] Pos[0] 100
 execute store result score y_delta um.dummy run data get entity @e[sort=nearest,limit=1,tag=um_fireshot] Pos[1] 100
 execute store result score z_delta um.dummy run data get entity @e[sort=nearest,limit=1,tag=um_fireshot] Pos[2] 100
