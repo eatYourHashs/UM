@@ -1,4 +1,4 @@
-scoreboard players remove @s um.orb_cooldown 1
+scoreboard players add @s[scores={um.mana_cd=20..,um.mana=..99}] um.mana 1
 scoreboard players set @s um.aw_mark 0
 scoreboard players set @e[tag=um_warlock_hand,distance=..10,sort=nearest,limit=2] um.aw_mark 0
 execute unless entity @e[tag=um_warlock_hand_l,distance=..10] run summon minecraft:armor_stand ^3 ^0.5 ^ {Silent:1b,NoGravity:1b,Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_warlock_hand_l","um_warlock_hand"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:420077}}]}
