@@ -226,6 +226,24 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Slot:12b,id:\"minecraft:clock\",Count:1b,tag:{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 10,
           "functions": [{
             "function": "minecraft:set_count",
