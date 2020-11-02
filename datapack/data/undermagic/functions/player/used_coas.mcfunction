@@ -43,3 +43,4 @@ execute if score $length um.dummy matches 19 if score @s um.mana matches 8.. if 
 execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_1"} run function undermagic:item/weapon/blood_rain_staff_1
 execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_2"} run function undermagic:item/weapon/blood_rain_staff_2
 execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_3"} run function undermagic:item/weapon/blood_rain_staff_3
+execute if score $length um.dummy matches 15 if score @s um.mana matches 12.. if data entity @s SelectedItem.tag{um_id:"spectral_sickle"} positioned ^ ^ ^1.1 run function undermagic:item/weapon/spectral_sickle
