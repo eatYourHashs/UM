@@ -1,4 +1,4 @@
-particle smoke
+execute if score temp um.dummy matches 2.. run particle smoke
 tp ~ ~ ~
 scoreboard players add temp um.dummy 1
 execute at @a if score @s um.familiar_id = @p um.familiar_id run tag @p add um_wielder
