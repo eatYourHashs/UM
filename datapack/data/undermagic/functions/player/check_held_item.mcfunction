@@ -16,5 +16,7 @@ execute if score $timer_20 um_dummy matches 0 if score $length um.dummy matches 
 execute if score $timer_10 um_dummy matches 0 if score $length um.dummy matches 13 if score @s um.dragon_energy matches 60.. if data entity @s SelectedItem.tag{um_id:"dragons_wrath"} run particle minecraft:dragon_breath ~ ~1 ~ 0.3 0.4 0.3 0 10
 execute if score $timer_10 um_dummy matches 0 if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"dragons_wrath"} run scoreboard players add @s um.dragon_energy 1
 
+execute if score $length um.dummy matches 11 if data entity @s SelectedItem.tag{um_id:"the_blaster",Charged:0b} run replaceitem entity @s weapon.mainhand minecraft:crossbow{display:{Name:'{"text":"The Blaster","color":"light_purple","italic":false}',Lore:['{"text":"An ultra-fast crossbow modified from","color":"gray","italic":false}','{"text":"an Illager design.","color":"gray","italic":false}']},HideFlags:1,RepairCost:50,Unbreakable:1b,CustomModelData:420001,um_id:the_blaster,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{},{}],Charged:1b}
+
 #coas function
 execute if score @s um.cstick matches 1.. run function undermagic:player/used_coas

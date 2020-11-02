@@ -10,6 +10,26 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Obliteration\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Concentrate to destroy all things. \",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420134,um_id:obliteration}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Blaster\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"An ultra-fast crossbow modified from\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"an Illager design.\",\"color\":\"gray\",\"italic\":false}']},HideFlags:1,RepairCost:50,Unbreakable:1b,CustomModelData:420001,um_id:the_blaster,Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}],ChargedProjectiles:[{id:\"minecraft:arrow\",Count:1b},{},{}],Charged:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:'{\"text\":\"Chain of Umbra\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Strike foes with a whip formed from shadows.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420133,um_id:\"chain_of_umbra\"}"
             }
           ]

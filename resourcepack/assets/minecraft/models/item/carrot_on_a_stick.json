@@ -458,6 +458,12 @@
         "custom_model_data": 420133
       },
       "model": "um:item/chain_of_umbra"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420134
+      },
+      "model": "um:item/obliteration"
     }
   ]
 }
