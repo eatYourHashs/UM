@@ -17,6 +17,8 @@ execute if score $length um.dummy matches 19 if data entity @s SelectedItem.tag{
 execute if score $length um.dummy matches 29 if data entity @s SelectedItem.tag{um_id:"mythical_dragon_egg_dismissed"} if score @s um.wyrmling_lvl matches 1.. run function undermagic:entity/wyrmling/summon
 execute if score $length um.dummy matches 28 if data entity @s SelectedItem.tag{um_id:"mythical_dragon_egg_summoned"} unless score @s um.cstick matches 0 run function undermagic:entity/wyrmling/dismiss
 
+execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"chain_of_umbra"} run function undermagic:item/weapon/chain_of_umbra/use
+
 #abyss warp/summon
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_the_nether run function undermagic:world/abyss/abyss_warp
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_abyss run function undermagic:world/abyss/nether_abyss_warp

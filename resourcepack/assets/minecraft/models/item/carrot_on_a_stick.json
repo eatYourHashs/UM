@@ -452,6 +452,12 @@
         "custom_model_data": 420132
       },
       "model": "um:entity/shadesull/shadesull_p2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420133
+      },
+      "model": "um:item/chain_of_umbra"
     }
   ]
 }

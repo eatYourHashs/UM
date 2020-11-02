@@ -10,6 +10,7 @@ execute if entity @s[tag=um_demon_flame] run function undermagic:entity/projecti
 execute if entity @s[tag=um_dragon_special] run function undermagic:entity/projectile/dragon_special_tick
 execute if entity @s[tag=um_spectral_sickle] run function undermagic:entity/projectile/spectral_sickle
 execute if entity @s[tag=um_bonus_sickle] run function undermagic:entity/projectile/bonus_sickle
+execute if entity @s[tag=um_chain_of_umbra] run function undermagic:item/weapon/chain_of_umbra/tick
 
 execute if entity @s[tag=um_fireshot] run scoreboard players add @s um.dummy_three 1
 execute if entity @s[tag=um_fireshot,scores={um.dummy_three=100..}] run kill @s
