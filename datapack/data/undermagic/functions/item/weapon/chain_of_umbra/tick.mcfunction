@@ -8,5 +8,6 @@ scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
 execute as @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2,tag=!um_wielder] run function undermagic:utils/damage_entity
 execute if entity @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2,tag=!um_wielder] run playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 1 1
+execute if entity @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2,tag=!um_wielder] run playsound minecraft:block.chain.break player @a ~ ~ ~ 1 0.5
 execute if entity @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2,tag=!um_wielder] run kill @s
 tag @a remove um_wielder
