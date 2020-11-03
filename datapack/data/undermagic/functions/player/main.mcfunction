@@ -19,6 +19,7 @@ execute as @s[scores={um.sneak=1..,um.jump=1..,um.ender_charms=2..}] at @s run f
 
 #effects
 execute if score @s um.flame_grasp matches 1.. run function undermagic:player/charms/flame_grasp
+execute if score @s um.oblit_prog matches 1.. run function undermagic:item/weapon/obliteration/caster_tick
 
 #damage
 execute as @s[scores={um.take_damage=1..}] run function undermagic:player/take_damage

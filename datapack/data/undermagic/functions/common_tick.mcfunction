@@ -24,6 +24,7 @@ function undermagic:boss/tick
 #Entities
 execute as @e[type=#undermagic:needs_processing,tag=!um_processed] at @s run function undermagic:entity/processing/process
 execute as @e[tag=um_entity] at @s run function undermagic:entity/entity_tick
+execute as @e[scores={um.oblit_mark=1..}] at @s run function undermagic:item/weapon/obliteration/target_tick
 
 #interval
 execute if score $timer_10 um.dummy matches 0 if predicate undermagic:probability/0.001 if score dragon_dead um.dummy matches 1 in minecraft:the_end at @r[distance=0..] run function undermagic:entity/wyrmling/spawn

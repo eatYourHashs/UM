@@ -14,3 +14,4 @@ execute if score nohit um.dummy matches 1 run function undermagic:boss/pit_lord/
 execute if score nohit um.dummy matches 1 run function undermagic:boss/shadesull/shadesull_end
 execute if score nohit um.dummy matches 1 run function undermagic:boss/blood_amalgam/blood_amalgam_end
 execute if score nohit um.dummy matches 1 run kill @s
+scoreboard players set @s um.oblit_prog 0

@@ -62,6 +62,8 @@ scoreboard objectives add um.wyrmling_xp dummy
 scoreboard objectives add um.mana dummy
 scoreboard objectives add um.mana_cd dummy
 scoreboard objectives add um.kill_count totalKillCount
+scoreboard objectives add um.oblit_prog dummy
+scoreboard objectives add um.oblit_mark dummy
 
 #scoreboard players init
 function undermagic:utils/init
