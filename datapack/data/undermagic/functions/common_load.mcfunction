@@ -64,6 +64,7 @@ scoreboard objectives add um.mana_cd dummy
 scoreboard objectives add um.kill_count totalKillCount
 scoreboard objectives add um.oblit_prog dummy
 scoreboard objectives add um.oblit_mark dummy
+scoreboard objectives add um.ak_count dummy
 
 #scoreboard players init
 function undermagic:utils/init
