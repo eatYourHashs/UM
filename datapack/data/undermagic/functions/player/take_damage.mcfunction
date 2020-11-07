@@ -15,3 +15,7 @@ execute if score nohit um.dummy matches 1 run function undermagic:boss/shadesull
 execute if score nohit um.dummy matches 1 run function undermagic:boss/blood_amalgam/blood_amalgam_end
 execute if score nohit um.dummy matches 1 run kill @s
 scoreboard players set @s um.oblit_prog 0
+execute if score @s um.panic_charms matches 1 run effect give @s speed 3 2
+execute if score @s um.panic_charms matches 2 run effect give @s speed 5 2
+execute if score @s um.panic_charms matches 3 run effect give @s speed 7 2
+execute if score @s um.panic_charms matches 4 run effect give @s speed 9 2
