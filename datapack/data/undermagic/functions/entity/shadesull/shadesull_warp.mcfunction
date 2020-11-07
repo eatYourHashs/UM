@@ -1,4 +1,4 @@
-execute store result score temp um.dummy_two run loot spawn 0 -10 0 loot undermagic:um_rand/rand1_12
+execute store result score temp um.dummy_two run loot spawn 0 -10 0 loot undermagic:technical/rand1_12
 execute if score temp um.dummy_two matches 1 at @p run tp @s ~10 ~ ~
 execute if score temp um.dummy_two matches 2 at @p run tp @s ~-10 ~ ~
 execute if score temp um.dummy_two matches 3 at @p run tp @s ~ ~ ~10

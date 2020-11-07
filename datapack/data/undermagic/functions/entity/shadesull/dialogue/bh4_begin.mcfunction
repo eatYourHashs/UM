@@ -1,4 +1,4 @@
-execute store result score rand um.dummy run loot spawn 0 -10 0 loot undermagic:um_rand/rand1_100
+execute store result score rand um.dummy run loot spawn 0 -10 0 loot undermagic:technical/rand1_100
 execute if score rand um.dummy matches 1..33 run tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#720080"},{"text":"I will destroy you!","color":"#E100FF"}]
 execute if score rand um.dummy matches 34..66 run tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#720080"},{"text":"I am the rightful ruler of this universe!","color":"#E100FF"}]
 execute if score rand um.dummy matches 67..100 run tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#720080"},{"text":"Your end approaches, in any case!","color":"#E100FF"}]

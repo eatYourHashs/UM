@@ -1,3 +1,3 @@
-execute store result score rand um.dummy run loot spawn 0 -10 0 loot undermagic:um_rand/rand1_100
+execute store result score rand um.dummy run loot spawn 0 -10 0 loot undermagic:technical/rand1_100
 execute if score rand um.dummy matches 1..33 run summon armor_stand ^ ^1 ^4 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["um.entity","global.ignore","um.healing_soul"]}
 execute if score rand um.dummy matches 34..100 run summon armor_stand ^ ^1 ^4 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["um.entity","global.ignore","um.offense_soul"]}
