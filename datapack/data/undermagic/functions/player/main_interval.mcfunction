@@ -18,7 +18,7 @@ execute if score difficulty um.dummy matches 2.. run loot give @s[scores={um.dra
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.wither_killed=1..}] loot undermagic:items/bone_of_wither
 
 #charms
-execute if score @s um.speed_charms matches 1.. run function undermagic:player/charms/speed
+execute if score @s um.spsi_charms matches 1.. run function undermagic:player/charms/spectre_sight
 execute if score @s um.resist_charms matches 1.. run function undermagic:player/charms/resistance
 execute if score @s um.streng_charms matches 1.. run function undermagic:player/charms/strength
 execute if score @s um.haste_charms matches 1.. run function undermagic:player/charms/haste
