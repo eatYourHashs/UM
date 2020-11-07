@@ -19,3 +19,8 @@ execute if score @s um.panic_charms matches 1 run effect give @s speed 3 2
 execute if score @s um.panic_charms matches 2 run effect give @s speed 5 2
 execute if score @s um.panic_charms matches 3 run effect give @s speed 7 2
 execute if score @s um.panic_charms matches 4 run effect give @s speed 9 2
+execute if score @s um.mc_charms matches 1 run scoreboard players add @s um.mana 20
+execute if score @s um.mc_charms matches 2 run scoreboard players add @s um.mana 30
+execute if score @s um.mc_charms matches 3 run scoreboard players add @s um.mana 40
+execute if score @s um.mc_charms matches 4.. run scoreboard players add @s um.mana 50
+execute if score @s um.mana matches 101.. run scoreboard players set @s um.mana 100
