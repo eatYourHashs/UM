@@ -1,0 +1,21 @@
+{
+  "um.name": "Undermagic",
+  "um.version": "Beta 34",
+  "um.name.hover_event": "Click here to go to the official website",
+  "um.version.hover_event": "Click here to see changelog notes",
+  "item.um.ebonquartz": "",
+  "item.um.mysterious_crystal": "",
+  "item.um.demon_skin": "",
+  "item.um.demon_bone": "",
+  "item.um.demon_sword_shard": "",
+  "item.um.demon_heart_stone": "",
+  "item.um.demonic_steel_ingot": "",
+  "item.um.demonic_steel_plate": "",
+  "item.um.
+
+
+  "block.um.charm_table": "Charm Table",
+  "block.um.pedestal": "Pedestal",
+
+  "entity.um.blood_nodule": "Blood Nodule"
+}
