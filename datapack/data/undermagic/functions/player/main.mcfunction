@@ -8,7 +8,9 @@ execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermag
 
 #charms
 execute if score @s um.swirl_charms matches 1.. if score @s um.deal_damage matches 1.. run function undermagic:player/charms/swirling
-execute if score @s um.dedstr_charms matches 1.. run function undermagic:player/charms/dedstr
+execute if score @s um.combo_charms matches 1.. run function undermagic:player/charms/combo
+execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic.attack_damage modifier remove a5c5148c-0568-47b8-a648-297e1a08cc0f
+execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic.attack_speed modifier remove f20361b0-655a-47be-bf66-d86c5522a37b
 execute if score @s um.shield_charms matches 1.. run function undermagic:player/charms/shield
 execute if score @s um.drain_charms matches 1.. run function undermagic:player/charms/drain
 execute if score @s um.reviv_cd matches 1.. run function undermagic:player/charms/revive
