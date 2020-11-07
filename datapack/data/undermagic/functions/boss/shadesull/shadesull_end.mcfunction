@@ -10,5 +10,5 @@ stopsound @a * um:boss_music.shadesull_p2
 function undermagic:boss/disciple_of_destruction/disciple_of_destruction_end
 function undermagic:boss/disciple_of_death/disciple_of_death_end
 
-tp @e[tag=um_shadesull] ~ -100 ~
-kill @e[tag=um_shadesull]
+tp @e[tag=um.shadesull] ~ -100 ~
+kill @e[tag=um.shadesull]

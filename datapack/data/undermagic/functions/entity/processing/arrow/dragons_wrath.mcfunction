@@ -1,6 +1,6 @@
 
-tag @s add um_dragons_proc
-tag @s add um_entity
+tag @s add um.dragons_proc
+tag @s add um.entity
 
 data merge entity @s {PierceLevel:1b}
 

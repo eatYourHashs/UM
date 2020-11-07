@@ -6,7 +6,7 @@ execute store result score rand um.dummy run loot spawn 0 -10 0 loot undermagic:
 scoreboard players remove rand um.dummy 11
 execute store result score z um.dummy run data get entity @s Pos[2] 1
 scoreboard players operation z um.dummy += rand um.dummy
-summon armor_stand ~ ~10 ~ {Tags:["global.ignore","um_entity","um_shadesull","um_shadesull_explosive_bullet","um_new_bullet"],NoGravity:1b,Invisible:1b,Marker:1b}
-execute store result entity @e[limit=1,tag=um_new_bullet] Pos[0] double 1 run scoreboard players get x um.dummy
-execute store result entity @e[limit=1,tag=um_new_bullet] Pos[2] double 1 run scoreboard players get z um.dummy
-tag @e[limit=1,tag=um_new_bullet] remove um_new_bullet
+summon armor_stand ~ ~10 ~ {Tags:["global.ignore","um.entity","um.shadesull","um.shadesull_explosive_bullet","um.new_bullet"],NoGravity:1b,Invisible:1b,Marker:1b}
+execute store result entity @e[limit=1,tag=um.new_bullet] Pos[0] double 1 run scoreboard players get x um.dummy
+execute store result entity @e[limit=1,tag=um.new_bullet] Pos[2] double 1 run scoreboard players get z um.dummy
+tag @e[limit=1,tag=um.new_bullet] remove um.new_bullet

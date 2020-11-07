@@ -13,4 +13,4 @@ scoreboard players add world um.familiar_id 1
 scoreboard players operation @s um.familiar_id = world um.familiar_id
 tellraw @s ["",{"text":"This world is running ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs. Please download the resource pack to play.","color":"red","bold":false}]
 tellraw @s ["",{"text":"Click here to download it at Planet Minecraft.","color":"red","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/undermagic/"}},{"text":" This message will only display once.","color":"gray","italic":true,"underlined":false}]
-tag @s add um_processed
+tag @s add um.processed

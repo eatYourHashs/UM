@@ -9,8 +9,8 @@ execute if score $length um.dummy matches 24 if data entity @s SelectedItem.tag{
 execute if score $length um.dummy matches 20 if data entity @s SelectedItem.tag{um_id:"charm_swapping_sigil"} run function undermagic:item/tool/swap_charms
 execute if score $length um.dummy matches 17 if data entity @s SelectedItem.tag{um_id:"phantasmal_dagger"} run function undermagic:item/weapon/throw_dagger
 execute if score $length um.dummy matches 19 if data entity @s SelectedItem.tag{um_id:"recall_locator_card"} run function undermagic:item/tool/recall_card
-execute if score $length um.dummy matches 12 if data entity @s SelectedItem.tag{um_id:"locator_card"} if entity @e[tag=um_teleporter,distance=..5] run function undermagic:item/tool/bind_card
-execute if score $length um.dummy matches 17 if data entity @s SelectedItem.tag{um_id:"sanguis_inspector"} run tellraw @s [{"score":{"name":"@e[distance=..5,limit=1,tag=um_bloodchalice,sort=nearest]","objective":"um.dummy"},"color":"red","bold":true},{"text":" blood in chalice.","color":"red","bold":false}]
+execute if score $length um.dummy matches 12 if data entity @s SelectedItem.tag{um_id:"locator_card"} if entity @e[tag=um.teleporter,distance=..5] run function undermagic:item/tool/bind_card
+execute if score $length um.dummy matches 17 if data entity @s SelectedItem.tag{um_id:"sanguis_inspector"} run tellraw @s [{"score":{"name":"@e[distance=..5,limit=1,tag=um.bloodchalice,sort=nearest]","objective":"um.dummy"},"color":"red","bold":true},{"text":" blood in chalice.","color":"red","bold":false}]
 execute if score $length um.dummy matches 17 if data entity @s SelectedItem.tag{um_id:"sanguis_inspector"} as @s[nbt={Inventory:[{id:"minecraft:leather_helmet",Count:1b,Slot:103b,tag:{um_id:"bloodstained_helmet"}},{id:"minecraft:leather_chestplate",Count:1b,Slot:102b,tag:{um_id:"bloodstained_chestplate"}},{id:"minecraft:leather_leggings",Count:1b,Slot:101b,tag:{um_id:"bloodstained_leggings"}},{id:"minecraft:leather_boots",Count:1b,Slot:100b,tag:{um_id:"bloodstained_boots"}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"sanguis_inspector"}}}] at @s run tellraw @s [{"score":{"name":"@s","objective":"um.blood"},"color":"red","bold":true},{"text":" blood in armor.","color":"red","bold":false}]
 
 execute if score $length um.dummy matches 19 if data entity @s SelectedItem.tag{um_id:"mythical_dragon_egg"} unless score @s um.wyrmling_lvl matches 1.. run function undermagic:entity/wyrmling/get
@@ -23,7 +23,7 @@ execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_the_nether run function undermagic:world/abyss/abyss_warp
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_abyss run function undermagic:world/abyss/nether_abyss_warp
 execute if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"crown_of_ruin"} if predicate undermagic:in_abyss run function undermagic:entity/shadesull/summon
-tag @s remove um_abyss_warped
+tag @s remove um.abyss_warped
 
 #staves
 scoreboard players set temp um.dummy 0

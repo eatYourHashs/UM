@@ -2,7 +2,7 @@ scoreboard players add @s um.oblit_mark 1
 particle minecraft:portal ~ ~ ~ 0 0 0 1 20
 execute if score @s um.oblit_mark matches 30.. run particle minecraft:reverse_portal ~ ~ ~ 0 0 0 3 40
 execute if score @s um.oblit_mark matches 30.. run particle minecraft:explosion ~ ~ ~ 4 4 4 0 10
-execute unless entity @s[tag=um_untargetable] run effect clear @s resistance
+execute unless entity @s[tag=um.untargetable] run effect clear @s resistance
 scoreboard players set $math.in_0 um.dummy 500
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0

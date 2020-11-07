@@ -22,8 +22,8 @@ execute as @a at @s run function undermagic:player/main
 function undermagic:boss/tick
 
 #Entities
-execute as @e[type=#undermagic:needs_processing,tag=!um_processed] at @s run function undermagic:entity/processing/process
-execute as @e[tag=um_entity] at @s run function undermagic:entity/entity_tick
+execute as @e[type=#undermagic:needs_processing,tag=!um.processed] at @s run function undermagic:entity/processing/process
+execute as @e[tag=um.entity] at @s run function undermagic:entity/entity_tick
 execute as @e[scores={um.oblit_mark=1..}] at @s run function undermagic:item/weapon/obliteration/target_tick
 
 #interval

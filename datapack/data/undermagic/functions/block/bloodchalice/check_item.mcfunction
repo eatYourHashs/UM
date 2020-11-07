@@ -41,7 +41,7 @@ execute if data storage undermagic:common obj.tag{um_id:"sanguine_eye"} run func
 execute if data storage undermagic:common obj{id:"minecraft:pufferfish"} run effect give @p poison 20 2
 
 #calc total
-tag @s add um_chalice_check
+tag @s add um.chalice_check
 execute store result score temp_1 um.dummy run data get entity @s Item.Count
 execute if score temp um.dummy matches 1.. run kill @s
 

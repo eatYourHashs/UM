@@ -1,5 +1,5 @@
 
-tag @s add um_damage_2
+tag @s add um.damage_2
 
 execute if score $entity.temp_0 du_data matches 500.. run attribute @s minecraft:generic.max_health modifier add a-b-c-d-2f "generic.max_health" -50 add
 execute if score $entity.temp_0 du_data matches 500.. run scoreboard players remove $entity.temp_0 du_data 500

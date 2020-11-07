@@ -1,5 +1,5 @@
 
-tag @s remove um_damage_0
+tag @s remove um.damage_0
 
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-0
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-1

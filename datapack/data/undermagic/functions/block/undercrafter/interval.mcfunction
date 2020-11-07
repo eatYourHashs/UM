@@ -19,8 +19,8 @@ execute unless block ~ ~1 ~ minecraft:barrel{Items:[{Slot:25b}]} run replaceitem
 execute unless block ~ ~1 ~ minecraft:barrel{Items:[{Slot:26b}]} run replaceitem block ~ ~1 ~ container.26 minecraft:clock{CustomModelData:420094,um_gui:1b,display:{Name:"\"\""}} 1
 
 #check recipes
-execute if entity @s[tag=!um_has_recipe] if data block ~ ~1 ~ Items[17] unless block ~ ~1 ~ minecraft:barrel{Items:[{Slot:16b}]} run function undermagic:block/undercrafter/check_recipes
+execute if entity @s[tag=!um.has_recipe] if data block ~ ~1 ~ Items[17] unless block ~ ~1 ~ minecraft:barrel{Items:[{Slot:16b}]} run function undermagic:block/undercrafter/check_recipes
 
 #blueprints
-execute if entity @e[distance=..3,type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"blueprint_ice_bow"}}}] run tag @s add um_know_ice_bow
-execute if entity @e[distance=..3,type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"blueprint_shadow_shield"}}}] run tag @s add um_know_shadow_shield
+execute if entity @e[distance=..3,type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"blueprint_ice_bow"}}}] run tag @s add um.know_ice_bow
+execute if entity @e[distance=..3,type=item,nbt={Item:{id:"minecraft:clock",Count:1b,tag:{um_id:"blueprint_shadow_shield"}}}] run tag @s add um.know_shadow_shield

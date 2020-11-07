@@ -1,6 +1,6 @@
 
-tag @s add um_blaster_proc
-tag @s add um_entity
+tag @s add um.blaster_proc
+tag @s add um.entity
 
 data merge entity @s {pickup:0b}
 

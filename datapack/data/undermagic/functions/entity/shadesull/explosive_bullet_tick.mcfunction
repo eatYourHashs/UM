@@ -6,7 +6,7 @@ scoreboard players add @s um.dummy 1
 execute if score @s um.dummy matches 140.. run kill @s
 execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air run summon tnt ~ ~0.1 ~
 execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air run kill @s
-execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air if score @e[tag=um_shadesull_boss,limit=1,sort=nearest] um.boss_hp matches ..400 run function undermagic:entity/shadesull/explosive_orb
+execute unless block ~ ~ ~ air unless block ~ ~ ~ cave_air if score @e[tag=um.shadesull_boss,limit=1,sort=nearest] um.boss_hp matches ..400 run function undermagic:entity/shadesull/explosive_orb
 execute if score difficulty um.dummy matches 0 run scoreboard players set $math.in_0 um.dummy 300
 execute if score difficulty um.dummy matches 1 run scoreboard players set $math.in_0 um.dummy 400
 execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 500

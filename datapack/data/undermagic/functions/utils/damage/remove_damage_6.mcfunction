@@ -1,5 +1,5 @@
 
-tag @s remove um_damage_6
+tag @s remove um.damage_6
 
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-60
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-61

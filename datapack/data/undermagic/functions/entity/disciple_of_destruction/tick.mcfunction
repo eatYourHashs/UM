@@ -17,4 +17,4 @@ bossbar set undermagic:disciple_of_destruction visible true
 execute store result score @s um.boss_hp run data get entity @s Health 1
 execute store result bossbar undermagic:disciple_of_destruction value run data get entity @s Health 1
 effect give @s invisibility 2 1 true
-tp @e[sort=nearest,limit=1,tag=um_disciple_of_destruction_model] @s
+tp @e[sort=nearest,limit=1,tag=um.disciple_of_destruction_model] @s

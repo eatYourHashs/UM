@@ -3,7 +3,7 @@
 execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor_interval
 
 #player processing
-execute if entity @s[tag=!um_processed] run function undermagic:player/processing
+execute if entity @s[tag=!um.processed] run function undermagic:player/processing
 execute if score @s version < undermagic load run function undermagic:player/update
 
 #effects
@@ -24,10 +24,10 @@ execute if score @s um.streng_charms matches 1.. run function undermagic:player/
 execute if score @s um.haste_charms matches 1.. run function undermagic:player/charms/haste
 execute if score @s um.jump_charms matches 1.. run function undermagic:player/charms/jump
 execute if score @s um.aqua_charms matches 1.. run function undermagic:player/charms/aqua
-execute if entity @s[tag=um_ele_limbs] run function undermagic:player/charms/ele_limbs
-effect give @s[tag=um_ironskin] resistance 1 1 true
-effect give @s[tag=um_flame_body] fire_resistance 1 0 true
-effect give @s[tag=um_drac_aspect] resistance 1 2 true
+execute if entity @s[tag=um.ele_limbs] run function undermagic:player/charms/ele_limbs
+effect give @s[tag=um.ironskin] resistance 1 1 true
+effect give @s[tag=um.flame_body] fire_resistance 1 0 true
+effect give @s[tag=um.drac_aspect] resistance 1 2 true
 
 #scoreboard
 execute if score @s um.dragon_killed matches 1.. run scoreboard players set dragon_dead um.dummy 1

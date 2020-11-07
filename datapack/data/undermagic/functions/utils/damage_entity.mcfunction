@@ -86,19 +86,19 @@ scoreboard players operation $math.temp_0 um.dummy = $math.out_1 um.dummy
 scoreboard players operation $math.temp_1 um.dummy -= $math.out_0 um.dummy
 scoreboard players operation $math.temp_0 um.dummy -= $math.temp_1 um.dummy
 
-tag @s add um_damage_reset
+tag @s add um.damage_reset
 schedule function undermagic:utils/damage/damage_reset 1t
 execute if score $math.temp_0 um.dummy >= $math.out_1 um.dummy run kill @s[gamemode=!creative,gamemode=!spectator]
 
-execute if score $timer_10 um.dummy matches 0 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_0
-execute if score $timer_10 um.dummy matches 1 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_1
-execute if score $timer_10 um.dummy matches 2 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_2
-execute if score $timer_10 um.dummy matches 3 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_3
-execute if score $timer_10 um.dummy matches 4 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_4
-execute if score $timer_10 um.dummy matches 5 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_5
-execute if score $timer_10 um.dummy matches 6 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_6
-execute if score $timer_10 um.dummy matches 7 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_7
-execute if score $timer_10 um.dummy matches 8 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_8
-execute if score $timer_10 um.dummy matches 9 if entity @s[tag=um_damage_reset] run function undermagic:utils/damage/apply_damage_9
+execute if score $timer_10 um.dummy matches 0 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_0
+execute if score $timer_10 um.dummy matches 1 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_1
+execute if score $timer_10 um.dummy matches 2 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_2
+execute if score $timer_10 um.dummy matches 3 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_3
+execute if score $timer_10 um.dummy matches 4 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_4
+execute if score $timer_10 um.dummy matches 5 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_5
+execute if score $timer_10 um.dummy matches 6 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_6
+execute if score $timer_10 um.dummy matches 7 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_7
+execute if score $timer_10 um.dummy matches 8 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_8
+execute if score $timer_10 um.dummy matches 9 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_9
 
 scoreboard players set @s[type=player] um.invuln 0

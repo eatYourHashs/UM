@@ -3,7 +3,7 @@
 execute store result score $length um.dummy run data get entity @s Inventory[{Slot:102b}].tag.um_id
 
 #check armor
-execute if score $length um.dummy matches 23 if score @s um.blood matches ..195 if entity @s[predicate=undermagic:armor_sets/bloodstained] if entity @e[tag=um_bloodchalice,scores={um.dummy=5..},sort=nearest,distance=..8] unless entity @e[distance=..64,type=wither] unless entity @e[distance=..64,tag=um_elemental] unless entity @e[distance=..64,tag=um_pit_lord_boss] unless entity @e[distance=..64,tag=um_blood_boss] unless entity @e[distance=..64,type=ender_dragon] run function undermagic:item/armor/bs_armor_draw_blood
+execute if score $length um.dummy matches 23 if score @s um.blood matches ..195 if entity @s[predicate=undermagic:armor_sets/bloodstained] if entity @e[tag=um.bloodchalice,scores={um.dummy=5..},sort=nearest,distance=..8] unless entity @e[distance=..64,type=wither] unless entity @e[distance=..64,tag=um.elemental] unless entity @e[distance=..64,tag=um.pit_lord_boss] unless entity @e[distance=..64,tag=um.blood_boss] unless entity @e[distance=..64,type=ender_dragon] run function undermagic:item/armor/bs_armor_draw_blood
 execute if score $length um.dummy matches 23 if score @s um.blood matches ..010 if entity @s[predicate=undermagic:armor_sets/bloodstained] run effect give @s wither 4 4
 execute if score $length um.dummy matches 23 if score @s um.blood matches ..010 if entity @s[predicate=undermagic:armor_sets/bloodstained] run effect give @s hunger 4 4
 

@@ -1,6 +1,6 @@
 
-tag @s add um_greatbow_proc
-tag @s add um_entity
+tag @s add um.greatbow_proc
+tag @s add um.entity
 
 data merge entity @s {PierceLevel:10b}
 

@@ -1,2 +1,2 @@
 setblock ~ ~ ~ dropper[facing=up]
-tag @s remove um_needs_dropper
+tag @s remove um.needs_dropper

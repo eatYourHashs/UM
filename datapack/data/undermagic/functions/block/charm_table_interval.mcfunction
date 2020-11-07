@@ -1,9 +1,9 @@
 
 data merge entity @s {Rotation:[90F,0F],Fire:100}
 
-execute if entity @s[tag=um_needs_dropper] run setblock ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Charm Table","italic":false}'}
-execute if entity @s[tag=um_needs_dropper] run tag @s remove um_needs_dropper
-execute if block ~ ~ ~ air run give @p minecraft:shulker_spawn_egg{display:{Name:'{"text":"Charm Table","color":"yellow","italic":false}',Lore:['{"text":"Used to charm armor.","color":"gray","italic":false}']},CustomModelData:420080,um_id:charm_table,EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Invulnerable:1b,Fire:1000,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["global.ignore","um_entity","um_charm_table","um_needs_dropper"],Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:shulker_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Charm Table","color":"yellow","italic":false}',Lore:['{"text":"Used to charm armor.","color":"gray","italic":false}']},CustomModelData:420080,um_id:charm_table,EntityTag:{id:"minecraft:armor_stand",Tags:["global.ignore","um_entity","um_charm_table","um_needs_dropper"]}}}]}} 1
+execute if entity @s[tag=um.needs_dropper] run setblock ~ ~ ~ dropper[facing=up]{CustomName:'{"text":"Charm Table","italic":false}'}
+execute if entity @s[tag=um.needs_dropper] run tag @s remove um.needs_dropper
+execute if block ~ ~ ~ air run give @p minecraft:shulker_spawn_egg{display:{Name:'{"text":"Charm Table","color":"yellow","italic":false}',Lore:['{"text":"Used to charm armor.","color":"gray","italic":false}']},CustomModelData:420080,um_id:charm_table,EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Invulnerable:1b,Fire:1000,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["global.ignore","um.entity","um.charm_table","um.needs_dropper"],Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:shulker_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Charm Table","color":"yellow","italic":false}',Lore:['{"text":"Used to charm armor.","color":"gray","italic":false}']},CustomModelData:420080,um.id:charm_table,EntityTag:{id:"minecraft:armor_stand",Tags:["global.ignore","um.entity","um.charm_table","um.needs_dropper"]}}}]}} 1
 execute if block ~ ~ ~ air run kill @e[type=item,distance=..2,nbt={Item:{id:"minecraft:dropper",Count:1b}}]
 execute if block ~ ~ ~ air run kill @s
 particle minecraft:enchant ~ ~1.2 ~ 0 0 0 0.4 4
