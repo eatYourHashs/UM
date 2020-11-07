@@ -51,6 +51,7 @@ scoreboard objectives add um.kinet_charms dummy
 scoreboard objectives add um.swirl_charms dummy
 scoreboard objectives add um.blaze_charms dummy
 scoreboard objectives add um.count_charms dummy
+scoreboard objectives add um.crit_charms dummy
 scoreboard objectives add um.tp_cooldown dummy
 scoreboard objectives add um.tp_id dummy
 scoreboard objectives add um.drag_animate dummy
