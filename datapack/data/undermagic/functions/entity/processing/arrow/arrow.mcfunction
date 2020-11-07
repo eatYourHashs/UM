@@ -13,3 +13,5 @@ execute if entity @s[tag=um.oathbow_proc] run kill @s
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"bow_ice"}}}] run tag @s add um.icebow_proc
 execute if entity @s[tag=um.icebow_proc] as @p at @s run function undermagic:entity/projectile/shoot_ice_bolt
 execute if entity @s[tag=um.icebow_proc] run kill @s
+
+execute if entity @p[distance=..2,scores={um.supchg_cd=30..}] run function undermagic:entity/processing/arrow/supercharge

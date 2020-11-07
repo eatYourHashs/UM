@@ -19,6 +19,7 @@ execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.wit
 
 #charms
 execute if score @s um.spsi_charms matches 1.. run function undermagic:player/charms/spectre_sight
+execute if score @s um.supchg_charms matches 1.. run function undermagic:player/charms/supercharge
 execute if score @s um.resist_charms matches 1.. run function undermagic:player/charms/resistance
 execute if score @s um.streng_charms matches 1.. run function undermagic:player/charms/strength
 execute if score @s um.haste_charms matches 1.. run function undermagic:player/charms/haste
