@@ -1,6 +1,6 @@
 #Nexus was here
+#CreeperMagnet_ was here
 #Scoreboard objective Init
-scoreboard objectives add um.dummy dummy
 scoreboard objectives add um.dummy_two dummy
 scoreboard objectives add um.dummy_three dummy
 scoreboard objectives add um.dummy_four dummy
@@ -67,10 +67,38 @@ scoreboard objectives add um.oblit_mark dummy
 scoreboard objectives add um.ak_count dummy
 
 #scoreboard players init
-function undermagic:utils/init
+
+# Define Constants
+scoreboard players set five um.dummy 5
+scoreboard players set 100 um.dummy 100
+
+scoreboard players set $cons.rng_a um.dummy 1103515245
+execute store result score $cons.rng_seed um.dummy run data get entity @e[limit=1,sort=random] UUID[0]
+
+scoreboard players set $cons.-100 um.dummy -100
+scoreboard players set $cons.-25 um.dummy -25
+scoreboard players set $cons.-10 um.dummy -10
+scoreboard players set $cons.-5 um.dummy -5
+scoreboard players set $cons.-3 um.dummy -3
+scoreboard players set $cons.-2 um.dummy -1
+scoreboard players set $cons.-1 um.dummy -1
+scoreboard players set $cons.2 um.dummy 2
+scoreboard players set $cons.3 um.dummy 3
+scoreboard players set $cons.4 um.dummy 4
+scoreboard players set $cons.5 um.dummy 5
+scoreboard players set $cons.10 um.dummy 10
+scoreboard players set $cons.16 um.dummy 16
+scoreboard players set $cons.25 um.dummy 25
+scoreboard players set $cons.100 um.dummy 100
+
+# Init Static Region
+execute in minecraft:overworld run forceload add -29999999 1600
+execute in minecraft:overworld run setblock -29999998 0 1601 minecraft:black_shulker_box
+execute in minecraft:overworld run setblock -29999998 0 1602 minecraft:oak_wall_sign[facing=south]
+execute in minecraft:overworld run fill -29999998 1 1600 -29999998 1 1615 minecraft:bedrock
 execute unless score difficulty um.dummy matches 0.. run scoreboard players set difficulty um.dummy 1
 
-#bossbard
+#bossbars
 bossbar add undermagic:pit_lord "Pit Lord"
 bossbar set undermagic:pit_lord max 400
 bossbar set undermagic:pit_lord style progress
@@ -111,7 +139,7 @@ bossbar set undermagic:disciple_of_death color purple
 forceload add ~ ~ ~ ~
 
 #set load version
-scoreboard players set undermagic load 34
+scoreboard players set um.server_version um.dummy 34
 
 #init storage
 data merge storage undermagic:common {list:[],obj:[],var:""}
@@ -119,4 +147,3 @@ data merge storage undermagic:common {list:[],obj:[],var:""}
 #Load Messages
 tellraw @a ["",{"text":"Loaded and installed ","color":"red"},{"text":"Undermagic","color":"dark_red","bold":true},{"text":" by Hashs.","color":"red","bold":false}]
 tellraw @a ["",{"text":"To begin, place an item frame with a book in it above a netherrack-lit fire.","color":"red"}]
-

@@ -1,5 +1,5 @@
 {
-    "values": [
-		"undermagic:common_tick"
-	]
+  "values": [
+    "undermagic:technical/tick"
+  ]
 }
