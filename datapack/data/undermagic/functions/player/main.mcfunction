@@ -7,7 +7,7 @@ execute if data entity @s Inventory[{Slot:-106b}].tag.um_id run function underma
 execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor
 
 #charms
-execute if score @s um.slowfa_charms matches 1.. run function undermagic:player/charms/slowfa
+execute if score @s um.swirl_charms matches 1.. if score @s um.deal_damage matches 1.. run function undermagic:player/charms/swirling
 execute if score @s um.dedstr_charms matches 1.. run function undermagic:player/charms/dedstr
 execute if score @s um.shield_charms matches 1.. run function undermagic:player/charms/shield
 execute if score @s um.drain_charms matches 1.. run function undermagic:player/charms/drain
