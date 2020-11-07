@@ -102,3 +102,7 @@ execute if score $timer_10 um.dummy matches 8 if entity @s[tag=um.damage_reset] 
 execute if score $timer_10 um.dummy matches 9 if entity @s[tag=um.damage_reset] run function undermagic:utils/damage/apply_damage_9
 
 scoreboard players set @s[type=player] um.invuln 0
+scoreboard players set @s[type=player,scores={um.imm_charms=1}] um.invuln -5
+scoreboard players set @s[type=player,scores={um.imm_charms=2}] um.invuln -10
+scoreboard players set @s[type=player,scores={um.imm_charms=3}] um.invuln -15
+scoreboard players set @s[type=player,scores={um.imm_charms=4}] um.invuln -20
