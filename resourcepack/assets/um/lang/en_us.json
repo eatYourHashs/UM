@@ -3,19 +3,94 @@
   "um.version": "Beta 34",
   "um.name.hover_event": "Click here to go to the official website",
   "um.version.hover_event": "Click here to see changelog notes",
-  "item.um.ebonquartz": "",
-  "item.um.mysterious_crystal": "",
-  "item.um.demon_skin": "",
-  "item.um.demon_bone": "",
-  "item.um.demon_sword_shard": "",
-  "item.um.demon_heart_stone": "",
-  "item.um.demonic_steel_ingot": "",
-  "item.um.demonic_steel_plate": "",
-  "item.um.
 
+  "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
+  "item.um.abyss_knight_chestplate": "Abyss Knight Chestplate",
+  "item.um.abyss_knight_leggings": "Abyss Knight Leggings",
+  "item.um.abyss_knight_boots": "Abyss Knight Boots",
+  "item.um.abyss_knight_set.lore.0": "Ancient knowledge of blades seems to seep into your soul",
+  "item.um.abyss_knight_set.lore.1": "Buffs melee strikes and summons blades when you strike foes",
 
-  "block.um.charm_table": "Charm Table",
-  "block.um.pedestal": "Pedestal",
+  "item.um.abyss_ranger_helmet": "Abyss Ranger Helmet",
+  "item.um.abyss_ranger_chestplate": "Abyss Ranger Chestplate",
+  "item.um.abyss_ranger_leggings": "Abyss Ranger Leggings",
+  "item.um.abyss_ranger_boots": "Abyss Ranger Boots",
+  "item.um.abyss_ranger_set.lore.0": "Light seems to bend around the fabric",
+  "item.um.abyss_ranger_set.lore.1": "Grants stealth and empowers arrow-firing weapons",
 
-  "entity.um.blood_nodule": "Blood Nodule"
+  "item.um.abyss_warlock_helmet": "Abyss Warlock Helmet",
+  "item.um.abyss_warlock_chestplate": "Abyss Warlock Chestplate",
+  "item.um.abyss_warlock_leggings": "Abyss Warlock Leggings",
+  "item.um.abyss_warlock_boots": "Abyss Warlock Boots",
+  "item.um.abyss_warlock_set.lore.0": "A power from beyond tugs at this armor",
+  "item.um.abyss_warlock_set.lore.1": "Boosts mana regen and summons eldritch hands to your side",
+
+  "item.um.abyss_shard": "Abyss Shard",
+  "item.um.abyssal_mirror": "Abyssal Mirror",
+  "item.um.abyssal_mirror.lore": "Use in the Nether to go to the Abyss.",
+
+  "item.um.blood_rain_staff": "Blood Rain Staff",
+  "item.um.blood_rain_staff.lore.0.tier_1": "Tier 1 - 50 Blood to next tier",
+  "item.um.blood_rain_staff.lore.0.tier_2": "Tier 2 - 250 Blood to next tier",
+  "item.um.blood_rain_staff.lore.0.tier_3": "Tier 3 - Maxed",
+  "item.um.blood_rain_staff.lore.1.normal": "Drips harmful blood and may be upgraded via Blood Infusion",
+  "item.um.blood_rain_staff.lore.1.tier_3": "Rains death upon foes",
+
+  "item.um.bloodstained_helmet": "Bloodstained Helmet",
+  "item.um.bloodstained_chestplate": "Bloodstained Chestplate",
+  "item.um.bloodstained_chestplate.lore.upgraded": "Upgraded using the Bloodstained Heart",
+  "item.um.bloodstained_leggings": "Bloodstained Leggings",
+  "item.um.bloodstained_boots": "Bloodstained Boots",
+  "item.um.bloodstained_set.lore": "Drains blood from Chalices for healing",
+
+  "item.um.bloodstone": "Bloodstone",
+
+  "item.um.bloody_edge": "Bloody Edge",
+  "item.um.bloody_edge.lore.0.tier_1": "Tier 1 - 50 Blood to next tier",
+  "item.um.bloody_edge.lore.0.tier_2": "Tier 2 - 250 Blood to next tier",
+  "item.um.bloody_edge.lore.0.tier_3": "Tier 3 - Maxed",
+  "item.um.bloody_edge.lore.1.normal": "May be upgraded via Blood Infusion",
+  "item.um.bloody_edge.lore.1.tier_3": "Heals you on a hit",
+
+  "item.um.bone_of_wither": "Bone of Wither",
+  "item.um.bone_of_wither.lore": "Protects against wither and shoots skulls",
+
+  "item.um.carnage": "Carnage",
+  "item.um.carnage.lore.0.tier_1": "Tier 1 - 50 Blood to next tier",
+  "item.um.carnage.lore.0.tier_2": "Tier II - 500 Blood to next tier",
+  "item.um.carnage.lore.0.tier_3": "Tier III - Maxed",
+  "itme.um.carnage.lore.1.normal": "Mining tool that may be upgraded through Blood Infusion",
+  "item.um.carnage.lore.1.tier_3": "Crushes stone and bone with equal ease",
+
+  "item.um.crown_of_ruin": "Crown of Ruin",
+  "item.um.crown_of_ruin.lore.0": "Call upon the overlord of the Abyss...",
+  "item.um.crown_of_ruin.lore.1": "Must be used within the Abyss",
+
+  "item.um.crystallized_blood_essence": "Crystallized Blood Essence",
+
+  "item.um.dark_crystal_heart": "Dark Crystal Heart",
+  "item.um.demon_bone": "Demon Bone",
+  "item.um.demon_flame_scepter": "Demon Bone",
+  "item.um.demon_flame_scepter.lore": "Launches demon fire that lights the ground aflame",
+  "item.um.demon_heart_stone": "Demon Heart Stone",
+  "item.um.demon_portal_stabilizer": "Demon Portal Stabilizer",
+  "item.um.demon_skin": "Demon Skin",
+  "item.um.demon_sword_shard": "Demon Sword Shard",
+
+  "item.um.demonic_steel_helmet": "",
+  "item.um.demonic_steel_chestplate": "",
+  "item.um.demonic_steel_leggings": "",
+  "item.um.demonic_steel_boots": "",
+  "item.um.demonic_steel_set.lore": "Protects its wearer with dark energy",
+
+  "item.um.demonic_steel_ingot": "Demonic Steel Ingot",
+  "item.um.demonic_steel_ingot.lore": "Strong metal forged from demon essence",
+  "item.um.demonic_steel_plate": "Demonic Steel Plate",
+  "item.um.demonic_steel_plate.lore": "Heavy plate of metal, used to make armor and weapons",
+
+  "lore.um.lunatic_drop": "Lunatic Drop",
+  "lore.um.lunatic_drop_obfuscation": "a %s b",
+
+  "block.um.blood_monolith": "Blood Monolith",
+  "block.um.blood_monolith.lore": "Boosts a Blood Chalice to Tier IV",
 }
