@@ -9,7 +9,7 @@
   "item.um.abyss_knight_leggings": "Abyss Knight Leggings",
   "item.um.abyss_knight_boots": "Abyss Knight Boots",
   "item.um.abyss_knight_set.lore.0": "Ancient knowledge of blades seems to seep into your soul",
-  "item.um.abyss_knight_set.lore.1": "Buffs melee strikes and summons blades when you strike foes",
+  "item.um.abyss_knight_set.lore.1": "Buffs melee strikes and allows you to deal 2x damage sometimes",
 
   "item.um.abyssal_longsword": "Abyssal Longsword",
   "item.um.abyssal_longsword.lore.0": "Use while sheathed to Quick Draw",
@@ -174,7 +174,7 @@
 
   "item.um.shade_walker_hood": "Shade Walker Hood",
   "item.um.shade_walker_robe": "Shade Walker Robe",
-  "item.um.shade_walker_leggings": "Shade Walker Tabard",
+  "item.um.shade_walker_leggings": "Shade Walker Pants",
   "item.um.shade_walker_shoes": "Shade Walker Shoes",
   "item.um.shade_walker_set.lore": "A dark armor made of Shadecloth",
 
@@ -189,7 +189,7 @@
   "item.um.shadow_chestplate": "Shadow Chestplate",
   "item.um.shadow_leggings": "Shadow Leggings",
   "item.um.shadow_boots": "Shadow Boots",
-  "item.um.shadow_set.lore": "This is better than diamond. Very unique lore, Hashs. Thank you.",
+  "item.um.shadow_set.lore": "A superior armor to most others in toughness",
 
   "item.um.shadow_guardian_bulwark": "Shadow Guardian's Bulwark",
   "item.um.shadow_guardian_bulwark.lore.0": "Summons a shadow guardian when held in the offhand",
