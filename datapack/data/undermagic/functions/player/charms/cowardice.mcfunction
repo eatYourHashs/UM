@@ -1,0 +1,6 @@
+execute store result score temp0 um.dummy run attribute @s minecraft:generic.max_health get
+execute store result score temp1 um.dummy run data get entity @s Health
+execute if score temp1 um.dummy = temp0 um.dummy if score @s um.coward_charms matches 1 run attribute @s minecraft:generic.attack_damage modifier add cdbac472-06be-4940-935b-bad65c21dfba cowardice 0.2 multiply
+execute if score temp1 um.dummy = temp0 um.dummy if score @s um.coward_charms matches 2 run attribute @s minecraft:generic.attack_damage modifier add cdbac472-06be-4940-935b-bad65c21dfba cowardice 0.3 multiply
+execute if score temp1 um.dummy = temp0 um.dummy if score @s um.coward_charms matches 3 run attribute @s minecraft:generic.attack_damage modifier add cdbac472-06be-4940-935b-bad65c21dfba cowardice 0.4 multiply
+execute if score temp1 um.dummy = temp0 um.dummy if score @s um.coward_charms matches 4.. run attribute @s minecraft:generic.attack_damage modifier add cdbac472-06be-4940-935b-bad65c21dfba cowardice 0.5 multiply
