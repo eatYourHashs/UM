@@ -22,6 +22,11 @@ execute if score @s um.spsi_charms matches 1.. run function undermagic:player/ch
 execute if score @s um.supchg_charms matches 1.. run function undermagic:player/charms/supercharge
 execute if score @s um.coward_charms matches 1.. run function undermagic:player/charms/cowardice
 execute if score @s um.coward_charms matches 0 run attribute @s minecraft:generic.attack_damage modifier remove cdbac472-06be-4940-935b-bad65c21dfba
+execute if score @s um.frenzy_charms matches 1.. run function undermagic:player/charms/frenzy
+execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.attack_damage modifier remove 23520e02-f308-40f4-a919-5e03bd775fb2
+execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.movement_speed modifier remove 121860d1-f4f0-4f0b-b7f5-9fbaf0ec1f3d
+execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.armor_toughness modifier remove 7fad711d-14d8-4526-9443-a8ff4d8e7d3f
+execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.attack_speed modifier remove 8c2e8910-0cec-4289-898a-3af402afa755
 execute if score @s um.resist_charms matches 1.. run function undermagic:player/charms/resistance
 execute if score @s um.streng_charms matches 1.. run function undermagic:player/charms/strength
 execute if score @s um.haste_charms matches 1.. run function undermagic:player/charms/haste
