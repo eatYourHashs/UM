@@ -71,6 +71,9 @@ scoreboard objectives add um.oblit_mark dummy
 scoreboard objectives add um.ak_count dummy
 scoreboard objectives add um.supchg_cd dummy
 scoreboard objectives add um.combo dummy
+scoreboard objectives add um.sprint_count dummy
+scoreboard objectives add um.sprint_cd dummy
+scoreboard objectives add um.sprint minecraft.custom:minecraft.sprint_one_cm
 
 #scoreboard players init
 

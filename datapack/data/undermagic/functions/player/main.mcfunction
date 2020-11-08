@@ -11,10 +11,8 @@ execute if score @s um.swirl_charms matches 1.. if score @s um.deal_damage match
 execute if score @s um.combo_charms matches 1.. run function undermagic:player/charms/combo
 execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic.attack_damage modifier remove a5c5148c-0568-47b8-a648-297e1a08cc0f
 execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic.attack_speed modifier remove f20361b0-655a-47be-bf66-d86c5522a37b
-execute if score @s um.shield_charms matches 1.. run function undermagic:player/charms/shield
-execute if score @s um.drain_charms matches 1.. run function undermagic:player/charms/drain
-execute if score @s um.reviv_cd matches 1.. run function undermagic:player/charms/revive
-execute if score @s um.flight matches 1.. run function undermagic:player/charms/flight
+execute if score @s um.sprint_charms matches 1.. run function undermagic:player/charms/sprint
+execute if score @s um.sprint_charms matches 0 run attribute @s minecraft:generic.movement_speed modifier remove 5dba9716-e66d-4984-859b-c9903aae7841
 execute if entity @s[tag=um.drac_aspect] run function undermagic:player/charms/drac_aspect
 execute as @s[tag=um.enderlord,scores={um.sneak=1..,um.jump=1..}] at @s run function undermagic:player/effects/enderlord_warp
 execute as @s[scores={um.sneak=1..,um.jump=1..,um.ender_charms=2..}] at @s run function undermagic:player/effects/enderlord_warp
@@ -51,6 +49,7 @@ scoreboard players set @s um.deal_damage 0
 scoreboard players add @s um.since_damaged 1
 scoreboard players add @s um.reviv_cd 1
 scoreboard players add @s um.since_attack 1
+scoreboard players set @s um.sprint 0
 
 #check mana
 scoreboard players add @s um.mana_cd 1
