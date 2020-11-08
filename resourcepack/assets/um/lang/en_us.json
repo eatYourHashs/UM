@@ -11,6 +11,11 @@
   "item.um.abyss_knight_set.lore.0": "Ancient knowledge of blades seems to seep into your soul",
   "item.um.abyss_knight_set.lore.1": "Buffs melee strikes and summons blades when you strike foes",
 
+  "item.um.abyssal_longsword": "Abyssal Longsword",
+  "item.um.abyssal_longsword.lore.0": "Use while sheathed to Quick Draw",
+  "item.um.abyssal_longsword.lore.1": "Swap to offhand to sheath",
+  "item.um.abyssal_longsword.lore.2": "Quick Draw fires an abyssal orb",
+
   "item.um.abyss_ranger_helmet": "Abyss Ranger Helmet",
   "item.um.abyss_ranger_chestplate": "Abyss Ranger Chestplate",
   "item.um.abyss_ranger_leggings": "Abyss Ranger Leggings",
@@ -85,12 +90,132 @@
 
   "item.um.demonic_steel_ingot": "Demonic Steel Ingot",
   "item.um.demonic_steel_ingot.lore": "Strong metal forged from demon essence",
+
+  "item.um.demonic_steel_longsword": "Demonic Steel Longsword",
+  "item.um.demonic_steel_longsword.lore.0": "Use while sheathed to Quick Draw",
+  "item.um.demonic_steel_longsword.lore.1": "Swap to offhand to sheath",
+
   "item.um.demonic_steel_plate": "Demonic Steel Plate",
   "item.um.demonic_steel_plate.lore": "Heavy plate of metal, used to make armor and weapons",
+
+  "item.um.diamond_piercer": "Diamond Piercer",
+  "item.um.diamond_piercer.lore": "Fires a diamond beam that pierces everything",
+  "item.um.draconic_bulwark": "Draconic Bulwark",
+  "item.um.draconic_bulwark.lore.0": "Deflects many kinds of projectiles",
+  "item.um.draconic_bulwark.lore.1": "Block attacks to create draconic blasts",
+  "item.um.dragon_scale": "Dragon Scale",
+  "item.um.dragon_scale.lore": "It seems to have fallen off the great wyrm...",
+  "item.um.dragon_staff": "Dragon Staff",
+  "item.um.dragon_staff.lore": "Spews draconic acid at your foes",
+
+  "item.um.dragon_scale_helmet": "Dragon-Scale Helmet",
+  "item.um.dragon_scale_chestplate": "Dragon-Scale Chestplate",
+  "item.um.dragon_scale_leggings": "Dragon-Scale Leggings",
+  "item.um.dragon_scale_boots": "Dragon-Scale Boots",
+  "item.um.dragon_scale_set.lore.0": "Tougher than diamonds, it channels draconic power",
+  "item.um.dragon_scale_set.lore.1": "Grants dragon wings with the full set",
+
+  "item.um.elder_staff": "Staff of the Elder",
+  "item.um.elder_staff.lore.0": "Rapidly fires dark orbs, similarly to Elder bolts",
+  "item.um.elder_staff.lore.1": "Sneak-click to fire a giant death orb",
+
+  "item.um.entropic_greatbow": "Entropic Greatbow",
+  "item.um.entropic_greatbow.lore": "Fires a powerful splitting arrow",
+
+  "item.um.fire_orb": "Fire Orb",
+  "item.um.fire_orb.lore": "Allows shaping of fire",
+
+  "item.um.infernal_summons": "Infernal Summons",
+  "item.um.infernal_summons.lore": "Throw into a demonic portal to summon the greatest demon...",
+
+  "item.um.inferno_staff": "Inferno Staff",
+  "item.um.inferno_staff.lore.0": "Burns your enemies to a crip with hellfire",
+  "item.um.inferno_staff.lore.1": "Provides fire resistance when held",
+  "item.um.inferno_staff.lore.2": "Provides absorption on a melee attack",
+
+  "item.um.iron_rod": "Iron Rod",
+  "item.um.iron_rod.lore": "Conjures falling metal above foes",
+
+  "item.um.locator_card": "Locator Card",
+
+  "item.um.mythical_dragon_egg": "Mythical Dragon Egg",
+  "item.um.mythical_dragon_egg.lore": "Summons a wyrmling familiar on right-click",
+  "item.um.mythical_dragon_egg.lore.unbound": "Right-clicking binds this item to you and you alone",
+  "item.um.mythical_dragon_egg.lore.summoned": "Right-click to dismiss",
+
+  "item.um.niflheim_bow": "Bow of Niflheim",
+  "item.um.niflheim_bow.lore.0": "Mystical bow that shoots icy bolts",
+  "item.um.niflheim_bow.lore.1": "Bolts pierce blocks, except obsidian and bedrock",
+
+  "item.um.oblivion_staff": "Oblivion Staff",
+  "item.um.oblivion_staff.lore": "Conjures void pillars to obliterate your foes",
+
+  "item.um.omega_rune": "Omega Rune",
+
+  "item.um.phantasmal_dagger": "Phantasmal Dagger",
+  "item.um.phantasmal_dagger.lore": "Use to rapidly throw intangible daggers",
+
+  "item.um.pit_lord_chestplate": "Pit Lord's Chestplate",
+  "item.um.pit_lord_chestplate.lore": "Provides supreme protection",
+
+  "item.um.pit_lord_heart": "Pit Lord's Heart",
+
+  "item.um.prismatic_scepter": "Prismatic Scepter",
+  "item.um.prismatic_scepter.lore": "Charges an unstoppable radiant beam",
+
+  "item.um.relic_of_ruin": "Relic of Ruin",
+  "item.um.relic_of_ruin.lore": "Throw on the ground to call a great eldritch being",
+
+  "item.um.sanguine_eye": "Sanguine Eye",
+  "item.um.sanguine_eye.lore": "Throw into a Blood Crucible to summon a great hunger...",
+
+  "item.um.sanguis_inspectorum": "Sanguis Inspectorum",
+  "item.um.sanguis_inspectorum.lore": "Right click to probe a nearby Blood Chalice",
+
+  "item.um.shade_walker_hood": "Shade Walker Hood",
+  "item.um.shade_walker_robe": "Shade Walker Robe",
+  "item.um.shade_walker_leggings": "Shade Walker Tabard",
+  "item.um.shade_walker_shoes": "Shade Walker Shoes",
+  "item.um.shade_walker_set.lore": "A dark armor made of Shadecloth",
+
+  "item.um.shadecloth": "Shadecloth",
+  "item.um.shadecloth.lore": "A fabric that radiates dark energy",
+
+  "item.um.shadow_base": "Shadow Base",
+  "item.um.shadow_base.lore.0": "Used to create a greater metal",
+  "item.um.shadow_base.lore.1": "Useless in this form",
+
+  "item.um.shadow_helmet": "Shadow Helmet",
+  "item.um.shadow_chestplate": "Shadow Chestplate",
+  "item.um.shadow_leggings": "Shadow Leggings",
+  "item.um.shadow_boots": "Shadow Boots",
+  "item.um.shadow_set.lore": "This is better than diamond. Very unique lore, Hashs. Thank you.",
+
+  "item.um.shadow_guardian_bulwark": "Shadow Guardian's Bulwark",
+  "item.um.shadow_guardian_bulwark.lore.0": "Summons a shadow guardian when held in the offhand",
+  "item.um.shadow_guardian_bulwark.lore.1": "The shadow reduces damage and counters attacks",
+
+  "item.um.shadow_longsword": "Shadow Longsword",
+  "item.um.shadow_longsword.lore.0": "Use while sheathed to Quick Draw",
+  "item.um.shadow_longsword.lore.1": "Swap to offhand to sheath",
+
+  "item.um.shadow_plate": "Shadow Plate",
+  "item.um.shadow_plate.lore": "An invincible plate of several dark alloys trimmed with gold",
+
+  "item.um.shadow_steel_ingot": "Shadow Steel Ingot",
+  "item.um.shadow_steel_ingot.lore": "An extraordinarily strong metal",
+
+  "item.um.tenebrous_base": "Tenebrous Base",
+  "item.um.tenebrous_base.lore.0": "Used to create an extreme material",
+  "item.um.tenebrous_base.lore.1": "Useless in this form",
+
+  "item.um.tenebrous_ingot": "Tenebrous Ingot",
+  "item.um.tenebrous_ingot.lore": "A warped metallic substance that hides incredible power",
 
   "lore.um.lunatic_drop": "Lunatic Drop",
   "lore.um.lunatic_drop_obfuscation": "a %s b",
 
   "block.um.blood_monolith": "Blood Monolith",
   "block.um.blood_monolith.lore": "Boosts a Blood Chalice to Tier IV",
+  "block.um.teleporter": "Teleporter"
 }
