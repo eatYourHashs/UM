@@ -14,4 +14,4 @@ execute if score @s um.cure_cd matches 1 run effect clear @s minecraft:mining_fa
 execute if score @s um.cure_cd matches 1 run effect clear @s minecraft:nausea
 execute if score @s um.cure_cd matches 1 run effect clear @s minecraft:bad_omen
 execute if score @s um.cure_cd matches 1 store success score temp0 um.dummy run effect clear @s minecraft:slowness
-execute if score @s um.cure_cd matches 1 if score temp0 um.dummy matches 1 run effect clear @s minecraft:resistance
+execute if score @s um.cure_cd matches 1 if score temp0 um.dummy matches 1.. run effect clear @s minecraft:resistance
