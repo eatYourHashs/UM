@@ -13,6 +13,7 @@ execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic
 execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic.attack_speed modifier remove f20361b0-655a-47be-bf66-d86c5522a37b
 execute if score @s um.sprint_charms matches 1.. run function undermagic:player/charms/sprint
 execute if score @s um.sprint_charms matches 0 run attribute @s minecraft:generic.movement_speed modifier remove 5dba9716-e66d-4984-859b-c9903aae7841
+execute if score @s um.ghost_charms matches 1.. run function undermagic:player/charms/sprint
 execute if entity @s[tag=um.drac_aspect] run function undermagic:player/charms/drac_aspect
 execute as @s[tag=um.enderlord,scores={um.sneak=1..,um.jump=1..}] at @s run function undermagic:player/effects/enderlord_warp
 execute as @s[scores={um.sneak=1..,um.jump=1..,um.ender_charms=2..}] at @s run function undermagic:player/effects/enderlord_warp
