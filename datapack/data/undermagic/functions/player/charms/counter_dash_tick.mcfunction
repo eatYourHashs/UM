@@ -1,7 +1,11 @@
 scoreboard players add @s um.count_count 1
+particle minecraft:crit ~ ~1 ~ 0.1 0.1 0.1 0.05 3
 execute unless block ^ ^ ^0.6 air unless block ^ ^ ^0.6 cave_air run scoreboard players set @s um.count_count 0
+execute unless block ^ ^ ^0.6 air unless block ^ ^ ^0.6 cave_air run effect clear @s resistance
+execute unless block ^ ^ ^0.6 air unless block ^ ^ ^0.6 cave_air run effect clear @s levitation
 execute if score @s um.count_count matches 1..10 run tp @s ^ ^ ^0.6
 execute if score @s um.count_count matches 10 run effect clear @s resistance
+execute if score @s um.count_count matches 10 run effect clear @s levitation
 execute if score @s um.count_count matches 10 run scoreboard players set @s um.count_count 0
 execute if score @s um.resist matches 1.. run playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 1 0.6
 execute if score @s um.resist matches 1.. run particle minecraft:crit ~ ~1 ~ 0.2 0.4 0.2 0.2 30

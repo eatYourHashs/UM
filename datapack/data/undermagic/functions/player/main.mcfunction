@@ -13,13 +13,16 @@ execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic
 execute if score @s um.combo_charms matches 0 run attribute @s minecraft:generic.attack_speed modifier remove f20361b0-655a-47be-bf66-d86c5522a37b
 execute if score @s um.sprint_charms matches 1.. run function undermagic:player/charms/sprint
 execute if score @s um.sprint_charms matches 0 run attribute @s minecraft:generic.movement_speed modifier remove 5dba9716-e66d-4984-859b-c9903aae7841
-execute if score @s um.ghost_charms matches 1.. run function undermagic:player/charms/sprint
+execute if score @s um.ghost_charms matches 1.. run function undermagic:player/charms/ghost_step
 execute if score @s um.crit_charms matches 1.. if score @s um.deal_damage matches 1.. run function undermagic:player/charms/critical_hit
 execute if score @s um.crit_charms matches 0 run attribute @s minecraft:generic.attack_damage modifier remove 08810db6-9a9f-4dc4-9b4a-16b2d36b9914
 execute if score @s um.count_charms matches 1.. if score @s um.count_count matches 1.. run function undermagic:player/charms/counter_dash_tick
+execute if score @s um.ghost_charms matches 1.. run function undermagic:player/charms/ghost_step
 execute if entity @s[tag=um.drac_aspect] run function undermagic:player/charms/drac_aspect
 execute as @s[tag=um.enderlord,scores={um.sneak=1..,um.jump=1..}] at @s run function undermagic:player/effects/enderlord_warp
-execute as @s[scores={um.sneak=1..,um.jump=1..,um.count_charms=1..}] at @s run function undermagic:player/charms/counter_dash_init
+execute if score @s um.count_charms matches 1.. unless block ~ ~-0.1 ~ air unless block ~ ~-0.1 ~ cave_air unless entity @s[nbt={ActiveEffects:[{Id:25b}]}] run tag @s remove um.dashed
+execute as @s[scores={um.sneak=1..,um.jump=1..,um.count_charms=1..}] as @s[nbt={OnGround:1b}] at @s run function undermagic:player/charms/counter_dash_init
+execute if score @s um.count_charms matches 1.. as @s[scores={um.sneak=1..},tag=!um.dashed,nbt={OnGround:0b}] at @s run function undermagic:player/charms/counter_dash_init
 
 #effects
 execute if score @s um.flame_grasp matches 1.. run function undermagic:player/charms/flame_grasp
