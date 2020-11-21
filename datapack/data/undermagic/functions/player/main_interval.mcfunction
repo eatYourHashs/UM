@@ -27,15 +27,10 @@ execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generi
 execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.movement_speed modifier remove 121860d1-f4f0-4f0b-b7f5-9fbaf0ec1f3d
 execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.armor_toughness modifier remove 7fad711d-14d8-4526-9443-a8ff4d8e7d3f
 execute if score @s um.frenzy_charms matches 0 run attribute @s minecraft:generic.attack_speed modifier remove 8c2e8910-0cec-4289-898a-3af402afa755
-execute if score @s um.resist_charms matches 1.. run function undermagic:player/charms/resistance
-execute if score @s um.streng_charms matches 1.. run function undermagic:player/charms/strength
-execute if score @s um.haste_charms matches 1.. run function undermagic:player/charms/haste
-execute if score @s um.jump_charms matches 1.. run function undermagic:player/charms/jump
-execute if score @s um.aqua_charms matches 1.. run function undermagic:player/charms/aqua
+execute if score @s um.lastst_charms matches 1.. run function undermagic:player/charms/last_stand
 execute if entity @s[tag=um.ele_limbs] run function undermagic:player/charms/ele_limbs
 effect give @s[tag=um.ironskin] resistance 1 1 true
 effect give @s[tag=um.flame_body] fire_resistance 1 0 true
-effect give @s[tag=um.drac_aspect] resistance 1 2 true
 
 #scoreboard
 execute if score @s um.dragon_killed matches 1.. run scoreboard players set dragon_dead um.dummy 1

@@ -76,6 +76,9 @@ scoreboard objectives add um.sprint_cd dummy
 scoreboard objectives add um.cure_cd dummy
 scoreboard objectives add um.count_count dummy
 scoreboard objectives add um.count_cd dummy
+scoreboard objectives add um.lastst_time dummy
+scoreboard objectives add um.lastst_count dummy
+scoreboard objectives add um.lastst_cd dummy
 scoreboard objectives add um.sprint minecraft.custom:minecraft.sprint_one_cm
 
 #scoreboard players init
