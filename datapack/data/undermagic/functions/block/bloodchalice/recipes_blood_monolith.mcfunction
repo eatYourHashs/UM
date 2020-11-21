@@ -1,5 +1,5 @@
 
-function undermagic:block/bloodchalice/recipes_beacon
+function undermagic:block/bloodchalice/recipes_radiant_monolith
 
 scoreboard players set temp um.dummy 0
 execute if data storage undermagic:common list[{Slot:0b,Count:3b,tag:{um_id:"cbe"}}] run scoreboard players add temp um.dummy 1

@@ -20,3 +20,4 @@ execute if entity @s[tag=um.bloodchalice] if entity @p[distance=..24] run functi
 execute if entity @s[tag=um.pedestal] if entity @p[distance=..24] run function undermagic:block/pedestal_interval
 execute if entity @s[tag=um.teleporter] run function undermagic:block/teleporter_interval
 execute if entity @s[tag=um.charm_table] run function undermagic:block/charm_table_interval
+execute if entity @s[tag=um.radiant_monolith] run function undermagic:block/radiant_monolith_interval

@@ -11,6 +11,12 @@
         "custom_model_data": 420081
       },
       "model": "um:block/teleporter"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420082
+      },
+      "model": "um:block/radiant_monolith"
     }
   ]
 
