@@ -19,3 +19,4 @@ execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_2 
 execute if score @s um.dummy matches 12.. as @e[tag=um.oblivion_hit] run function undermagic:utils/damage_entity
 execute if score @s um.dummy matches 12.. as @e[tag=um.oblivion_hit] run tag @s remove um.oblivion_hit
 execute if score @s um.dummy matches 12.. run kill @s
+execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_strong

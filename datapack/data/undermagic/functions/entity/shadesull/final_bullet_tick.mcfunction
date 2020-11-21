@@ -9,3 +9,4 @@ scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
 execute as @a[tag=!global.ignore,scores={um.invuln=10..},distance=..2] run function undermagic:utils/damage_entity
 execute if entity @p[distance=..2] run kill @s
+execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_strong

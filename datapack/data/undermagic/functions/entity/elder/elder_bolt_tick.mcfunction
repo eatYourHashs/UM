@@ -11,3 +11,4 @@ execute unless entity @s[tag=um.no_damage] as @a[tag=!global.ignore,scores={um.i
 execute if entity @a[distance=..2] run tag @s add um.no_damage
 execute if entity @p[distance=..2] if score @e[tag=um.shadesull_boss,limit=1,sort=nearest] um.boss_hp matches ..600 run effect give @p blindness 2 0
 execute if entity @p[distance=..2] if score @e[tag=um.shadesull_boss,limit=1,sort=nearest] um.boss_hp matches ..600 run effect give @p wither 5 1
+execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_weak

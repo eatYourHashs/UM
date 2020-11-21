@@ -7,3 +7,4 @@ execute if score @s um.dummy matches 10.. run scoreboard players set $math.in_1 
 execute if score @s um.dummy matches 10.. run scoreboard players set $math.in_2 um.dummy 0
 execute if score @s um.dummy matches 10.. as @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2] run function undermagic:utils/damage_entity
 fill ~-1 ~-1 ~-1 ~1 ~1 ~1 fire keep
+execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] if score @s um.dummy matches 10.. unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_weak
