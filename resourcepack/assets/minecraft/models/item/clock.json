@@ -584,6 +584,12 @@
         "custom_model_data": 420094
       },
       "model": "um:item/empty"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420095
+      },
+      "model": "um:item/nether_shard"
     }
   ]
 }
