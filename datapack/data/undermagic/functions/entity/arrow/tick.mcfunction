@@ -8,4 +8,6 @@ execute if entity @s[tag=um.dragons_proc,scores={um.dummy=2..},nbt=!{life:0s}] r
 execute if entity @s[tag=um.greatbow_proc] run function undermagic:entity/arrow/greatbow_shot
 execute if entity @s[tag=um.split_shot] run particle smoke
 
+execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] if score @s um.dummy matches 4.. unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_weak
+
 scoreboard players add @s um.dummy 1
