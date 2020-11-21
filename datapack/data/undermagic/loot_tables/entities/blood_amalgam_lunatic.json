@@ -19,6 +19,17 @@
         "type": "loot_table",
         "name": "undermagic:items/bloodstained_heart"
       }]
+    },
+    {
+      "rolls": 1,
+      "entries": [{
+        "type": "minecraft:loot_table",
+        "name": "undermagic:charm_drop",
+        "functions": [{
+          "function": "minecraft:set_count",
+          "count": 5
+        }]
+      }]
     }
   ]
 }

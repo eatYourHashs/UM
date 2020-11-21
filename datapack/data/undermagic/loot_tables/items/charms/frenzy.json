@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Charm - Haste","color":"yellow","italic":false}
+			  "name": {"text":"Charm - Frenzy","color":"aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"haste\"}"
+              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"frenzy\"}"
             }
           ]
         }

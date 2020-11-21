@@ -221,6 +221,20 @@
         "condition": "minecraft:random_chance",
         "chance": 0.15
       }]
+    },
+    {
+      "rolls": 1,
+      "entries": [{
+        "type": "minecraft:loot_table",
+        "name": "undermagic:charm_drop",
+        "functions": [{
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 2,
+            "max": 3
+          }
+        }]
+      }]
     }
   ]
 }

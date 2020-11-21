@@ -305,6 +305,20 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [{
+        "type": "minecraft:loot_table",
+        "name": "undermagic:charm_drop",
+        "functions": [{
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 1,
+            "max": 2
+          }
+        }]
+      }]
     }
   ]
 }

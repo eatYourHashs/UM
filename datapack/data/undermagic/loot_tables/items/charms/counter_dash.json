@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Charm - Aquatic","color":"yellow","italic":false}
+			  "name": {"text":"Charm - Counter Dash","color":"light_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"aquatic\"}"
+              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"counter_dash\"}"
             }
           ]
         }

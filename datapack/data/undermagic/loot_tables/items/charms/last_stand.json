@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Charm - Flight","color":"light_purple","italic":false}
+			  "name": {"text":"Charm - Last Stand","color":"light_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"flight\"}"
+              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"last_stand\"}"
             }
           ]
         }

@@ -7,68 +7,93 @@
 	    {
 		  "type":"loot_table",
 		  "weight":3,
-		  "name":"undermagic:items/charms/speed"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":3,
-		  "name":"undermagic:items/charms/strength"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":3,
-		  "name":"undermagic:items/charms/resistance"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":3,
-		  "name":"undermagic:items/charms/leaping"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":3,
-		  "name":"undermagic:items/charms/haste"
+		  "name":"undermagic:items/charms/sprint"
 		},
 		{
 		  "type":"loot_table",
 		  "weight":2,
-		  "name":"undermagic:items/charms/hearty"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":2,
-		  "name":"undermagic:items/charms/shielding"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":2,
-		  "name":"undermagic:items/charms/deathstrike"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":2,
-		  "name":"undermagic:items/charms/slowfall"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":3,
-		  "name":"undermagic:items/charms/aquatic"
+		  "name":"undermagic:items/charms/frenzy"
 		},
 		{
 		  "type":"loot_table",
 		  "weight":1,
-		  "name":"undermagic:items/charms/flight"
+		  "name":"undermagic:items/charms/last_stand"
 		},
 		{
-		  "type":"loot_table",
-		  "weight":1,
-		  "name":"undermagic:items/charms/revivify"
-		},
-		{
-		  "type":"loot_table",
-		  "weight":1,
-		  "name":"undermagic:items/charms/lifesteal"
-		}
+			"type":"loot_table",
+			"weight":3,
+			"name":"undermagic:items/charms/combo"
+		  },
+		  {
+			"type":"loot_table",
+			"weight":2,
+			"name":"undermagic:items/charms/spectre_sight"
+		  },
+		  {
+			"type":"loot_table",
+			"weight":1,
+			"name":"undermagic:items/charms/blaze"
+		  },
+		  {
+			  "type":"loot_table",
+			  "weight":3,
+			  "name":"undermagic:items/charms/panic"
+			},
+			{
+			  "type":"loot_table",
+			  "weight":2,
+			  "name":"undermagic:items/charms/immunity"
+			},
+			{
+			  "type":"loot_table",
+			  "weight":1,
+			  "name":"undermagic:items/charms/critical_hit"
+			},
+			{
+				"type":"loot_table",
+				"weight":3,
+				"name":"undermagic:items/charms/mana_regen"
+			  },
+			  {
+				"type":"loot_table",
+				"weight":2,
+				"name":"undermagic:items/charms/ghost_step"
+			  },
+			  {
+				"type":"loot_table",
+				"weight":1,
+				"name":"undermagic:items/charms/counter_dash"
+			  },
+			  {
+				  "type":"loot_table",
+				  "weight":3,
+				  "name":"undermagic:items/charms/cure"
+				},
+				{
+				  "type":"loot_table",
+				  "weight":2,
+				  "name":"undermagic:items/charms/mana_conduit"
+				},
+				{
+				  "type":"loot_table",
+				  "weight":1,
+				  "name":"undermagic:items/charms/kinetic_field"
+				},
+				{
+					"type":"loot_table",
+					"weight":3,
+					"name":"undermagic:items/charms/supercharge"
+				  },
+				  {
+					"type":"loot_table",
+					"weight":2,
+					"name":"undermagic:items/charms/frenzy"
+				  },
+				  {
+					"type":"loot_table",
+					"weight":1,
+					"name":"undermagic:items/charms/cowardice"
+				  }
 	  ]
 	}
   ]

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Charm - Deathstrike","color":"aqua","italic":false}
+			  "name": {"text":"Charm - Spectre Sight","color":"aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"deathstrike\"}"
+              "tag":"{CustomModelData:420080,um_id:\"charm\",um_extra:\"spectre_sight\"}"
             }
           ]
         }

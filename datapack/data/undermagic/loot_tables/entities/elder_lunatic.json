@@ -19,6 +19,17 @@
         "type": "loot_table",
         "name": "undermagic:items/elder_staff"
       }]
+    },
+    {
+      "rolls": 1,
+      "entries": [{
+        "type": "minecraft:loot_table",
+        "name": "undermagic:charm_drop",
+        "functions": [{
+          "function": "minecraft:set_count",
+          "count": 5
+        }]
+      }]
     }
   ]
 }
