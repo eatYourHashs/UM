@@ -37,4 +37,4 @@ execute if entity @s[tag=um.shadesull_arena_marker] if entity @a[distance=..32] 
 execute if entity @s[tag=um.disciple_of_destruction_spawner] if entity @a[distance=..14] run function undermagic:entity/disciple_of_destruction/summon
 execute if entity @s[tag=um.disciple_of_death_spawner] if entity @a[distance=..14] run function undermagic:entity/disciple_of_death/summon
 execute if entity @s[tag=um.shadesull_door] if entity @a[distance=..5] if score destruction_downed um.dummy matches 1 if score death_downed um.dummy matches 1 run function undermagic:entity/shadesull/door_open
-execute if entity @s[tag=um.shadesull_spawner] if entity @a[distance=..14] run function undermagic:entity/shadesull/summon
+execute if entity @s[tag=um.shadesull_spawner] if entity @a[distance=..14] unless entity @e[tag=um.shadesull_door] run function undermagic:entity/shadesull/summon

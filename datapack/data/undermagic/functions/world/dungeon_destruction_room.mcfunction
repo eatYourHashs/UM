@@ -3,5 +3,6 @@ execute if entity @s[y_rotation=45..135] run setblock ^-13 ^-2 ^1 structure_bloc
 execute if entity @s[y_rotation=135..225] run setblock ^-13 ^-2 ^1 structure_block{mirror: "NONE", ignoreEntities: 0b, powered: 0b, seed: 0L, author: "?", rotation: "CLOCKWISE_180", posX: 0, mode: "LOAD", posY: 1, sizeX: 27, posZ: 0, integrity: 1.0f, showair: 0b, name: "undermagic:dungeon_disciple_of_destruction", sizeY: 10, sizeZ: 27, showboundingbox: 0b}
 execute if entity @s[y_rotation=225..315] run setblock ^-13 ^-2 ^1 structure_block{mirror: "NONE", ignoreEntities: 0b, powered: 0b, seed: 0L, author: "?", rotation: "COUNTERCLOCKWISE_90", posX: 0, mode: "LOAD", posY: 1, sizeX: 27, posZ: 0, integrity: 1.0f, showair: 0b, name: "undermagic:dungeon_disciple_of_destruction", sizeY: 10, sizeZ: 27, showboundingbox: 0b}
 setblock ^-13 ^-3 ^1 redstone_block
+fill ~-1 ~ ~-1 ~1 ~2 ~1 air
 execute positioned ^ ^ ^27 run function undermagic:world/dungeon_passage_mark
 execute if entity @s[type=armor_stand] run kill @s
