@@ -21,3 +21,12 @@ execute if entity @s[tag=um.pedestal] if entity @p[distance=..24] run function u
 execute if entity @s[tag=um.teleporter] run function undermagic:block/teleporter_interval
 execute if entity @s[tag=um.charm_table] run function undermagic:block/charm_table_interval
 execute if entity @s[tag=um.radiant_monolith] run function undermagic:block/radiant_monolith_interval
+
+#dungeon markers
+execute if entity @s[tag=um.dungeon_passage_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_passage
+execute if entity @s[tag=um.dungeon_passage_down_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_passage_down
+execute if entity @s[tag=um.dungeon_passage_up_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_passage_up
+execute if entity @s[tag=um.dungeon_intersection_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_intersection
+execute if entity @s[tag=um.dungeon_great_hall_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_great_hall
+execute if entity @s[tag=um.dungeon_library_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_library
+execute if entity @s[tag=um.dungeon_small_parkour_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_small_parkour
