@@ -3,3 +3,5 @@ summon ravager ~ ~ ~ {Silent:1b,DeathLootTable:"undermagic:entities/disciple_of_
 summon armor_stand ~ ~ ~ {Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["um.entity","global.ignore","um.disciple_of_destruction_model","um.disciple_of_destruction"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:420129}}],CustomName:'{"text":"Disciple of Destruction"}'}
 
 data modify storage undermagic:common boss_status.disciple_of_destruction set value 1b
+
+execute if entity @s[type=armor_stand] run kill @s

@@ -17,7 +17,7 @@ execute if score @s um.ghost_charms matches 1.. run function undermagic:player/c
 execute if score @s um.crit_charms matches 1.. if score @s um.deal_damage matches 1.. run function undermagic:player/charms/critical_hit
 execute if score @s um.crit_charms matches 0 run attribute @s minecraft:generic.attack_damage modifier remove 08810db6-9a9f-4dc4-9b4a-16b2d36b9914
 execute if score @s um.count_charms matches 1.. if score @s um.count_count matches 1.. run function undermagic:player/charms/counter_dash_tick
-execute if score @s um.ghost_charms matches 1.. run function undermagic:player/charms/ghost_step
+execute if score @s um.ghost_charms matches 1.. unless entity @s[nbt={Dimension:"minecraft:undermagic/dungeon"}] run function undermagic:player/charms/ghost_step
 execute if entity @s[tag=um.drac_aspect] run function undermagic:player/charms/drac_aspect
 execute as @s[tag=um.enderlord,scores={um.sneak=1..,um.jump=1..}] at @s run function undermagic:player/effects/enderlord_warp
 execute if score @s um.count_charms matches 1.. unless block ~ ~-0.1 ~ air unless block ~ ~-0.1 ~ cave_air unless entity @s[nbt={ActiveEffects:[{Id:25b}]}] run tag @s remove um.dashed
