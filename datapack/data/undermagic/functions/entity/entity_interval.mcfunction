@@ -23,6 +23,8 @@ execute if entity @s[tag=um.charm_table] run function undermagic:block/charm_tab
 execute if entity @s[tag=um.radiant_monolith] run function undermagic:block/radiant_monolith_interval
 
 #dungeon markers
+execute if entity @s[tag=um.break_walls_marker] run fill ~-1 ~ ~-1 ~1 ~2 ~1 air
+execute if entity @s[tag=um.break_walls_marker] run kill @s
 execute if entity @s[tag=um.dungeon_passage_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_passage
 execute if entity @s[tag=um.dungeon_passage_down_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_passage_down
 execute if entity @s[tag=um.dungeon_passage_up_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_passage_up
