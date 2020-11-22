@@ -22,7 +22,7 @@ execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{
 #abyss warp/summon
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_the_nether run function undermagic:world/abyss/abyss_warp
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_abyss run function undermagic:world/abyss/nether_abyss_warp
-execute if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"crown_of_ruin"} if predicate undermagic:in_abyss run function undermagic:entity/shadesull/summon
+execute if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"crown_of_ruin"} if predicate undermagic:in_abyss if score fought_shadesull um.dummy matches 1 run function undermagic:entity/shadesull/summon
 tag @s remove um.abyss_warped
 
 #staves
