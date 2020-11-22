@@ -10,6 +10,8 @@ execute if score @s version < undermagic load run function undermagic:player/upd
 execute if score @s um.dark_energy matches 1.. run function undermagic:player/effects/dark_energy
 execute unless score @s um.dark_energy matches 1.. run attribute @s minecraft:generic.armor_toughness modifier remove b5fcc13f-e407-486f-ad77-3556c5338eba
 execute if score @s um.since_damaged matches 1.. run function undermagic:player/effects/dark_energy_add
+execute if entity @s[predicate=undermagic:in_dungeon,gamemode=survival] run gamemode adventure
+execute if entity @s[predicate=!undermagic:in_dungeon,gamemode=adventure] run gamemode survival
 
 #vanilla boss loot
 loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/multiples/dragon_scale_8
