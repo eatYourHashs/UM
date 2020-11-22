@@ -152,6 +152,8 @@ bossbar set undermagic:disciple_of_death max 300
 bossbar set undermagic:disciple_of_death style progress
 bossbar set undermagic:disciple_of_death color purple
 forceload add ~ ~ ~ ~
+execute in minecraft:the_end positioned 700 250 0 run forceload add ~ ~
+execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal
 
 #set load version
 scoreboard players set um.server_version um.dummy 34

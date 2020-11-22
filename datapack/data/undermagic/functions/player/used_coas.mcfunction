@@ -23,7 +23,10 @@ execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_the_nether run function undermagic:world/abyss/abyss_warp
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_abyss run function undermagic:world/abyss/nether_abyss_warp
 execute if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"crown_of_ruin"} if predicate undermagic:in_abyss if score fought_shadesull um.dummy matches 1 run function undermagic:entity/shadesull/summon
+execute if score $length um.dummy matches 18 if data entity @s SelectedItem.tag{um_id:"sigil_of_the_shade"} if predicate undermagic:in_abyss run function undermagic:world/dungeon_warp
+execute if score $length um.dummy matches 18 if data entity @s SelectedItem.tag{um_id:"sigil_of_the_shade"} if predicate undermagic:in_dungeon unless entity @s[tag=um.dungeon_warped] run function undermagic:world/return_dungeon_warp
 tag @s remove um.abyss_warped
+tag @s remove um.dungeon_warped
 
 #staves
 scoreboard players set temp um.dummy 0

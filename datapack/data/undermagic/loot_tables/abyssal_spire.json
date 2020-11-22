@@ -1,92 +1,123 @@
 {
   "type": "minecraft:chest",
-  "pools": [{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/sigil_of_the_shade"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
       "rolls": 2,
-      "entries": [{
+      "entries": [
+        {
           "type": "minecraft:item",
+          "weight": 3,
           "name": "minecraft:netherite_sword",
-          "weight": 3,
-          "functions": [{
-            "function": "minecraft:enchant_with_levels",
-            "levels": {
-              "min": 20,
-              "max": 39
-            },
-            "treasure": true
-          }]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_pickaxe",
-          "weight": 3,
-          "functions": [{
-            "function": "minecraft:enchant_with_levels",
-            "levels": {
-              "min": 20,
-              "max": 39
-            },
-            "treasure": true
-          }]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot",
-          "weight": 4,
-          "functions": [{
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 1,
-              "max": 2
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
             }
-          }]
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:netherite_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:netherite_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:clock",
-        "functions": [
-          {
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 4,
-              "max": 7
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 7
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
             }
-          },
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
-          }
-        ]
-      },
-      {
-        "type": "minecraft:loot_table",
-        "name": "undermagic:items/abyss_shard",
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 3,
-            "max": 7
-          }
-        }]
-      }]
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/abyss_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "minecraft:loot_table",
-        "name": "undermagic:charm_drop",
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 4,
-            "max": 5
-          }
-        }]
-      }]
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

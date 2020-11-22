@@ -464,6 +464,12 @@
         "custom_model_data": 420134
       },
       "model": "um:item/obliteration"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420135
+      },
+      "model": "um:item/sigil_of_the_shade"
     }
   ]
 }
