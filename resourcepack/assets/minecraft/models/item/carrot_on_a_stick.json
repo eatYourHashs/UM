@@ -199,19 +199,19 @@
       "predicate": {
         "custom_model_data": 420087
       },
-      "model": "um:entity/ender_wyrmling/1"
+      "model": "um:entity/ender_wyrmling/familiar/1"
     },
     {
       "predicate": {
         "custom_model_data": 420088
       },
-      "model": "um:entity/ender_wyrmling/2"
+      "model": "um:entity/ender_wyrmling/familiar/2"
     },
     {
       "predicate": {
         "custom_model_data": 420089
       },
-      "model": "um:entity/ender_wyrmling/3"
+      "model": "um:entity/ender_wyrmling/familiar/3"
     },
     {
       "predicate": {
@@ -247,7 +247,7 @@
       "predicate": {
         "custom_model_data": 420095
       },
-      "model": "um:entity/voidling/hand"
+      "model": "um:entity/voidling/left_hand"
     },
     {
       "predicate": {
@@ -355,19 +355,19 @@
       "predicate": {
         "custom_model_data": 420113
       },
-      "model": "um:entity/ender_wyrmling/elder/1"
+      "model": "um:entity/ender_wyrmling/familiar/elder/1"
     },
     {
       "predicate": {
         "custom_model_data": 420114
       },
-      "model": "um:entity/ender_wyrmling/elder/2"
+      "model": "um:entity/ender_wyrmling/familiar/elder/2"
     },
     {
       "predicate": {
         "custom_model_data": 420115
       },
-      "model": "um:entity/ender_wyrmling/elder/3"
+      "model": "um:entity/ender_wyrmling/familiar/elder/3"
     },
     {
       "predicate": {
@@ -470,6 +470,12 @@
         "custom_model_data": 420135
       },
       "model": "um:item/sigil_of_the_shade"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420136
+      },
+      "model": "um:entity/voidling/right_hand"
     }
   ]
 }
