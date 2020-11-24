@@ -154,6 +154,7 @@ bossbar set undermagic:disciple_of_death color purple
 forceload add ~ ~ ~ ~
 execute in minecraft:the_end positioned 700 250 0 run forceload add ~ ~
 execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal
+execute in minecraft:undermagic/dungeon positioned 0 100 0 run forceload add ~ ~
 
 #set load version
 scoreboard players set um.server_version um.dummy 34
