@@ -6,6 +6,7 @@ execute unless entity @s[tag=um.untargetable] run effect clear @s resistance
 scoreboard players set $math.in_0 um.dummy 500
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
+scoreboard players set $math.in_3 um.dummy 0
 execute if score @s um.oblit_mark matches 30 if entity @s[scores={um.invuln=10..}] run function undermagic:utils/damage_entity
 execute if score @s um.oblit_mark matches 40 if entity @s[scores={um.invuln=10..}] run function undermagic:utils/damage_entity
 execute if score @s um.oblit_mark matches 50 if entity @s[scores={um.invuln=10..}] run function undermagic:utils/damage_entity

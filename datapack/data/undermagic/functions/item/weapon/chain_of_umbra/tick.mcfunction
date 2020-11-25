@@ -7,6 +7,7 @@ execute if score @s um.dummy matches 10.. if score $timer_20 um.dummy matches 2 
 scoreboard players set $math.in_0 um.dummy 500
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
+scoreboard players set $math.in_3 um.dummy 0
 scoreboard players operation $math.in_0 um.dummy += temp0 um.dummy
 execute at @a if score @s um.familiar_id = @p um.familiar_id if score @p um.ak_count matches 200.. as @p run function undermagic:item/armor/abyss_knight_reset
 execute as @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2,tag=!um.wielder] run function undermagic:utils/damage_entity

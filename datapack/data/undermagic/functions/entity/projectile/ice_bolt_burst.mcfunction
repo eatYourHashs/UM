@@ -4,6 +4,7 @@ playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 2
 scoreboard players set $math.in_0 um.dummy 200
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
+scoreboard players set $math.in_3 um.dummy 0
 execute as @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2,tag=um.pit_lord_boss] run function undermagic:utils/damage_entity
 scoreboard players set $math.in_0 um.dummy 100
 scoreboard players set $math.in_1 um.dummy 0

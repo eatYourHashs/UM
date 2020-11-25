@@ -23,12 +23,14 @@ execute if score difficulty um.dummy matches 1 run scoreboard players set $math.
 execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 300
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
+scoreboard players set $math.in_3 um.dummy 0
 execute as @a[tag=!global.ignore,scores={um.invuln=10..},tag=um.shotgun_close] run function undermagic:utils/damage_entity
 execute if score difficulty um.dummy matches 0 run scoreboard players set $math.in_0 um.dummy 100
 execute if score difficulty um.dummy matches 1 run scoreboard players set $math.in_0 um.dummy 150
 execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 200
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
+scoreboard players set $math.in_3 um.dummy 0
 execute as @a[tag=!global.ignore,scores={um.invuln=10..},tag=um.shotgun_far] run function undermagic:utils/damage_entity
 tag @a[tag=um.shotgun_close] remove um.shotgun_close
 tag @a[tag=um.shotgun_far] remove um.shotgun_far

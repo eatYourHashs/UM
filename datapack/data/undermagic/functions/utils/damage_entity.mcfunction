@@ -2,6 +2,7 @@
 # $math.in_0 um.dummy: damage to add to entity, to 1 decimal place
 # $math.in_1 um.dummy: 1 if should ignore armor, 2 if should ignore armor + enchants, 3 if should ignore armor, enchants, and resistance
 # $math.in_2 um.dummy: 1 for fire damage, 2 for projectile damage, 3 for blast damage (only relevant if enchantments are not ignored)
+# $math.in_3 um.dummy: minimum damage to 1 decimal place
 # Note: not always accurate on wither and ender dragon
 
 #calculate armor redux
@@ -62,6 +63,9 @@ execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operati
 
 execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operation $math.out_0 um.dummy *= $math.temp_1 um.dummy
 execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operation $math.out_0 um.dummy /= $cons.5 um.dummy
+
+#apply min dmg
+execute if score $math.in_3 um.dummy > $math.out_0 um.dummy run scoreboard players operation $math.out_0 um.dummy = $math.in_3 um.dummy
 
 #tellraw @p {"score":{"name":"$math.out_0","objective":"um.dummy"}}
 

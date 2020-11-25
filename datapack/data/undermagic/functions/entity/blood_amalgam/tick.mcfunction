@@ -14,6 +14,7 @@ execute if score difficulty um.dummy matches 1 run scoreboard players set $math.
 execute if score difficulty um.dummy matches 2.. run scoreboard players set $math.in_0 um.dummy 180
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
+scoreboard players set $math.in_3 um.dummy 0
 execute if entity @s[scores={um.boss_hp=4..10,um.dummy=100}] at @p[distance=5..64,gamemode=!creative,gamemode=!spectator] run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["global.ignore","um.entity","um.blood_laser_target","um.blood_amalgam"]}
 execute if entity @s[scores={um.boss_hp=4..10,um.dummy=100}] run playsound minecraft:entity.lightning_bolt.thunder hostile @a ~ ~ ~ 1 2
 execute if entity @s[scores={um.boss_hp=4..10,um.dummy=105}] positioned ~ ~1 ~ facing entity @e[sort=nearest,limit=1,tag=um.blood_laser_target] feet run particle minecraft:dust 1 0 0 1 ^ ^ ^0.5 0 0 0 0 1
