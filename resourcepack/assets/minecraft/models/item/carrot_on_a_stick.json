@@ -169,19 +169,19 @@
       "predicate": {
         "custom_model_data": 420082
       },
-      "model": "um:entity/shadebeast/normal"
+      "model": "um:entity/shadebeast/generic/idle"
     },
     {
       "predicate": {
         "custom_model_data": 420083
       },
-      "model": "um:entity/shadebeast/alpha"
+      "model": "um:entity/shadebeast/alpha/idle"
     },
     {
       "predicate": {
         "custom_model_data": 420084
       },
-      "model": "um:entity/salamander"
+      "model": "um:entity/salamander/idle"
     },
     {
       "predicate": {
