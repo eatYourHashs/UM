@@ -17,8 +17,8 @@ execute if data storage undermagic:common list[{Slot:0b,id:"minecraft:redstone"}
 execute if data storage undermagic:common list[{Slot:1b,id:"minecraft:redstone"}] run scoreboard players add temp um.dummy 1
 execute if data storage undermagic:common list[{Slot:2b,id:"minecraft:redstone"}] run scoreboard players add temp um.dummy 1
 execute if data storage undermagic:common list[{Slot:3b,id:"minecraft:redstone"}] run scoreboard players add temp um.dummy 1
-execute if score @s um.dummy matches 10.. if score temp um.dummy matches 2 if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:blaze_powder"}] run loot spawn ~ ~1 ~ loot undermagic:items/sanguis_inspector
-execute if score @s um.dummy matches 10.. if score temp um.dummy matches 2 if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:blaze_powder"}] run scoreboard players remove @s um.dummy 10
+execute if score @s um.dummy matches 10.. if score temp um.dummy matches 2 if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:book"}] run loot spawn ~ ~1 ~ loot undermagic:items/sanguis_inspector
+execute if score @s um.dummy matches 10.. if score temp um.dummy matches 2 if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:book"}] run scoreboard players remove @s um.dummy 10
 
 #Summon Elemental
 execute if score @s um.dummy matches 100.. if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:blaze_rod"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:golden_sword"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:iron_block"}] run function undermagic:entity/elemental/summon

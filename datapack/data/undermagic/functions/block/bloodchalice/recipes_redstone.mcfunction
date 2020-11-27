@@ -15,7 +15,7 @@ execute if data storage undermagic:common list[{Slot:0b,id:"minecraft:redstone"}
 execute if data storage undermagic:common list[{Slot:1b,id:"minecraft:redstone"}] run scoreboard players add temp um.dummy 1
 execute if data storage undermagic:common list[{Slot:2b,id:"minecraft:redstone"}] run scoreboard players add temp um.dummy 1
 execute if data storage undermagic:common list[{Slot:3b,id:"minecraft:redstone"}] run scoreboard players add temp um.dummy 1
-execute if score @s um.dummy matches 10.. if score temp um.dummy matches 2 if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:blaze_powder"}] run scoreboard players add @s um.dummy_two 1
+execute if score @s um.dummy matches 10.. if score temp um.dummy matches 2 if data storage undermagic:common list[{Count:1b,id:"minecraft:redstone_block"}] if data storage undermagic:common list[{Count:1b,id:"minecraft:book"}] run scoreboard players add @s um.dummy_two 1
 
 #spawn mobs
 scoreboard players set temp um.dummy 0

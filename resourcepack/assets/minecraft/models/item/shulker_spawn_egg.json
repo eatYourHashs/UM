@@ -2,6 +2,12 @@
   "parent": "item/template_spawn_egg",
   "overrides": [{
       "predicate": {
+        "custom_model_data": 420002
+      },
+      "model": "um:block/undercrafter"
+    },
+    {
+      "predicate": {
         "custom_model_data": 420080
       },
       "model": "um:block/charm_table"
