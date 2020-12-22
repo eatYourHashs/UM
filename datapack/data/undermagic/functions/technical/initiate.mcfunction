@@ -95,7 +95,7 @@ scoreboard players set $cons.-25 um.dummy -25
 scoreboard players set $cons.-10 um.dummy -10
 scoreboard players set $cons.-5 um.dummy -5
 scoreboard players set $cons.-3 um.dummy -3
-scoreboard players set $cons.-2 um.dummy -1
+scoreboard players set $cons.-2 um.dummy -2
 scoreboard players set $cons.-1 um.dummy -1
 scoreboard players set $cons.2 um.dummy 2
 scoreboard players set $cons.3 um.dummy 3
