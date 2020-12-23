@@ -1,8 +1,7 @@
 {
   "textures": {
-    "0": "um:block/blood_monolith_side",
-    "1": "um:block/blood_monolith_top",
-    "particle": "um:block/blood_monolith_side"
+    "0": "um:block/blood_monolith_new",
+    "particle": "um:block/blood_monolith_new"
   },
   "elements": [{
     "from": [-0.1, -0.1, -0.1],
@@ -26,7 +25,7 @@
       },
       "up": {
         "uv": [0, 0, 16, 16],
-        "texture": "#1"
+        "texture": "#0"
       }
     }
   }],
