@@ -29,6 +29,12 @@
         "custom_model_data": 420083
       },
       "model": "um:block/blood_chalice"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420085
+      },
+      "model": "um:block/blood_monolith_new"
     }
   ]
 
