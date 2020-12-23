@@ -23,6 +23,12 @@
         "custom_model_data": 420082
       },
       "model": "um:block/radiant_monolith"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420083
+      },
+      "model": "um:block/blood_chalice"
     }
   ]
 
