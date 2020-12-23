@@ -30,6 +30,7 @@ execute as @e[type=#undermagic:absorbable,tag=!um.kinet_proc,tag=!global.ignore,
 #interval
 execute if score $timer_20 um.dummy matches 0 if predicate undermagic:probability/0.001 if score dragon_dead um.dummy matches 1 in minecraft:the_end at @r[distance=0..] run function undermagic:entity/wyrmling/spawn
 execute if score $timer_20 um.dummy matches 0 as @e[type=item_frame] at @s if block ~ ~-1 ~ minecraft:fire if block ~ ~-2 ~ minecraft:netherrack if data entity @s Item{id:"minecraft:crafting_table"} run function undermagic:item/tool/table_conversion
+execute if score $timer_20 um.dummy matches 0 as @e[type=item_frame] at @s if block ~ ~-1 ~ minecraft:fire if block ~ ~-2 ~ minecraft:netherrack if data entity @s Item{id:"minecraft:cauldron"} run function undermagic:item/tool/cauldron_conversion
 execute if score $timer_20 um.dummy matches 0 run scoreboard players set @e[tag=!global.ignore,type=!player] um.invuln 11
 
 #other stuff

@@ -1,7 +1,8 @@
-
-execute if entity @s[scores={um.dummy=10..}] run particle minecraft:dust 1 0 0 1 ~ ~0.2 ~ 0.3 0.2 0.3 0 1
-execute if entity @s[scores={um.dummy=50..}] run particle minecraft:dust 1 0 0 1 ~ ~0.2 ~ 0.3 0.2 0.3 0 1
-execute if entity @s[scores={um.dummy=250..}] run particle minecraft:dust 1 0 0 1 ~ ~0.2 ~ 0.3 0.2 0.3 0 1
+#block management
+execute if entity @s[tag=um.needs_dropper] run setblock ~ ~ ~ cauldron
+execute if entity @s[tag=um.needs_dropper] run advancement grant @a[distance=..5] only undermagic:undermagic/blood_chalice
+execute if entity @s[tag=um.needs_dropper] run tag @s remove um.needs_dropper
+data modify entity @s Fire set value 1000
 
 # Check Nearby Items
 scoreboard players set out um.dummy 0
