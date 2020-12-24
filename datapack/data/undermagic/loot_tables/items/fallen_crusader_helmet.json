@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Fallen Crusader Helm","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"text":"Projects a swiftness aura on melee hits with the full set.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"fallen_crusader_helmet\",display:{color:4326147}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.armor",
+				  "attribute":"generic.armor",
+				  "operation":"addition",
+				  "amount":3,
+				  "slot":"head"
+				},
+				{
+					"name":"generic.armor_toughness",
+					"attribute":"generic.armor_toughness",
+					"operation":"addition",
+					"amount":2,
+					"slot":"head"
+				  },
+				  {
+					  "name":"generic.attack_damage",
+					  "attribute":"generic.attack_damage",
+					  "operation":"addition",
+					  "amount":2,
+					  "slot":"head"
+					},
+					{
+						"name":"generic.movement_speed",
+						"attribute":"generic.movement_speed",
+						"operation":"multiply_base",
+						"amount":0.2,
+						"slot":"head"
+					  }
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}
