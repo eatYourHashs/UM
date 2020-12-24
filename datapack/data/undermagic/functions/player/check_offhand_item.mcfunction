@@ -11,6 +11,7 @@ execute if score $length um.dummy matches 13 if data entity @s Inventory[{Slot:-
 execute if score $length um.dummy matches 13 if data entity @s[scores={um.shield_block=1..}] Inventory[{Slot:-106b}].tag{um_id:"shadow_shield"} run function undermagic:item/weapon/shadow_counter
 execute if score $length um.dummy matches 16 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"draconic_bulwark"} run function undermagic:item/weapon/draconic_shield_tick
 execute if score $length um.dummy matches 16 if data entity @s[scores={um.shield_block=1..,um.drac_sh_chg=1..}] Inventory[{Slot:-106b}].tag{um_id:"draconic_bulwark"} run function undermagic:item/weapon/draconic_counter
+execute if score $length um.dummy matches 9 if data entity @s[scores={um.shield_block=1..}] Inventory[{Slot:-106b}].tag{um_id:"rev_guard"} run attribute @s minecraft:generic.attack_damage modifier add a5feef90-47e6-4eec-8f23-5ab6d96bfefb rev_guard 0.5 multiply
 
 #
 execute if score @s um.cstick matches 1.. unless data entity @s SelectedItem.tag.um_id run function undermagic:player/used_coas

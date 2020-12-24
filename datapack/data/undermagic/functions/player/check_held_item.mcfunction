@@ -23,6 +23,10 @@ execute if score $length um.dummy matches 14 if score @s um.paladin_chg matches 
 execute unless score $length um.dummy matches 14 run attribute @s minecraft:generic.attack_damage modifier remove 2eb6df10-0ea6-46ba-a91a-b026ef10315c
 execute if score $length um.dummy matches 14 unless score @s um.paladin_chg matches 4 run attribute @s minecraft:generic.attack_damage modifier remove 2eb6df10-0ea6-46ba-a91a-b026ef10315c
 execute if score $length um.dummy matches 14 if score @s um.paladin_chg matches 4 unless data entity @s SelectedItem.tag{um_id:"paladin_hammer"} run attribute @s minecraft:generic.attack_damage modifier remove 2eb6df10-0ea6-46ba-a91a-b026ef10315c
+execute if score $length um.dummy matches 9 if score @s um.health matches ..10 if data entity @s SelectedItem.tag{um_id:"rev_blade"} run attribute @s minecraft:generic.attack_damage modifier add 26e91bd0-88e2-47bd-861d-d379765295c5 rev_blade 0.5 multiply
+execute unless score $length um.dummy matches 9 run attribute @s minecraft:generic.attack_damage modifier remove 26e91bd0-88e2-47bd-861d-d379765295c5
+execute if score $length um.dummy matches 9 unless score @s um.health matches ..10 run attribute @s minecraft:generic.attack_damage modifier remove 26e91bd0-88e2-47bd-861d-d379765295c5
+execute if score $length um.dummy matches 9 if score @s um.health matches ..10 unless data entity @s SelectedItem.tag{um_id:"rev_blade"} run attribute @s minecraft:generic.attack_damage modifier remove 26e91bd0-88e2-47bd-861d-d379765295c5
 
 #coas function
 execute if score @s um.cstick matches 1.. run function undermagic:player/used_coas

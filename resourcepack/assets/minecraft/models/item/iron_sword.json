@@ -32,6 +32,12 @@
         "custom_model_data": 420125
       },
       "model": "um:item/reaper_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420126
+      },
+      "model": "um:item/revenant_blade"
     }
   ]
 }
