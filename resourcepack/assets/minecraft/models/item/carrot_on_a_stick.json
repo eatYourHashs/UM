@@ -476,6 +476,12 @@
         "custom_model_data": 420136
       },
       "model": "um:entity/voidling/right_hand"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420137
+      },
+      "model": "um:item/iron_whip"
     }
   ]
 }
