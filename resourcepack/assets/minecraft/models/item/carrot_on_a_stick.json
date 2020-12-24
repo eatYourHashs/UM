@@ -482,6 +482,12 @@
         "custom_model_data": 420137
       },
       "model": "um:item/iron_whip"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420138
+      },
+      "model": "um:item/dragon_lash"
     }
   ]
 }
