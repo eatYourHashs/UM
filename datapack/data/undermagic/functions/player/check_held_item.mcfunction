@@ -18,5 +18,11 @@ execute if score $timer_10 um_dummy matches 0 if score $length um.dummy matches 
 
 execute if score $length um.dummy matches 11 if data entity @s SelectedItem.tag{um_id:"the_blaster",Charged:0b} run replaceitem entity @s weapon.mainhand minecraft:crossbow{display:{Name:'{"text":"The Blaster","color":"light_purple","italic":false}',Lore:['{"text":"An ultra-fast crossbow modified from","color":"gray","italic":false}','{"text":"an Illager design.","color":"gray","italic":false}']},HideFlags:1,RepairCost:50,Unbreakable:1b,CustomModelData:420001,um_id:the_blaster,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{},{}],Charged:1b}
 
+execute if score $length um.dummy matches 14 if score @s um.deal_damage matches 1.. if data entity @s SelectedItem.tag{um_id:"paladin_hammer"} run function undermagic:item/weapon/paladin_hammer_hit
+execute if score $length um.dummy matches 14 if score @s um.paladin_chg matches 4 if data entity @s SelectedItem.tag{um_id:"paladin_hammer"} run attribute @s minecraft:generic.attack_damage modifier add 2eb6df10-0ea6-46ba-a91a-b026ef10315c paladin_hammer 1 multiply
+execute unless score $length um.dummy matches 14 run attribute @s minecraft:generic.attack_damage modifier remove 2eb6df10-0ea6-46ba-a91a-b026ef10315c
+execute if score $length um.dummy matches 14 unless score @s um.paladin_chg matches 4 run attribute @s minecraft:generic.attack_damage modifier remove 2eb6df10-0ea6-46ba-a91a-b026ef10315c
+execute if score $length um.dummy matches 14 if score @s um.paladin_chg matches 4 unless data entity @s SelectedItem.tag{um_id:"paladin_hammer"} run attribute @s minecraft:generic.attack_damage modifier remove 2eb6df10-0ea6-46ba-a91a-b026ef10315c
+
 #coas function
 execute if score @s um.cstick matches 1.. run function undermagic:player/used_coas

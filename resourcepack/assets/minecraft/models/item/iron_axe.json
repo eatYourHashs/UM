@@ -8,6 +8,11 @@
         "custom_model_data": 420001
       },
       "model": "um:item/greatblade_of_destruction"
+    },{
+      "predicate": {
+        "custom_model_data": 420002
+      },
+      "model": "um:item/paladin_hammer"
     }
   ]
 }
