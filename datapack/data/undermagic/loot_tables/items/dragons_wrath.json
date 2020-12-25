@@ -15,7 +15,6 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    [{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"a","color":"red","italic":false,"obfuscated":true}],
 				{"text":"Shoots dragon-charged arrows.","color":"gray","italic":false},
 				{"text":"Hold it in your hand to charge the bow.","color":"gray","italic":false},
 				{"text":"Shoot while fully charged to unleash","color":"gray","italic":false},

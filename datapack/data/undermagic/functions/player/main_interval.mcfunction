@@ -14,9 +14,8 @@ execute if entity @s[predicate=undermagic:in_dungeon,gamemode=survival] run game
 execute if entity @s[predicate=!undermagic:in_dungeon,gamemode=adventure] run gamemode survival
 
 #vanilla boss loot
-loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/multiples/dragon_scale_8
-execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragons_wrath
-execute if score difficulty um.dummy matches 2.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragons_wrath
+loot give @s[scores={um.dragon_killed=1..}] loot undermagic:entities/dragon
+execute if score difficulty um.dummy matches 2.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/mythical_dragon_egg
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.wither_killed=1..}] loot undermagic:items/bone_of_wither
 
 #charms
