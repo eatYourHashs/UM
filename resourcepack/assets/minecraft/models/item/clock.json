@@ -596,6 +596,12 @@
         "custom_model_data": 420096
       },
       "model": "um:item/blessed_fragment"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420097
+      },
+      "model": "um:item/holy_alloy_plate"
     }
   ]
 }
