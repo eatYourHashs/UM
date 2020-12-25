@@ -310,6 +310,34 @@
           }
         }]
       }]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Blessed Fragment\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"A piece of a holy relic from long ago.\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:420096,um_id:blessed_fragment}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
     }
   ]
 }

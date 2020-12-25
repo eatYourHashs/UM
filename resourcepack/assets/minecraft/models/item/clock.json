@@ -590,6 +590,12 @@
         "custom_model_data": 420095
       },
       "model": "um:item/nether_shard"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420096
+      },
+      "model": "um:item/blessed_fragment"
     }
   ]
 }

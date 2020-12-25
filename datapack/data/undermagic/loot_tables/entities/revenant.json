@@ -15,6 +15,25 @@
             ]
           }
         ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "undermagic:items/revenant_guard"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "name": "undermagic:items/revenant_blade"
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.05
+          }
+        ]
       }
     ]
   }
