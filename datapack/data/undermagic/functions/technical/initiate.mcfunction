@@ -106,6 +106,7 @@ scoreboard players set $cons.3 um.dummy 3
 scoreboard players set $cons.4 um.dummy 4
 scoreboard players set $cons.5 um.dummy 5
 scoreboard players set $cons.10 um.dummy 10
+scoreboard players set $cons.11 um.dummy 11
 scoreboard players set $cons.16 um.dummy 16
 scoreboard players set $cons.25 um.dummy 25
 scoreboard players set $cons.100 um.dummy 100
