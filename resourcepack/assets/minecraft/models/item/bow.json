@@ -149,6 +149,48 @@
         "custom_model_data": 420127
       },
       "model": "um:item/forbidden_oathbow/pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420128
+      },
+      "model": "um:item/shortbow_of_the_wild/pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "custom_model_data": 420128
+      },
+      "model": "um:item/shortbow_of_the_wild/pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9,
+        "custom_model_data": 420128
+      },
+      "model": "um:item/shortbow_of_the_wild/pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420129
+      },
+      "model": "um:item/shortbow_of_decay/pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "custom_model_data": 420129
+      },
+      "model": "um:item/shortbow_of_decay/pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9,
+        "custom_model_data": 420129
+      },
+      "model": "um:item/shortbow_of_decay/pulling_2"
     }
 
   ]
