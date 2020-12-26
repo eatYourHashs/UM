@@ -1,0 +1,6 @@
+{
+  "parent": "um:item/shortbow_of_decay/pulling_0",
+  "textures": {
+    "layer0": "um:item/shortbow_of_decay/pulling_1"
+  }
+}
