@@ -5,6 +5,8 @@ execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b
 execute if entity @p[distance=..2,predicate=undermagic:armor_sets/abyss_ranger_one] run function undermagic:entity/processing/arrow/abyss_ranger
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"the_blaster"}}}] run function undermagic:entity/processing/arrow/the_blaster
 execute if entity @p[distance=..2,predicate=undermagic:armor_sets/primal] run function undermagic:entity/processing/arrow/primal
+execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"shortbow_of_the_wild"}}}] run function undermagic:entity/processing/arrow/shortbow_of_the_wild
+execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"shortbow_of_decay"}}}] run function undermagic:entity/processing/arrow/shortbow_of_decay
 
 scoreboard players set temp um.dummy 0
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"forbidden_oathbow"}}}] run tag @s add um.oathbow_proc
