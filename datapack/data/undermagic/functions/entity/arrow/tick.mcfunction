@@ -5,6 +5,13 @@ execute if entity @s[tag=um.explosive,scores={um.dummy=2..},nbt=!{life:0s}] run 
 execute if entity @s[tag=um.dragons_proc] run particle minecraft:dragon_breath ~ ~ ~ 0 0 0 0 1
 execute if entity @s[tag=um.dragons_proc,scores={um.dummy=2..},nbt=!{life:0s}] run function undermagic:entity/arrow/dragons_blast
 
+execute if entity @s[tag=um.shadow_proc] run particle minecraft:smoke ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.shadow_proc,scores={um.dummy=2..},nbt=!{life:0s}] run function undermagic:entity/arrow/shadow_burst
+
+execute if entity @s[tag=um.impact_proc] run particle minecraft:explosion ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.impact_proc] run playsound minecraft:entity.dragon_fireball.explode player @a ~ ~ ~ 0.2 1
+execute if entity @s[tag=um.impact_proc,scores={um.dummy=2..},nbt=!{life:0s}] run function undermagic:entity/arrow/impact
+
 execute if entity @s[tag=um.greatbow_proc] run function undermagic:entity/arrow/greatbow_shot
 execute if entity @s[tag=um.split_shot] run particle smoke
 

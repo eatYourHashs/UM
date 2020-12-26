@@ -488,6 +488,30 @@
         "custom_model_data": 420138
       },
       "model": "um:item/dragon_lash"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420139
+      },
+      "model": "um:item/venom_quiver"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420140
+      },
+      "model": "um:item/acid_quiver"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420141
+      },
+      "model": "um:item/shadow_quiver"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420142
+      },
+      "model": "um:item/impact_quiver"
     }
   ]
 }

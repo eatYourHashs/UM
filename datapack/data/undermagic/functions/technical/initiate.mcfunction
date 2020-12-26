@@ -83,6 +83,7 @@ scoreboard objectives add um.sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add um.paladin_chg dummy
 scoreboard objectives add um.primal_chg dummy
 scoreboard objectives add um.primal_cd dummy
+scoreboard objectives add um.quiver_cd dummy
 
 #scoreboard players init
 
