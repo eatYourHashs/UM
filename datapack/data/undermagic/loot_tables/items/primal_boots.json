@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_boots",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Primal Boots","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"A full set grants primal instinct, empowering bows.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420092,um_id:\"primal_boots\",display:{color:65288}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.armor",
+				  "attribute":"generic.armor",
+				  "operation":"addition",
+				  "amount":2,
+				  "slot":"feet"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}
