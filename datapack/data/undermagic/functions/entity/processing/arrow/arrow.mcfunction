@@ -2,8 +2,9 @@
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"bow_demonic_steel"}}}] run function undermagic:entity/processing/arrow/demon_steel_bow
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"dragons_wrath"}}}] run function undermagic:entity/processing/arrow/dragons_wrath
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"entropic_greatbow"}}}] run function undermagic:entity/processing/arrow/greatbow
-execute if entity @p[distance=..2,predicate=undermagic:armor/abyss_ranger_one] run function undermagic:entity/processing/arrow/abyss_ranger
+execute if entity @p[distance=..2,predicate=undermagic:armor_sets/abyss_ranger_one] run function undermagic:entity/processing/arrow/abyss_ranger
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"the_blaster"}}}] run function undermagic:entity/processing/arrow/the_blaster
+execute if entity @p[distance=..2,predicate=undermagic:armor_sets/primal] run function undermagic:entity/processing/arrow/primal
 
 scoreboard players set temp um.dummy 0
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"forbidden_oathbow"}}}] run tag @s add um.oathbow_proc
