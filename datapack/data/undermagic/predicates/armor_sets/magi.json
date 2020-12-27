@@ -1,0 +1,24 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "item": "leather_helmet",
+        "nbt": "{um_id:\"magi_helmet\"}"
+      },
+      "chest": {
+        "item": "leather_chestplate",
+        "nbt": "{um_id:\"magi_chestplate\"}"
+      },
+      "legs": {
+        "item": "leather_leggings",
+        "nbt": "{um_id:\"magi_leggings\"}"
+      },
+      "feet": {
+        "item": "leather_boots",
+        "nbt": "{um_id:\"magi_boots\"}"
+      }
+    }
+  }
+}
