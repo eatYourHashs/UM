@@ -129,17 +129,36 @@
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "minecraft:loot_table",
-        "name": "undermagic:charm_drop",
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 4,
-            "max": 5
-          }
-        }]
-      }]
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/impact_quiver"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.167
+        }
+      ]
     }
   ]
 }
