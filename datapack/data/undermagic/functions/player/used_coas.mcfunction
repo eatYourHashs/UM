@@ -33,6 +33,7 @@ tag @s remove um.dungeon_warped
 #staves
 scoreboard players set temp um.dummy 0
 execute if score $length um.dummy matches 14 if score @s um.mana matches 35.. if data entity @s SelectedItem.tag{um_id:"oblivion_staff"} positioned ^ ^ ^3 run function undermagic:item/weapon/oblivion_staff
+execute if score $length um.dummy matches 14 if score @s um.mana matches 20..34 if data entity @s SelectedItem.tag{um_id:"oblivion_staff"} if data entity @s Inventory[{Slot:-106b}].tag{um_id:"oblivion_matrix"} positioned ^ ^ ^3 run function undermagic:item/weapon/oblivion_staff
 execute if score $length um.dummy matches 08 if score @s um.mana matches 20.. if data entity @s SelectedItem.tag{um_id:"iron_rod"} positioned ^ ^ ^3 run function undermagic:item/weapon/iron_rod
 execute if score $length um.dummy matches 15 if score @s um.mana matches 60.. if data entity @s SelectedItem.tag{um_id:"diamond_piercer"} positioned ^ ^ ^3 run function undermagic:item/weapon/diamond_piercer
 execute if score $length um.dummy matches 17 if score @s um.mana matches 8.. if data entity @s SelectedItem.tag{um_id:"prismatic_scepter"} positioned ^ ^ ^3 run function undermagic:item/weapon/prismatic_scepter

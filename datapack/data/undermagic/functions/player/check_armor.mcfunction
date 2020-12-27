@@ -15,6 +15,7 @@ execute if score $length um.dummy matches 19 if score @s um.dark_energy matches 
 
 execute if score $length um.dummy matches 17 if entity @s[predicate=undermagic:armor_sets/primal] run function undermagic:item/armor/primal_tick
 execute if score $length um.dummy matches 15 if entity @s[predicate=undermagic:armor_sets/magi] run function undermagic:item/armor/magi_tick
+execute if score $length um.dummy matches 17 if entity @s[predicate=undermagic:armor_sets/astral] run function undermagic:item/armor/astral_tick
 
 execute if score $length um.dummy matches 18 if score @s um.deal_damage matches 1.. if entity @s[predicate=undermagic:armor_sets/avenger] run effect give @a[distance=..6] strength 5 0
 execute if score $length um.dummy matches 18 if score @s um.deal_damage matches 1.. if entity @s[predicate=undermagic:armor_sets/protector] run effect give @a[distance=..6] resistance 5 0

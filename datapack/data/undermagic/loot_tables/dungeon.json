@@ -151,6 +151,14 @@
         {
           "type": "minecraft:loot_table",
           "name": "undermagic:items/impact_quiver"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/oblivion_matrix"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/living_nightmares_aegis"
         }
       ],
       "conditions": [

@@ -524,6 +524,30 @@
         "custom_model_data": 420144
       },
       "model": "um:item/lucid_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420145
+      },
+      "model": "um:item/mysterious_orb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420146
+      },
+      "model": "um:item/astral_orb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420147
+      },
+      "model": "um:item/eldritch_orb"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420148
+      },
+      "model": "um:item/oblivion_matrix"
     }
   ]
 }
