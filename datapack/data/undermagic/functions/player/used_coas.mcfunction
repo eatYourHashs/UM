@@ -46,6 +46,8 @@ execute if score $length um.dummy matches 08 if score @s um.mana matches 40.. if
 execute if score $length um.dummy matches 08 if data entity @s SelectedItem.tag{um_id:"fire_orb"} if score @s um.sneak matches 1.. run function undermagic:item/weapon/fo_flamethrower
 
 execute if score $length um.dummy matches 12 if score @s um.mana matches 10.. if data entity @s SelectedItem.tag{um_id:"dragon_staff"} run function undermagic:item/weapon/dragon_staff
+execute if score $length um.dummy matches 17 if score @s um.mana matches 8.. if data entity @s SelectedItem.tag{um_id:"staff_of_the_magi"} run function undermagic:item/weapon/staff_of_the_magi
+execute if score $length um.dummy matches 11 if score @s um.mana matches 10.. if data entity @s SelectedItem.tag{um_id:"lucid_staff"} run function undermagic:item/weapon/lucid_staff
 execute if score $length um.dummy matches 19 if score @s um.mana matches 8.. if data entity @s SelectedItem.tag{um_id:"demon_flame_scepter"} run function undermagic:item/weapon/demon_flame_scepter
 execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_1"} run function undermagic:item/weapon/blood_rain_staff_1
 execute if score $length um.dummy matches 18 if score @s um.mana matches 40.. if data entity @s SelectedItem.tag{um_id:"blood_rain_staff_2"} run function undermagic:item/weapon/blood_rain_staff_2

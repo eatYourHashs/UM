@@ -84,6 +84,7 @@ scoreboard objectives add um.paladin_chg dummy
 scoreboard objectives add um.primal_chg dummy
 scoreboard objectives add um.primal_cd dummy
 scoreboard objectives add um.quiver_cd dummy
+scoreboard objectives add um.lucid_chg dummy
 
 #scoreboard players init
 

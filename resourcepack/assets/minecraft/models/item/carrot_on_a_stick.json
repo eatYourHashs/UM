@@ -512,6 +512,18 @@
         "custom_model_data": 420142
       },
       "model": "um:item/impact_quiver"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420143
+      },
+      "model": "um:item/staff_of_the_magi"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420144
+      },
+      "model": "um:item/lucid_staff"
     }
   ]
 }
