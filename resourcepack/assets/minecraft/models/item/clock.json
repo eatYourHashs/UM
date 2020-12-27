@@ -602,6 +602,12 @@
         "custom_model_data": 420097
       },
       "model": "um:item/holy_alloy_plate"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420098
+      },
+      "model": "um:item/heart_of_the_wild"
     }
   ]
 }
