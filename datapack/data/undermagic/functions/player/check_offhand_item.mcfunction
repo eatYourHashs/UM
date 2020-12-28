@@ -8,6 +8,9 @@ execute if score $length um.dummy matches 16 if data entity @s Inventory[{Slot:-
 execute if score $length um.dummy matches 15 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"longsword_abyss"} run function undermagic:item/weapon/abyss_sheath
 
 execute if score $length um.dummy matches 13 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"shadow_shield"} run function undermagic:item/weapon/shadow_shield_tick
+execute unless score $length um.dummy matches 25 run function undermagic:items/weapon/living_nightmare_end
+execute if score $length um.dummy matches 25 unless data entity @s Inventory[{Slot:-106b}].tag{um_id:"living_nightmares_buckler"} run function undermagic:items/weapon/living_nightmare_end
+execute if score $length um.dummy matches 25 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"living_nightmares_buckler"} run function undermagic:item/weapon/living_nightmares_buckler_tick
 execute if score $length um.dummy matches 13 if data entity @s[scores={um.shield_block=1..}] Inventory[{Slot:-106b}].tag{um_id:"shadow_shield"} run function undermagic:item/weapon/shadow_counter
 execute if score $length um.dummy matches 16 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"draconic_bulwark"} run function undermagic:item/weapon/draconic_shield_tick
 execute if score $length um.dummy matches 16 if data entity @s[scores={um.shield_block=1..,um.drac_sh_chg=1..}] Inventory[{Slot:-106b}].tag{um_id:"draconic_bulwark"} run function undermagic:item/weapon/draconic_counter

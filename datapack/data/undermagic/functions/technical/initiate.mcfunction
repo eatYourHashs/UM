@@ -88,6 +88,7 @@ scoreboard objectives add um.lucid_chg dummy
 scoreboard objectives add um.magi_cd dummy
 scoreboard objectives add um.astral_cd dummy
 scoreboard objectives add um.astral_stars dummy
+scoreboard objectives add um.night_cd dummy
 
 #scoreboard players init
 

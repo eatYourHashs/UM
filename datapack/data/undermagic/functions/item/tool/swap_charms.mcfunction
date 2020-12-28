@@ -16,6 +16,7 @@ scoreboard players set @s um.kinet_charms 0
 scoreboard players set @s um.swirl_charms 0
 scoreboard players set @s um.blaze_charms 0
 scoreboard players set @s um.count_charms 0
+scoreboard players set @s um.crit_charms 0
 execute if entity @s[nbt={Inventory:[{Slot:103b,tag:{um_charm1:combo}}]}] run scoreboard players add @s um.combo_charms 1
 execute if entity @s[nbt={Inventory:[{Slot:102b,tag:{um_charm1:combo}}]}] run scoreboard players add @s um.combo_charms 1
 execute if entity @s[nbt={Inventory:[{Slot:101b,tag:{um_charm1:combo}}]}] run scoreboard players add @s um.combo_charms 1
