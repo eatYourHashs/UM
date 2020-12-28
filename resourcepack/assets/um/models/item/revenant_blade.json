@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "um:item/revenant_blade_alt"
+    "layer0": "um:item/revenant_blade"
   }
 }

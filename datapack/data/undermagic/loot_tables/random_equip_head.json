@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "undermagic:items/astral_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "undermagic:items/primal_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "undermagic:items/fallen_crusader_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "undermagic:items/fallen_protector_helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "undermagic:items/fallen_avenger_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:netherite_helmet"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_with_levels",
+          "levels": 40,
+          "treasure": true
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.8
+        }
+      ]
+    }
+  ]
+}
