@@ -4,6 +4,7 @@
 		"1": "um:block/blood_chalice_top",
 		"2": "um:block/blood_chalice_bottom",
 		"3": "um:block/blood_chalice_inside",
+		"4": "um:block/blood_bubble",
 		"particle": "um:block/blood_chalice_side"
 	},
 	"elements": [
@@ -42,6 +43,32 @@
 				"west": {"uv": [0, 0, 8, 0], "texture": "#3"},
 				"up": {"uv": [4, 4, 12, 12], "texture": "#3"},
 				"down": {"uv": [4, 4, 12, 12], "texture": "#3"}
+			}
+		},
+		{
+			"from": [8, 15, 0],
+			"to": [8.01, 31, 16],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 23, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.01, 16], "texture": "#4"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"south": {"uv": [0, 0, 0.01, 16], "texture": "#4"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"up": {"uv": [0, 0, 0.01, 16], "texture": "#4"},
+				"down": {"uv": [0, 0, 0.01, 16], "texture": "#4"}
+			}
+		},
+		{
+			"from": [0, 15, 8],
+			"to": [16, 31, 8.01],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 23, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"east": {"uv": [0, 0, 0.01, 16], "texture": "#4"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"west": {"uv": [0, 0, 0.01, 16], "texture": "#4"},
+				"up": {"uv": [0, 0, 0.01, 16], "rotation": 90, "texture": "#4"},
+				"down": {"uv": [0, 0, 0.01, 16], "rotation": 270, "texture": "#4"}
 			}
 		}
 	],
