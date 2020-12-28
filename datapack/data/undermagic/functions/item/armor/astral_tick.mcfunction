@@ -16,6 +16,6 @@ execute if score @s um.astral_cd matches 1 run playsound minecraft:block.beacon.
 execute if score @s um.astral_cd matches 1 run playsound minecraft:block.beacon.activate player @a ~ ~ ~
 execute if score @s um.astral_cd matches 1 run particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.2 30
 execute if score @s um.astral_cd matches 1 run scoreboard players set @s um.astral_stars 4
-execute unless score @s um.astral_cd matches 0.. run scoreboard players set @s um.astral_cd 1
+execute unless score @s um.astral_cd matches 0.. run scoreboard players set @s um.astral_cd 2
 execute if score @s um.astral_cd matches 1.. run scoreboard players remove @s um.astral_cd 1
 
