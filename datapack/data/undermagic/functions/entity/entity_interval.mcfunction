@@ -33,6 +33,7 @@ execute if entity @s[tag=um.dungeon_intersection_marker] if entity @a[distance=.
 execute if entity @s[tag=um.dungeon_great_hall_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_great_hall
 execute if entity @s[tag=um.dungeon_library_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_library
 execute if entity @s[tag=um.dungeon_small_parkour_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_small_parkour
+execute if entity @s[tag=um.dungeon_large_parkour_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_large_parkour
 execute if entity @s[tag=um.dungeon_destruction_room_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_destruction_room
 execute if entity @s[tag=um.dungeon_death_room_marker] if entity @a[distance=..32] run function undermagic:world/dungeon_death_room
 execute if entity @s[tag=um.shadesull_arena_marker] if entity @a[distance=..32] run function undermagic:world/shadesull_arena
