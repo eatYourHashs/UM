@@ -29,5 +29,5 @@ execute if score $length um.dummy matches 15 if data entity @s Inventory[{Slot:-
 execute if score $length um.dummy matches 15 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"oblivion_matrix"} if score @s um.mana_cd matches 20.. if score $timer_20 um.dummy matches 1..10 unless score @s um.mana matches 100 if entity @s[predicate=undermagic:armor_sets/abyss_warlock] run scoreboard players add @s um.mana 1
 execute if score $length um.dummy matches 15 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"oblivion_matrix"} if score @s um.mana_cd matches 20.. if score $timer_20 um.dummy matches 1..10 unless score @s um.mana matches 100 if entity @s[predicate=undermagic:armor_sets/magi,tag=um.magi_break] run scoreboard players add @s um.mana 1
 
-#
+#coas
 execute if score @s um.cstick matches 1.. unless data entity @s SelectedItem.tag.um_id run function undermagic:player/used_coas
