@@ -42,3 +42,4 @@ execute if score @s um.dummy matches 0..9 run replaceitem entity @s armor.head m
 execute if score @s um.dummy matches 10..49 run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420086}
 execute if score @s um.dummy matches 50..249 run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420087}
 execute if score @s um.dummy matches 250.. run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420088}
+stopsound @a * minecraft:item.armor.equip_generic
