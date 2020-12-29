@@ -1,8 +1,6 @@
 {
-  "credit": "Made with Blockbench",
   "textures": {
-    "0": "um:entity/abyssal_revenant",
-    "particle": "um:entity/abyssal_revenant"
+    "0": "um:entity/abyssal_revenant"
   },
   "elements": [{
       "from": [2.75, 11, 7],

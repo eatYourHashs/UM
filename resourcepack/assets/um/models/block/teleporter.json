@@ -2,8 +2,7 @@
 	"textures": {
 		"0": "um:block/teleporter",
 		"1": "um:block/teleporter_bottom",
-		"2": "um:block/teleporter_misc",
-		"particle": "um:block/teleporter"
+		"2": "um:block/teleporter_misc"
 	},
 	"elements": [
 		{

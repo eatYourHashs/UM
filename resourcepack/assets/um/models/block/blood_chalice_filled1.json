@@ -3,8 +3,7 @@
 		"0": "um:block/blood_chalice_side",
 		"1": "um:block/blood_chalice_top",
 		"2": "um:block/blood_chalice_bottom",
-		"3": "um:block/blood_chalice_inside",
-		"particle": "um:block/blood_chalice_side"
+		"3": "um:block/blood_chalice_inside"
 	},
 	"elements": [
 		{

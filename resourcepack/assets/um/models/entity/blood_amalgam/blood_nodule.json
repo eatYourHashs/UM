@@ -1,7 +1,6 @@
 {
 	"textures": {
-		"1": "um:entity/blood_amalgam/blood_nodule",
-		"particle": "um:entity/blood_amalgam/blood_nodule"
+		"1": "um:entity/blood_amalgam/blood_nodule"
 	},
 	"elements": [
 		{

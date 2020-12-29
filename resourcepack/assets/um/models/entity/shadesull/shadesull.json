@@ -4,8 +4,7 @@
 		"0": "um:entity/shadesull/shadesull_1",
 		"1": "um:entity/shadesull/shadesull_2",
 		"2": "um:entity/shadesull/shadesull_3",
-		"3": "um:entity/shadesull/shadesull_4",
-		"particle": "um:entity/shadesull/shadesull_1"
+		"3": "um:entity/shadesull/shadesull_4"
 	},
 	"elements": [
 		{

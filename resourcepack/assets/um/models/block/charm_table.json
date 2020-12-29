@@ -1,8 +1,7 @@
 {
 	"textures": {
 		"0": "um:block/charm_table_side",
-		"1": "um:block/charm_table_top",
-		"particle": "um:block/charm_table_side"
+		"1": "um:block/charm_table_top"
 	},
 	"elements": [
 		{

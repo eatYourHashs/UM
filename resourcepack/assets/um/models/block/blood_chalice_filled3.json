@@ -4,8 +4,7 @@
 		"1": "um:block/blood_chalice_top",
 		"2": "um:block/blood_chalice_bottom",
 		"3": "um:block/blood_chalice_inside",
-		"4": "um:block/blood_bubble",
-		"particle": "um:block/blood_chalice_side"
+		"4": "um:block/blood_bubble"
 	},
 	"elements": [
 		{

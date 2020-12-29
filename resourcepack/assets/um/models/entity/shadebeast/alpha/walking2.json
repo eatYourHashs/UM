@@ -1,8 +1,7 @@
 {
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "um:entity/shadebeast/alpha",
-		"particle": "um:entity/shadebeast/alpha"
+		"0": "um:entity/shadebeast/alpha"
 	},
 	"elements": [
 		{
