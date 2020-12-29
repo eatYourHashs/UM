@@ -2,8 +2,7 @@
   "credit": "Made with Blockbench",
   "textures": {
     "0": "um:entity/disciple_of_death/1",
-    "1": "um:entity/disciple_of_death/2",
-    "particle": "um:entity/disciple_of_death/1"
+    "1": "um:entity/disciple_of_death/2"
   },
   "elements": [{
       "from": [4, 3, 6],

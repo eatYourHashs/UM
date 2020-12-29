@@ -1,8 +1,6 @@
 {
-  "credit": "Made with Blockbench",
   "textures": {
-    "0": "um:entity/shadebeast",
-    "particle": "um:entity/shadebeast"
+    "0": "um:entity/shadebeast"
   },
   "elements": [{
       "from": [5, 5, 0],

@@ -1,8 +1,7 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "um:entity/voidling/voidling",
-		"particle": "um:entity/voidling/voidling"
+		"0": "um:entity/voidling/voidling"
 	},
 	"elements": [
 		{

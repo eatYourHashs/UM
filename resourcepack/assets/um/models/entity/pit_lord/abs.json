@@ -1,8 +1,7 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "um:entity/pit_lord/abs",
-		"particle": "um:entity/pit_lord/abs"
+		"0": "um:entity/pit_lord/abs"
 	},
 	"elements": [
 		{

@@ -1,8 +1,7 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "um:entity/disciple_of_destruction",
-    "particle": "um:entity/disciple_of_destruction"
+    "0": "um:entity/disciple_of_destruction"
   },
   "elements": [{
       "from": [5, 6, -4],

@@ -1,8 +1,7 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "um:entity/salamander/salamander",
-		"particle": "um:entity/salamander/salamander"
+		"0": "um:entity/salamander/salamander"
 	},
 	"elements": [
 		{

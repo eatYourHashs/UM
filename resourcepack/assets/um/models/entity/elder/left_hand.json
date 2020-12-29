@@ -1,8 +1,7 @@
 {
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "um:entity/elder/hand",
-		"particle": "um:entity/elder/hand"
+		"0": "um:entity/elder/hand"
 	},
 	"elements": [
 		{

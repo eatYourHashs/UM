@@ -1,7 +1,6 @@
 {
 	"textures": {
-		"0": "um:entity/demon/demon_arm",
-		"particle": "um:entity/demon/demon_arm"
+		"0": "um:entity/demon/demon_arm"
 	},
 	"elements": [
 		{
