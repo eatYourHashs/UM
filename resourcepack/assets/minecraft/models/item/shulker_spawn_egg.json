@@ -28,13 +28,31 @@
       "predicate": {
         "custom_model_data": 420083
       },
-      "model": "um:block/blood_chalice"
+      "model": "um:block/blood_chalice_empty"
     },
     {
       "predicate": {
         "custom_model_data": 420085
       },
-      "model": "um:block/blood_monolith_new"
+      "model": "um:block/blood_monolith"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420086
+      },
+      "model": "um:block/blood_chalice_filled1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420087
+      },
+      "model": "um:block/blood_chalice_filled2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420088
+      },
+      "model": "um:block/blood_chalice_filled3"
     }
   ]
 

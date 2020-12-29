@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420085,um_id:\"blood_monolith\", EntityTag:{id:\"minecraft:armor_stand\",Rotation:[90F,0F],Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:[\"global.ignore\",\"um.entity\",\"um.blood_monolith\",\"um.needs_dropper\"],ArmorItems:[{},{},{},{id:\"minecraft:shulker_spawn_egg\",Count:1b,tag:{Unbreakable:1b,CustomModelData:420085}}],HandItems:[{},{}]} }"
+              "tag":"{CustomModelData:420085,um_id:\"blood_monolith\",EntityTag:{id:\"minecraft:armor_stand\",Rotation:[90F,0F],Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:[\"global.ignore\",\"um.entity\",\"um.blood_monolith\",\"um.needs_dropper\"],ArmorItems:[{},{},{},{id:\"minecraft:shulker_spawn_egg\",Count:1b,tag:{Unbreakable:1b,CustomModelData:420085}}],HandItems:[{},{}]} }"
             }
           ]
         }

@@ -35,3 +35,8 @@ execute if score @s um.dummy_two matches 06..09 run particle minecraft:totem_of_
 execute if score @s um.dummy_two matches 10..13 run particle minecraft:totem_of_undying ~ ~ ~ -1.2 1 -1.2 1 0
 execute if score @s um.dummy_two matches 14..17 run particle minecraft:totem_of_undying ~ ~ ~ 1.2 1 -1.2 1 0
 execute if score @s um.dummy_two matches 20.. run function undermagic:block/bloodchalice/finish
+
+execute if score @s um.dummy matches 0..9 run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420083}
+execute if score @s um.dummy matches 10..49 run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420086}
+execute if score @s um.dummy matches 50..249 run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420087}
+execute if score @s um.dummy matches 250.. run replaceitem entity @s armor.head minecraft:shulker_spawn_egg{CustomModelData:420088}
