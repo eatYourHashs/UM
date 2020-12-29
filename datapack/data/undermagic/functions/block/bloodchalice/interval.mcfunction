@@ -1,6 +1,8 @@
 #block management
 execute if entity @s[tag=um.needs_dropper] run setblock ~ ~ ~ cauldron
 execute if entity @s[tag=um.needs_dropper] run advancement grant @a[distance=..5] only undermagic:undermagic/blood_chalice
+execute if entity @s[tag=um.needs_dropper] run scoreboard players set @s um.dummy 0
+execute if entity @s[tag=um.needs_dropper] run scoreboard players set @s um.dummy_two 0
 execute if entity @s[tag=um.needs_dropper] run tag @s remove um.needs_dropper
 data modify entity @s Fire set value 1000
 
