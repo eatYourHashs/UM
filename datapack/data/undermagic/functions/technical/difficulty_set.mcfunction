@@ -1,4 +1,5 @@
 execute if score difficulty_set um.dummy matches 1 run playsound minecraft:entity.arrow.hit_player player @a ~ ~ ~ 1 0.5 1
+execute if score difficulty_set um.dummy matches 1 run playsound minecraft:entity.wandering_trader.ambient player @a ~ ~ ~ 1 1 1
 execute if score difficulty_set um.dummy matches 2 run playsound minecraft:entity.arrow.hit_player player @a ~ ~ ~ 1 0.8 1
 execute if score difficulty_set um.dummy matches 2 run playsound minecraft:entity.ender_dragon.growl player @a ~ ~ ~ 1 2 1
 execute if score difficulty_set um.dummy matches 3 run playsound minecraft:entity.arrow.hit_player player @a ~ ~ ~ 1 1 1

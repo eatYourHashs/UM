@@ -548,6 +548,18 @@
         "custom_model_data": 420148
       },
       "model": "um:item/oblivion_matrix"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420149
+      },
+      "model": "um:item/flame_rider_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420150
+      },
+      "model": "um:item/bfg_9001"
     }
   ]
 }
