@@ -3,7 +3,7 @@ execute at @a if score @s um.familiar_id = @p um.familiar_id store result score 
 particle minecraft:block iron_block ~ ~ ~ 0.15 0.15 0.15 0 3
 execute at @a if score @s um.familiar_id = @p um.familiar_id run tag @p add um.wielder
 execute if entity @p[tag=um.wielder,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{um_id:"iron_whip"}}}] run kill @s
-scoreboard players set $math.in_0 um.dummy 80
+scoreboard players set $math.in_0 um.dummy 60
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
 scoreboard players set $math.in_3 um.dummy 0
