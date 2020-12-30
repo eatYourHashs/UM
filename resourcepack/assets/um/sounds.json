@@ -38,5 +38,21 @@
     ],
     "stream": "true",
     "preload": "true"
+  },
+  "boss_music.herald_p1": {
+    "subtitle": "Conflict of the Ages plays",
+    "sounds": [
+      "um:boss_music/conflict_of_the_ages"
+    ],
+    "stream": "true",
+    "preload": "true"
+  },
+  "boss_music.herald_p2": {
+    "subtitle": "Echoes of the Apocalypse plays",
+    "sounds": [
+      "um:boss_music/echoes_of_the_apocalypse"
+    ],
+    "stream": "true",
+    "preload": "true"
   }
 }

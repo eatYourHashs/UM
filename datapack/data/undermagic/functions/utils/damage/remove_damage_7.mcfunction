@@ -17,3 +17,8 @@ attribute @s minecraft:generic.max_health modifier remove a-b-c-d-7c
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-7d
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-7e
 attribute @s minecraft:generic.max_health modifier remove a-b-c-d-7f
+attribute @s minecraft:generic.max_health modifier remove a-b-c-e-70
+attribute @s minecraft:generic.max_health modifier remove a-b-c-e-71
+attribute @s minecraft:generic.max_health modifier remove a-b-c-e-72
+attribute @s minecraft:generic.max_health modifier remove a-b-c-e-73
+attribute @s minecraft:generic.max_health modifier remove a-b-c-e-74

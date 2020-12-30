@@ -1,6 +1,17 @@
 
 tag @s add um.damage_9
 
+execute if score $math.temp_0 um.dummy matches 5000.. run attribute @s minecraft:generic.max_health modifier add a-b-c-e-94 "generic.max_health" -500 add
+execute if score $math.temp_0 um.dummy matches 5000.. run scoreboard players remove $math.temp_0 um.dummy 5000
+execute if score $math.temp_0 um.dummy matches 1000.. run attribute @s minecraft:generic.max_health modifier add a-b-c-e-93 "generic.max_health" -100 add
+execute if score $math.temp_0 um.dummy matches 1000.. run scoreboard players remove $math.temp_0 um.dummy 1000
+execute if score $math.temp_0 um.dummy matches 1000.. run attribute @s minecraft:generic.max_health modifier add a-b-c-e-92 "generic.max_health" -100 add
+execute if score $math.temp_0 um.dummy matches 1000.. run scoreboard players remove $math.temp_0 um.dummy 1000
+execute if score $math.temp_0 um.dummy matches 1000.. run attribute @s minecraft:generic.max_health modifier add a-b-c-e-91 "generic.max_health" -100 add
+execute if score $math.temp_0 um.dummy matches 1000.. run scoreboard players remove $math.temp_0 um.dummy 1000
+execute if score $math.temp_0 um.dummy matches 1000.. run attribute @s minecraft:generic.max_health modifier add a-b-c-e-90 "generic.max_health" -100 add
+execute if score $math.temp_0 um.dummy matches 1000.. run scoreboard players remove $math.temp_0 um.dummy 1000
+
 execute if score $math.temp_0 um.dummy matches 500.. run attribute @s minecraft:generic.max_health modifier add a-b-c-d-9f "generic.max_health" -50 add
 execute if score $math.temp_0 um.dummy matches 500.. run scoreboard players remove $math.temp_0 um.dummy 500
 execute if score $math.temp_0 um.dummy matches 100.. run attribute @s minecraft:generic.max_health modifier add a-b-c-d-9e "generic.max_health" -10 add
