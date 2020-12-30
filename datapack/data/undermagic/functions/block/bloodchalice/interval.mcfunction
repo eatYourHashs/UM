@@ -13,10 +13,10 @@ scoreboard players operation @s um.dummy += out um.dummy
 
 #recipes
 data modify storage undermagic:common list set value []
-execute positioned ~3 ~ ~3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
-execute positioned ~-3 ~ ~3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
-execute positioned ~3 ~ ~-3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
-execute positioned ~-3 ~ ~-3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
+execute positioned ~3 ~1 ~3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
+execute positioned ~-3 ~1 ~3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
+execute positioned ~3 ~1 ~-3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
+execute positioned ~-3 ~1 ~-3 run data modify storage undermagic:common list append from entity @e[type=item,sort=nearest,limit=1,distance=..1] Item
 data modify storage undermagic:common list[0].Slot set value 0b
 data modify storage undermagic:common list[1].Slot set value 1b
 data modify storage undermagic:common list[2].Slot set value 2b
