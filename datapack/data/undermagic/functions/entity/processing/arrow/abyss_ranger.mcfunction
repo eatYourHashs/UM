@@ -38,6 +38,5 @@ execute store result entity @s Motion[2] double 0.0001 run scoreboard players ge
 execute if entity @p[distance=..2,predicate=undermagic:armor_sets/abyss_ranger] run tag @s add um.abyss_ranger_proc
 execute if entity @s[tag=um.abyss_ranger_proc] store result score dmg um.dummy run data get entity @s damage 10
 execute if entity @s[tag=um.abyss_ranger_proc] run scoreboard players operation stealth_val um.dummy = @p um.ar_stealth
-execute if entity @s[tag=um.abyss_ranger_proc] run scoreboard players operation stealth_val um.dummy *= $cons.2 um.dummy
 execute if entity @s[tag=um.abyss_ranger_proc] run scoreboard players operation dmg um.dummy += stealth_val um.dummy
 execute if entity @s[tag=um.abyss_ranger_proc] store result entity @s damage double 0.1 run scoreboard players get dmg um.dummy

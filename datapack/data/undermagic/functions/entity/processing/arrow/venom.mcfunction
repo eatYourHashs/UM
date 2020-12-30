@@ -1,5 +1,5 @@
 execute store result score dmg um.dummy run data get entity @s damage 10
-scoreboard players add dmg um.dummy 30
+scoreboard players add dmg um.dummy 20
 execute store result entity @s damage double 0.1 run scoreboard players get dmg um.dummy
 data modify entity @s CustomPotionEffects append value {Id:19b,Amplifier:0b,Duration:200}
 playsound minecraft:item.armor.equip_turtle player @a

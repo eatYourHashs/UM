@@ -8,7 +8,7 @@ execute store result entity @s Motion[2] double 0.0001 run scoreboard players ge
 
 execute if entity @p[distance=..2,scores={um.primal_chg=1..}] run tag @s add um.primal_proc
 execute if entity @s[tag=um.primal_proc] store result score dmg um.dummy run data get entity @s damage 10
-execute if entity @s[tag=um.primal_proc] run scoreboard players add dmg um.dummy 60
+execute if entity @s[tag=um.primal_proc] run scoreboard players add dmg um.dummy 40
 execute if entity @s[tag=um.primal_proc] run scoreboard players remove @p[distance=..2,scores={um.primal_chg=1..}] um.primal_chg 1
 execute if entity @s[tag=um.primal_proc] run playsound minecraft:entity.spider.death player @a ~ ~ ~ 1 2
 execute if entity @s[tag=um.primal_proc] store result entity @s damage double 0.1 run scoreboard players get dmg um.dummy

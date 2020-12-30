@@ -2,8 +2,8 @@ execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless 
 execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run playsound minecraft:item.armor.equip_leather player @a ~ ~ ~ 1 0.5
 execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run playsound minecraft:item.armor.equip_leather player @a ~ ~ ~ 1 0.5
 execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run particle minecraft:smoke ~ ~1 ~ 0.2 0.4 0.2 0.1 200
-execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run attribute @s minecraft:generic.attack_damage modifier add a9d2c60a-26a9-42a2-940b-6b7cdba8daf1 night_form_atk 2 multiply
-execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run attribute @s minecraft:generic.movement_speed modifier add 0c1f3aea-96cb-4a34-a9e4-f9652455a525 night_form_spd 0.5 multiply
+execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run attribute @s minecraft:generic.attack_damage modifier add a9d2c60a-26a9-42a2-940b-6b7cdba8daf1 night_form_atk 2 multiply_base
+execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run attribute @s minecraft:generic.movement_speed modifier add 0c1f3aea-96cb-4a34-a9e4-f9652455a525 night_form_spd 0.5 multiply_base
 execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run tag @s add um.night_form
 execute if score @s um.sneak matches 1.. if score @s um.jump matches 1.. unless score @s um.night_cd matches 1.. run scoreboard players set @s um.night_cd 600
 execute if entity @s[tag=um.night_form] run effect give @s resistance 1 1 true

@@ -39,11 +39,11 @@ scoreboard players set @s um.wither_killed 0
 scoreboard players set @s um.dragon_killed 0
 
 #delayed tick
-execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.attack_damage modifier add 7a94449c-e979-4a4a-9100-1fb6aa492e14 ele_limbs_dmg 0.1 multiply
+execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.attack_damage modifier add 7a94449c-e979-4a4a-9100-1fb6aa492e14 ele_limbs_dmg 0.1 multiply_base
 execute if score $timer_200 um.dummy matches 0..9 unless entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.attack_damage modifier remove 7a94449c-e979-4a4a-9100-1fb6aa492e14
 execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.attack_speed modifier add 38042a31-a6d9-4457-9720-7397fb6d36a1 ele_limbs_atkspd 0.1 add
 execute if score $timer_200 um.dummy matches 0..9 unless entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.attack_speed modifier remove 38042a31-a6d9-4457-9720-7397fb6d36a1
-execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.movement_speed modifier add bf54fbc5-a7d0-4f4a-898d-4c5878053c6a ele_limbs_spd 0.1 multiply
+execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.movement_speed modifier add bf54fbc5-a7d0-4f4a-898d-4c5878053c6a ele_limbs_spd 0.1 multiply_base
 execute if score $timer_200 um.dummy matches 0..9 unless entity @s[tag=um.ele_limbs] run attribute @s minecraft:generic.movement_speed modifier remove bf54fbc5-a7d0-4f4a-898d-4c5878053c6a
 execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.ironskin] run attribute @s minecraft:generic.armor modifier add e1acd556-0e28-4e49-a50f-4bf5523af977 iron_armor 3 add
 execute if score $timer_200 um.dummy matches 0..9 unless entity @s[tag=um.ironskin] run attribute @s minecraft:generic.armor modifier remove e1acd556-0e28-4e49-a50f-4bf5523af977
