@@ -13,7 +13,7 @@ execute if score @s um.dummy matches 12.. positioned ~ ~-3 ~ run tag @e[distance
 execute if score @s um.dummy matches 12.. positioned ~ ~-4 ~ run tag @e[distance=..2,tag=!global.ignore] add um.oblivion_hit
 execute if score @s um.dummy matches 12.. positioned ~ ~-5 ~ run tag @e[distance=..2,tag=!global.ignore] add um.oblivion_hit
 execute if score @s um.dummy matches 12.. run scoreboard players set @e[tag=um.oblivion_hit] um.aw_mark 100
-execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_0 um.dummy 500
+execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_0 um.dummy 350
 execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_1 um.dummy 0
 execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_2 um.dummy 0
 execute if score @s um.dummy matches 12.. run scoreboard players set $math.in_3 um.dummy 0
