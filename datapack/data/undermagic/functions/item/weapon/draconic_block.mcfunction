@@ -9,6 +9,6 @@ execute as @e[type=fireball,distance=..4,tag=!um.deflected] at @s run function u
 execute as @e[type=small_fireball,distance=..4,tag=!um.deflected] at @s run function undermagic:item/weapon/draconic_reversal_fireballs
 execute as @e[type=dragon_fireball,distance=..4,tag=!um.deflected] at @s run function undermagic:item/weapon/draconic_reversal_fireballs
 execute as @e[type=wither_skull,distance=..4,tag=!um.deflected] at @s run function undermagic:item/weapon/draconic_reversal_fireballs
-execute as @e[tag=!global.ignore,distance=1..6] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
-execute as @e[tag=!global.ignore,distance=1..6] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
+execute as @e[type=#undermagic:attackable,tag=!global.ignore,distance=1..6] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
+execute as @e[type=#undermagic:attackable,tag=!global.ignore,distance=1..6] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
 scoreboard players remove @s um.drac_sh_chg 1

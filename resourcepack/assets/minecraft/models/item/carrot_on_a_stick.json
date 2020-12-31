@@ -560,6 +560,12 @@
         "custom_model_data": 420150
       },
       "model": "um:item/bfg_9001"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420151
+      },
+      "model": "um:item/armageddon"
     }
   ]
 }

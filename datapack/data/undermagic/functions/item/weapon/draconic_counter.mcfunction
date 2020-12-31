@@ -5,10 +5,10 @@ particle minecraft:dragon_breath ~ ~1 ~ 0 0 0 0.5 1000
 particle minecraft:dragon_breath ~ ~1 ~ 0 0 0 0.3 500
 particle minecraft:dragon_breath ~ ~1 ~ 0 0 0 0.2 300
 particle minecraft:explosion_emitter
-execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
-execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
-execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
-execute as @e[tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
+execute as @e[type=#undermagic:attackable,tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
+execute as @e[type=#undermagic:attackable,tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
+execute as @e[type=#undermagic:attackable,tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
+execute as @e[type=#undermagic:attackable,tag=!global.ignore,distance=1..8] at @s facing entity @p[nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] feet if block ^ ^ ^-1 air run tp ^ ^ ^-1
 scoreboard players set $math.in_0 um.dummy 190
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 3
