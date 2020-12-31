@@ -15,7 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Fires massive vortexes of flame that trap and kill mobs.","color":"gray","italic":false}
+			    {"text":"Fires massive fireballs that turn into a nexus of destruction on contact.","color":"gray","italic":false}
 			  ]
 			},
 			{
