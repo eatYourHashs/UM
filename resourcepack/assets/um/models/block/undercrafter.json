@@ -1,7 +1,8 @@
 {
 	"textures": {
 		"0": "um:block/undercrafter_side",
-		"1": "um:block/undercrafter_top"
+		"1": "um:block/undercrafter_top",
+		"2": "minecraft:block/netherrack"
 	},
 	"elements": [
 		{
@@ -12,7 +13,8 @@
 				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"}
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
 			}
 		}
 	],
@@ -44,7 +46,7 @@
 			"scale": [0.625, 0.625, 0.625]
 		},
 		"head": {
-			"translation": [0, -30, 0],
+			"translation": [0, -30.5, 0],
 			"scale": [1.62, 1.62, 1.62]
 		},
 		"fixed": {
