@@ -559,13 +559,19 @@
       "predicate": {
         "custom_model_data": 420150
       },
-      "model": "um:item/bfg_9001"
+      "model": "um:item/bfc_9000"
     },
     {
       "predicate": {
         "custom_model_data": 420151
       },
       "model": "um:item/armageddon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420152
+      },
+      "model": "um:entity/cataclyz"
     }
   ]
 }
