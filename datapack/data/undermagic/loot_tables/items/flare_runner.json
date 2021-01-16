@@ -15,8 +15,8 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Right click to jab and fire a bolt.","color":"gray","italic":false},
-			    {"text":"Sneak right click to perform a spin attack.","color":"gray","italic":false},
+			    {"text":"Right click to jab with the lance.","color":"gray","italic":false},
+			    {"text":"Sneak right click to perform a charged spin attack.","color":"gray","italic":false},
 			    {"text":"Deals more damage while sprinting.","color":"gray","italic":false}
 			  ]
 			},
