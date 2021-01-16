@@ -26,7 +26,7 @@ execute unless score @s um.sneak matches 1.. run scoreboard players set $math.in
 execute unless score @s um.sneak matches 1.. positioned ~ ~1.8 ~ positioned ^ ^ ^3 as @e[distance=..2,tag=!global.ignore] run function undermagic:utils/damage_entity
 execute unless score @s um.sneak matches 1.. positioned ~ ~1.8 ~ positioned ^ ^ ^4 as @e[distance=..2,tag=!global.ignore] run function undermagic:utils/damage_entity
 execute unless score @s um.sneak matches 1.. positioned ~ ~1.8 ~ positioned ^ ^ ^5 as @e[distance=..2,tag=!global.ignore] run function undermagic:utils/damage_entity
-execute unless score @s um.sneak matches 1.. run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.5
-execute unless score @s um.sneak matches 1.. run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.5
-execute unless score @s um.sneak matches 1.. run summon armor_stand ^ ^ ^1 {NoGravity:1b,Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["global.ignore","um.entity","um.projectile","um.flare_bolt"]}
-execute unless score @s um.sneak matches 1.. as @e[sort=nearest,limit=1,tag=um.flare_bolt] at @p positioned ~ ~1.8 ~ run tp ^ ^ ^1
+#execute unless score @s um.sneak matches 1.. run playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.5
+#execute unless score @s um.sneak matches 1.. run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.5
+#execute unless score @s um.sneak matches 1.. run summon armor_stand ^ ^ ^1 {NoGravity:1b,Invulnerable:1b,ShowArms:0b,Small:0b,Marker:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["global.ignore","um.entity","um.projectile","um.flare_bolt"]}
+#execute unless score @s um.sneak matches 1.. as @e[sort=nearest,limit=1,tag=um.flare_bolt] at @p positioned ~ ~1.8 ~ run tp ^ ^ ^1
