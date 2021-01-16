@@ -11,6 +11,8 @@ execute if entity @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_sti
 execute if entity @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"acid_quiver"}}]}] unless score @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"acid_quiver"}}]}] um.quiver_cd matches 1.. run function undermagic:entity/processing/arrow/acid
 execute if entity @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"shadow_quiver"}}]}] unless score @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"shadow_quiver"}}]}] um.quiver_cd matches 1.. run function undermagic:entity/processing/arrow/shadow
 execute if entity @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"impact_quiver"}}]}] unless score @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"impact_quiver"}}]}] um.quiver_cd matches 1.. run function undermagic:entity/processing/arrow/impact
+execute as @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"bfc_9000"}}}] at @s run function undermagic:entity/processing/arrow/bfc_9000
+execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"bfc_9000"}}}] run kill @s
 
 scoreboard players set temp um.dummy 0
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"forbidden_oathbow"}}}] run tag @s add um.oathbow_proc
