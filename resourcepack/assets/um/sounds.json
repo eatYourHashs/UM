@@ -1,8 +1,8 @@
 {
   "boss_music.pit_lord": {
-    "subtitle": "Demon King's Inferno plays",
+    "subtitle": "Demon King's Revenge plays",
     "sounds": [
-      "um:boss_music/demon_kings_inferno"
+      "um:boss_music/demon_kings_revenge"
     ],
     "stream": "true",
     "preload": "true"
