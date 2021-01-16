@@ -161,13 +161,18 @@ bossbar add undermagic:disciple_of_death "Disciple of Death"
 bossbar set undermagic:disciple_of_death max 300
 bossbar set undermagic:disciple_of_death style progress
 bossbar set undermagic:disciple_of_death color purple
+
+bossbar add undermagic:demon_army "Demon Army"
+bossbar set undermagic:demon_army max 60
+bossbar set undermagic:demon_army style progress
+bossbar set undermagic:demon_army color red
 forceload add ~ ~ ~ ~
 execute in minecraft:the_end positioned 700 250 0 run forceload add ~ ~
 execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal
 execute in minecraft:undermagic/dungeon positioned 0 100 0 run forceload add ~ ~
 
 #set load version
-scoreboard players set um.server_version um.dummy 34
+scoreboard players set um.server_version um.dummy 36
 
 #init storage
 data merge storage undermagic:common {list:[],obj:[],var:""}

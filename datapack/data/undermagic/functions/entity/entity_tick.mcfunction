@@ -21,6 +21,7 @@ execute as @s[tag=um.oblivion_charge] run function undermagic:entity/generic/obl
 execute as @s[tag=um.salamander] run function undermagic:entity/salamander/tick
 execute as @s[tag=um.wyrmling] run function undermagic:entity/wyrmling/tick
 execute as @s[tag=um.voidling] run function undermagic:entity/voidling/tick
+execute as @s[tag=um.demon_meteor] run function undermagic:world/demon_army/meteor_tick
 
 execute as @s[tag=um.wyrmling_fam] run function undermagic:entity/wyrmling/wyrmling_fam_tick
 execute as @s[tag=um.healing_soul] run function undermagic:entity/reaper_soul/healing_soul_tick

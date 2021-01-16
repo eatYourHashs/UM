@@ -15,6 +15,7 @@ execute if entity @s[predicate=!undermagic:in_dungeon,gamemode=adventure] run ga
 
 #vanilla boss loot
 loot give @s[scores={um.dragon_killed=1..}] loot undermagic:entities/dragon
+tag @s[scores={um.dragon_killed=1..},tag=!um.demon_army_spawned] add um.demon_army_ready
 execute if score difficulty um.dummy matches 2.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/mythical_dragon_egg
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragon_hide
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.wither_killed=1..}] loot undermagic:items/bone_of_wither
@@ -52,4 +53,5 @@ execute if score $timer_200 um.dummy matches 0..9 unless entity @s[tag=um.ironsk
 execute if score $timer_200 um.dummy matches 0..9 unless score @s um.drac_sh_chg matches 0..5 run scoreboard players add @s um.drac_sh_chg 1
 execute if score $timer_200 um.dummy matches 0..9 run scoreboard players add @s[scores={um.drac_sh_chg=..4},nbt={Inventory:[{id:"minecraft:shield",Count:1b,Slot:-106b,tag:{um_id:"draconic_bulwark"}}]}] um.drac_sh_chg 1
 execute if score $timer_200 um.dummy matches 0..9 run function undermagic:item/tool/swap_charms
+execute if score $timer_200 um.dummy matches 0..9 if entity @s[tag=um.demon_army_ready,nbt={Dimension:"minecraft:overworld"}] unless data storage undermagic:common event_status.demon_army run function undermagic:world/demon_army/spawn_meteors
 
