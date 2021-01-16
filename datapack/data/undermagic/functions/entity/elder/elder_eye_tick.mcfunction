@@ -18,6 +18,7 @@ execute if entity @p[distance=..10] if entity @e[tag=um.elder_hand] run tp ~ ~0.
 execute if entity @p[distance=..10] unless entity @e[tag=um.elder_hand] run tp ~ ~0.1 ~
 particle minecraft:portal ~ ~1 ~ 0 0 0 1 10
 execute store result score @s um.boss_hp run data get entity @s Health 1
+scoreboard players remove @s um.boss_hp 200
 execute if entity @e[tag=um.elder_hand] run effect give @s resistance 1 99 true
 execute if entity @e[tag=um.elder_hand] run tag @s add um.untargetable
 execute unless entity @e[tag=um.elder_hand] run tag @s remove um.untargetable
@@ -25,7 +26,7 @@ scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_four 1
 scoreboard players add @s um.dummy_five 1
 scoreboard players set @s[scores={um.dummy_four=6..}] um.dummy_four 0
-scoreboard players set @s[scores={um.dummy=460..}] um.dummy 0
+scoreboard players set @s[scores={um.dummy=460..,um.boss_hp=1..}] um.dummy 0
 execute if score @s um.boss_hp matches ..100 if score difficulty um.dummy matches 1.. if score @s um.dummy matches 1 run scoreboard players set @s um.dummy 55
 execute if entity @s[scores={um.dummy=60}] run function undermagic:entity/elder/elder_eye_bolt
 execute if entity @s[scores={um.dummy=120}] if score difficulty um.dummy matches 0 run function undermagic:entity/elder/elder_eye_bolt
@@ -90,6 +91,31 @@ execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.boss_hp
 scoreboard players add @s um.music 1
 execute if score @s um.music matches 1960 run playsound um:boss_music.elder music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1960.. run scoreboard players set @s um.music 0
+
+execute if score @s um.boss_hp matches ..0 unless entity @s[tag=um.dead] run scoreboard players set @s um.dummy 499
+execute if score @s um.boss_hp matches ..0 unless entity @s[tag=um.dead] run tag @s add um.dead
+
+execute if score @s um.dummy matches 500 run effect give @s resistance 7 4 true
+execute if score @s um.dummy matches 500 run stopsound @a * um:boss_music.elder
+execute if score @s um.dummy matches 500 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 1 2
+execute if score @s um.dummy matches 500 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.7
+execute if score @s um.dummy matches 520 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.7
+execute if score @s um.dummy matches 540 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.8
+execute if score @s um.dummy matches 550 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.9
+execute if score @s um.dummy matches 560 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1
+execute if score @s um.dummy matches 565 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.1
+execute if score @s um.dummy matches 570 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.2
+execute if score @s um.dummy matches 575 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.3
+execute if score @s um.dummy matches 580 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.4
+execute if score @s um.dummy matches 585 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.5
+execute if score @s um.dummy matches 590 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.6
+execute if score @s um.dummy matches 595 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.6
+execute if score @s um.dummy matches 600.. run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.6
+execute if score @s um.dummy matches 640 run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 1
+execute if score @s um.dummy matches 640 run particle explosion_emitter
+execute if score @s um.dummy matches 640 run kill @s
+execute if score @s um.dummy matches 560.. run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.5 20
+execute if score @s um.dummy matches 600.. run particle minecraft:end_rod ~ ~ ~ 0 0 0 1 40
 
 execute as @e[tag=um.elder_hand] at @s run function undermagic:entity/elder/elder_hand_tick
 bossbar set undermagic:elder players @a[distance=..64]
