@@ -7,4 +7,3 @@ execute positioned ^ ^0.4 ^2.1 as @e[distance=..2,tag=!global.ignore] run functi
 playsound minecraft:entity.player.attack.sweep player @a ^ ^1 ^1 1 0.7
 playsound minecraft:entity.blaze.shoot player @a ^ ^1 ^1 1 1.3
 loot replace entity @s weapon.mainhand loot undermagic:items/longsword_demonic_steel
-replaceitem entity @s weapon.offhand minecraft:air
