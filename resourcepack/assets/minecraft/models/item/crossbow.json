@@ -64,6 +64,19 @@
                 "custom_model_data": 420001
             },
             "model": "um:item/the_blaster"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420002
+            },
+            "model": "um:item/bfc_9000"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420002,
+                "charged": 1
+            },
+            "model": "um:item/bfc_9000_charged"
         }
     ]
 }
