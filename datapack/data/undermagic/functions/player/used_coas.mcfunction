@@ -21,6 +21,8 @@ execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{
 execute if score $length um.dummy matches 9 if data entity @s SelectedItem.tag{um_id:"iron_whip"} run function undermagic:item/weapon/iron_whip/use
 execute if score $length um.dummy matches 11 if data entity @s SelectedItem.tag{um_id:"dragon_lash"} run function undermagic:item/weapon/dragon_lash/use
 
+execute if score $length um.dummy matches 12 if data entity @s SelectedItem.tag{um_id:"flare_runner"} unless score @s um.flare_cd matches 1.. run function undermagic:item/weapon/flare_runner_use
+
 #abyss warp/summon
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_the_nether run function undermagic:world/abyss/abyss_warp
 execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"abyssal_mirror"} if predicate undermagic:in_abyss run function undermagic:world/abyss/nether_abyss_warp

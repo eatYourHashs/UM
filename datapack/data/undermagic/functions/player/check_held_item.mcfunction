@@ -28,5 +28,10 @@ execute unless score $length um.dummy matches 9 run attribute @s minecraft:gener
 execute if score $length um.dummy matches 9 unless score @s um.health matches ..10 run attribute @s minecraft:generic.attack_damage modifier remove 26e91bd0-88e2-47bd-861d-d379765295c5
 execute if score $length um.dummy matches 9 if score @s um.health matches ..10 unless data entity @s SelectedItem.tag{um_id:"rev_blade"} run attribute @s minecraft:generic.attack_damage modifier remove 26e91bd0-88e2-47bd-861d-d379765295c5
 
+execute if score $length um.dummy matches 12 if score @s um.sprint matches 1.. run attribute @s minecraft:generic.attack_damage modifier add ab770ca2-a0cc-415c-9518-aa9c68274268 flare_runner 0.25 multiply_base
+execute if score $length um.dummy matches 12 unless score @s um.sprint matches 1.. run attribute @s minecraft:generic.attack_damage modifier remove ab770ca2-a0cc-415c-9518-aa9c68274268
+execute unless score $length um.dummy matches 12 run attribute @s minecraft:generic.attack_damage modifier remove ab770ca2-a0cc-415c-9518-aa9c68274268
+
+
 #coas function
 execute if score @s um.cstick matches 1.. run function undermagic:player/used_coas

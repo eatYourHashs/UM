@@ -27,6 +27,7 @@ execute if score @s um.count_charms matches 1.. as @s[scores={um.sneak=1..},tag=
 #effects
 execute if score @s um.flame_grasp matches 1.. run function undermagic:player/charms/flame_grasp
 execute if score @s um.oblit_prog matches 1.. run function undermagic:item/weapon/obliteration/caster_tick
+execute if score @s um.flare_cd matches ..-1 run function undermagic:item/weapon/flare_runner_tick
 execute if score @s um.deal_damage matches 1.. run attribute @s minecraft:generic.attack_damage modifier remove a5feef90-47e6-4eec-8f23-5ab6d96bfefb
 
 #damage
@@ -45,6 +46,7 @@ execute if score @s um.deal_damage matches 1.. run scoreboard players add @s um.
 execute if score @s um.deal_damage matches 1.. run scoreboard players set @s um.since_attack 0
 execute if score @s um.orb_cooldown matches 1.. run scoreboard players remove @s um.orb_cooldown 1
 execute if score @s um.shade_invi matches 1.. run scoreboard players remove @s um.shade_invi 1
+execute if score @s um.flare_cd matches 1.. run scoreboard players remove @s um.flare_cd 1
 
 scoreboard players set @s um.cstick 0
 scoreboard players set @s um.sneak 0

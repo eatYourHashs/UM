@@ -89,6 +89,7 @@ scoreboard objectives add um.magi_cd dummy
 scoreboard objectives add um.astral_cd dummy
 scoreboard objectives add um.astral_stars dummy
 scoreboard objectives add um.night_cd dummy
+scoreboard objectives add um.flare_cd dummy
 
 #scoreboard players init
 
@@ -166,6 +167,7 @@ bossbar add undermagic:demon_army "Demon Army"
 bossbar set undermagic:demon_army max 60
 bossbar set undermagic:demon_army style progress
 bossbar set undermagic:demon_army color red
+
 forceload add ~ ~ ~ ~
 execute in minecraft:the_end positioned 700 250 0 run forceload add ~ ~
 execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal

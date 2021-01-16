@@ -553,7 +553,7 @@
       "predicate": {
         "custom_model_data": 420149
       },
-      "model": "um:item/flame_rider_scythe"
+      "model": "um:item/flare_runner"
     },
     {
       "predicate": {
@@ -572,6 +572,12 @@
         "custom_model_data": 420152
       },
       "model": "um:entity/cataclyz"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420153
+      },
+      "model": "um:item/greatblade_of_destruction"
     }
   ]
 }
