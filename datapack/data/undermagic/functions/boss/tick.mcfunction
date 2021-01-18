@@ -23,3 +23,6 @@ execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common 
 execute if data storage undermagic:common boss_status{disciple_of_death:1b} run function undermagic:boss/disciple_of_death/disciple_of_death
 execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{disciple_of_death:0b} run tp @e[tag=um.disciple_of_death] ~ -100 ~
 
+execute if data storage undermagic:common boss_status{maxon:1b} run function undermagic:boss/maxon/maxon
+execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{maxon:0b} run tp @e[tag=um.maxon] ~ -100 ~
+

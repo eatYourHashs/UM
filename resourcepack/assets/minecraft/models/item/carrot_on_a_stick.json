@@ -578,6 +578,18 @@
         "custom_model_data": 420153
       },
       "model": "um:item/greatblade_of_destruction"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420154
+      },
+      "model": "um:entity/maxon/head"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420155
+      },
+      "model": "um:entity/maxon/arm"
     }
   ]
 }

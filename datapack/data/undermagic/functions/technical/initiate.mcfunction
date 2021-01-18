@@ -169,6 +169,21 @@ bossbar set undermagic:demon_army max 60
 bossbar set undermagic:demon_army style progress
 bossbar set undermagic:demon_army color red
 
+bossbar add undermagic:maxon "Maxon"
+bossbar set undermagic:maxon max 200
+bossbar set undermagic:maxon style progress
+bossbar set undermagic:maxon color red
+
+bossbar add undermagic:rahthor "Rahthor"
+bossbar set undermagic:rahthor max 200
+bossbar set undermagic:rahthor style progress
+bossbar set undermagic:rahthor color red
+
+bossbar add undermagic:cataclyz "Cataclyz"
+bossbar set undermagic:cataclyz max 300
+bossbar set undermagic:cataclyz style progress
+bossbar set undermagic:cataclyz color red
+
 forceload add ~ ~ ~ ~
 execute in minecraft:the_end positioned 700 250 0 run forceload add ~ ~
 execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal
