@@ -1,11 +1,6 @@
 scoreboard players add @s um.dummy 1
 effect give @s weakness 1 99 true
 execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:entity.ravager.hurt hostile @a ~ ~ ~ 1 0.5
-execute if block ~ ~-0.1 ~ #undermagic:passable run tp @s ~ ~-0.1 ~
-execute if block ~ ~-0.1 ~ #undermagic:passable run tp @s ~ ~-0.1 ~
-execute if block ~ ~-0.1 ~ #undermagic:passable run tp @s ~ ~-0.1 ~
-execute if block ~ ~-0.1 ~ #undermagic:passable run tp @s ~ ~-0.1 ~
-execute if block ~ ~-0.1 ~ #undermagic:passable run tp @s ~ ~-0.1 ~
 execute store result score @s um.boss_hp run data get entity @s Health 1
 execute if score @s um.boss_hp matches 101.. run function undermagic:entity/maxon/p1_tick
 execute if score @s um.boss_hp matches ..100 run function undermagic:entity/maxon/p2_tick
