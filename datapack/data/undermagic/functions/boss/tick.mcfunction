@@ -26,3 +26,6 @@ execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common 
 execute if data storage undermagic:common boss_status{maxon:1b} run function undermagic:boss/maxon/maxon
 execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{maxon:0b} run tp @e[tag=um.maxon] ~ -100 ~
 
+execute if data storage undermagic:common boss_status{rahthor:1b} run function undermagic:boss/rahthor/rahthor
+execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{rahthor:0b} run tp @e[tag=um.rahthor] ~ -100 ~
+

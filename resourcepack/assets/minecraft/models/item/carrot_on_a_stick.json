@@ -590,6 +590,18 @@
         "custom_model_data": 420155
       },
       "model": "um:entity/maxon/arm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420156
+      },
+      "model": "um:entity/rahthor/head"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420157
+      },
+      "model": "um:entity/rahthor/arm"
     }
   ]
 }

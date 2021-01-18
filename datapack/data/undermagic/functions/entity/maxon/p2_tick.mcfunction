@@ -1,6 +1,9 @@
 execute store result score y1 um.dummy run data get entity @s Pos[1] 10
 execute store result score y2 um.dummy run data get entity @p Pos[1] 10
-execute if score y1 um.dummy < y2 um.dummy if score @s um.dummy matches 241..280 run tp ~ ~2 ~
+scoreboard players add y1 um.dummy 50
+execute if score y1 um.dummy < y2 um.dummy run scoreboard players set @s um.dummy_two 6
+scoreboard players remove @s um.dummy_two 1
+execute if score @s um.dummy_two matches 1.. unless score @s um.dummy matches 241..280 run tp @s ~ ~2 ~
 execute if score @s um.dummy matches 25..29 if entity @p[distance=2..] facing entity @p feet run tp ^ ^ ^0.4
 execute if score @s um.dummy matches 25..29 if entity @p[distance=8..] facing entity @p feet run tp ^ ^ ^1.2
 execute if score @s um.dummy matches 30 facing entity @p feet run particle minecraft:dust 1 0.2 0 2 ^ ^0.5 ^4 1.2 0 1.2 1 200

@@ -1,6 +1,9 @@
 execute store result score y1 um.dummy run data get entity @s Pos[1] 10
 execute store result score y2 um.dummy run data get entity @p Pos[1] 10
-execute if score y1 um.dummy < y2 um.dummy run tp ~ ~2 ~
+scoreboard players add y1 um.dummy 50
+execute if score y1 um.dummy < y2 um.dummy run scoreboard players set @s um.dummy_two 6
+scoreboard players remove @s um.dummy_two 1
+execute if score @s um.dummy_two matches 1.. run tp @s ~ ~2 ~
 execute if score @s um.dummy matches 20..29 if entity @p[distance=2..] facing entity @p feet run tp ^ ^ ^0.4
 execute if score @s um.dummy matches 20..29 if entity @p[distance=8..] facing entity @p feet run tp ^ ^ ^1.2
 execute if score @s um.dummy matches 30 facing entity @p feet run particle minecraft:dust 1 0.2 0 2 ^ ^0.5 ^4 1.2 0 1.2 1 200
@@ -37,6 +40,8 @@ execute if score @s um.dummy matches 79 at @e[tag=um.maxon_marker] as @a[distanc
 execute if score @s um.dummy matches 79 run kill @e[tag=um.maxon_marker]
 execute if score @s um.dummy matches 95 facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 95 run playsound minecraft:entity.illusioner.prepare_blindness hostile @a ~ ~ ~ 1 2
+scoreboard players remove y1 um.dummy 50
+execute if score @s um.dummy matches 95..99 if score y1 um.dummy > y2 um.dummy run tp @s ~ ~-0.2 ~
 execute if score @s um.dummy matches 100 facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 100 facing entity @p feet run summon armor_stand ^ ^ ^64 {Marker:1b,Invisible:1b,NoGravity:1b,Tags:[um.entity,global.ignore,um.maxon_marker]}
 execute if score @s um.dummy matches 100 run particle minecraft:angry_villager ~ ~2.2 ~ 0.1 0 0.1 0 5
