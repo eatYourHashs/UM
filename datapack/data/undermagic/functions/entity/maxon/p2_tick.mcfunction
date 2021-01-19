@@ -78,6 +78,7 @@ scoreboard players set $math.in_3 um.dummy 0
 execute if score @s um.dummy matches 165 as @a[distance=..4] run function undermagic:utils/damage_entity
 execute if score @s um.dummy matches 165 run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 0.5
 execute if score @s um.dummy matches 165 run particle explosion_emitter ~ ~1 ~
+execute if score @s um.dummy matches 175 facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 165 run playsound minecraft:entity.ravager.stunned hostile @a ~ ~ ~ 1 1.5
 execute if score @s um.dummy matches 220 run playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 1 2
 execute if score @s um.dummy matches 230 at @p run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,NoGravity:1b,Tags:[um.entity,global.ignore,um.maxon_marker]}
