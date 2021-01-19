@@ -21,6 +21,7 @@ execute if score @s um.dummy matches 39 run playsound minecraft:entity.player.at
 execute if score @s um.dummy matches 39 run playsound minecraft:entity.player.attack.strong hostile @a ~ ~ ~ 1 0.8
 execute if score @s um.dummy matches 39 at @e[tag=um.maxon_marker] as @a[distance=..3,scores={um.invuln=10..}] run function undermagic:utils/damage_entity
 execute if score @s um.dummy matches 39 run kill @e[tag=um.maxon_marker]
+execute if score @s um.dummy matches 45..59 facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 60..69 if entity @p[distance=2..] facing entity @p feet run tp ^ ^ ^0.4
 execute if score @s um.dummy matches 60..69 if entity @p[distance=8..] facing entity @p feet run tp ^ ^ ^1.2
 execute if score @s um.dummy matches 70 facing entity @p feet run particle minecraft:dust 1 0.2 0 2 ^ ^0.5 ^4 1.2 0 1.2 1 200
@@ -38,6 +39,7 @@ execute if score @s um.dummy matches 79 run playsound minecraft:entity.player.at
 execute if score @s um.dummy matches 79 run playsound minecraft:entity.player.attack.strong hostile @a ~ ~ ~ 1 0.8
 execute if score @s um.dummy matches 79 at @e[tag=um.maxon_marker] as @a[distance=..3,scores={um.invuln=10..}] run function undermagic:utils/damage_entity
 execute if score @s um.dummy matches 79 run kill @e[tag=um.maxon_marker]
+execute if score @s um.dummy matches 85 facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 95 facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 95 run playsound minecraft:entity.illusioner.prepare_blindness hostile @a ~ ~ ~ 1 2
 scoreboard players remove y1 um.dummy 50
