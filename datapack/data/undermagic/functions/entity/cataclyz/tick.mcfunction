@@ -6,8 +6,9 @@ execute store result score @s um.boss_hp run data get entity @s Health 1
 execute facing entity @p feet run tp ~ ~ ~
 execute if score @s um.dummy matches 1..19 run tp @s ~ ~0.6 ~
 execute if score @s um.dummy matches 1..19 run tp @s ~ ~0.6 ~
-execute if score @s um.dummy matches 20 run scoreboard players set $math.in_0 um.dummy 3
-execute if score @s um.dummy matches 20 if score @s um.boss_hp matches ..150 run scoreboard players set $math.in_0 um.dummy 4
+execute if score @s um.dummy matches 20 run scoreboard players set $math.in_0 um.dummy 2
+execute if score @s um.dummy matches 20 if score @s um.boss_hp matches ..300 run scoreboard players set $math.in_0 um.dummy 3
+execute if score @s um.dummy matches 20 if score @s um.boss_hp matches ..200 run scoreboard players set $math.in_0 um.dummy 4
 execute if score @s um.dummy matches 20 run function undermagic:utils/random
 execute if score @s um.dummy matches 20 run scoreboard players operation @s um.dummy_two = $math.out_0 um.dummy
 execute if score @s um.dummy matches 20 run scoreboard players add @s um.dummy_two 1
