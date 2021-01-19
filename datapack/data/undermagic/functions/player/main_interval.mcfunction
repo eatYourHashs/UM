@@ -16,7 +16,7 @@ execute unless entity @e[distance=..6,tag=um.cataclyz_curse,scores={um.dummy=80.
 
 #vanilla boss loot
 loot give @s[scores={um.dragon_killed=1..}] loot undermagic:entities/dragon
-tag @s[scores={um.dragon_killed=1..},tag=!um.demon_army_spawned] add um.demon_army_ready
+tag @s[scores={um.dragon_killed=1..}] add um.demon_army_ready
 execute if score difficulty um.dummy matches 2.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/mythical_dragon_egg
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.dragon_killed=1..}] loot undermagic:items/dragon_hide
 execute if score difficulty um.dummy matches 1.. run loot give @s[scores={um.wither_killed=1..}] loot undermagic:items/bone_of_wither
