@@ -12,6 +12,7 @@ execute unless score @s um.dark_energy matches 1.. run attribute @s minecraft:ge
 execute if score @s um.since_damaged matches 1.. run function undermagic:player/effects/dark_energy_add
 execute if entity @s[predicate=undermagic:in_dungeon,gamemode=survival] run gamemode adventure
 execute if entity @s[predicate=!undermagic:in_dungeon,gamemode=adventure] run gamemode survival
+execute unless entity @e[distance=..6,tag=um.cataclyz_curse,scores={um.dummy=80..}] run attribute @s minecraft:generic.armor modifier remove 1e8e6084-8b38-40bf-8f4c-fd16d40424fa
 
 #vanilla boss loot
 loot give @s[scores={um.dragon_killed=1..}] loot undermagic:entities/dragon

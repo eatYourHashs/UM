@@ -7,6 +7,8 @@ execute if score @s um.dummy matches ..99 run effect give @s resistance 1 4 true
 execute if score @s um.dummy matches ..99 run tag @s add um.untargetable
 execute if score @s um.dummy matches ..99 run effect give @s instant_damage 1 0 true
 execute if score @s um.dummy matches 100 run tag @s remove um.untargetable
+execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:entity.ravager.hurt hostile @a ~ ~ ~ 1 0.5
+execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:item.trident.riptide_2 hostile @a ~ ~ ~ 1 0.6
 particle flame ~ ~1 ~ 0.2 0.3 0.2 0 2
 execute if score @s um.dummy matches 100.. unless score @s um.dummy matches 320..400 facing entity @p[distance=..64,gamemode=!creative,gamemode=!spectator] feet if block ^ ^ ^2 #undermagic:passable run tp ^ ^ ^0.2
 execute if score difficulty um.dummy matches 1.. unless score @s um.dummy matches 320..400 facing entity @p[distance=..64,gamemode=!creative,gamemode=!spectator] feet if block ^ ^ ^2 #undermagic:passable run tp ^ ^ ^0.3

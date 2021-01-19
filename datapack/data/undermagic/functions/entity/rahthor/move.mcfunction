@@ -1,5 +1,6 @@
-scoreboard players set $math.in_0 16
+scoreboard players set $math.in_0 um.dummy 16
 function undermagic:utils/random
+scoreboard players add $math.out_0 um.dummy 1
 execute if score $math.out_0 um.dummy matches 1 at @p run summon armor_stand ~6 ~ ~ {Invisible:1b,NoGravity:1b,Marker:1b,Tags:["global.ignore","um.rahthor_move_marker"]}
 execute if score $math.out_0 um.dummy matches 2 at @p run summon armor_stand ~-6 ~ ~ {Invisible:1b,NoGravity:1b,Marker:1b,Tags:["global.ignore","um.rahthor_move_marker"]}
 execute if score $math.out_0 um.dummy matches 3 at @p run summon armor_stand ~ ~ ~6 {Invisible:1b,NoGravity:1b,Marker:1b,Tags:["global.ignore","um.rahthor_move_marker"]}

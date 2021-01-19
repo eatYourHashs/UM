@@ -1,3 +1,4 @@
+execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=um.hand1,scores={um.dummy=..0}] facing entity @e[tag=um.hand_marker_l,limit=1,sort=nearest] feet run tp ^ ^ ^1
 execute if entity @s[tag=um.hand2,scores={um.dummy=..0}] facing entity @e[tag=um.hand_marker_r,limit=1,sort=nearest] feet run tp ^ ^ ^1
 execute if entity @s[tag=um.hand3,scores={um.dummy=..0}] facing entity @e[tag=um.hand_marker_l2,limit=1,sort=nearest] feet run tp ^ ^ ^1
