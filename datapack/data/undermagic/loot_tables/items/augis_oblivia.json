@@ -16,7 +16,8 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
           {"text":"Increases mana regen by 10 mana per second.","color":"gray","italic":false},
-          {"text":"Also occasionally fires void beams when casting.","color":"gray","italic":false}
+          {"text":"Also occasionally fires void beams when casting.","color":"gray","italic":false},
+          {"text":"Also buffs abyssal magic weapons.","color":"gray","italic":false}
 			  ]
 			},
 			{
