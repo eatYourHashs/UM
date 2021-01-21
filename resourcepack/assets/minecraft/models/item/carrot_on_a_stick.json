@@ -602,6 +602,18 @@
         "custom_model_data": 420157
       },
       "model": "um:entity/rahthor/arm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420158
+      },
+      "model": "um:item/augis_ultra"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420159
+      },
+      "model": "um:item/augis_oblivia"
     }
   ]
 }

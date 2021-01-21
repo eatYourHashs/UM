@@ -8,5 +8,6 @@ scoreboard players set $math.in_3 um.dummy 0
 execute as @e[tag=!global.ignore,scores={um.invuln=10..},distance=..2] run function undermagic:utils/damage_entity
 execute unless score temp um.dummy matches 201.. positioned ^ ^ ^0.5 run function undermagic:item/weapon/prismatic_scepter
 execute if score temp um.dummy matches 201.. run scoreboard players remove @s um.mana 8
+execute if score temp um.dummy matches 201.. run scoreboard players add @s um.mana_used 8
 execute if score temp um.dummy matches 201.. run scoreboard players set @s um.mana_cd 0
 execute if score temp um.dummy matches 201.. run scoreboard players set temp um.dummy 0

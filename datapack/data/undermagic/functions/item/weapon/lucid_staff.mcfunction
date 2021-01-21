@@ -6,4 +6,5 @@ playsound minecraft:entity.vex.death player @a ~ ~ ~ 1 2
 playsound minecraft:entity.vex.death player @a ~ ~ ~ 1 2
 playsound minecraft:entity.vex.death player @a ~ ~ ~ 1 2
 scoreboard players remove @s um.mana 10
+scoreboard players add @s um.mana_used 10
 scoreboard players set @s um.mana_cd 0

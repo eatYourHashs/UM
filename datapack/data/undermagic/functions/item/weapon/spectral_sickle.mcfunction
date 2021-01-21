@@ -4,4 +4,5 @@ execute if data entity @s Inventory[{Slot:-106b}].tag{um_id:"oblivion_matrix"} p
 execute as @e[sort=nearest,limit=1,tag=um.spectral_sickle] run tp @p
 execute as @e[sort=nearest,limit=1,tag=um.spectral_sickle] run tp ~ ~1.3 ~
 scoreboard players remove @s um.mana 12
+scoreboard players add @s um.mana_used 12
 scoreboard players set @s um.mana_cd 0

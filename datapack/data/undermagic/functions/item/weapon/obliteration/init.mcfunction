@@ -1,4 +1,5 @@
 scoreboard players set @s um.mana 0
+scoreboard players add @s um.mana_used 100
 scoreboard players set @s um.mana_cd 0
 scoreboard players set @s um.oblit_prog 1
 playsound minecraft:entity.illusioner.cast_spell player @a ~ ~ ~ 1 0.5

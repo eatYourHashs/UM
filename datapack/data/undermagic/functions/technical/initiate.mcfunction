@@ -91,6 +91,7 @@ scoreboard objectives add um.astral_stars dummy
 scoreboard objectives add um.night_cd dummy
 scoreboard objectives add um.flare_cd dummy
 scoreboard objectives add um.bfc_hits dummy
+scoreboard objectives add um.mana_used dummy
 
 #scoreboard players init
 

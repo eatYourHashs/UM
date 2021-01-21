@@ -5,4 +5,5 @@ playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 1 2
 playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 1 2
 playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 1 2
 scoreboard players remove @s um.mana 8
+scoreboard players add @s um.mana_used 8
 scoreboard players set @s um.mana_cd 0
