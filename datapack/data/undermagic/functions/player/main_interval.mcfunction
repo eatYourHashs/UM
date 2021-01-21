@@ -1,6 +1,7 @@
 
 #check items
 execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor_interval
+execute if data entity @s Inventory[{Slot:-106b}].tag.um_id run function undermagic:player/check_armor_interval
 
 #player processing
 execute if entity @s[tag=!um.processed] run function undermagic:player/processing
