@@ -1,6 +1,7 @@
 execute unless score @s um.oblit_prog matches 101.. run scoreboard players add @s um.oblit_prog 1
 execute unless score @s um.oblit_prog matches 101.. unless score @s um.oblit_prog matches 2 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"oblivion_matrix"} run scoreboard players add @s um.oblit_prog 1
 execute unless score @s um.oblit_prog matches 101.. unless score @s um.oblit_prog matches 2 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"augis_oblivia"} run scoreboard players add @s um.oblit_prog 1
+execute unless score @s um.oblit_prog matches 101.. if score @s um.oblit_prog matches 40 if data entity @s Inventory[{Slot:-106b}].tag{um_id:"augis_oblivia"} run scoreboard players set @s um.oblit_prog 60
 scoreboard players set @s um.mana 0
 scoreboard players set @s um.mana_cd 0
 particle minecraft:portal ~ ~1.3 ~ 0 0 0 0.5 10
