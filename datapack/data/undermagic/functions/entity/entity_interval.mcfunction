@@ -22,6 +22,7 @@ execute if entity @s[tag=um.teleporter] run function undermagic:block/teleporter
 execute if entity @s[tag=um.charm_table] run function undermagic:block/charm_table_interval
 execute if entity @s[tag=um.radiant_monolith] run function undermagic:block/radiant_monolith_interval
 execute if entity @s[tag=um.blood_monolith] run function undermagic:block/blood_monolith_interval
+execute if entity @s[tag=um.chunk_loader] run function undermagic:block/chunk_loader_interval
 
 #dungeon markers
 execute if entity @s[tag=um.break_walls_marker] run fill ~-1 ~ ~-1 ~1 ~2 ~1 air
