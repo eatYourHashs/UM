@@ -53,6 +53,12 @@
         "custom_model_data": 420088
       },
       "model": "um:block/blood_chalice_filled3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420089
+      },
+      "model": "um:block/chunk_loader"
     }
   ]
 
