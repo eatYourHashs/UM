@@ -8,6 +8,24 @@
           "name": "undermagic:items/armageddon"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/augis_ultra"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop"
+        }
+      ]
     }
   ]
 }

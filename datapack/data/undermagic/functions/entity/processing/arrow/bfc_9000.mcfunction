@@ -28,6 +28,8 @@ execute if entity @e[type=arrow,sort=nearest,distance=..3,tag=um.venom_proc] run
 execute if entity @e[type=arrow,sort=nearest,distance=..3,tag=um.dragons_proc] run tag @s add um.acid
 execute if entity @e[type=arrow,sort=nearest,distance=..3,tag=um.shadow_proc] run tag @s add um.shadow
 execute if entity @e[type=arrow,sort=nearest,distance=..3,tag=um.impact_proc] run tag @s add um.impact
+execute if entity @e[type=arrow,sort=nearest,distance=..3,tag=um.hellfire_proc] run tag @s add um.hellfire
+execute if entity @e[type=arrow,sort=nearest,distance=..3,tag=um.doom_proc] run tag @s add um.doom
 execute if entity @s[predicate=undermagic:armor_sets/abyss_ranger,scores={um.ar_stealth=100..}] run tag @s add um.ar_stealth
 execute as @e[scores={um.bfc_hits=1..}] at @s run function undermagic:item/weapon/bfc_9000_damage
 tag @s remove um.ar_helm
@@ -41,3 +43,5 @@ tag @s remove um.venom
 tag @s remove um.acid
 tag @s remove um.shadow
 tag @s remove um.impact
+tag @s remove um.hellfire
+tag @s remove um.doom

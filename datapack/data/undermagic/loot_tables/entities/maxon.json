@@ -8,6 +8,24 @@
           "name": "undermagic:items/flare_runner"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/flarium_aegis"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop"
+        }
+      ]
     }
   ]
 }

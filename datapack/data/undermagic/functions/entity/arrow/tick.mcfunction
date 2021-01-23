@@ -12,6 +12,13 @@ execute if entity @s[tag=um.impact_proc] run particle minecraft:explosion ~ ~ ~ 
 execute if entity @s[tag=um.impact_proc] run playsound minecraft:entity.dragon_fireball.explode player @a ~ ~ ~ 0.2 1
 execute if entity @s[tag=um.impact_proc,scores={um.dummy=2..},nbt=!{life:0s}] run function undermagic:entity/arrow/impact
 
+execute if entity @s[tag=um.hellfire_proc] run particle minecraft:flame ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.hellfire_proc,scores={um.dummy=2..},nbt=!{life:0s}] run function undermagic:entity/arrow/hellfire
+
+execute if entity @s[tag=um.doom_proc] run particle minecraft:explosion ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.doom_proc] run playsound minecraft:entity.dragon_fireball.explode player @a ~ ~ ~ 0.2 1
+execute if entity @s[tag=um.doom_proc,scores={um.dummy=2..},nbt=!{life:0s}] run function undermagic:entity/arrow/doom
+
 execute if entity @s[tag=um.greatbow_proc] run function undermagic:entity/arrow/greatbow_shot
 execute if entity @s[tag=um.split_shot] run particle smoke
 

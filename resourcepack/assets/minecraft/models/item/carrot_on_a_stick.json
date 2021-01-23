@@ -614,6 +614,18 @@
         "custom_model_data": 420159
       },
       "model": "um:item/augis_oblivia"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420160
+      },
+      "model": "um:item/hellfire_quiver"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420161
+      },
+      "model": "um:item/doom_quiver"
     }
   ]
 }

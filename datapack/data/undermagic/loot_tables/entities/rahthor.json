@@ -8,6 +8,24 @@
           "name": "undermagic:items/bfc_9000"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/hellfire_quiver"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop"
+        }
+      ]
     }
   ]
 }

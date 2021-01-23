@@ -10,6 +10,8 @@ execute if entity @p[tag=um.venom] run scoreboard players add $math.in_0 um.dumm
 execute if entity @p[tag=um.acid] run scoreboard players add $math.in_0 um.dummy 20
 execute if entity @p[tag=um.shadow] run scoreboard players add $math.in_0 um.dummy 30
 execute if entity @p[tag=um.impact] run scoreboard players add $math.in_0 um.dummy 35
+execute if entity @p[tag=um.hellfire] run scoreboard players add $math.in_0 um.dummy 25
+execute if entity @p[tag=um.doom] run scoreboard players add $math.in_0 um.dummy 40
 scoreboard players operation $math.in_0 um.dummy *= @s um.bfc_hits
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 3

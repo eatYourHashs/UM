@@ -15,7 +15,8 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Provides supreme protection.","color":"gray","italic":false}
+				{"text":"Provides supreme protection against heavy hits.","color":"gray","italic":false},
+				{"text":"Also reduces fire damage and grants immunity to lava.","color":"gray","italic":false}
 			  ]
 			},
 			{

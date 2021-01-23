@@ -5,6 +5,14 @@
 # $math.in_3 um.dummy: minimum damage to 1 decimal place
 # Note: not always accurate on wither and ender dragon
 
+#special fire DR items
+
+execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,nbt={Inventory:[{Slot:-106b,tag:{um_id:"flarium_aegis"}}]}] run scoreboard players operation $math.in_0 um.dummy *= $cons.3
+execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,nbt={Inventory:[{Slot:-106b,tag:{um_id:"flarium_aegis"}}]}] run scoreboard players operation $math.in_0 um.dummy /= $cons.4
+execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,nbt={Inventory:[{Slot:-106b,tag:{um_id:"infernal_soul_aegis"}}]}] run scoreboard players operation $math.in_0 um.dummy /= $cons.2
+execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,nbt={Inventory:[{Slot:102b,tag:{um_id:"pit_lord_chestplate"}}]}] run scoreboard players operation $math.in_0 um.dummy *= $cons.3
+execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,nbt={Inventory:[{Slot:102b,tag:{um_id:"pit_lord_chestplate"}}]}] run scoreboard players operation $math.in_0 um.dummy /= $cons.4
+
 #calculate armor redux
 execute store result score $math.temp_0 um.dummy run attribute @s minecraft:generic.armor get 10
 execute store result score $math.temp_1 um.dummy run attribute @s minecraft:generic.armor_toughness get 10
