@@ -7,7 +7,7 @@ bossbar set undermagic:elder players @s
 stopsound @a * um:boss_music.elder
 
 execute at @e[tag=um.elder] run advancement grant @a[distance=..128] only undermagic:undermagic/elder
-execute at @e[tag=um.elder] run advancement grant @a[distance=..128] only undermagic:undermagic/abyss_elder
+execute at @e[tag=um.elder] run advancement grant @a[distance=..128] only undermagic:undermagic/abyss elder
 
 tp @e[tag=um.elder] ~ -100 ~
 kill @e[tag=um.elder]

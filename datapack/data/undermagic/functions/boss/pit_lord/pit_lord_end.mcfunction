@@ -6,7 +6,7 @@ bossbar set undermagic:pit_lord visible false
 bossbar set undermagic:pit_lord players @s
 
 execute as @e[tag=um.pit_lord] at @s run advancement grant @a[distance=..128] only undermagic:undermagic/pit_lord
-execute as @e[tag=um.pit_lord] at @s run advancement grant @a[distance=..128] only undermagic:undermagic/abyss_pit_lord
+execute as @e[tag=um.pit_lord] at @s run advancement grant @a[distance=..128] only undermagic:undermagic/abyss pit_lord
 
 tp @e[tag=um.pit_lord] ~ -100 ~
 kill @e[tag=um.pit_lord]
