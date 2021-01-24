@@ -184,6 +184,7 @@ execute if score @s um.dummy matches 2100 run particle explosion_emitter
 execute if score @s um.dummy matches 2120 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 2
 execute if score @s um.dummy matches 2120 run particle explosion_emitter ~ ~ ~ 0.5 0.5 0.5 0 10
 execute if score @s um.dummy matches 2120 run particle minecraft:smoke ~ ~1 ~ 0.1 0.2 0.1 0.5 3000
+execute if score @s um.dummy matches 2120 run advancement grant @a[distance=..128] only undermagic:undermagic/shadesull
 execute if score @s um.dummy matches 2120 run kill @s
 bossbar set undermagic:shadesull players @a[distance=..50]
 bossbar set undermagic:shadesull visible true
