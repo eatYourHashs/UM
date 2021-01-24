@@ -11,6 +11,7 @@
 		"minecraft:ghast",
 		"minecraft:phantom",
 		"minecraft:zoglin",
-		"minecraft:zombified_piglin"
+		"minecraft:zombified_piglin",
+		"minecraft:drowned"
 	]
 }
