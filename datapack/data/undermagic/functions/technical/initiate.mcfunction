@@ -191,7 +191,7 @@ execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal
 execute in minecraft:undermagic/dungeon positioned 0 100 0 run forceload add ~ ~
 
 #set load version
-scoreboard players set um.server_version um.dummy 36
+scoreboard players set um.server_version um.dummy 37
 
 #init storage
 data merge storage undermagic:common {list:[],obj:[],var:""}
