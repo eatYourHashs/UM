@@ -17,6 +17,7 @@ execute as @s[tag=um.shadow_rift] run function undermagic:entity/rift/tick
 
 execute as @s[tag=um.shadebeast] run function undermagic:entity/generic/shadebeast_tick
 execute as @s[tag=um.oblivion_charge] run function undermagic:entity/generic/oblivion_charge
+execute as @s[tag=um.crystal_breath] run function undermagic:entity/ender_dragon/crystal_breath_tick
 
 execute as @s[tag=um.salamander] run function undermagic:entity/salamander/tick
 execute as @s[tag=um.wyrmling] run function undermagic:entity/wyrmling/tick

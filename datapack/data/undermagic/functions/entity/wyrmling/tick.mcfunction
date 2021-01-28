@@ -10,7 +10,7 @@ execute facing entity @e[tag=um.wyrmling_target,sort=nearest,limit=1,distance=..
 execute unless entity @e[tag=um.wyrmling_target,distance=..100] if entity @p[distance=..100] run function undermagic:entity/wyrmling/wyrmling_retarget
 execute if entity @e[tag=um.wyrmling_target,distance=..1] run function undermagic:entity/wyrmling/wyrmling_retarget
 execute if entity @s[scores={um.dummy_two=500}] facing entity @p feet run summon armor_stand ^20 ^ ^10 {Marker:1b,NoGravity:1b,Invisible:1b,Tags:["global.ignore","um.entity","um.wyrmling_target"]}
-execute if entity @s[scores={um.dummy_two=560}] facing entity @p feet run function undermagic:entity/wyrmling/wyrmling_fireball
+execute if entity @s[scores={um.dummy_two=560}] facing entity @p feet unless entity @e[type=minecraft:area_effect_cloud,nbt={Particle:"minecraft:dragon_breath"}] run function undermagic:entity/wyrmling/wyrmling_fireball
 execute if entity @s[scores={um.dummy_two=660..}] facing entity @p feet if block ^ ^1 ^ air run tp ^ ^ ^0.4
 execute if entity @s[scores={um.dummy_two=660..}] facing entity @p feet unless block ^ ^1 ^ air run scoreboard players set @s um.dummy_two 0
 execute if entity @s[scores={um.dummy_two=660..}] if entity @p[distance=..1] run function undermagic:entity/wyrmling/wyrmling_bite

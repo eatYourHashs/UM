@@ -73,7 +73,7 @@ execute if entity @e[tag=um.pit_minion] run bossbar set undermagic:pit_lord colo
 execute store result score @s um.boss_hp run data get entity @s Health 1
 execute store result bossbar undermagic:pit_lord value run data get entity @s Health 1
 
-execute if score @s um.music matches 1460 run playsound um:boss_music.pit_lord music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 1460 run playsound um:music.pit_lord music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1460.. run scoreboard players set @s um.music 0
 effect give @s invisibility 2 1 true
 tp @e[sort=nearest,limit=1,tag=um.pit_abs] @s

@@ -91,14 +91,14 @@ execute if entity @s[scores={um.dummy=455}] run kill @e[tag=um.elder_ray]
 execute if score difficulty um.dummy matches 1.. if entity @s[scores={um.boss_hp=..150},tag=!um.spawned_hands] run function undermagic:entity/elder/elder_spawn_hands
 execute if score difficulty um.dummy matches 2.. if entity @s[scores={um.boss_hp=..20},tag=!um.spawned_hands2] run function undermagic:entity/elder/elder_spawn_hands2
 scoreboard players add @s um.music 1
-execute if score @s um.music matches 1960 run playsound um:boss_music.elder music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
+execute if score @s um.music matches 1960 run playsound um:music.elder music @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 execute if score @s um.music matches 1960.. run scoreboard players set @s um.music 0
 
 execute if score @s um.boss_hp matches ..0 unless entity @s[tag=um.dead] run scoreboard players set @s um.dummy 499
 execute if score @s um.boss_hp matches ..0 unless entity @s[tag=um.dead] run tag @s add um.dead
 
 execute if score @s um.dummy matches 500 run effect give @s resistance 7 4 true
-execute if score @s um.dummy matches 500 run stopsound @a * um:boss_music.elder
+execute if score @s um.dummy matches 500 run stopsound @a * um:music.elder
 execute if score @s um.dummy matches 500 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 1 2
 execute if score @s um.dummy matches 500 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.7
 execute if score @s um.dummy matches 520 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 0.7

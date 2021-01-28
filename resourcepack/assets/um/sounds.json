@@ -1,56 +1,64 @@
 {
-  "boss_music.pit_lord": {
+  "music.pit_lord": {
     "subtitle": "Demon King's Revenge plays",
     "sounds": [
-      "um:boss_music/demon_kings_revenge"
+      "um:music/demon_kings_revenge"
     ],
     "stream": "true",
     "preload": "true"
   },
-  "boss_music.shadesull_p1": {
+  "music.shadesull_p1": {
     "subtitle": "In the Chamber of Madness plays",
     "sounds": [
-      "um:boss_music/in_the_chamber_of_madness"
+      "um:music/in_the_chamber_of_madness"
     ],
     "stream": "true",
     "preload": "true"
   },
-  "boss_music.shadesull_p2": {
+  "music.shadesull_p2": {
     "subtitle": "Reign of the Corrupt plays",
     "sounds": [
-      "um:boss_music/reign_of_the_corrupt"
+      "um:music/reign_of_the_corrupt"
     ],
     "stream": "true",
     "preload": "true"
   },
-  "boss_music.blood_amalgam": {
+  "music.blood_amalgam": {
     "subtitle": "Blood Amalgam plays",
     "sounds": [
-      "um:boss_music/blood_amalgam"
+      "um:music/blood_amalgam"
     ],
     "stream": "true",
     "preload": "true"
   },
-  "boss_music.elder": {
+  "music.elder": {
     "subtitle": "Eye on You plays",
     "sounds": [
-      "um:boss_music/eye_on_you"
+      "um:music/eye_on_you"
     ],
     "stream": "true",
     "preload": "true"
   },
-  "boss_music.herald_p1": {
+  "music.herald_p1": {
     "subtitle": "Conflict of the Ages plays",
     "sounds": [
-      "um:boss_music/conflict_of_the_ages"
+      "um:music/conflict_of_the_ages"
     ],
     "stream": "true",
     "preload": "true"
   },
-  "boss_music.herald_p2": {
+  "music.herald_p2": {
     "subtitle": "Echoes of the Apocalypse plays",
     "sounds": [
-      "um:boss_music/echoes_of_the_apocalypse"
+      "um:music/echoes_of_the_apocalypse"
+    ],
+    "stream": "true",
+    "preload": "true"
+  },
+  "music.dungeon": {
+    "subtitle": "Halls of Shadow plays",
+    "sounds": [
+      "um:music/halls_of_shadow"
     ],
     "stream": "true",
     "preload": "true"
