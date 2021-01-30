@@ -7,6 +7,12 @@ execute if score difficulty um.dummy matches 1.. unless entity @e[distance=..6,t
 execute if score difficulty um.dummy matches 1.. at @s facing entity @p feet run tp ~ ~ ~
 execute if score difficulty um.dummy matches 1.. store result score @s um.boss_hp run data get entity @s Health
 execute if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 200
+execute if score difficulty um.dummy matches 1 if score @s um.boss_hp < @s um.dummy_two run attribute @s minecraft:generic.armor modifier add 053eab72-6330-11eb-ae93-0242ac130002 wither_armor 12 add
+execute if score difficulty um.dummy matches 1 if score @s um.boss_hp < @s um.dummy_two run attribute @s minecraft:generic.armor_toughness modifier add da27117a-6331-11eb-ae93-0242ac130002 wither_armor_tough 10 add
+execute if score difficulty um.dummy matches 2.. if score @s um.boss_hp < @s um.dummy_two run attribute @s minecraft:generic.armor modifier add 053eab72-6330-11eb-ae93-0242ac130002 wither_armor 14 add
+execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp < @s um.dummy_two run attribute @s minecraft:generic.armor_toughness modifier add da27117a-6331-11eb-ae93-0242ac130002 wither_armor_tough 12 add
+execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp > @s um.dummy_two run attribute @s minecraft:generic.armor modifier remove 053eab72-6330-11eb-ae93-0242ac130002
+execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp > @s um.dummy_two run attribute @s minecraft:generic.armor_toughness modifier remove da27117a-6331-11eb-ae93-0242ac130002
 execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp < @s um.dummy_two as @e[type=wither_skull,distance=..3] at @s run function undermagic:entity/wither/convert_beam
 execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp < @s um.dummy_two if score @s um.dummy matches 100 run function undermagic:entity/wither/spawn_decay_clouds
 execute if score difficulty um.dummy matches 1.. if score @s um.boss_hp < @s um.dummy_two if score @s um.dummy matches 101 run spreadplayers ~ ~ 3 12 false @e[tag=um.wither_cloud]

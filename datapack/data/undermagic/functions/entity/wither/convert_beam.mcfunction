@@ -5,4 +5,6 @@ particle smoke
 particle smoke ^ ^ ^1
 particle smoke ^ ^ ^2
 particle smoke ^ ^ ^3
+particle smoke ^ ^ ^4
+particle smoke ^ ^ ^5
 kill @s
