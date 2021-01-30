@@ -1,4 +1,5 @@
 execute if entity @s[type=wither] run function undermagic:entity/wither/tick
+execute if entity @s[tag=um.wither_beam_marker] run function undermagic:entity/wither/beam_marker_tick
 
 execute if score $timer_10 um.dummy matches 0 run function undermagic:entity/entity_interval
 
