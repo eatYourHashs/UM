@@ -1,6 +1,3 @@
-
-execute if entity @s[type=wither] run function undermagic:entity/generic/wither_interval
-
 execute if entity @s[tag=um.demon_portal] run function undermagic:entity/generic/demon_portal
 execute if entity @s[tag=um.shadow_rift] run function undermagic:entity/rift/interval
 execute if entity @e[tag=um.salamander] run function undermagic:entity/salamander/interval
@@ -46,3 +43,5 @@ execute if entity @s[tag=um.disciple_of_destruction_spawner] if entity @a[distan
 execute if entity @s[tag=um.disciple_of_death_spawner] if entity @a[distance=..14] run function undermagic:entity/disciple_of_death/summon
 execute if entity @s[tag=um.shadesull_door] if entity @a[distance=..5] if score destruction_downed um.dummy matches 1 if score death_downed um.dummy matches 1 run function undermagic:entity/shadesull/door_open
 execute if entity @s[tag=um.shadesull_spawner] if entity @a[distance=..14] unless entity @e[tag=um.shadesull_door] run function undermagic:entity/shadesull/summon
+
+execute if entity @s[tag=um.wither_marker] unless entity @e[type=wither,distance=..3] run kill @s

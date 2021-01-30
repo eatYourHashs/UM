@@ -1,3 +1,4 @@
+execute if entity @s[type=wither] run function undermagic:entity/wither/tick
 
 execute if score $timer_10 um.dummy matches 0 run function undermagic:entity/entity_interval
 
