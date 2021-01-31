@@ -7,7 +7,7 @@ function undermagic:utils/random
 scoreboard players remove $math.out_0 um.dummy 11
 execute store result score z um.dummy run data get entity @s Pos[2] 1
 scoreboard players operation z um.dummy += $math.out_0 um.dummy
-summon armor_stand ~ ~20 ~ {Tags:["global.ignore","um.entity","um.shadesull","um.shadesull_explosive_bullet","um.new_bullet"],NoGravity:1b,Invisible:1b,Marker:1b}
+summon armor_stand ~ ~15 ~ {Tags:["global.ignore","um.entity","um.shadesull","um.shadesull_explosive_bullet","um.new_bullet"],NoGravity:1b,Invisible:1b,Marker:1b}
 execute unless entity @p[distance=..24] as @e[tag=um.new_bullet] at @s run tp ~ ~-10 ~
 execute store result entity @e[limit=1,tag=um.new_bullet] Pos[0] double 1 run scoreboard players get x um.dummy
 execute store result entity @e[limit=1,tag=um.new_bullet] Pos[2] double 1 run scoreboard players get z um.dummy
