@@ -34,5 +34,5 @@ execute if score $timer_20 um.dummy matches 0 as @e[type=item_frame] at @s if bl
 execute if score $timer_20 um.dummy matches 0 run scoreboard players set @e[tag=!global.ignore,type=!player] um.invuln 11
 
 #other stuff
-scoreboard players remove @e[scores={um.aw_mark=1..}] um.aw_mark 1
+#scoreboard players remove @e[scores={um.aw_mark=1..}] um.aw_mark 1
 scoreboard players remove @e[scores={um.oathbow_mark=1..}] um.oathbow_mark 1

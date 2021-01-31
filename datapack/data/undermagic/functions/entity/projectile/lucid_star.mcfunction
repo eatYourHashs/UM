@@ -1,6 +1,6 @@
 particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1
 execute facing entity @e[type=#undermagic:hostile,limit=1,sort=nearest,distance=..64] feet run tp ^ ^ ^1
-scoreboard players set $math.in_0 um.dummy 120
+scoreboard players set $math.in_0 um.dummy 80
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
 scoreboard players set $math.in_3 um.dummy 0
