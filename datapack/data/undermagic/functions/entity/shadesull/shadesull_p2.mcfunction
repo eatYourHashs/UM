@@ -1,3 +1,4 @@
+function undermagic:entity/shadesull/dialogue/phase_2
 stopsound @a master um:music.shadesull_p1
 playsound um:music.shadesull_p2 master @a[distance=..50] ~ ~ ~ 0.5 1 0.5
 scoreboard players set @s um.music 0

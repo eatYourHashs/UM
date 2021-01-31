@@ -1,3 +1,4 @@
+function undermagic:entity/shadesull/dialogue/spawn_disciple_1
 scoreboard players set @s um.dummy 2121
 tag @s add um.spawned_disciple
 tag @s add um.untargetable

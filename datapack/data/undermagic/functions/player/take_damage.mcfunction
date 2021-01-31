@@ -11,6 +11,7 @@ scoreboard players add @s um.shade_invi 100
 scoreboard players set @s um.take_damage 0
 execute if score nohit um.dummy matches 1 run function undermagic:boss/elder/elder_end
 execute if score nohit um.dummy matches 1 run function undermagic:boss/pit_lord/pit_lord_end
+execute if score nohit um.dummy matches 1 if data storage undermagic:common boss_status{shadesull:1b} run function undermagic:entity/shadesull/dialogue/nohit_fail
 execute if score nohit um.dummy matches 1 run function undermagic:boss/shadesull/shadesull_end
 execute if score nohit um.dummy matches 1 run function undermagic:boss/blood_amalgam/blood_amalgam_end
 execute if score nohit um.dummy matches 1 run gamerule showDeathMessages false

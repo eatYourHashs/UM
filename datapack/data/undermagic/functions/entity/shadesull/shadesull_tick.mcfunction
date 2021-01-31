@@ -27,6 +27,7 @@ execute if entity @s[scores={um.dummy=1..200,um.boss_hp=800,um.dummy_two=2..}] i
 execute if entity @s[scores={um.dummy=1..200,um.boss_hp=800,um.dummy_two=2..}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 0
 execute if entity @s[scores={um.dummy=1..200,um.boss_hp=800,um.dummy_two=3..}] unless score difficulty um.dummy matches 1.. as @r[distance=..50] at @s run function undermagic:entity/shadesull/shadesull_spawn_basic_bullet
 execute if entity @s[scores={um.dummy=1..200,um.boss_hp=800,um.dummy_two=3..}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 0
+execute if entity @s[scores={um.dummy=200}] run function undermagic:entity/shadesull/dialogue/bh1_end
 execute if entity @s[scores={um.dummy=201..280,um.boss_hp=..600}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 400
 execute if entity @s[scores={um.dummy=201..320,um.boss_hp=..600}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 400
 execute if entity @s[scores={um.dummy=280}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 201
@@ -41,6 +42,7 @@ execute if entity @s[scores={um.dummy=213,um.dummy_three=0}] as @p at @s run sum
 execute if entity @s[scores={um.dummy=222,um.dummy_three=0}] as @p at @s run function undermagic:entity/shadesull/predict_movement
 execute if entity @s[scores={um.dummy=222,um.dummy_three=0}] run function undermagic:entity/shadesull/fire_soul_wisp
 execute if entity @s[scores={um.dummy=401..600}] run effect give @s resistance 1 5 true
+execute if entity @s[scores={um.dummy=402}] run function undermagic:entity/shadesull/dialogue/bh2_begin
 execute if entity @s[scores={um.dummy=401..600}] run tag @s add um.untargetable
 execute if entity @s[scores={um.dummy=401..600,um.dummy_two=2..}] if score difficulty um.dummy matches 1.. as @r[distance=..50] at @s run function undermagic:entity/shadesull/shadesull_spawn_basic_bullet
 execute if entity @s[scores={um.dummy=401..600,um.dummy_two=2..}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 0
@@ -69,6 +71,7 @@ execute if entity @s[scores={um.dummy=801..1000,um.dummy_two=10..}] unless score
 execute if entity @s[scores={um.dummy=801..1000,um.dummy_two=10..}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 0
 execute if entity @s[scores={um.dummy=801..1000,um.dummy_two=6..}] if score difficulty um.dummy matches 1.. as @r[distance=..50] at @s run function undermagic:entity/shadesull/shadesull_spawn_explosive_bullet
 execute if entity @s[scores={um.dummy=801..1000,um.dummy_two=6..}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 0
+execute if entity @s[scores={um.dummy=1000}] run function undermagic:entity/shadesull/dialogue/bh3_end
 execute if entity @s[scores={um.dummy=1000}] run function undermagic:entity/shadesull/shadesull_elder_hands
 execute if entity @s[scores={um.dummy=1001..1080,um.boss_hp=..300}] if score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 1200
 execute if entity @s[scores={um.dummy=1001..1120,um.boss_hp=..300}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy 1200
@@ -126,6 +129,7 @@ execute if entity @s[scores={um.dummy=1400..1600,um.dummy_two=3..}] unless score
 execute if entity @s[scores={um.dummy=1400..1600,um.dummy_two=3..}] unless score difficulty um.dummy matches 1.. run scoreboard players set @s um.dummy_two 0
 execute if entity @s[scores={um.dummy=1580}] run function undermagic:entity/shadesull/shadesull_warp
 execute if entity @s[scores={um.dummy=1590}] if entity @e[tag=um.shadesull_elder_hand] run scoreboard players set @s um.dummy 1401
+execute if entity @s[scores={um.dummy=1400..1600}] unless entity @e[tag=um.shadesull_elder_hand] run function undermagic:entity/shadesull/dialogue/bh4_end
 execute if entity @s[scores={um.dummy=1400..1600}] unless entity @e[tag=um.shadesull_elder_hand] run scoreboard players set @s um.dummy 1601
 execute if entity @s[scores={um.dummy=1602}] run function undermagic:entity/shadesull/shadesull_warp
 execute if entity @s[scores={um.dummy=1607}] run function undermagic:entity/shadesull/shadesull_warp
@@ -177,12 +181,16 @@ execute if score @s um.boss_hp matches ..100 if score @s um.dummy matches ..1999
 execute if score @s um.boss_hp matches ..100 run stopsound @a * um:music.shadesull_p2
 execute if score @s um.dummy matches 2020 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 0.5
 execute if score @s um.dummy matches 2020 run particle explosion_emitter
+execute if score @s um.dummy matches 2020 run function undermagic:entity/shadesull/dialogue/death_1
 execute if score @s um.dummy matches 2060 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 0.5
 execute if score @s um.dummy matches 2060 run particle explosion_emitter
+execute if score @s um.dummy matches 2060 run function undermagic:entity/shadesull/dialogue/death_2
 execute if score @s um.dummy matches 2100 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 0.5
 execute if score @s um.dummy matches 2100 run particle explosion_emitter
+execute if score @s um.dummy matches 2100 run function undermagic:entity/shadesull/dialogue/death_3
 execute if score @s um.dummy matches 2120 run playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 1 2
 execute if score @s um.dummy matches 2120 run particle explosion_emitter ~ ~ ~ 0.5 0.5 0.5 0 10
+execute if score @s um.dummy matches 2120 run function undermagic:entity/shadesull/dialogue/death_4
 execute if score @s um.dummy matches 2120 run particle minecraft:smoke ~ ~1 ~ 0.1 0.2 0.1 0.5 3000
 execute if score @s um.dummy matches 2120 run advancement grant @a[distance=..128] only undermagic:undermagic/shadesull
 execute if score @s um.dummy matches 2120 run kill @s

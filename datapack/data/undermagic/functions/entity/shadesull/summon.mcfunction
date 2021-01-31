@@ -1,5 +1,6 @@
 function undermagic:boss/shadesull/shadesull_end
 clear @s carrot_on_a_stick{um_id:"crown_of_ruin"} 1
+function undermagic:entity/shadesull/dialogue/spawn
 execute if entity @s[type=armor_stand] run scoreboard players set fought_shadesull um.dummy 1
 execute if entity @s[type=armor_stand] run kill @s
 scoreboard players add @s um.dummy 1

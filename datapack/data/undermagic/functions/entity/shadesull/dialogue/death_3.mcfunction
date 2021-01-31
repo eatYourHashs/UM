@@ -1,0 +1,1 @@
+tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#720080"},{"text":"Thank you, mighty warrior...","color":"#E100FF"}]

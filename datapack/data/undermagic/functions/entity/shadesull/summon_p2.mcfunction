@@ -1,4 +1,5 @@
 function undermagic:boss/shadesull/shadesull_end
+function undermagic:entity/shadesull/dialogue/phase_2
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.music 1
 playsound minecraft:entity.evoker.prepare_summon hostile @a ~ ~ ~ 1 2
