@@ -2,6 +2,7 @@ tp @s ~ ~-0.6 ~
 execute if score difficulty um.dummy matches 1.. run tp @s ~ ~-0.2 ~
 execute if score difficulty um.dummy matches 2.. run tp @s ~ ~-0.2 ~
 particle minecraft:witch ~ ~ ~ 0.15 0.15 0.15 0 6
+particle minecraft:soul_fire_flame ~ ~ ~ 0.15 0.15 0.15 0 4
 scoreboard players add @s um.dummy 1
 execute if score @s um.dummy matches 140.. run kill @s
 execute if score difficulty um.dummy matches 0 run scoreboard players set $math.in_0 um.dummy 300
