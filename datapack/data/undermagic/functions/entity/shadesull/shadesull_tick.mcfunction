@@ -6,6 +6,7 @@ scoreboard players add @s um.dummy_two 1
 scoreboard players add @s um.music 1
 execute unless score @s um.dummy matches 2121.. run tp @a[distance=40..50] @s
 execute facing entity @p feet run tp ^ ^ ^
+execute unless score nohit um.dummy matches 1.. run tag @s add um.no_nohit
 kill @e[tag=um.hand_marker_l]
 kill @e[tag=um.hand_marker_r]
 kill @e[tag=um.hand_marker_l2]

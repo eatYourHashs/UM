@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:music_disc_13",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Music Disc","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+          {"text":"Hashs - Halls of Shadow","color":"gray","italic":false},
+          {"text":"Theme of the Shadesull Dungeon","color":"dark_gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420004,HideFlags:32b,um_id:\"reign_of_the_corrupt\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

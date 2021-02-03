@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "item": {
+            "item": "minecraft:music_disc_13",
+            "nbt": "{um_id:\"demon_kings_revenge\"}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "undermagic:item/disc/demon_kings_revenge"
+    }
+  }

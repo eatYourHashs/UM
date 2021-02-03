@@ -2,6 +2,7 @@ execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:entity.enderman.
 execute if entity @s[nbt={HurtTime:9s}] run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 1 0.5
 execute store success score @s um.dummy_two as @e[tag=um.elder_hand] run help
 execute unless entity @e[tag=um.elder_hand] run scoreboard players set @s um.dummy_two 0
+execute unless score nohit um.dummy matches 1.. run tag @s add um.no_nohit
 kill @e[tag=um.hand_marker_l]
 kill @e[tag=um.hand_marker_r]
 kill @e[tag=um.hand_marker_l2]

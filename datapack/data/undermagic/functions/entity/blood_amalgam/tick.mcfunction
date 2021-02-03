@@ -1,6 +1,7 @@
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.music 1
 particle minecraft:dust 1 0 0 1 ~ ~1 ~ 0 0 0 0 1
+execute unless score nohit um.dummy matches 1.. run tag @s add um.no_nohit
 execute if score difficulty um.dummy matches 0 facing entity @p[distance=5..64,gamemode=!creative,gamemode=!spectator] feet facing ^ ^-0.2 ^-1 run tp ^ ^ ^-0.08
 execute if entity @s[scores={um.boss_hp=4..}] if score difficulty um.dummy matches 1.. facing entity @p[distance=5..64,gamemode=!creative,gamemode=!spectator] feet facing ^ ^-0.2 ^-1 run tp ^ ^ ^-0.08
 execute unless entity @s[scores={um.dummy=250..270,um.boss_hp=..6}] facing entity @p[distance=..3,gamemode=!creative,gamemode=!spectator] feet facing ^ ^ ^-1 run tp ^ ^ ^0.08

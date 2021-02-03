@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:music_disc_13",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Music Disc","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+          {"text":"Hashs - In the Chamber of Madness","color":"gray","italic":false},
+          {"text":"Theme of Shadesull (Phase I)","color":"dark_gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420001,HideFlags:32b,um_id:\"in_the_chamber_of_madness\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

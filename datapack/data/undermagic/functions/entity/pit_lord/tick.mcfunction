@@ -1,5 +1,6 @@
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.music 1
+execute unless score nohit um.dummy matches 1.. run tag @s add um.no_nohit
 execute if score @s um.dummy matches ..99 run particle flame ~ ~1 ~ 0.2 0.3 0.2 0.1 6
 execute if score @s um.dummy matches ..30 run tp ~ ~0.13 ~
 execute if score @s um.dummy matches ..99 run playsound minecraft:entity.ender_dragon.shoot hostile @a ~ ~ ~ 1 2

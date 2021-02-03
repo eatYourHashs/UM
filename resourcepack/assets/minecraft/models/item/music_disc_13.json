@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/music_disc_13"
+  },
+  "overrides": [{
+      "predicate": {
+        "custom_model_data": 420000
+      },
+      "model": "um:item/music_disc/demon_kings_revenge"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420001
+      },
+      "model": "um:item/music_disc/in_the_chamber_of_madness"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420002
+      },
+      "model": "um:item/music_disc/reign_of_the_corrupt"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420003
+      },
+      "model": "um:item/music_disc/eye_on_you"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420004
+      },
+      "model": "um:item/music_disc/halls_of_shadow"
+    }
+  ]
+}
