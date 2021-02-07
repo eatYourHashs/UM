@@ -145,9 +145,9 @@ for entry in entries :
     with_description = "{\\\"translate\\\":\\\"" + description + "\\\",\\\"color\\\":\\\"black\\\""+ with_references +"}"
 
     with_back_button = "{\\\"translate\\\":\\\"item.um.demonomicon.page.arrow_button\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"change_page\\\",\\\"value\\\":\\\""+ str(index_page_id) +"\\\"}}"
-    with_link_button = "{\\\"translate\\\":\\\"item.um.demonomicon.page.arrow_button\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"item.um.demonomicon.page.feature_hover_event\\\"}},\\\"clickEvent\\\":{\\\"action\\\":\\\"open_url\\\",\\\"value\\\":\\\""+ feature_link + "\\\"}}"
+#   with_link_button = "{\\\"translate\\\":\\\"item.um.demonomicon.page.arrow_button\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"item.um.demonomicon.page.feature_hover_event\\\"}},\\\"clickEvent\\\":{\\\"action\\\":\\\"open_url\\\",\\\"value\\\":\\\""+ feature_link + "\\\"}}"
 
-    withs = with_icon + "," + with_history + "," + with_contributors + "," + with_more_info + "," + with_recipe + "," + with_give_command + "," + with_description + "," + with_back_button + "," + with_link_button
+    withs = with_icon + "," + with_history + "," + with_contributors + "," + with_more_info + "," + with_recipe + "," + with_give_command + "," + with_description + "," + with_back_button
 
     # Making the entry pages
     page_string = "\'{\\\"translate\\\":\\\"item.um.demonomicon.page\\\",\\\"color\\\":\\\"white\\\",\\\"font\\\":\\\"um:demonomicon\\\",\\\"with\\\":[" + withs + "]}\'"
