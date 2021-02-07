@@ -7,6 +7,7 @@
   "um.version.hover_event": "Click here to see changelog notes",
 
   "item.um.demonomicon": "Demonomicon",
+  "item.um.demonomicon.lore": "A guide to all of Undermagic.",
   "item.um.demonomicon.example_page": "\ud003%s\ud003\ud003%s%s%s%s%s\n\ud021\n%s",
   "item.um.demonomicon.example_page.title": "Example Entry Page",
   "item.um.demonomicon.example_page.icon": "\ud022",

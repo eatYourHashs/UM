@@ -4,4 +4,5 @@ execute as @a[scores={um.cure_charms=1..}] at @s run function undermagic:player/
 execute as @a[scores={um.count_charms=1..}] at @s if score @s um.count_cd matches 1.. run scoreboard players remove @s um.count_cd 1
 execute if score difficulty_set um.dummy matches 1.. run function undermagic:technical/difficulty_set
 execute if score nohit_set um.dummy matches 1.. run function undermagic:technical/nohit_set
+#execute as @a[scores={um.demonomicon=1..}] at @s run function undermagic:technical/give_book
 schedule function undermagic:technical/second_clock 1s replace
