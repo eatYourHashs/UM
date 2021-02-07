@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "id": "piss",
+      "title": "item.um.piss",
+      "recipe_type": "crafting",
+      "give_command": "/say piss."
+    }
+  ]
+}
