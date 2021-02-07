@@ -13,10 +13,10 @@
   "item.um.demonomicon.example_page.icon": "\ud022",
   "item.um.demonomicon.example_page.history": "This is where the history of the item would appear.",
   "item.um.demonomicon.example_page.contributors": "This is where the contributors to this feature would appear.",
-  "item.um.demonomicon.example_page.more_info": "This is where technical information would appear.",
+  "item.um.demonomicon.example_page.more_info": "This is where additional information would appear.",
   "item.um.demonomicon.example_page.recipe": "This is where the recipe would appear.\n\nOr, alternatively, where the item could be found if it doesn't have a recipe.",
   "item.um.demonomicon.example_page.give_command": "This is where you would click to get an item.",
-  "item.um.demonomicon.example_page.description": "This is an example.\n\nIf you hover over the icons, you can read about them. There is also usually a link in the bottom right, but this is an example, so there isn't one.\n\nAfter this page, there is a feature index.",
+  "item.um.demonomicon.example_page.description": "This is an example.\n\nIf you hover over the icons, you can read about them. \n\nAfter this page, there is a feature index.",
 
   "item.um.demonomicon.page": "\ud003%s\ud003\ud003%s%s%s%s%s\n\ud002\n%s\n\ue020%8$s\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003%9$s\n\ue020%8$s\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003%9$s",
   "item.um.demonomicon.page.arrow_button": "\ud011",
@@ -52,16 +52,10 @@
 
 
   "item.um.demonomicon.cover_page": "\n\ud000\n\n\n         %s\n\n\ud020%s%s%s%s\n\n%s",
-  "item.um.demonomicon.cover_page.content": "A comprehensive guide to all the content in Undermagic.\n\nTo get another copy, run %s",
-  "item.um.demonomicon.cover_page.give_command": "this command.",
-  "item.um.demonomicon.cover_page.give_command.hover_event": "/trigger um.demonomicon",
-  "item.um.demonomicon.cover_page.website": "\ud016",
-  "item.um.demonomicon.cover_page.website.hover_event": "Official Website Link",
-  "item.um.demonomicon.cover_page.github": "\ud017",
-  "item.um.demonomicon.cover_page.github.hover_event": "Github Link",
-  "item.um.demonomicon.cover_page.reddit": "\ud018",
-  "item.um.demonomicon.cover_page.reddit.hover_event": "Reddit Link",
-  "item.um.demonomicon.cover_page.discord": "\ud019",
+  "item.um.demonomicon.cover_page.content": "\n\nA comprehensive guide to all the content in Undermagic.",
+  "item.um.demonomicon.cover_page.pmc": "   \ud016",
+  "item.um.demonomicon.cover_page.pmc.hover_event": "Planet Minecraft Link",
+  "item.um.demonomicon.cover_page.discord": "\ud017   ",
   "item.um.demonomicon.cover_page.discord.hover_event": "Discord Link",
 
   "item.um.demonomicon.credits": "This is where credits go\n\n\n\n\n\n\n\n\n\n\n\n\n\ue020\ud011\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003%1$s\n\ue020\ud011\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003\ud003%1$s",
