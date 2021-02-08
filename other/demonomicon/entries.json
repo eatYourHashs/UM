@@ -1,10 +1,13 @@
 {
   "entries": [
     {
-      "id": "piss",
-      "title": "item.um.piss",
-      "recipe_type": "crafting",
-      "give_command": "/say piss."
+      "id": "zealot_tome",
+      "recipe_type": "location",
+      "give_command": "/function undermagic:item/zealot_tome"
+    },
+    {
+      "id": "demons",
+      "recipe_type": "location"
     }
   ]
 }
