@@ -101,6 +101,13 @@
   "item.um.demonomicon.entry.zealot_tome.recipe": "Can be changed using the Zealot's Tome; obtain from the \"give item\"\n button on this page.",
   "item.um.demonomicon.entry.zealot_tome.description": "Undermagic contains two difficulty levels above vanilla, Lunatic and Infernal, which exclusively buff all six boss battles with new attacks and higher damage. These levels are made to challenge you and test your skill. Difficulties can be changed using the Zealot's Tome, only by opped players.\n\n\n\n\n\n\n\n\n",
 
+  "item.um.demonomicon.entry.undercrafter.title": "Undercrafter",
+  "item.um.demonomicon.entry.undercrafter.icon": "\uf003",
+  "item.um.demonomicon.entry.undercrafter.contributors": "Hashs: Created\nImCoolYeah105: Reworked\nRagtime Gal: Textured",
+  "item.um.demonomicon.entry.undercrafter.history": "%1$s: Added.\n%34$s: Reworked.\n%35$s: Changed obtaining method.",
+  "item.um.demonomicon.entry.undercrafter.recipe": "\n\n\n\n\n\n\uc000\n",
+  "item.um.demonomicon.entry.undercrafter.description": "Undermagic contains two difficulty levels above vanilla, Lunatic and Infernal, which exclusively buff all six boss battles with new attacks and higher damage. These levels are made to challenge you and test your skill. Difficulties can be changed using the Zealot's Tome, only by opped players.\n\n\n\n\n\n\n\n\n",
+
   "item.um.demonomicon.entry.demons.title": "Demons",
   "item.um.demonomicon.entry.demons.icon": "\uf001",
   "item.um.demonomicon.entry.demons.contributors": "Hashs: Created\nRagtime Gal: Textured/modeled",

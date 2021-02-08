@@ -358,6 +358,15 @@
         "      ",
         "      "
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "um:gui/demonomicon/recipes/crafting.png",
+      "ascent": 48,
+      "height": 100,
+      "chars": [
+        "\uc001"
+      ]
     }
   ]
 }

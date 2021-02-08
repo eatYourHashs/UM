@@ -6,6 +6,11 @@
       "give_command": "/function undermagic:item/zealot_tome"
     },
     {
+      "id": "undercrafter",
+      "recipe_type": "location",
+      "give_command": "/function undermagic:item/undercrafter"
+    },
+    {
       "id": "demons",
       "recipe_type": "location"
     }
