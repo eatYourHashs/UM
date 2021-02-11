@@ -159,7 +159,16 @@
   "item.um.demonomicon.entry.blood_infusion_cont_2.history": "%6$s: Added.\n%34$s: Reworked.",
   "item.um.demonomicon.entry.blood_infusion_cont_2.description": "Toss the items on the Boosters while you have the required amount of blood in the chalice and wait a few seconds to perform Blood Infusion.\n\n\n\n\n\n\n\n\n",
 
-  "item.um.demonomicon.entry.demonic_steel_longsword.recipe": "\n\n\n\n\n\n\uc000\n",
+  "item.um.demonomicon.entry.demonic_steel.title": "Demons",
+  "item.um.demonomicon.entry.demonic_steel.icon": "\uf001",
+  "item.um.demonomicon.entry.demonic_steel.contributors": "Hashs: Created\nRagtime Gal: Textured",
+  "item.um.demonomicon.entry.demonic_steel.more_info": "Demon parts can also be found in various nether-related chests.",
+  "item.um.demonomicon.entry.demonic_steel.history": "%1$s: Added.\n%34$s: Retextured.",
+  "item.um.demonomicon.entry.demonic_steel.recipe": "\n\n\n\n\n\n\uc004\n\n\n\n\n\n\n\uc006\n",
+  "item.um.demonomicon.entry.demonic_steel.description": "Demonic Steel, a tough alloy laced with dark energy, can be made from iron ingots and the various items dropped by %s\n\n\n\n\n\n\n\n\n",
+  "item.um.demonomicon.entry.demonic_steel.reference.0": "demons.",
+
+  "item.um.demonomicon.entry.demonic_steel_longsword.recipe": "\n\n\n\n\n\n\uc008\n",
 
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
   "item.um.abyss_knight_chestplate": "Abyss Knight Cuirass",
