@@ -3,16 +3,60 @@
     {
       "id": "zealot_tome",
       "recipe_type": "location",
-      "give_command": "/function undermagic:item/zealot_tome"
+      "give_command": "/loot give @s loot undermagic:items/zealot_tome",
+      "references": [
+        "zealot_tome_cont"
+      ]
+    },
+    {
+      "id": "zealot_tome_cont",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/zealot_tome"
     },
     {
       "id": "undercrafter",
-      "recipe_type": "location",
-      "give_command": "/function undermagic:item/undercrafter"
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/undercrafter"
+    },
+    {
+      "id": "blood_chalice",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/blood_chalice",
+      "references": [
+        "blood_infusion"
+      ]
+    },
+    {
+      "id": "blood_infusion",
+      "recipe_type": "crafting",
+      "references": [
+        "blood_infusion_cont"
+      ]
+    },
+    {
+      "id": "blood_infusion_cont",
+      "recipe_type": "crafting",
+      "references": [
+        "blood_infusion_cont_2"
+      ]
+    },
+    {
+      "id": "blood_infusion_cont_2",
+      "references": [
+        "blood_infusion_cont"
+      ]
     },
     {
       "id": "demons",
       "recipe_type": "location"
+    },
+    {
+      "id": "demonic_steel",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/demon_steel",
+      "references": [
+        "demons"
+      ]
     }
   ]
 }
