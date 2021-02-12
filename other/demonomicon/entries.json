@@ -123,6 +123,11 @@
       "id": "pit_lord_chestplate",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/pit_lord_chestplate"
+    },
+    {
+      "id": "sanguis_inspectorum",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/sanguis_inspector"
     }
   ]
 }

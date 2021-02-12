@@ -254,6 +254,14 @@
   "item.um.demonomicon.entry.pit_lord_chestplate.recipe": "\n\n\n\n\n\n\uc019\n",
   "item.um.demonomicon.entry.pit_lord_chestplate.description": "Made from the heart of the Pit Lord, this chestplate provides supreme protection, granting incredible toughness, immunity to natural fire, and 25% fire damage reduction.\n\n\n\n\n\n\n\n\n",
 
+  "item.um.demonomicon.entry.sanguis_inspectorum.title": "Sanguis Inspectorum",
+  "item.um.demonomicon.entry.sanguis_inspectorum.icon": "\uf016",
+  "item.um.demonomicon.entry.sanguis_inspectorum.contributors": "Hashs: Created\nRagtime Gal: Textured",
+  "item.um.demonomicon.entry.sanguis_inspectorum.more_info": "One mob drop is usually equal to one unit of blood.",
+  "item.um.demonomicon.entry.sanguis_inspectorum.history": "%6$s: Added.\n%34$s: Retextured.",
+  "item.um.demonomicon.entry.sanguis_inspectorum.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\n\n\uc021\n\n\n\n\n\n",
+  "item.um.demonomicon.entry.sanguis_inspectorum.description": "Right click with this mystical tome to accurately read off the blood amount in a nearby chalice.\n\n\n\n\n\n\n\n\n",
+
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
   "item.um.abyss_knight_chestplate": "Abyss Knight Cuirass",
   "item.um.abyss_knight_leggings": "Abyss Knight Leggings",
