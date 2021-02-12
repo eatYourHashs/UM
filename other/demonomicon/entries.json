@@ -98,6 +98,34 @@
       "id": "demon_portal_stabilizer",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/demon_portal_stabilizer"
+    },
+    {
+      "id": "demon_flame_scepter",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/demon_flame_scepter"
+    },
+    {
+      "id": "demon_army",
+      "recipe_type": "location",
+      "references": [
+        "pit_lord"
+      ]
+    },
+    {
+      "id": "pit_lord",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/infernal_summons",
+      "references": [
+        "demon_army"
+      ]
+    },
+    {
+      "id": "pit_lord_chestplate",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/pit_lord_chestplate",
+      "references": [
+        "pit_lord"
+      ]
     }
   ]
 }
