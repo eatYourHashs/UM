@@ -93,6 +93,11 @@
       "id": "bow_of_niflheim",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/ice_bow"
+    },
+    {
+      "id": "demon_portal_stabilizer",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/demon_portal_stabilizer"
     }
   ]
 }
