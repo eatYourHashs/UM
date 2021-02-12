@@ -220,6 +220,14 @@
   "item.um.demonomicon.entry.demon_portal_stabilizer.recipe": "\n\n\n\n\n\n\uc015\n\n\n\n\n\n\n\uc016\n",
   "item.um.demonomicon.entry.demon_portal_stabilizer.description": "Throw this on top of obsidian to place a Demon Portal, which spews out demons at a fairly fast rate.\n\n\n\n\n\n\n\n\n",
 
+  "item.um.demonomicon.entry.demon_flame_scepter.title": "Demon Flame Scepter",
+  "item.um.demonomicon.entry.demon_flame_scepter.icon": "\uf012",
+  "item.um.demonomicon.entry.demon_flame_scepter.contributors": "Hashs: Created\nRagtime Gal: Textured",
+  "item.um.demonomicon.entry.demon_flame_scepter.more_info": "The Dragon Staff is identical to this weapon in attacking style, minus the fire-setting element.",
+  "item.um.demonomicon.entry.demon_flame_scepter.history": "%23$s: Added.\n%34$s: Retextured.",
+  "item.um.demonomicon.entry.demon_flame_scepter.recipe": "\n\n\n\n\n\n\uc017\n",
+  "item.um.demonomicon.entry.demon_flame_scepter.description": "A magic weapon, this scepter spews demon flames inflicting minor damage and setting wide swaths of ground aflame.\n\n\n\n\n\n\n\n\n",
+
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
   "item.um.abyss_knight_chestplate": "Abyss Knight Cuirass",
   "item.um.abyss_knight_leggings": "Abyss Knight Leggings",
