@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{HideFlags:1,Enchantments:[{id:\"minecraft:aqua_affinity\",lvl:1s}],Unbreakable:1b,CustomModelData:420002,um_id:\"bfc_9000\"}"
+              "tag":"{HideFlags:1,RepairCost:50,Enchantments:[{id:\"minecraft:aqua_affinity\",lvl:1s}],Unbreakable:1b,CustomModelData:420002,um_id:\"bfc_9000\"}"
             }
           ]
         }

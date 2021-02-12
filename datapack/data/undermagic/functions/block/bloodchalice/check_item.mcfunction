@@ -44,6 +44,7 @@ execute if data storage undermagic:common obj{id:"minecraft:pufferfish"} run eff
 tag @s add um.chalice_check
 execute store result score temp_1 um.dummy run data get entity @s Item.Count
 execute if score temp um.dummy matches 1.. run kill @s
+execute if data storage undermagic:common obj.tag{um_id:"sanguine_eye"} run kill @s
 
 scoreboard players operation temp um.dummy *= temp_1 um.dummy
 scoreboard players operation out um.dummy += temp um.dummy
