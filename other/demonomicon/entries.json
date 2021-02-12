@@ -122,10 +122,7 @@
     {
       "id": "pit_lord_chestplate",
       "recipe_type": "crafting",
-      "give_command": "/loot give @s loot undermagic:items/pit_lord_chestplate",
-      "references": [
-        "pit_lord"
-      ]
+      "give_command": "/loot give @s loot undermagic:items/pit_lord_chestplate"
     }
   ]
 }

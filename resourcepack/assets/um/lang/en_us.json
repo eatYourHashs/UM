@@ -252,8 +252,7 @@
   "item.um.demonomicon.entry.pit_lord_chestplate.more_info": "This chestplate used to be viable against the final boss before it was reworked.\nIt counts as three pieces of Demonic Steel armor for toughness.",
   "item.um.demonomicon.entry.pit_lord_chestplate.history": "%5$s: Added.\n%12$s: Nerfed.\n%34$s: Reworked.\n%38$s: Retextured.",
   "item.um.demonomicon.entry.pit_lord_chestplate.recipe": "\n\n\n\n\n\n\uc019\n",
-  "item.um.demonomicon.entry.pit_lord_chestplate.description": "Made from the heart of the %s, this chestplate provides supreme protection, granting incredible toughness, immunity to natural fire, and 25% fire damage reduction.\n\n\n\n\n\n\n\n\n",
-  "item.um.demonomicon.entry.pit_lord_chestplate.reference.0": "Pit Lord",
+  "item.um.demonomicon.entry.pit_lord_chestplate.description": "Made from the heart of the Pit Lord, this chestplate provides supreme protection, granting incredible toughness, immunity to natural fire, and 25% fire damage reduction.\n\n\n\n\n\n\n\n\n",
 
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
   "item.um.abyss_knight_chestplate": "Abyss Knight Cuirass",
