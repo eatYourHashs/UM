@@ -128,6 +128,16 @@
       "id": "sanguis_inspectorum",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/sanguis_inspector"
+    },
+    {
+      "id": "bloody_edge",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/bloody_edge_t3"
+    },
+    {
+      "id": "blood_rain_staff",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/blood_rain_staff_t3"
     }
   ]
 }
