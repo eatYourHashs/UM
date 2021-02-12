@@ -57,6 +57,42 @@
       "references": [
         "demons"
       ]
+    },
+    {
+      "id": "demonic_steel_plate",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/demon_steel_plate",
+      "references": [
+        "demonic_steel"
+      ]
+    },
+    {
+      "id": "demonic_steel_longsword",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/longsword_demonic_steel",
+      "references": [
+        "demonic_steel_plate"
+      ]
+    },
+    {
+      "id": "demonic_steel_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "demonic_steel_plate"
+      ]
+    },
+    {
+      "id": "demonic_steel_bow",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/demon_steel_bow",
+      "references": [
+        "demonic_steel_plate"
+      ]
+    },
+    {
+      "id": "bow_of_niflheim",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/ice_bow"
     }
   ]
 }
