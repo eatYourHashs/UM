@@ -320,6 +320,14 @@
   "item.um.demonomicon.entry.bloodstained_armor.description": "This armor, reinforced with %s absorbs blood from a nearby Chalice when the set is worn. When you take damage, it then uses that blood to heal you for about 2 hearts.\n\n\n\n\n\n\n\n\n",
   "item.um.demonomicon.entry.bloodstained_armor.reference.0": "Bloodstone,",
 
+  "item.um.demonomicon.entry.blood_amalgam.title": "Bloodstone",
+  "item.um.demonomicon.entry.blood_amalgam.icon": "\uf024",
+  "item.um.demonomicon.entry.blood_amalgam.contributors": "Hashs: Created\nRagtime Gal: Textured",
+  "item.um.demonomicon.entry.blood_amalgam.more_info": "The Amalgam itself is invulnerable. You must kill its minions to damage it.\nStay away when it cries out to avoid\nits devastating blood shotgun.",
+  "item.um.demonomicon.entry.blood_amalgam.history": "%9$s: Added.\n%34$s: Retextured.",
+  "item.um.demonomicon.entry.blood_amalgam.recipe": "Throw the Sanguine Eye into a Blood Chalice.\nThe Eye is made as such:\n\nBlood Cost: 500\nBooster Tier: III\n\n\n\n\n\n\uc038\n\n\n\n\n\n\n",
+  "item.um.demonomicon.entry.blood_amalgam.description": "A powerful amalgam of flesh and blood, the Blood Amalgam is a boss that can be summoned with a large sacrifice of blood and precious items.\n\n\n\n\n\n\n\n\n",
+
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
   "item.um.abyss_knight_chestplate": "Abyss Knight Cuirass",
   "item.um.abyss_knight_leggings": "Abyss Knight Leggings",
@@ -445,7 +453,7 @@
   "item.um.infernal_summons.lore": "Throw into a demonic portal to summon the greatest demon...",
 
   "item.um.inferno_staff": "Inferno Staff",
-  "item.um.inferno_staff.lore.0": "Burns your enemies to a crip with hellfire",
+  "item.um.inferno_staff.lore.0": "Right click to summon giant fireballs",
   "item.um.inferno_staff.lore.1": "Provides fire resistance when held",
   "item.um.inferno_staff.lore.2": "Provides absorption on a melee attack",
 
@@ -472,7 +480,7 @@
   "item.um.phantasmal_dagger.lore": "Use to rapidly throw intangible daggers",
 
   "item.um.pit_lord_chestplate": "Pit Lord's Chestplate",
-  "item.um.pit_lord_chestplate.lore": "Provides supreme protection",
+  "item.um.pit_lord_chestplate.lore": "Provides supreme protection against flame",
 
   "item.um.pit_lord_heart": "Pit Lord's Heart",
 
@@ -492,7 +500,7 @@
   "item.um.shade_walker_robe": "Shade Walker Robe",
   "item.um.shade_walker_leggings": "Shade Walker Pants",
   "item.um.shade_walker_shoes": "Shade Walker Shoes",
-  "item.um.shade_walker_set.lore": "A dark armor made of Shadecloth",
+  "item.um.shade_walker_set.lore": "Protects you fully from damage every few seconds",
 
   "item.um.shadecloth": "Shadecloth",
   "item.um.shadecloth.lore": "A fabric that radiates dark energy",
