@@ -177,6 +177,8 @@
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/radiant_monolith",
       "references": [
+        "blood_infusion_cont",
+        "blood_infusion",
         "nether_shards"
       ]
     },
@@ -185,8 +187,37 @@
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/blood_monolith",
       "references": [
+        "blood_infusion_cont",
+        "blood_infusion",
         "blood_amalgam"
       ]
+    },
+    {
+      "id": "self_infusion",
+      "references": [
+        "blood_amalgam"
+      ]
+    },
+    {
+      "id": "self_infusion_cont"
+    },
+    {
+      "id": "ele_limbs",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/elemental_limbs",
+      "references": [
+        "self_infusion"
+      ]
+    },
+    {
+      "id": "iron_skin",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/ironskin"
+    },
+    {
+      "id": "flame_body",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/flame_body"
     }
   ]
 }
