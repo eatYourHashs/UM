@@ -47,6 +47,11 @@
       ]
     },
     {
+      "id": "nether_shards",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/nether_shard"
+    },
+    {
       "id": "demons",
       "recipe_type": "location"
     },
@@ -98,6 +103,121 @@
       "id": "demon_portal_stabilizer",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/demon_portal_stabilizer"
+    },
+    {
+      "id": "demon_flame_scepter",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/demon_flame_scepter"
+    },
+    {
+      "id": "demon_army",
+      "recipe_type": "location",
+      "references": [
+        "pit_lord"
+      ]
+    },
+    {
+      "id": "pit_lord",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/infernal_summons",
+      "references": [
+        "demon_army"
+      ]
+    },
+    {
+      "id": "pit_lord_chestplate",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/pit_lord_chestplate"
+    },
+    {
+      "id": "sanguis_inspectorum",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/sanguis_inspector"
+    },
+    {
+      "id": "bloody_edge",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/bloody_edge_3"
+    },
+    {
+      "id": "blood_rain_staff",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/blood_rain_staff_3"
+    },
+    {
+      "id": "bloodstone",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/bloodstone"
+    },
+    {
+      "id": "animal_creation",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "carnage",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/carnage_3",
+      "references": [
+        "bloodstone"
+      ]
+    },
+    {
+      "id": "bloodstained_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "bloodstone"
+      ]
+    },
+    {
+      "id": "blood_amalgam",
+      "recipe_type": "location"
+    },
+    {
+      "id": "radiant_monolith",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/radiant_monolith",
+      "references": [
+        "blood_infusion_cont",
+        "blood_infusion",
+        "nether_shards"
+      ]
+    },
+    {
+      "id": "blood_monolith",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/blood_monolith",
+      "references": [
+        "blood_infusion_cont",
+        "blood_infusion",
+        "blood_amalgam"
+      ]
+    },
+    {
+      "id": "self_infusion",
+      "references": [
+        "blood_amalgam"
+      ]
+    },
+    {
+      "id": "self_infusion_cont"
+    },
+    {
+      "id": "ele_limbs",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/elemental_limbs",
+      "references": [
+        "self_infusion"
+      ]
+    },
+    {
+      "id": "iron_skin",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/ironskin"
+    },
+    {
+      "id": "flame_body",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/flame_body"
     }
   ]
 }
