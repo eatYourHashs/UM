@@ -114,93 +114,63 @@
           }]
         }
       ]
-    },
-    {
+    },	
+	{
       "rolls": {
         "min": 2,
         "max": 3
       },
       "entries": [
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:clock",
-        "functions": [
-          {
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 2,
-              "max": 4
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "undermagic:items/mysterious_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
             }
-          },
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
-          }
-        ]
-      },
-      {
-          "type": "item",
-          "name": "minecraft:clock",
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
           "weight": 6,
-          "functions": [{
-              "function": "set_count",
+          "name": "undermagic:items/demon_skin",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": {
                 "min": 2,
                 "max": 4
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Skin\\\",\\\"italic\\\":false}\"},CustomModelData:420004,um_id:demon_skin}"
             }
           ]
         },
         {
-          "type": "item",
-          "name": "minecraft:clock",
+          "type": "minecraft:loot_table",
           "weight": 5,
-          "functions": [{
-              "function": "set_count",
+          "name": "undermagic:items/demon_bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Bone\\\",\\\"italic\\\":false}\"},CustomModelData:420005,um_id:demon_bone}"
             }
           ]
         },
         {
-          "type": "item",
-          "name": "minecraft:clock",
-          "weight": 3,
-          "functions": [{
-              "function": "set_count",
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "undermagic:items/demon_sword_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 2
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Sword Shard\\\",\\\"italic\\\":false}\"},CustomModelData:420009,um_id:demon_sword_shard}"
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:clock",
-          "weight": 1,
-          "functions": [{
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Heart Stone\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},CustomModelData:420001,um_id:demon_heart_stone}"
             }
           ]
         }
@@ -208,33 +178,37 @@
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "item",
-        "name": "minecraft:clock",
-        "weight": 1,
-        "functions": [{
-          "function": "set_nbt",
-          "tag": "{display:{Name:\"{\\\"text\\\":\\\"Undercrafter Blueprint\\\",\\\"color\\\":\\\"yellow\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Shadow Guardian Bulwark\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":true,\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"Drop on your Undercrafter to\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}\",\"{\\\"text\\\":\\\"enable this item's recipe!\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}\"]},CustomModelData:420017,um_id:blueprint_shadow_shield}"
-        }]
-      }],
-      "conditions": [{
-        "condition": "minecraft:random_chance",
-        "chance": 0.15
-      }]
+      "entries": [
+	    {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "functions": [
+		    {
+			"function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 3
+              }
+			}
+		  ]
+		}
+	  ]
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "minecraft:loot_table",
-        "name": "undermagic:charm_drop",
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 2,
-            "max": 3
-          }
-        }]
-      }]
+      "entries": [
+		{
+          "type": "loot_table",
+          "name": "undermagic:items/blueprint_shadow_shield",
+          "weight": 1
+		}
+	  ],
+      "conditions": [
+		{
+		  "condition": "minecraft:random_chance",
+		  "chance": 0.15
+		}
+	  ]
     }
   ]
 }

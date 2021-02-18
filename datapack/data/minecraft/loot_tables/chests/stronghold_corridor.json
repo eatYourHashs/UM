@@ -1,213 +1,226 @@
 {
   "type": "minecraft:chest",
-  "pools": [{
-    "rolls": {
-      "min": 2.0,
-      "max": 3.0,
-      "type": "minecraft:uniform"
+  "pools": [
+    {
+      "rolls": {
+        "min": 2.0,
+        "max": 3.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:ender_pearl"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:diamond"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4.0,
+                "max": 9.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:redstone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:iron_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:book"
+        },
+		{
+		  "type": "minecraft:loot_table",
+		  "weight": 5,
+		  "name": "undermagic:items/mysterious_crystal",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+      ]
     },
-    "entries": [{
-        "type": "minecraft:item",
-        "weight": 10,
-        "name": "minecraft:ender_pearl"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 3,
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1.0,
-            "max": 3.0,
-            "type": "minecraft:uniform"
-          }
-        }],
-        "name": "minecraft:diamond"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 10,
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1.0,
-            "max": 5.0,
-            "type": "minecraft:uniform"
-          }
-        }],
-        "name": "minecraft:iron_ingot"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1.0,
-            "max": 3.0,
-            "type": "minecraft:uniform"
-          }
-        }],
-        "name": "minecraft:gold_ingot"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 4.0,
-            "max": 9.0,
-            "type": "minecraft:uniform"
-          }
-        }],
-        "name": "minecraft:redstone"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 15,
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1.0,
-            "max": 3.0,
-            "type": "minecraft:uniform"
-          }
-        }],
-        "name": "minecraft:bread"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 15,
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1.0,
-            "max": 3.0,
-            "type": "minecraft:uniform"
-          }
-        }],
-        "name": "minecraft:apple"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:iron_pickaxe"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:iron_sword"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:iron_chestplate"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:iron_helmet"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:iron_leggings"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:iron_boots"
-      },
-      {
-        "type": "minecraft:item",
-        "name": "minecraft:golden_apple"
-      },
-      {
-        "type": "minecraft:item",
-        "name": "minecraft:saddle"
-      },
-      {
-        "type": "minecraft:item",
-        "name": "minecraft:iron_horse_armor"
-      },
-      {
-        "type": "minecraft:item",
-        "name": "minecraft:golden_horse_armor"
-      },
-      {
-        "type": "minecraft:item",
-        "name": "minecraft:diamond_horse_armor"
-      },
-      {
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:clock",
-        "functions": [
-          {
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 1,
-              "max": 4
+    {
+      "rolls": 1,
+      "entries": [
+	    {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "functions": [
+		    {
+			"function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 3
+              }
+			}
+		  ]
+		}
+	  ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/blessed_fragment",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
             }
-          },
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
-          }
-        ]
-      },
-      {
-        "type": "minecraft:item",
-        "functions": [{
-          "function": "minecraft:enchant_with_levels",
-          "levels": 30,
-          "treasure": true
-        }],
-        "name": "minecraft:book"
-      }
-    ]
-  },
-  {
-    "rolls": 1,
-    "entries": [{
-      "type": "minecraft:loot_table",
-      "name": "undermagic:charm_drop",
-      "functions": [{
-        "function": "minecraft:set_count",
-        "count": {
-          "min": 1,
-          "max": 3
+          ]
         }
-      }]
-    }]
-  },
-  {
-    "rolls": 1,
-    "entries": [
-      {
-        "type": "minecraft:item",
-        "name": "minecraft:clock",
-        "functions": [
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Blessed Fragment\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"A piece of a holy relic from long ago.\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:420096,um_id:blessed_fragment}"
-          },
-          {
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 3,
-              "max": 5
-            }
-          }
-        ]
-      }
-    ],
-    "conditions": [
-      {
-        "condition": "minecraft:random_chance",
-        "chance": 0.5
-      }
-    ]
-  }]
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    }
+  ]
 }

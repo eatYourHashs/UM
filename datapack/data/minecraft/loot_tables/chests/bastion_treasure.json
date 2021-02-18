@@ -319,80 +319,55 @@
       },
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:clock",
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "undermagic:items/mysterious_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 6,
+          "name": "undermagic:items/demon_skin",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 6
+                "min": 2,
+                "max": 4
               }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
             }
           ]
         },
         {
-          "type": "item",
-          "name": "minecraft:clock",
-          "weight": 4,
-          "functions": [{
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 6
-              }
-            },
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "undermagic:items/demon_bone",
+          "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Sword Shard\\\",\\\"italic\\\":false}\"},CustomModelData:420009,um_id:demon_sword_shard}"
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:clock",
-          "weight": 2,
-          "functions": [{
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Heart Stone\\\",\\\"color\\\":\\\"light_purple\\\",\\\"italic\\\":false}\"},CustomModelData:420001,um_id:demon_heart_stone}"
-          }]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:clock",
-          "weight": 3,
-          "functions": [{
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:420007,um_id:\"demonic_steel_ingot\",display:{Name:\"{\\\"text\\\":\\\"Demonic Steel Ingot\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Strong metal made from demon parts.\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:clock",
-          "weight": 2,
-          "functions": [{
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 4
+                "max": 3
               }
-            },
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "undermagic:items/demon_sword_shard",
+          "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:420008,um_id:\"demonic_steel_plate\",display:{Name:\"{\\\"text\\\":\\\"Demonic Steel Plate\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":false}\",Lore:[\"{\\\"text\\\":\\\"Heavy plate of metal, used to make armor and weapons.\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"]}}"
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
             }
           ]
         }
@@ -400,17 +375,21 @@
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "minecraft:loot_table",
-        "name": "undermagic:charm_drop",
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 2,
-            "max": 4
-          }
-        }]
-      }]
+      "entries": [
+	    {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "functions": [
+		    {
+			"function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 3
+              }
+			}
+		  ]
+		}
+	  ]
     }
   ]
 }
