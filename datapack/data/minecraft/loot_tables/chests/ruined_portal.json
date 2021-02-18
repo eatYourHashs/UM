@@ -226,72 +226,57 @@
         "min": 2,
         "max": 3
       },
-      "entries": [{
-        "type": "minecraft:item",
-        "weight": 5,
-        "name": "minecraft:clock",
-        "functions": [
-          {
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 1,
-              "max": 3
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "undermagic:items/mysterious_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
             }
-          },
-          {
-            "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
-          }
-        ]
-      },
-      {
-          "type": "item",
-          "name": "minecraft:clock",
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
           "weight": 6,
-          "functions": [{
-              "function": "set_count",
+          "name": "undermagic:items/demon_skin",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": {
                 "min": 2,
                 "max": 4
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Skin\\\",\\\"italic\\\":false}\"},CustomModelData:420004,um_id:demon_skin}"
             }
           ]
         },
         {
-          "type": "item",
-          "name": "minecraft:clock",
+          "type": "minecraft:loot_table",
           "weight": 5,
-          "functions": [{
-              "function": "set_count",
+          "name": "undermagic:items/demon_bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Bone\\\",\\\"italic\\\":false}\"},CustomModelData:420005,um_id:demon_bone}"
             }
           ]
         },
         {
-          "type": "item",
-          "name": "minecraft:clock",
-          "weight": 2,
-          "functions": [{
-              "function": "set_count",
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "undermagic:items/demon_sword_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 2
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Demon Sword Shard\\\",\\\"italic\\\":false}\"},CustomModelData:420009,um_id:demon_sword_shard}"
             }
           ]
         }
@@ -299,29 +284,29 @@
     },
     {
       "rolls": 1,
-      "entries": [{
-        "type": "minecraft:loot_table",
-        "name": "undermagic:charm_drop",
-        "functions": [{
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 2,
-            "max": 3
-          }
-        }]
-      }]
+      "entries": [
+	    {
+          "type": "minecraft:loot_table",
+          "name": "undermagic:charm_drop",
+          "functions": [
+		    {
+			"function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 3
+              }
+			}
+		  ]
+		}
+	  ]
     },
     {
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:clock",
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/blessed_fragment",
           "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Blessed Fragment\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"A piece of a holy relic from long ago.\",\"color\":\"gray\",\"italic\":false}']},CustomModelData:420096,um_id:blessed_fragment}"
-            },
             {
               "function": "minecraft:set_count",
               "count": {

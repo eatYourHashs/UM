@@ -48,18 +48,14 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:clock",
+          "type": "minecraft:loot_table",
+          "name": "undermagic:items/ebonquartz",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:apply_bonus",
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:ore_drops"
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Ebonquartz\",\"color\":\"white\",\"italic\":false}'},CustomModelData:420065,um_id:\"ebonquartz\"}"
             }
           ]
         }

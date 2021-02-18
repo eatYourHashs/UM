@@ -49,24 +49,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:clock",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Mysterious Crystal\",\"color\":\"yellow\",\"italic\":false}'},CustomModelData:420093,um_id:\"magic_crystal\"}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 5,
           "functions": [
             {
@@ -79,6 +61,20 @@
             }
           ],
           "name": "minecraft:tnt"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "undermagic:items/mysterious_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
         }
       ]
     },
