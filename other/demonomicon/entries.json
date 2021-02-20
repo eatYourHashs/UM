@@ -218,6 +218,16 @@
       "id": "flame_body",
       "recipe_type": "crafting",
       "give_command": "/function undermagic:infusions/flame_body"
+    },
+    {
+      "id": "tolerance",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/tolerance"
+    },
+    {
+      "id": "enderlord",
+      "recipe_type": "crafting",
+      "give_command": "/function undermagic:infusions/enderlord"
     }
   ]
 }
