@@ -1,6 +1,0 @@
-{
-  "parent": "um:item/demonic_reinforced_bow/pulling_0",
-  "textures": {
-    "layer0": "um:item/demonic_reinforced_bow/pulling_2"
-  }
-}
