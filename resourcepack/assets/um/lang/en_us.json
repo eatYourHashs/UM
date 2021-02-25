@@ -6,7 +6,10 @@
   "item.um.demonic_steel_ingot": "Demonic Steel Ingot",
   "item.um.demon_bone": "Demon Bone",
   "item.um.demon_skin": "Demon Skin",
-  "item.um.demon_sword_shard": "Demon Sword Shard",
+  "item.um.demon_horn": "Demon Horn",
+
+  "entity.um.greater_demon": "Greater Demon",
+  "entity.um.lesser_demon": "Lesser Demon",
 
   "commands.um.reload.success": " Updated datapacks and UM scoreboards"
 

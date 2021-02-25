@@ -17,13 +17,31 @@
       "predicate": {
         "custom_model_data": 420002
       },
-      "model": "um:item/demon_bone"
+      "model": "um:item/demon_horn"
     },
     {
       "predicate": {
         "custom_model_data": 420003
       },
-      "model": "um:item/demon_sword_shard"
+      "model": "um:entity/demon/left_arm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420004
+      },
+      "model": "um:entity/demon/sword_arm"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420005
+      },
+      "model": "um:entity/demon/lesser_head"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420006
+      },
+      "model": "um:entity/demon/greater_head"
     }
   ]
 }

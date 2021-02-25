@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{BlockEntityTag:{name:\"um:stackable_item\"},um:{id:\"demon_bone\"},CustomModelData:420002}"
+              "tag": "{um:{id:\"demon_bone\"},CustomModelData:420000}"
             },
             {
               "function": "minecraft:set_name",
@@ -30,7 +30,7 @@
               ]
             }
           ],
-          "name": "minecraft:structure_block"
+          "name": "minecraft:bone"
         }
       ]
     }

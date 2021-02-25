@@ -1,0 +1,11 @@
+{
+  "parent": "item/bone",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 420000
+      },
+      "model": "um:item/demon_bone"
+    }
+  ]
+}

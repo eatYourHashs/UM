@@ -9,13 +9,13 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{BlockEntityTag:{name:\"um:stackable_item\"},um:{id:\"demon_sword_shard\"},CustomModelData:420003}"
+              "tag": "{BlockEntityTag:{name:\"um:stackable_item\"},um:{id:\"demon_horn\"},CustomModelData:420002}"
             },
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "item.um.demon_sword_shard",
-                "color": "white",
+                "translate": "item.um.demon_horn",
+                "color": "yellow",
                 "italic": false
               }
             },
