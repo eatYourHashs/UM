@@ -627,5 +627,14 @@
 
   "block.um.blood_monolith": "Blood Monolith",
   "block.um.blood_monolith.lore": "Boosts a Blood Chalice to Tier IV",
-  "block.um.teleporter": "Teleporter"
+  "block.um.teleporter": "Teleporter",
+  
+  "subtitles.um.music.pit_lord": "Demon King's Revenge plays",
+  "subtitles.um.music.shadesull_p1": "In the Chamber of Madness plays",
+  "subtitles.um.music.shadesull_p2": "Reign of the Corrupt plays",
+  "subtitles.um.music.blood_amalgam": "Blood Amalgam plays",
+  "subtitles.um.music.elder": "Eye on You plays",
+  "subtitles.um.music.herald_p1": "Conflict of the Ages plays",
+  "subtitles.um.music.herald_p2": "Echoes of the Apocalypse plays",
+  "subtitles.um.music.dungeon": "Halls of Shadow plays"
 }
