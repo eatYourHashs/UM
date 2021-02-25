@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{BlockEntityTag:{name:\"um:stackable_item\"},um:{id:\"demonic_steel_ingot\"},CustomModelData:420000}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.um.demonic_steel_ingot",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "pack.um",
+                  "color": "#941a1a",
+                  "italic": true
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:structure_block"
+        }
+      ]
+    }
+  ]
+}

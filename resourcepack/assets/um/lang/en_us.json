@@ -1,6 +1,9 @@
 {
-  "pack.um": "Undermagic but CreeperMagnet_",
-  "pack.um.hover_event": "Click here to go to the official website",
+  "pack.um": "Undermagic",
+  "pack.um.hover_event": "Click here to go to the PMC page",
   "pack.um.version": "V0.1",
-  "pack.um.version.hover_event": "Click here to see changelog notes"
+  "pack.um.version.hover_event": "Click here to see changelog notes",
+  "item.um.demonic_steel_ingot": "Demonic Steel Ingot",
+  "commands.um.reload.success": " Updated datapacks and UM scoreboards"
+
 }
