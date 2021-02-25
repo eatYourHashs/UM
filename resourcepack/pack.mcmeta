@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 6,
-    "description": [{"text":"Undermagic but creeper","color":"dark_aqua"},{"text":"\n"},{"text":"V0.1","color":"#c6fdfe"}]
+    "description": [{"text":"Undermagic but creeper","color":"#941a1a"},{"text":"\n"},{"text":"V0.1","color":"red"}]
   }
 }
