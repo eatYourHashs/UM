@@ -6,6 +6,24 @@
         "custom_model_data": 420000
       },
       "model": "um:item/demonic_steel_ingot"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420001
+      },
+      "model": "um:item/demon_skin"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420002
+      },
+      "model": "um:item/demon_bone"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420003
+      },
+      "model": "um:item/demon_sword_shard"
     }
   ]
 }

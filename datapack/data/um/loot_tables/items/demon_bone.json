@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{BlockEntityTag:{name:\"um:stackable_item\"},um:{id:\"demon_bone\"},CustomModelData:420002}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.um.demon_bone",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "translate": "pack.um",
+                  "color": "#941a1a",
+                  "italic": true
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:structure_block"
+        }
+      ]
+    }
+  ]
+}
