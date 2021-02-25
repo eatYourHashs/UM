@@ -1,3 +1,0 @@
-execute store result score rand um.dummy run loot spawn 0 -10 0 loot undermagic:technical/rand1_100
-execute if score rand um.dummy matches 1..50 run tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#2F0080"},{"text":"Disciple! Assist me!","color":"#6E00FF"}]
-execute if score rand um.dummy matches 51..100 run tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#2F0080"},{"text":"Disciple! Destroy this scum!","color":"#6E00FF"}]

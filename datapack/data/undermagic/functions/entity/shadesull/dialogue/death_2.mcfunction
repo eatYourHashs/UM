@@ -1,1 +1,0 @@
-tellraw @a[distance=..50] ["",{"text":"Shadesull: ","bold":true,"color":"#720080"},{"text":"Maybe... I was never meant to rule...","color":"#E100FF"}]
