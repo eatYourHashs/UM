@@ -70,7 +70,7 @@
       "um:entity/lesser_demon/idle1",
 	  "um:entity/lesser_demon/idle2",
 	  "um:entity/lesser_demon/idle3"
-    ],
+    ]
   },
   "entity.lesser_demon.hurt": {
     "subtitle": "subtitles.um.entity.lesser_demon.hurt",
@@ -78,7 +78,7 @@
       "um:entity/lesser_demon/hurt1",
 	  "um:entity/lesser_demon/hurt2",
 	  "um:entity/lesser_demon/hurt3"
-    ],
+    ]
   },
   "entity.lesser_demon.death": {
     "subtitle": "subtitles.um.entity.lesser_demon.death",
@@ -86,6 +86,6 @@
       "um:entity/lesser_demon/death1",
 	  "um:entity/lesser_demon/death2",
 	  "um:entity/lesser_demon/death3"
-    ],
+    ]
   }
 }
