@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+		"side": "um:block/undercrafter_side",
+		"top": "um:block/undercrafter_top",
+		"bottom": "minecraft:block/netherrack"
+	},
+  "display": {
+    "head": {
+      "rotation": [0, 0, 0],
+      "translation": [0, -43.23, 0],
+      "scale": [1.601, 1.601, 1.601]
+    }
+  }
+}
