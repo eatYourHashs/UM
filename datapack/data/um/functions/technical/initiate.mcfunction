@@ -4,4 +4,4 @@
 ############################################################
 
 data merge storage um:storage {root:{gamerules:{}}}
-scoreboard players set um.server_version um.dummy 10
+scoreboard players set um.server_version um.dummy 1
