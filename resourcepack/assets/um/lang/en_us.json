@@ -13,6 +13,7 @@
   "entity.um.greater_demon": "Greater Demon",
   "entity.um.lesser_demon": "Lesser Demon",
 
-  "commands.um.reload.success": " Updated datapacks and UM scoreboards"
+  "commands.um.reload.success": " Updated datapacks and UM scoreboards",
+  "commands.um.scold_naughty_player": "Don't use that command."
 
 }

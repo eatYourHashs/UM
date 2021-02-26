@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "click_undercrafter": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "block": "minecraft:barrel",
+            "state": {
+              "open": "true"
+            },
+            "nbt": "{CustomName:'{\"color\":\"white\",\"font\":\"um:undercrafter\",\"translate\":\"block.um.undercrafter.gui\",\"with\":[{\"color\":\"#3F3F3F\",\"font\":\"minecraft:default\",\"translate\":\"block.um.undercrafter\"}]}'}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "um:block/undercrafter/interact/enter"
+  },
+  "parent": "um:technical/root"
+}

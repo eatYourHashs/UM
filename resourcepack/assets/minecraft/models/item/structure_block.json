@@ -42,6 +42,12 @@
         "custom_model_data": 420006
       },
       "model": "um:entity/demon/greater_head"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420007
+      },
+      "model": "um:item/empty"
     }
   ]
 }

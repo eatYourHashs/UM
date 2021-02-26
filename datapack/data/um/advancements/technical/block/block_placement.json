@@ -11,5 +11,6 @@
   },
   "rewards": {
     "function": "um:block/placement/scan"
-  }
+  },
+  "parent": "um:technical/root"
 }
