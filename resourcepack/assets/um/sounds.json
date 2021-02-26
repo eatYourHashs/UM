@@ -1,6 +1,6 @@
 {
   "music.pit_lord": {
-    "subtitle": "subtitles.um.music.pit_lord",
+    "subtitle": "Demon King's Revenge plays",
     "sounds": [
       "um:music/demon_kings_revenge"
     ],
@@ -8,7 +8,7 @@
     "preload": "true"
   },
   "music.shadesull_p1": {
-    "subtitle": "subtitles.um.music.shadesull_p1",
+    "subtitle": "In the Chamber of Madness plays",
     "sounds": [
       "um:music/in_the_chamber_of_madness"
     ],
@@ -16,7 +16,7 @@
     "preload": "true"
   },
   "music.shadesull_p2": {
-    "subtitle": "subtitles.um.music.shadesull_p2",
+    "subtitle": "Reign of the Corrupt plays",
     "sounds": [
       "um:music/reign_of_the_corrupt"
     ],
@@ -24,7 +24,7 @@
     "preload": "true"
   },
   "music.blood_amalgam": {
-    "subtitle": "subtitles.um.music.blood_amalgam",
+    "subtitle": "Blood Amalgam plays",
     "sounds": [
       "um:music/blood_amalgam"
     ],
@@ -32,7 +32,7 @@
     "preload": "true"
   },
   "music.elder": {
-    "subtitle": "subtitles.um.music.elder",
+    "subtitle": "Eye on You plays",
     "sounds": [
       "um:music/eye_on_you"
     ],
@@ -40,7 +40,7 @@
     "preload": "true"
   },
   "music.herald_p1": {
-    "subtitle": "subtitles.um.music.herald_p1",
+    "subtitle": "Conflict of the Ages plays",
     "sounds": [
       "um:music/conflict_of_the_ages"
     ],
@@ -48,7 +48,7 @@
     "preload": "true"
   },
   "music.herald_p2": {
-    "subtitle": "subtitles.um.music.herald_p2",
+    "subtitle": "Echoes of the Apocalypse plays",
     "sounds": [
       "um:music/echoes_of_the_apocalypse"
     ],
@@ -56,43 +56,11 @@
     "preload": "true"
   },
   "music.dungeon": {
-    "subtitle": "subtitles.um.music.dungeon",
+    "subtitle": "Halls of Shadow plays",
     "sounds": [
       "um:music/halls_of_shadow"
     ],
     "stream": "true",
     "preload": "true"
-  },
-  
-  "entity.lesser_demon.idle": {
-    "subtitle": "subtitles.um.entity.lesser_demon.idle",
-    "sounds": [
-      "um:entity/lesser_demon/idle1",
-	    "um:entity/lesser_demon/idle2",
-	    "um:entity/lesser_demon/idle3"
-    ]
-  },
-  "entity.lesser_demon.hurt": {
-    "subtitle": "subtitles.um.entity.lesser_demon.hurt",
-    "sounds": [
-      "um:entity/lesser_demon/hurt1",
-	    "um:entity/lesser_demon/hurt2",
-	    "um:entity/lesser_demon/hurt3"
-    ]
-  },
-  "entity.lesser_demon.death": {
-    "subtitle": "subtitles.um.entity.lesser_demon.death",
-    "sounds": [
-      "um:entity/lesser_demon/death1",
-	    "um:entity/lesser_demon/death2",
-	    "um:entity/lesser_demon/death3"
-    ]
-  },
-
-  "block.undercrafter.craft": {
-    "subtitle": "subtitles.um.block.undercrafter.craft",
-    "sounds": [
-      "um:block/undercrafter_craft"
-    ]
   }
 }
