@@ -3,7 +3,7 @@
   "textures": {
 		"side": "um:block/undercrafter_side",
 		"top": "um:block/undercrafter_top",
-		"bottom": "minecraft:block/netherrack"
+		"bottom": "minecraft:block/crimson_planks"
 	},
   "display": {
     "head": {
