@@ -15,6 +15,7 @@ data modify storage um:storage root.temp.Items append from block ~ ~ ~ Items[{Sl
 data modify storage um:storage root.temp.Items append from block ~ ~ ~ Items[{Slot:20b}]
 data modify storage um:storage root.temp.Items append from block ~ ~ ~ Items[{Slot:21b}]
 data modify storage um:storage root.temp.Items append from block ~ ~ ~ Items[{Slot:22b}]
+execute if entity @s[tag=um.undercrafter.assembled_output] run data modify storage um:storage root.temp.Items append from block ~ ~ ~ Items[{Slot:16b}]
 
 data remove block ~ ~ ~ Items[{Slot:2b}]
 data remove block ~ ~ ~ Items[{Slot:3b}]
@@ -25,6 +26,7 @@ data remove block ~ ~ ~ Items[{Slot:13b}]
 data remove block ~ ~ ~ Items[{Slot:20b}]
 data remove block ~ ~ ~ Items[{Slot:21b}]
 data remove block ~ ~ ~ Items[{Slot:22b}]
+execute if entity @s[tag=um.undercrafter.assembled_output] run data remove block ~ ~ ~ Items[{Slot:16b}]
 
 data modify storage um:storage root.temp.export_items set from block ~ ~ ~ Items
 execute store result score @s um.dummy run data get block ~ ~ ~ Items
