@@ -3,5 +3,5 @@
 # Creator: CreeperMagnet_
 ############################################################
 
-data merge storage tcc:storage {root:{gamerules:{doChargedDiscs:1b,alwaysShowTeaTimer:0b,ignoreGobbleriftMeatNBT:0b,doGobbleriftBreeding:1b}}}
+data merge storage um:storage {root:{gamerules:{}}}
 scoreboard players set um.server_version um.dummy 10
