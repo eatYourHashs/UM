@@ -8,6 +8,7 @@
   "item.um.demon_skin": "Demon Skin",
   "item.um.demon_horn": "Demon Horn",
   "block.um.undercrafter": "Undercrafter",
+  "block.um.undercrafter.gui": "\uc000\uc001\uc002%s",
 
   "entity.um.greater_demon": "Greater Demon",
   "entity.um.lesser_demon": "Lesser Demon",

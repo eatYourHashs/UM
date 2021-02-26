@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{um:{id:\"undercrafter\"},CustomModelData:420000}"
+              "tag": "{BlockEntityTag:{id:\"minecraft:barrel\",Items:[{id:\"minecraft:barrier\",Count:1b,tag:{um:{placed_block:1b,block:\"undercrafter\"}}}]},um:{id:\"undercrafter\"},CustomModelData:420000}"
             },
             {
               "function": "minecraft:set_name",
