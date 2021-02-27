@@ -43,7 +43,6 @@ scoreboard players add @s um.airtime 1
 scoreboard players set @s[nbt={OnGround:1b}] um.airtime 0
 
 execute if score @s um.resist matches 1.. run scoreboard players add @s um.shade_invi 100
-execute if score @s um.deal_damage matches 1.. run scoreboard players add @s um.shade_invi 60
 execute if score @s um.deal_damage matches 1.. run scoreboard players set @s um.since_attack 0
 execute if score @s um.orb_cooldown matches 1.. run scoreboard players remove @s um.orb_cooldown 1
 execute if score @s um.shade_invi matches 1.. run scoreboard players remove @s um.shade_invi 1
