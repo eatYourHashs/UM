@@ -109,22 +109,6 @@
     },
     {
       "rolls": 1,
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.15
-        }
-      ],
-      "entries": [
-        {
-          "type": "loot_table",
-          "weight": 1,
-          "name": "undermagic:items/blueprint_ice_bow"
-		}
-      ]
-    },
-    {
-      "rolls": 1,
       "entries": [
 	    {
           "type": "minecraft:loot_table",

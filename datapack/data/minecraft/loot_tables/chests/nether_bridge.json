@@ -193,22 +193,6 @@
 		  ]
 		}
 	  ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-		{
-          "type": "loot_table",
-          "name": "undermagic:items/blueprint_shadow_shield",
-          "weight": 1
-		}
-	  ],
-      "conditions": [
-		{
-		  "condition": "minecraft:random_chance",
-		  "chance": 0.15
-		}
-	  ]
     }
   ]
 }
