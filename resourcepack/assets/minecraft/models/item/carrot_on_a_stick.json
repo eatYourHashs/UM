@@ -173,12 +173,6 @@
     },
     {
       "predicate": {
-        "custom_model_data": 420083
-      },
-      "model": "um:entity/shadebeast/alpha/idle"
-    },
-    {
-      "predicate": {
         "custom_model_data": 420084
       },
       "model": "um:entity/salamander/idle"

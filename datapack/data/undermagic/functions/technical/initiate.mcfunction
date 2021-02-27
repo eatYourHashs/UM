@@ -146,11 +146,6 @@ execute if score difficulty um.dummy matches 2.. run bossbar set undermagic:elde
 bossbar set undermagic:elder style progress
 bossbar set undermagic:elder color purple
 
-bossbar add undermagic:sb_alpha "Shadebeast Alpha"
-bossbar set undermagic:sb_alpha max 100
-bossbar set undermagic:sb_alpha style progress
-bossbar set undermagic:sb_alpha color purple
-
 bossbar add undermagic:shadesull "Shadesull"
 bossbar set undermagic:shadesull max 800
 bossbar set undermagic:shadesull style progress

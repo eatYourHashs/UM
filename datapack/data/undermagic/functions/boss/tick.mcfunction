@@ -11,9 +11,6 @@ execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common 
 execute if data storage undermagic:common boss_status{elder:1b} run function undermagic:boss/elder/elder
 execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{elder:0b} run tp @e[tag=um.elder] ~ -100 ~
 
-execute if data storage undermagic:common boss_status{alpha_shadebeast:1b} run function undermagic:boss/alpha_shadebeast/alpha_shadebeast
-execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{alpha_shadebeast:0b} run tp @e[tag=um.shadebeast_alpha] ~ -100 ~
-
 execute if data storage undermagic:common boss_status{shadesull:1b} run function undermagic:boss/shadesull/shadesull
 execute if score $timer_20 um.dummy matches 1 if data storage undermagic:common boss_status{shadesull:0b} run tp @e[tag=um.shadesull] ~ -100 ~
 
