@@ -228,6 +228,18 @@
       "id": "enderlord",
       "recipe_type": "crafting",
       "give_command": "/function undermagic:infusions/enderlord"
+    },
+    {
+      "id": "shadow_rifts",
+      "recipe_type": "location"
+    },
+    {
+      "id": "shadebeasts",
+      "recipe_type": "location"
+    },
+    {
+      "id": "shadow_metals",
+      "recipe_type": "location"
     }
   ]
 }
