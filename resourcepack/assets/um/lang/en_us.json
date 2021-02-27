@@ -390,13 +390,13 @@
   "item.um.demonomicon.entry.flame_body.history": "%16$s: Added.\n%38$s: Buffed.",
   "item.um.demonomicon.entry.flame_body.description": "You have figured out how to become resistant to the dangers of the Nether. By infusing your body with various hot materials, you can become immune to natural fire, as well as gain 25% fire damage reduction.\n\n\n\n\n\n\n\n\n",
 
-  "item.um.demonomicon.entry.tolerance.title": "Tolerance",
+  "item.um.demonomicon.entry.tolerance.title": "Tolerant",
   "item.um.demonomicon.entry.tolerance.icon": "\uf031",
   "item.um.demonomicon.entry.tolerance.contributors": "Hashs: Created",
   "item.um.demonomicon.entry.tolerance.more_info": "This infusion is not lost if you die by overload.",
   "item.um.demonomicon.entry.tolerance.recipe": "Tolerance Cost: 0\nBlood Cost: 300\nBooster Tier: IV\n\n\n\n\n\n\uc044\n\n\n\n\n\n\n",
   "item.um.demonomicon.entry.tolerance.history": "%16$s: Added.",
-  "item.um.demonomicon.entry.tolerance.description": "By embedding Nether Shards within your body and infusing your bones with gold, you can become able to tolerate much greater levels of magical enhancement. The Tolerance infusion adds +5 to your tolerance cap.\n\n\n\n\n\n\n\n\n",
+  "item.um.demonomicon.entry.tolerance.description": "By embedding Nether Shards within your body and infusing your bones with gold, you can become able to tolerate much greater levels of magical enhancement. The Tolerant infusion adds +5 to your tolerance cap.\n\n\n\n\n\n\n\n\n",
 
   "item.um.demonomicon.entry.enderlord.title": "Enderlord",
   "item.um.demonomicon.entry.enderlord.icon": "\uf032",
@@ -412,7 +412,7 @@
   "item.um.demonomicon.entry.shadow_rifts.more_info": "One can become immune to the damage by holding\nthe Bone of Wither.",
   "item.um.demonomicon.entry.shadow_rifts.recipe": "Found throughout the Nether.",
   "item.um.demonomicon.entry.shadow_rifts.history": "%16$s: Added.",
-  "item.um.demonomicon.entry.shadow_rifts.description": "While you have this infusion, sneak-jump to warp forward. Due to the limitations of your teleportation organs, this only works if nothing, not even tall grass, is at your destination.\n\n\n\n\n\n\n\n\n",
+  "item.um.demonomicon.entry.shadow_rifts.description": "In places, the veil between the Nether and the Shadow Realm thins. These rifts damage living matter around them and corrupt Iron and Gold into shadowy variants, Shadow Base and Tenebrous Base.\n\n\n\n\n\n\n\n\n",
 
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
   "item.um.abyss_knight_chestplate": "Abyss Knight Cuirass",
