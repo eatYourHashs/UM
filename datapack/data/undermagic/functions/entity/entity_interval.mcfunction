@@ -1,6 +1,5 @@
 execute if entity @s[tag=um.demon_portal] run function undermagic:entity/generic/demon_portal
 execute if entity @s[tag=um.shadow_rift] run function undermagic:entity/rift/interval
-execute if entity @e[tag=um.salamander] run function undermagic:entity/salamander/interval
 
 effect give @s[tag=um.blood_monolith] invisibility 2 1 true
 effect give @s[tag=um.shadebeast] invisibility 2 1 true
