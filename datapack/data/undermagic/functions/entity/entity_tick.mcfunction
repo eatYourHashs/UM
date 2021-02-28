@@ -25,7 +25,7 @@ execute as @s[tag=um.wyrmling] run function undermagic:entity/wyrmling/tick
 execute as @s[tag=um.voidling] run function undermagic:entity/voidling/tick
 execute as @s[tag=um.demon_meteor] run function undermagic:world/demon_army/meteor_tick
 
-execute as @s[tag=um.wyrmling_fam] run function undermagic:entity/wyrmling/wyrmling_fam_tick
+#execute as @s[tag=um.wyrmling_fam] run function undermagic:entity/wyrmling/wyrmling_fam_tick
 execute as @s[tag=um.healing_soul] run function undermagic:entity/reaper_soul/healing_soul_tick
 execute as @s[tag=um.offense_soul] run function undermagic:entity/reaper_soul/offense_soul_tick
 execute as @s[tag=um.abyssal_revenant] run particle smoke ~ ~1 ~ 0.2 0.4 0.2 0 10
