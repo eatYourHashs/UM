@@ -40,4 +40,8 @@ data modify storage um:storage root.temp.crafting_input.2[0].Slot set value 0b
 data modify storage um:storage root.temp.crafting_input.2[1].Slot set value 1b
 data modify storage um:storage root.temp.crafting_input.2[2].Slot set value 2b
 
+execute if data storage um:storage root.temp.crafting_input{0:[]} run data remove storage um:storage root.temp.crafting_input.0
+execute if data storage um:storage root.temp.crafting_input{1:[]} run data remove storage um:storage root.temp.crafting_input.1
+execute if data storage um:storage root.temp.crafting_input{2:[]} run data remove storage um:storage root.temp.crafting_input.2
+
 function um:block/undercrafter/crafting/recipe_checks
