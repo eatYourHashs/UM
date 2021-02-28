@@ -1,5 +1,8 @@
 {
-  "parent": "item/bone",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/bone"
+  },
   "overrides": [
     {
       "predicate": {
