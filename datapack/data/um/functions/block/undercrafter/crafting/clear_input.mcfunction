@@ -5,6 +5,8 @@
 
 playsound um:block.undercrafter.craft block @a[distance=..16]
 tag @s remove um.undercrafter.assembled_output
+execute as @a[distance=..12,sort=nearest,tag=um.inside_undercrafter_gui] run function um:block/undercrafter/crafting/cursor_check/main
+execute if entity @a[distance=..12,sort=nearest,tag=um.inside_undercrafter_gui,tag=!um.shift_clicked] run say uh oh, someone's in the way!
 execute store result block ~ ~ ~ Items[{Slot:2b}].Count int 1 run data get block ~ ~ ~ Items[{Slot:2b}].Count 0.9999999999
 execute store result block ~ ~ ~ Items[{Slot:3b}].Count int 1 run data get block ~ ~ ~ Items[{Slot:3b}].Count 0.9999999999
 execute store result block ~ ~ ~ Items[{Slot:4b}].Count int 1 run data get block ~ ~ ~ Items[{Slot:4b}].Count 0.9999999999
