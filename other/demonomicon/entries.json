@@ -98,10 +98,6 @@
       "recipe_type": "crafting"
     },
     {
-      "id": "astral_armor",
-      "recipe_type": "crafting"
-    },
-    {
       "id": "orbs",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/mysterious_orb"
@@ -380,6 +376,51 @@
     {
       "id": "recall_locator_card",
       "recipe_type": "crafting"
+    },
+    {
+      "id": "dragon_drops",
+      "recipe_type": "location"
+    },
+    {
+      "id": "dragon_scale_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "fallen_paladin_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "astral_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "abyssal_mirror",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/abyssal_mirror"
+    },
+    {
+      "id": "abyss",
+      "recipe_type": "location"
+    },
+    {
+      "id": "voidling",
+      "recipe_type": "location"
+    },
+    {
+      "id": "abyssal_longsword",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/longsword_abyss",
+      "references": [
+        "voidling"
+      ]
+    },
+    {
+      "id": "entropic_greatbow",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/entropic_greatbow",
+      "references": [
+        "voidling"
+      ]
     }
   ]
 }
