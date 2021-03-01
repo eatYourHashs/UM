@@ -170,7 +170,8 @@
     },
     {
       "id": "blood_amalgam",
-      "recipe_type": "location"
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/sanguine_eye"
     },
     {
       "id": "radiant_monolith",
@@ -234,12 +235,87 @@
       "recipe_type": "location"
     },
     {
+      "id": "ebonquartz",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/ebonquartz"
+    },
+    {
       "id": "shadebeasts",
       "recipe_type": "location"
     },
     {
       "id": "shadow_metals",
-      "recipe_type": "location"
+      "recipe_type": "crafting",
+      "references": [
+        "shadow_rifts"
+      ]
+    },
+    {
+      "id": "shadow_plate",
+      "recipe_type": "crafting",
+      "references": [
+        "shadow_metals"
+      ],
+      "give_command": "/loot give @s loot undermagic:items/shadow_plate"
+    },
+    {
+      "id": "shadecloth",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/shadecloth"
+    },
+    {
+      "id": "shadow_longsword",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/longsword_shadow"
+    },
+    {
+      "id": "shadow_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "shadow_plate"
+      ]
+    },
+    {
+      "id": "shade_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "shadecloth"
+      ]
+    },
+    {
+      "id": "phantasmal_dagger",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/phantasmal_dagger"
+    },
+    {
+      "id": "charms",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/charm_table"
+    },
+    {
+      "id": "shadow_guardian_bulwark",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/shadow_guardian_bulwark"
+    },
+    {
+      "id": "elder",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/relic_of_ruin"
+    },
+    {
+      "id": "omega_plate",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/omega_plate",
+      "references": [
+        "elder"
+      ]
+    },
+    {
+      "id": "omega_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "omega_plate"
+      ]
     }
   ]
 }

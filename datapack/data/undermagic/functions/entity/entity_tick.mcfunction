@@ -8,6 +8,7 @@ execute if entity @s[type=arrow] run function undermagic:entity/arrow/tick
 execute if entity @s[tag=um.shadow_guardian] run function undermagic:entity/generic/shadow_guardian_tick
 execute if entity @s[tag=um.blood_cloud] run function undermagic:entity/blood_cloud/blood_cloud_tick
 execute if entity @s[tag=um.projectile] run function undermagic:entity/projectile/tick
+execute if entity @s[tag=um.flare_anim] run function undermagic:entity/flare_anim/tick
 
 execute as @s[tag=um.greater_demon] run function undermagic:entity/greater_demon/tick
 execute as @s[tag=um.lesser_demon] run function undermagic:entity/lesser_demon/tick

@@ -620,6 +620,54 @@
         "custom_model_data": 420161
       },
       "model": "um:item/doom_quiver"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420162
+      },
+      "model": "um:anim/flare_runner_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420163
+      },
+      "model": "um:anim/flare_runner_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420164
+      },
+      "model": "um:anim/flare_runner_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420165
+      },
+      "model": "um:anim/flare_runner_3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420166
+      },
+      "model": "um:anim/flare_runner_4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420167
+      },
+      "model": "um:anim/flare_runner_5"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420168
+      },
+      "model": "um:anim/flare_runner_6"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420169
+      },
+      "model": "um:anim/flare_runner_7"
     }
   ]
 }
