@@ -386,6 +386,11 @@
       "recipe_type": "crafting"
     },
     {
+      "id": "chunk_loader",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/chunk_loader"
+    },
+    {
       "id": "fallen_paladin_armor",
       "recipe_type": "crafting"
     },
@@ -421,6 +426,49 @@
       "references": [
         "voidling"
       ]
+    },
+    {
+      "id": "oblivion_staff",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/oblivion_staff",
+      "references": [
+        "voidling"
+      ]
+    },
+    {
+      "id": "abyss_knight_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "voidling"
+      ]
+    },
+    {
+      "id": "abyss_ranger_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "voidling"
+      ]
+    },
+    {
+      "id": "abyss_warlock_armor",
+      "recipe_type": "crafting",
+      "references": [
+        "voidling"
+      ]
+    },
+    {
+      "id": "dungeon",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/sigil_of_the_shade"
+    },
+    {
+      "id": "shadesull",
+      "recipe_type": "location",
+      "give_command": "/loot give @s loot undermagic:items/crown_of_ruin"
+    },
+    {
+      "id": "ultimate_offhands",
+      "recipe_type": "crafting"
     }
   ]
 }
