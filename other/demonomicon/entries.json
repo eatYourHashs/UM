@@ -52,6 +52,61 @@
       "give_command": "/loot give @s loot undermagic:items/nether_shard"
     },
     {
+      "id": "iron_whip",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/iron_whip"
+    },
+    {
+      "id": "holy_alloy_plate",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/holy_alloy_plate"
+    },
+    {
+      "id": "paladin_hammer",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/paladin_hammer"
+    },
+    {
+      "id": "paladin_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "primal_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "shortbows",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/shortbow_of_the_wild"
+    },
+    {
+      "id": "quivers",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/venom_quiver"
+    },
+    {
+      "id": "early_magic_weps",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "staff_of_the_magi",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/staff_of_the_magi"
+    },
+    {
+      "id": "magi_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "astral_armor",
+      "recipe_type": "crafting"
+    },
+    {
+      "id": "orbs",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/mysterious_orb"
+    },
+    {
       "id": "demons",
       "recipe_type": "location"
     },
@@ -316,6 +371,15 @@
       "references": [
         "omega_plate"
       ]
+    },
+    {
+      "id": "teleporters",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/teleporter"
+    },
+    {
+      "id": "recall_locator_card",
+      "recipe_type": "crafting"
     }
   ]
 }
