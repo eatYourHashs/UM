@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420067,um_id:\"boots_demonic_leggings\",display:{color:2424906}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420003,um_id:\"shadow_leggings\",display:{color:2424906}}"
             },
 			{
 			  "function":"set_attributes",
@@ -36,7 +36,7 @@
 				  "name":"generic.armor_toughness",
 				  "attribute":"generic.armor_toughness",
 				  "operation":"addition",
-				  "amount":4,
+				  "amount":3.5,
 				  "slot":"legs"
 				}
 			  ]

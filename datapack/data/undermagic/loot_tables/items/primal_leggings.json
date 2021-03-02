@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420092,um_id:\"primal_leggings\",display:{color:65288}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420016,um_id:\"primal_leggings\",display:{color:65288}}"
             },
 			{
 			  "function":"set_attributes",

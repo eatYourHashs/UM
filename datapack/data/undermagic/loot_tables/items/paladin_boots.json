@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"paladin_boots\",display:{color:16777215}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420010,um_id:\"paladin_boots\",display:{color:16777215}}"
             },
 			{
 			  "function":"set_attributes",

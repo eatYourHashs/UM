@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"fallen_paladin_chestplate\",display:{color:2037270}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420013,um_id:\"fallen_paladin_chestplate\",display:{color:2037270}}"
             },
 			{
 			  "function":"set_attributes",

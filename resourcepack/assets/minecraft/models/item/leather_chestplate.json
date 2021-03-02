@@ -6,8 +6,78 @@
   },
   "overrides": [{
     "predicate": {
-      "custom_model_data": 420010
+      "custom_model_data": 420000
     },
     "model": "um:item/demonic_steel_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420001
+    },
+    "model": "um:item/bloodstained_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420002
+    },
+    "model": "um:item/pit_lord_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420003
+    },
+    "model": "um:item/shadow_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420004
+    },
+    "model": "um:item/shade_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420005
+    },
+    "model": "um:item/omega_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420006
+    },
+    "model": "um:item/dragon_scale_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420007
+    },
+    "model": "um:item/abyss_knight_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420008
+    },
+    "model": "um:item/abyss_ranger_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420009
+    },
+    "model": "um:item/abyss_warlock_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420010
+    },
+    "model": "um:item/paladin_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420013
+    },
+    "model": "um:item/fallen_paladin_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420016
+    },
+    "model": "um:item/primal_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420017
+    },
+    "model": "um:item/magi_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420018
+    },
+    "model": "um:item/astral_chestplate"
   }]
 }

@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420067,um_id:\"omega_helmet\",display:{color:2424906}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420005,um_id:\"omega_helmet\",display:{color:2424906}}"
             },
 			{
 			  "function":"set_attributes",

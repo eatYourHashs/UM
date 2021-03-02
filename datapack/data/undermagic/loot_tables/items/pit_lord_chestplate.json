@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420010,um_id:\"pit_lord_chestplate\",display:{color:16750351}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420002,um_id:\"pit_lord_chestplate\",display:{color:16750351}}"
             },
 			{
 			  "function":"set_attributes",

@@ -6,8 +6,73 @@
   },
   "overrides": [{
     "predicate": {
-      "custom_model_data": 420012
+      "custom_model_data": 420000
     },
     "model": "um:item/demonic_steel_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420001
+    },
+    "model": "um:item/bloodstained_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420003
+    },
+    "model": "um:item/shadow_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420004
+    },
+    "model": "um:item/shade_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420005
+    },
+    "model": "um:item/omega_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420006
+    },
+    "model": "um:item/dragon_scale_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420007
+    },
+    "model": "um:item/abyss_knight_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420008
+    },
+    "model": "um:item/abyss_ranger_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420009
+    },
+    "model": "um:item/abyss_warlock_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420010
+    },
+    "model": "um:item/paladin_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420013
+    },
+    "model": "um:item/fallen_paladin_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420016
+    },
+    "model": "um:item/primal_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420017
+    },
+    "model": "um:item/magi_leggings"
+  },{
+    "predicate": {
+      "custom_model_data": 420018
+    },
+    "model": "um:item/astral_leggings"
   }]
 }

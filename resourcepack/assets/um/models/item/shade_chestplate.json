@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "um:gui/negative_space",
+    "layer1": "um:item/armor/shadewalker_chestplate"
+  }
+}

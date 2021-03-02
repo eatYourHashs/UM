@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420043,um_id:\"bloodstained_boots\",display:{color:7340032}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420001,um_id:\"bloodstained_boots\",display:{color:7340032}}"
             },
 			{
 			  "function":"set_attributes",

@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"fallen_avenger_helmet\",display:{color:4326147}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420013,um_id:\"fallen_avenger_helmet\",display:{color:4326147}}"
             },
 			{
 			  "function":"set_attributes",

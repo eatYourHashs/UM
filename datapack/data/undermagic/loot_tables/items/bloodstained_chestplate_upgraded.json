@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420041,um_id:\"bloodstained_chestplate\",um_extra:\"bloodstained_upgrade\",display:{color:7340032}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420001,um_id:\"bloodstained_chestplate\",um_extra:\"bloodstained_upgrade\",display:{color:7340032}}"
             },
 			{
 			  "function":"set_attributes",

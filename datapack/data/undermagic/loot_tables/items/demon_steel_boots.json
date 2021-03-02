@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420011,um_id:\"boots_demonic_boots\",display:{color:16742520}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420000,um_id:\"boots_demonic_boots\",display:{color:16742520}}"
             },
 			{
 			  "function":"set_attributes",

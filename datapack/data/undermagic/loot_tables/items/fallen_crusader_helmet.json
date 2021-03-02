@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"fallen_crusader_helmet\",display:{color:4326147}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420015,um_id:\"fallen_crusader_helmet\",display:{color:4326147}}"
             },
 			{
 			  "function":"set_attributes",

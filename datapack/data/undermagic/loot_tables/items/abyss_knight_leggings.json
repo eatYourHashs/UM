@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420091,um_id:\"abyss_knight_leggings\",display:{color:1048596}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420007,um_id:\"abyss_knight_leggings\",display:{color:1048596}}"
             },
 			{
 			  "function":"set_attributes",
