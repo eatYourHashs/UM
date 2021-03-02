@@ -8,6 +8,11 @@
         "custom_model_data": 420000
       },
       "model": "um:item/zealot_tome"
+    },{
+      "predicate": {
+        "custom_model_data": 420001
+      },
+      "model": "um:item/demonomicon"
     }
   ]
 }
