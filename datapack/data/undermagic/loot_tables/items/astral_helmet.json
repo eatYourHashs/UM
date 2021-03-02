@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420013,um_id:\"astral_helmet\",display:{color:14079702}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420018,um_id:\"astral_helmet\",display:{color:14079702}}"
             },
 			{
 			  "function":"set_attributes",

@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420013,um_id:\"magi_boots\",display:{color:29398}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420017,um_id:\"magi_boots\",display:{color:29398}}"
             },
 			{
 			  "function":"set_attributes",
