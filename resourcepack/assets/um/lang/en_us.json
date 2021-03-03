@@ -504,8 +504,7 @@
   "item.um.demonomicon.entry.shadow_longsword.more_info": "This longsword cannot be enchanted, but has higher attack power than \nan unenchanted netherite sword or Bloody Edge.",
   "item.um.demonomicon.entry.shadow_longsword.history": "%18$s: Added.\n%34$s: Retextured.",
   "item.um.demonomicon.entry.shadow_longsword.recipe": "\n\n\n\n\n\n\uc061\n",
-  "item.um.demonomicon.entry.shadow_longsword.description": "%s can be used to make a special sword. This sword cannot sweep and is slower, but can be sheathed and wielded to perform a Quick Draw attack.\n\n\n\n\n\n\n\n\n",
-  "item.um.demonomicon.entry.shadow_longsword.reference.0": "Shadow Plates",
+  "item.um.demonomicon.entry.shadow_longsword.description": "Shadow Plates can be used to make a special sword. This sword cannot sweep and is slower, but can be sheathed and wielded to perform a Quick Draw attack.\n\n\n\n\n\n\n\n\n",
 
   "item.um.demonomicon.entry.elder.title": "The Elder",
   "item.um.demonomicon.entry.elder.icon": "\uf045",
