@@ -78,18 +78,18 @@ execute if score @s um.dummy matches 1000.. if data storage undermagic:common li
 
 #Bloodstained Armor
 scoreboard players set temp um.dummy 0
-execute if data storage undermagic:common list[{Slot:0b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
-execute if data storage undermagic:common list[{Slot:1b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
-execute if data storage undermagic:common list[{Slot:2b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
-execute if data storage undermagic:common list[{Slot:3b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_helmet",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_helmet
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_helmet",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run scoreboard players remove @s um.dummy 75
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_chestplate",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_chestplate
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_chestplate",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run scoreboard players remove @s um.dummy 75
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_leggings",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_leggings
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_leggings",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run scoreboard players remove @s um.dummy 75
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_boots",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_boots
-execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_boots",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:diamond_block"}] run scoreboard players remove @s um.dummy 75
+execute if data storage undermagic:common list[{Slot:0b,Count:4b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
+execute if data storage undermagic:common list[{Slot:1b,Count:4b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
+execute if data storage undermagic:common list[{Slot:2b,Count:4b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
+execute if data storage undermagic:common list[{Slot:3b,Count:4b,tag:{um_id:"Bloodstone"}}] run scoreboard players add temp um.dummy 1
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_helmet",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_helmet
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_helmet",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run scoreboard players remove @s um.dummy 75
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_chestplate",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_chestplate
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_chestplate",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run scoreboard players remove @s um.dummy 75
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_leggings",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_leggings
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_leggings",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run scoreboard players remove @s um.dummy 75
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_boots",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run loot spawn ~ ~1 ~ loot undermagic:items/bloodstained_boots
+execute if score @s um.dummy matches 75.. if score temp um.dummy matches 2 if data storage undermagic:common list[{id:"minecraft:chainmail_boots",Count:1b}] if data storage undermagic:common list[{Count:1b,id:"minecraft:enchanted_golden_apple"}] run scoreboard players remove @s um.dummy 75
 
 scoreboard players set temp um.dummy 0
 execute if data storage undermagic:common list[{Slot:0b,Count:3b,tag:{um_id:"cbe"}}] run scoreboard players add temp um.dummy 1
