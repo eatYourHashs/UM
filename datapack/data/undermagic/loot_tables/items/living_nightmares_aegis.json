@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Living Nightmare's Buckler","color":"aqua","italic":false}
+			  "name": {"text":"Living Nightmare's Buckler","color":"light_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",

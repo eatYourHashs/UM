@@ -15,13 +15,12 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				[{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"b","color":"red","italic":false,"obfuscated":true}],
 			    {"text":"The hide of the dragon, holding immense vitality within.","color":"gray","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420040,um_id:\"dragon_hide\",display:{color:1048594}}"
+              "tag":"{Unbreakable:1b,CustomModelData:420030,um_id:\"dragon_hide\",display:{color:1048594}}"
             },
 			{
 			  "function":"set_attributes",

@@ -191,6 +191,27 @@
         "custom_model_data": 420129
       },
       "model": "um:item/shortbow_of_decay/pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420130
+      },
+      "model": "um:item/dark_pulsar/pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "custom_model_data": 420130
+      },
+      "model": "um:item/dark_pulsar/pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9,
+        "custom_model_data": 420130
+      },
+      "model": "um:item/dark_pulsar/pulling_2"
     }
 
   ]

@@ -15,7 +15,6 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    [{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"b","color":"red","italic":false,"obfuscated":true}],
 				{"text":"Burn your enemies with hellfire!","color":"gray","italic":false},
 				{"text":"Also grants fire resistance when held,","color":"gray","italic":false},
 				{"text":"and absorption on melee hits.","color":"gray","italic":false}

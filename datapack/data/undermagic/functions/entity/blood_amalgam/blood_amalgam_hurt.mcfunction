@@ -5,7 +5,7 @@ execute if entity @s[scores={um.boss_hp=..0}] run playsound minecraft:entity.eld
 execute if entity @s[scores={um.boss_hp=..0}] run playsound minecraft:entity.witch.death hostile @a ~ ~ ~ 1 0
 execute if entity @s[scores={um.boss_hp=..0}] run advancement grant @a only undermagic:undermagic/blood_amalgam
 execute if entity @s[scores={um.boss_hp=..0}] run advancement grant @a only undermagic:undermagic/abyss blood_amalgam
-execute if entity @s[scores={um.boss_hp=..0}] if score difficulty um.dummy matches 0 run loot spawn ~ ~ ~ loot undermagic:entities/blood_amalgam
+execute if entity @s[scores={um.boss_hp=..0}] if score difficulty um.dummy matches 0 run loot spawn ~ ~ ~ loot undermagic:entities/blood_amalgam_lunatic
 execute if entity @s[scores={um.boss_hp=..0}] if score difficulty um.dummy matches 1.. run loot spawn ~ ~ ~ loot undermagic:entities/blood_amalgam_lunatic
 execute unless entity @s[scores={um.boss_hp=..0}] run playsound minecraft:entity.wither.hurt hostile @a ~ ~ ~ 1 0.5
 execute if entity @s[scores={um.boss_hp=..0}] run stopsound @a * undermagic:music.blood_amalgam

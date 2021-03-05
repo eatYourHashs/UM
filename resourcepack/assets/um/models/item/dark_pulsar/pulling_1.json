@@ -1,0 +1,6 @@
+{
+  "parent": "um:item/dark_pulsar/pulling_0",
+  "textures": {
+    "layer0": "um:item/dark_pulsar/pulling_1"
+  }
+}

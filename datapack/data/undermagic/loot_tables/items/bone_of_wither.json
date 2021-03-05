@@ -15,10 +15,8 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    [{"text":"a","color":"red","italic":false,"obfuscated":true},{"text":" Lunatic Drop ","color":"red","italic":false,"obfuscated":false},{"text":"b","color":"red","italic":false,"obfuscated":true}],
 				{"text":"Bone clubs enemies.","color":"gray","italic":false},
-				{"text":"Also protects against withering,","color":"gray","italic":false},
-				{"text":"and shoots skulls.","color":"gray","italic":false}
+				{"text":"Also protects against withering.","color":"gray","italic":false}
 			  ]
 			},
 			{

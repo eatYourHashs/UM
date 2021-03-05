@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:carrot_on_a_stick",
+		  "name": "minecraft:bow",
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Staff of the Elder","color":"light_purple","italic":false}
+			  "name": {"text":"Dark Pulsar","color":"yellow","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Rapidly fires dark orbs.","color":"gray","italic":false},
-			    {"text":"Sneak-click to fire a giant death orb.","color":"gray","italic":false}
+				{"text":"Shots fired ignore gravity,","color":"gray","italic":false},
+				{"text":"start slow, and quickly accelerate.","color":"gray","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420081,um_id:\"elder_staff\"}"
+              "tag":"{Unbreakable:1b,CustomModelData:420130,um_id:\"dark_pulsar\"}"
             }
           ]
         }

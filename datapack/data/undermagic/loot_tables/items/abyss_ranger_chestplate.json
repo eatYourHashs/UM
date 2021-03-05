@@ -30,7 +30,7 @@
 				  "name":"generic.armor",
 				  "attribute":"generic.armor",
 				  "operation":"addition",
-				  "amount":3,
+				  "amount":8,
 				  "slot":"chest"
 				},
 				{

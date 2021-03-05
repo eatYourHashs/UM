@@ -79,5 +79,10 @@
       "custom_model_data": 420018
     },
     "model": "um:item/astral_chestplate"
+  },{
+    "predicate": {
+      "custom_model_data": 420030
+    },
+    "model": "um:item/dragon_hide"
   }]
 }
