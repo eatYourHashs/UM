@@ -22,6 +22,11 @@ execute if entity @s[tag=um.doom_proc,scores={um.dummy=2..},nbt=!{life:0s}] run 
 execute if entity @s[tag=um.greatbow_proc] run function undermagic:entity/arrow/greatbow_shot
 execute if entity @s[tag=um.split_shot] run particle smoke
 
+execute if entity @s[tag=um.puncture_1_proc] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.puncture_2_proc] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.puncture_3_proc] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=um.puncture_4_proc] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1
+
 execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] if score @s um.dummy matches 4.. unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_weak
 
 scoreboard players add @s um.dummy 1

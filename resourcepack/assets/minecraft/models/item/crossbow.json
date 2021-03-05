@@ -77,6 +77,182 @@
                 "charged": 1
             },
             "model": "um:item/bfc_9000_charged"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420003
+            },
+            "model": "um:item/puncture/1_standby"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420003,
+                "pulling": 1
+            },
+            "model": "um:item/puncture/1_pulling_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420003,
+                "pulling": 1,
+                "pull": 0.58
+            },
+            "model": "um:item/puncture/1_pulling_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420003,
+                "pulling": 1,
+                "pull": 1.0
+            },
+            "model": "um:item/puncture/1_pulling_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420003,
+                "charged": 1
+            },
+            "model": "um:item/puncture/1_arrow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420003,
+                "charged": 1,
+                "firework": 1
+            },
+            "model": "um:item/puncture/1_firework"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420004
+            },
+            "model": "um:item/puncture/2_standby"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420004,
+                "pulling": 1
+            },
+            "model": "um:item/puncture/2_pulling_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420004,
+                "pulling": 1,
+                "pull": 0.58
+            },
+            "model": "um:item/puncture/2_pulling_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420004,
+                "pulling": 1,
+                "pull": 1.0
+            },
+            "model": "um:item/puncture/2_pulling_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420004,
+                "charged": 1
+            },
+            "model": "um:item/puncture/2_arrow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420004,
+                "charged": 1,
+                "firework": 1
+            },
+            "model": "um:item/puncture/2_firework"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420005
+            },
+            "model": "um:item/puncture/3_standby"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420005,
+                "pulling": 1
+            },
+            "model": "um:item/puncture/3_pulling_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420005,
+                "pulling": 1,
+                "pull": 0.58
+            },
+            "model": "um:item/puncture/3_pulling_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420005,
+                "pulling": 1,
+                "pull": 1.0
+            },
+            "model": "um:item/puncture/3_pulling_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420005,
+                "charged": 1
+            },
+            "model": "um:item/puncture/3_arrow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420005,
+                "charged": 1,
+                "firework": 1
+            },
+            "model": "um:item/puncture/3_firework"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420006
+            },
+            "model": "um:item/puncture/4_standby"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420006,
+                "pulling": 1
+            },
+            "model": "um:item/puncture/4_pulling_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420006,
+                "pulling": 1,
+                "pull": 0.58
+            },
+            "model": "um:item/puncture/4_pulling_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420006,
+                "pulling": 1,
+                "pull": 1.0
+            },
+            "model": "um:item/puncture/4_pulling_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420006,
+                "charged": 1
+            },
+            "model": "um:item/puncture/4_arrow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420006,
+                "charged": 1,
+                "firework": 1
+            },
+            "model": "um:item/puncture/4_firework"
         }
     ]
 }
