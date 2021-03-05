@@ -15,7 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 1 - 50 Blood to next tier","color":"gold","italic":false},
+			    {"text":"Tier 1","color":"gold","italic":false},
 			    {"text":"May be upgraded via Blood Infusion.","color":"gray","italic":false}
 			  ]
 			},

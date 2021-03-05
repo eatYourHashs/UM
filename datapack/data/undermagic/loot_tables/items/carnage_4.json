@@ -15,13 +15,13 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 3","color":"gold","italic":false},
+			    {"text":"Tier 4","color":"gold","italic":false},
 			    {"text":"Crushes stone and bone with equal ease.","color":"gray","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420039,um_id:\"carnage_3\"}"
+              "tag":"{Unbreakable:1b,CustomModelData:420040,um_id:\"carnage_4\"}"
             },
 			{
 			  "function":"set_attributes",
@@ -30,7 +30,7 @@
 				  "name":"generic.attack_damage",
 				  "attribute":"generic.attack_damage",
 				  "operation":"addition",
-				  "amount":16,
+				  "amount":20,
 				  "slot":"mainhand"
 				},
 				{

@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:diamond_pickaxe",
+		  "name": "minecraft:iron_sword",
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Carnage","color":"light_purple","italic":false}
+			  "name": {"text":"Bloody Edge","color":"light_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 3","color":"gold","italic":false},
-			    {"text":"Crushes stone and bone with equal ease.","color":"gray","italic":false}
+			    {"text":"Tier 4","color":"gold","italic":false},
+			    {"text":"Heals you on a hit.","color":"gray","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{Unbreakable:1b,CustomModelData:420039,um_id:\"carnage_3\"}"
+              "tag":"{Unbreakable:1b,CustomModelData:420033,um_id:\"bloody_edge_4\"}"
             },
 			{
 			  "function":"set_attributes",
@@ -30,14 +30,14 @@
 				  "name":"generic.attack_damage",
 				  "attribute":"generic.attack_damage",
 				  "operation":"addition",
-				  "amount":16,
+				  "amount":11,
 				  "slot":"mainhand"
 				},
 				{
 				  "name":"generic.attack_speed",
 				  "attribute":"generic.attack_speed",
 				  "operation":"addition",
-				  "amount":-3.6,
+				  "amount":-2.1,
 				  "slot":"mainhand"
 				}
 			  ]

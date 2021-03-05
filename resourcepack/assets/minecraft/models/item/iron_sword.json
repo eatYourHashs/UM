@@ -29,6 +29,12 @@
     },
     {
       "predicate": {
+        "custom_model_data": 420033
+      },
+      "model": "um:item/bloody_edge/4"
+    },
+    {
+      "predicate": {
         "custom_model_data": 420125
       },
       "model": "um:item/reaper_scythe"

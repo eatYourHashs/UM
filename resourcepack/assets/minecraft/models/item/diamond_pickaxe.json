@@ -20,6 +20,12 @@
         "custom_model_data": 420039
       },
       "model": "um:item/carnage/3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420040
+      },
+      "model": "um:item/carnage/4"
     }
   ]
 }

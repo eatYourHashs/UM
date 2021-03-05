@@ -10,12 +10,12 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Bloody Edge","color":"yellow","italic":false}
+			  "name": {"text":"Bloody Edge","color":"light_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 3 - Maxed","color":"gold","italic":false},
+			    {"text":"Tier 3","color":"gold","italic":false},
 			    {"text":"Heals you on a hit.","color":"gray","italic":false}
 			  ]
 			},
@@ -30,7 +30,7 @@
 				  "name":"generic.attack_damage",
 				  "attribute":"generic.attack_damage",
 				  "operation":"addition",
-				  "amount":11,
+				  "amount":9,
 				  "slot":"mainhand"
 				},
 				{

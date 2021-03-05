@@ -15,7 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier II - 500 Blood to next tier","color":"gold","italic":false},
+			    {"text":"Tier 2","color":"gold","italic":false},
 			    {"text":"Mining tool that may be upgraded through Blood Infusion.","color":"gray","italic":false}
 			  ]
 			},

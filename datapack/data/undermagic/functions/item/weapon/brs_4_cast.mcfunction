@@ -1,0 +1,3 @@
+execute if entity @e[type=#undermagic:attackable,tag=!global.ignore,scores={um.invuln=10..},distance=..1] run function undermagic:item/weapon/blood_rain_staff_4
+execute unless entity @e[type=#undermagic:attackable,tag=!global.ignore,scores={um.invuln=10..},distance=..1] run scoreboard players add temp um.dummy 1
+execute unless entity @e[type=#undermagic:attackable,tag=!global.ignore,scores={um.invuln=10..},distance=..1] positioned ^ ^ ^0.5 unless score temp um.dummy matches 61.. run function undermagic:item/weapon/brs_4_cast

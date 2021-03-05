@@ -15,7 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 2 - 250 Blood to next tier","color":"gold","italic":false},
+			    {"text":"Tier 2","color":"gold","italic":false},
 			    {"text":"May be upgraded via Blood Infusion.","color":"gray","italic":false}
 			  ]
 			},
@@ -30,7 +30,7 @@
 				  "name":"generic.attack_damage",
 				  "attribute":"generic.attack_damage",
 				  "operation":"addition",
-				  "amount":9,
+				  "amount":8,
 				  "slot":"mainhand"
 				},
 				{

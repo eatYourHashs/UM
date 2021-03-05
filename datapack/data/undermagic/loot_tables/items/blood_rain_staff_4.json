@@ -10,18 +10,18 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Blood Rain Staff","color":"yellow","italic":false}
+			  "name": {"text":"Blood Rain Staff","color":"light_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 2","color":"gold","italic":false},
-			    {"text":"Drips harmful blood and may be upgraded via Blood Infusion.","color":"gray","italic":false}
+			    {"text":"Tier 4","color":"gold","italic":false},
+			    {"text":"Rains death upon foes.","color":"gray","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:420105,um_id:\"blood_rain_staff_2\"}"
+              "tag":"{CustomModelData:420170,um_id:\"blood_rain_staff_4\",Unbreakable:1b}"
             }
           ]
         }

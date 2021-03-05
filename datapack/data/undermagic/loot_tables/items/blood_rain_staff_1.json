@@ -10,12 +10,12 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"text":"Blood Rain Staff","color":"aqua","italic":false}
+			  "name": {"text":"Blood Rain Staff","color":"yellow","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"text":"Tier 1 - 50 Blood to next tier","color":"gold","italic":false},
+			    {"text":"Tier 1","color":"gold","italic":false},
 			    {"text":"Drips harmful blood and may be upgraded via Blood Infusion.","color":"gray","italic":false}
 			  ]
 			},

@@ -668,6 +668,12 @@
         "custom_model_data": 420169
       },
       "model": "um:anim/flare_runner_7"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420170
+      },
+      "model": "um:item/blood_rain_staff/4"
     }
   ]
 }

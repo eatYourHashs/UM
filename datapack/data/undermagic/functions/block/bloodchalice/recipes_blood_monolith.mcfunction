@@ -1,6 +1,11 @@
 
 function undermagic:block/bloodchalice/recipes_radiant_monolith
 
+execute if score @s um.dummy matches 500.. if data storage undermagic:common list[{Count:1b,id:"minecraft:netherite_ingot"}] if data storage undermagic:common list[{Count:1b,tag:{um_id:"bloody_edge_3"}}] if data storage undermagic:common list[{Count:5b,tag:{um_id:"cbe"}}] if data storage undermagic:common list[{Count:4b,id:"minecraft:ghast_tear"}] run scoreboard players add @s um.dummy_two 1
+execute if score @s um.dummy matches 500.. if data storage undermagic:common list[{Count:1b,id:"minecraft:netherite_ingot"}] if data storage undermagic:common list[{Count:1b,tag:{um_id:"blood_rain_staff_3"}}] if data storage undermagic:common list[{Count:5b,tag:{um_id:"cbe"}}] if data storage undermagic:common list[{Count:4b,id:"minecraft:ghast_tear"}] run scoreboard players add @s um.dummy_two 1
+execute if score @s um.dummy matches 500.. if data storage undermagic:common list[{Count:1b,id:"minecraft:netherite_ingot"}] if data storage undermagic:common list[{Count:1b,tag:{um_id:"puncture_3"}}] if data storage undermagic:common list[{Count:5b,tag:{um_id:"cbe"}}] if data storage undermagic:common list[{Count:4b,id:"minecraft:ghast_tear"}] run scoreboard players add @s um.dummy_two 1
+execute if score @s um.dummy matches 1000.. if data storage undermagic:common list[{Count:2b,id:"minecraft:netherite_ingot"}] if data storage undermagic:common list[{Count:1b,tag:{um_id:"carnage_3"}}] if data storage undermagic:common list[{Count:10b,tag:{um_id:"cbe"}}] if data storage undermagic:common list[{Count:10b,tag:{um_id:"Bloodstone"}}] run scoreboard players add @s um.dummy_two 1
+
 scoreboard players set temp um.dummy 0
 execute if data storage undermagic:common list[{Slot:0b,Count:3b,tag:{um_id:"cbe"}}] run scoreboard players add temp um.dummy 1
 execute if data storage undermagic:common list[{Slot:1b,Count:3b,tag:{um_id:"cbe"}}] run scoreboard players add temp um.dummy 1
