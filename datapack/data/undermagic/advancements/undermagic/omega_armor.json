@@ -5,11 +5,11 @@
             "text": "Fortress of Destruction"
         },
         "description": {
-            "text": "Obtain a full set of Omega armor, the strongest armor before the Abyss."
+            "text": "Obtain a full set of Omega armor, one of the strongest armors before the Abyss."
         },
         "icon": {
             "item": "minecraft:leather_chestplate",
-            "nbt": "{CustomModelData:420010,display:{color:2424906}}"
+            "nbt": "{CustomModelData:420005,display:{color:2424906}}"
         },
         "frame": "goal",
         "show_toast": true,

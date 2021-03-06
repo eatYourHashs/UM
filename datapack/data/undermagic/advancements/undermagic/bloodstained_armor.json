@@ -9,7 +9,7 @@
         },
         "icon": {
             "item": "minecraft:leather_chestplate",
-            "nbt": "{CustomModelData:420010,display:{color:7340032}}"
+            "nbt": "{CustomModelData:420001,display:{color:7340032}}"
         },
         "frame": "goal",
         "show_toast": true,
