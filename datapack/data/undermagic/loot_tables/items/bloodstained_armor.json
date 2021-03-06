@@ -1,0 +1,40 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:loot_table",
+			"name": "undermagic:items/bloodstained_boots"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:loot_table",
+			"name": "undermagic:items/bloodstained_leggings"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:loot_table",
+			"name": "undermagic:items/bloodstained_chestplate"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:loot_table",
+			"name": "undermagic:items/bloodstained_helmet"
+		  }
+		]
+	  }
+	]
+  }
