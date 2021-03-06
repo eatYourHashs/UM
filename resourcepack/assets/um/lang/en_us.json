@@ -275,7 +275,7 @@
   "item.um.demonomicon.entry.bloody_edge.contributors": "Hashs: Created\nRagtime Gal: Textured",
   "item.um.demonomicon.entry.bloody_edge.more_info": "The tier III version used to heal you instantly on a hit.",
   "item.um.demonomicon.entry.bloody_edge.history": "%5$s: Added.\n%34$s: Retextured.\n%39$s: Nerfed and added tier IV version.",
-  "item.um.demonomicon.entry.bloody_edge.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\n\uc022\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\n\uc023\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\n\uc024\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\n\uc129\n\n\n\n\n",
+  "item.um.demonomicon.entry.bloody_edge.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\uc022\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\uc023\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\uc024\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\uc129\n\n\n\n\n",
   "item.um.demonomicon.entry.bloody_edge.description": "This sword comes in four tiers, each with better attack damage and speed. The tier III and IV versions also grants regeneration on dealing damage.\n\n\n\n\n\n\n\n\n",
 
   "item.um.demonomicon.entry.blood_rain_staff.title": "Blood Rain Staff",
@@ -283,7 +283,7 @@
   "item.um.demonomicon.entry.blood_rain_staff.contributors": "Hashs: Created\nRagtime Gal: Textured",
   "item.um.demonomicon.entry.blood_rain_staff.more_info": "The clouds persist for quite some time and drip blood straight down.",
   "item.um.demonomicon.entry.blood_rain_staff.history": "%23$s: Added.\n%34$s: Retextured.\n%39$s: Buffed and added tier IV version.",
-  "item.um.demonomicon.entry.blood_rain_staff.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\n\uc025\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\n\uc026\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\n\uc027\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\n\uc130\n\n\n\n\n",
+  "item.um.demonomicon.entry.blood_rain_staff.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\uc025\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\uc026\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\uc027\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\uc130\n\n\n\n\n",
   "item.um.demonomicon.entry.blood_rain_staff.description": "This magic staff targets enemies and drips harmful blood from above. It comes in four tiers, each with better damage.\n\n\n\n\n\n\n\n\n",
 
   "item.um.demonomicon.entry.bloodstone.title": "Bloodstone",
@@ -307,7 +307,7 @@
   "item.um.demonomicon.entry.carnage.contributors": "Hashs: Created\nRagtime Gal: Textured",
   "item.um.demonomicon.entry.carnage.more_info": "With Efficiency V, the tier II version can instantly mine stone.",
   "item.um.demonomicon.entry.carnage.history": "%8$s: Added.\n%34$s: Retextured.\n%39$s: Added tier IV version.",
-  "item.um.demonomicon.entry.carnage.recipe": "Blood Cost: 50\nBooster Tier: I\n\n\n\n\n\uc033\n\n\n\n\n\nBlood Cost: 150\nBooster Tier: II\n\n\n\n\n\uc034\n\n\n\n\n\nBlood Cost: 500\nBooster Tier: III\n\n\n\n\n\uc035\n\n\n\n\nBlood Cost: 1000\nBooster Tier: IV\n\n\n\n\n\uc131\n\n\n\n\n",
+  "item.um.demonomicon.entry.carnage.recipe": "Blood Cost: 50\nBooster Tier: I\n\n\n\n\uc033\n\n\n\n\n\nBlood Cost: 150\nBooster Tier: II\n\n\n\n\uc034\n\n\n\n\n\nBlood Cost: 500\nBooster Tier: III\n\n\n\n\uc035\n\n\n\n\nBlood Cost: 1000\nBooster Tier: IV\n\n\n\n\uc131\n\n\n\n\n",
   "item.um.demonomicon.entry.carnage.description": "This hammer, made from %s, comes in four tiers. It is not only an effective mining tool but also a slow and powerful melee weapon.\n\n\n\n\n\n\n\n\n",
   "item.um.demonomicon.entry.carnage.reference.0": "Bloodstone",
 
@@ -783,7 +783,7 @@
   "item.um.demonomicon.entry.puncture.contributors": "Hashs: Created/textured",
   "item.um.demonomicon.entry.puncture.more_info": "Use Quick Charge on this item for best results.",
   "item.um.demonomicon.entry.puncture.history": "%39$s: Added.",
-  "item.um.demonomicon.entry.puncture.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\n\uc132\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\n\uc133\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\n\uc134\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\n\uc135\n\n\n\n\n",
+  "item.um.demonomicon.entry.puncture.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\uc132\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\uc133\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\uc134\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\uc135\n\n\n\n\n",
   "item.um.demonomicon.entry.puncture.description": "A blood-infused crossbow with four tiers, the Puncture has high piercing and can sometimes shoot for critical damage.\n\n\n\n\n\n\n\n\n",
 
   "item.um.demonomicon.entry.dark_pulsar.title": "Dark Pulsar",
