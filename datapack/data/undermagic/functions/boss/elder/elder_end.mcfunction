@@ -6,9 +6,9 @@ bossbar set undermagic:elder players @s
 
 stopsound @a * um:music.elder
 
-execute if score kill um.dummy matches 1 unless entity @s[tag=um.no_nohit] run loot give @p loot undermagic:items/eye_on_you
-execute at @e[tag=um.elder] run advancement grant @a[distance=..128] only undermagic:undermagic/elder
-execute at @e[tag=um.elder] run advancement grant @a[distance=..128] only undermagic:undermagic/abyss elder
+execute if score kill um.dummy matches 1 at @e[tag=um.elder_eye] run loot give @p loot undermagic:items/eye_on_you
+execute if score kill um.dummy matches 1 at @e[tag=um.elder_eye] run advancement grant @a[distance=..128] only undermagic:undermagic/elder
+execute if score kill um.dummy matches 1 at @e[tag=um.elder_eye] run advancement grant @a[distance=..128] only undermagic:undermagic/abyss elder
 
 scoreboard players set kill um.dummy 0
 

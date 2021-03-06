@@ -7,7 +7,7 @@ execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{
 execute if score $length um.dummy matches 13 if data entity @s SelectedItem.tag{um_id:"inferno_staff"} run effect give @s minecraft:fire_resistance 2 0 true
 
 execute if score $length um.dummy matches 13 if score @s um.deal_damage matches 1.. if data entity @s SelectedItem.tag{um_id:"bloody_edge_3"} run effect give @s minecraft:regeneration 3 1 true
-execute if score $length um.dummy matches 13 if score @s um.deal_damage matches 1.. if data entity @s SelectedItem.tag{um_id:"bloody_edge_3"} run effect give @s minecraft:regeneration 3 2 true
+execute if score $length um.dummy matches 13 if score @s um.deal_damage matches 1.. if data entity @s SelectedItem.tag{um_id:"bloody_edge_4"} run effect give @s minecraft:regeneration 3 2 true
 execute if score $length um.dummy matches 13 if score @s um.deal_damage matches 1.. if data entity @s SelectedItem.tag{um_id:"inferno_staff"} run effect give @s minecraft:absorption 20 0 true
 
 execute if score $length um.dummy matches 9 if data entity @s SelectedItem.tag{um_id:"carnage_1"} run effect give @s minecraft:haste 2 0 true

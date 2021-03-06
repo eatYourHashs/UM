@@ -188,12 +188,17 @@
     {
       "id": "bloody_edge",
       "recipe_type": "crafting",
-      "give_command": "/loot give @s loot undermagic:items/bloody_edge_3"
+      "give_command": "/loot give @s loot undermagic:items/bloody_edge_4"
+    },
+    {
+      "id": "puncture",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/puncture_4"
     },
     {
       "id": "blood_rain_staff",
       "recipe_type": "crafting",
-      "give_command": "/loot give @s loot undermagic:items/blood_rain_staff_3"
+      "give_command": "/loot give @s loot undermagic:items/blood_rain_staff_4"
     },
     {
       "id": "bloodstone",
@@ -318,6 +323,11 @@
       "id": "shadow_longsword",
       "recipe_type": "crafting",
       "give_command": "/loot give @s loot undermagic:items/longsword_shadow"
+    },
+    {
+      "id": "dark_pulsar",
+      "recipe_type": "crafting",
+      "give_command": "/loot give @s loot undermagic:items/dark_pulsar"
     },
     {
       "id": "shadow_armor",

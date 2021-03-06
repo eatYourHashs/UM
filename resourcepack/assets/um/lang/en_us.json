@@ -772,7 +772,7 @@
 
   "item.um.demonomicon.entry.chunk_loader.title": "Chunk Loaders",
   "item.um.demonomicon.entry.chunk_loader.icon": "\uf077",
-  "item.um.demonomicon.entry.chunk_loader.contributors": "Hashs: Created/textured/modeled",
+  "item.um.demonomicon.entry.chunk_loader.contributors": "Hashs: Created\nRagtime Gal: Textured",
   "item.um.demonomicon.entry.chunk_loader.more_info": "Placing more than one chunk loader in a chunk may cause problems.",
   "item.um.demonomicon.entry.chunk_loader.history": "%36$s: Added.",
   "item.um.demonomicon.entry.chunk_loader.recipe": "\n\n\n\n\n\n\uc127\n",
@@ -780,18 +780,18 @@
 
   "item.um.demonomicon.entry.puncture.title": "Puncture",
   "item.um.demonomicon.entry.puncture.icon": "\uf078",
-  "item.um.demonomicon.entry.puncture.contributors": "Hashs: Created\nRagtime Gal: Textured",
+  "item.um.demonomicon.entry.puncture.contributors": "Hashs: Created/textured",
   "item.um.demonomicon.entry.puncture.more_info": "Use Quick Charge on this item for best results.",
   "item.um.demonomicon.entry.puncture.history": "%39$s: Added.",
-  "item.um.demonomicon.entry.puncture.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\n\uc133\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\n\uc134\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\n\uc135\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\n\uc136\n\n\n\n\n",
-  "item.um.demonomicon.entry.puncture.description": "A blood-infused crossbow, the Puncture has high piercing and can sometimes shoot critically.\n\n\n\n\n\n\n\n\n",
+  "item.um.demonomicon.entry.puncture.recipe": "Blood Cost: 10\nBooster Tier: I\n\n\n\n\n\uc132\n\n\n\n\n\nBlood Cost: 50\nBooster Tier: II\n\n\n\n\n\uc133\n\n\n\n\n\nBlood Cost: 250\nBooster Tier: III\n\n\n\n\n\uc134\n\n\n\n\nBlood Cost: 500\nBooster Tier: IV\n\n\n\n\n\uc135\n\n\n\n\n",
+  "item.um.demonomicon.entry.puncture.description": "A blood-infused crossbow with four tiers, the Puncture has high piercing and can sometimes shoot for critical damage.\n\n\n\n\n\n\n\n\n",
 
   "item.um.demonomicon.entry.dark_pulsar.title": "Dark Pulsar",
   "item.um.demonomicon.entry.dark_pulsar.icon": "\uf079",
-  "item.um.demonomicon.entry.dark_pulsar.contributors": "Hashs: Created\nRagtime Gal: Textured",
-  "item.um.demonomicon.entry.dark_pulsar.more_info": "This item pairs very well with the Power enchantment and quivers.",
+  "item.um.demonomicon.entry.dark_pulsar.contributors": "Hashs: Created/textured",
+  "item.um.demonomicon.entry.dark_pulsar.more_info": "This item pairs very well with the Power enchantment,\nSupercharge charm, and quivers.",
   "item.um.demonomicon.entry.dark_pulsar.history": "%39$s: Added.",
-  "item.um.demonomicon.entry.dark_pulsar.recipe": "\n\n\n\n\n\n\uc132\n",
+  "item.um.demonomicon.entry.dark_pulsar.recipe": "\n\n\n\n\n\n\uc128\n",
   "item.um.demonomicon.entry.dark_pulsar.description": "The Dark Pulsar's arrows start very slow, but quickly speed up to very high speeds. They also ignore gravity.\n\n\n\n\n\n\n\n\n",
 
   "item.um.abyss_knight_helmet": "Abyss Knight Helmet",
