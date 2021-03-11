@@ -1,0 +1,46 @@
+Content is split up into three major areas:
+  - Demon Stuff
+  - Shadow Stuff
+  - Blood Stuff
+
+
+Bosses:
+  - Demon: Pit Lord
+  - Shadow: The Elder
+  - Blood: Blood Amalgam
+
+
+Basic Underlying Mechanics:
+  - Undercrafter
+    - Used to craft every single item from the pack
+    - Made from crimson planks
+
+Demon Stuff:
+  - Based around crimson forest, fortresses, fire. Red, thematically.
+  - Demon citadel
+    - Based upon pillager outpost start
+    - Locatable via map traded by piglins
+    - Spawns from top of bedrock downwards
+    - Contains plenty of demons
+    - Demons spawn naturally via spawner and via pillager spawning method
+  - Demons found in demon citadel
+    - Two variants of demons:
+      - Lesser: Less damage, less health
+      - Greater: More damage and health, can spawn with bows, drops demon horns
+  - Also spawned rarely in nether fortresses
+  - Items
+    - Demonic Steel
+      - Created from demon skin plus iron ingot
+      - Used to make Demonic Steel Sword
+        - Gets bonus damage against living entities, and applies wither to said entities.
+      - Used to make Demonic Steel Armor
+        - Insanely strong armor, takes power from dark energy
+        - Requires demon horns as additional ingredients for boots and helmet
+        - Tier of armor between diamond and iron (Gives 1 bar less than diamond, perhaps?)
+        - Has a set bonus of movement speed addition (+15%)
+        - Has durability between diamond and iron
+        - Can be enchanted normally
+        - 
+    - Demon Skin
+      - Used as an ingredient in demonic steel
+      -
