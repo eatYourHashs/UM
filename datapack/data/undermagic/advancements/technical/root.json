@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "um:commands/revoke_technical_advancements"
+  }
+}

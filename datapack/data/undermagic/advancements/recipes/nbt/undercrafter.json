@@ -1,0 +1,15 @@
+{
+  "parent": "undermagic:recipes/nbt/root",
+  "rewards": {
+    "function": "undermagic:entity/player/nbt_recipe",
+    "loot": ["undermagic:items/undercrafter"]
+  },
+  "criteria": {
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "undermagic:nbt/undercrafter"
+      }
+    }
+  }
+}

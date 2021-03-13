@@ -124,7 +124,7 @@
   "item.um.demonomicon.entry.demons.history": "%1$s: Added.\n%5$s: Increased rare drop rates.\n%14$s: Greater Demons nerfed.\n%15$s: Made Lesser Demons drop sword shards\nand made more demons spawn in fortresses.\n%26$s: Nerfed.\n%34$s: Retextured.",
   "item.um.demonomicon.entry.demons.recipe": "Demon Towers can be found throughout the Nether.",
   "item.um.demonomicon.entry.demons.description": "Demons are an ancient race of humanoid creatures not native to this plane. They thirst for blood and power, and work towards these by invading the Nether through their towers, which can be found throughout and spawn demons constantly.\n\n\n\n\n\n\n\n\n",
-  
+
   "item.um.demonomicon.entry.blood_chalice.title": "Blood Chalice",
   "item.um.demonomicon.entry.blood_chalice.icon": "\uf004",
   "item.um.demonomicon.entry.blood_chalice.contributors": "Hashs: Created\nImCoolYeah105: Reworked\nRagtime Gal: Textured",
@@ -1007,5 +1007,19 @@
 
   "block.um.blood_monolith": "Blood Monolith",
   "block.um.blood_monolith.lore": "Boosts a Blood Chalice to Tier IV",
-  "block.um.teleporter": "Teleporter"
+  "block.um.teleporter": "Teleporter",
+
+
+  "block.um.undercrafter": "Undercrafter",
+  "block.um.undercrafter.gui": "\uc000\uc001\uc002%s",
+
+  "subtitles.um.music.pit_lord": "Demon King's Revenge plays",
+  "subtitles.um.music.shadesull_p1": "In the Chamber of Madness plays",
+  "subtitles.um.music.shadesull_p2": "Reign of the Corrupt plays",
+  "subtitles.um.music.blood_amalgam": "Blood Amalgam plays",
+  "subtitles.um.music.elder": "Eye on You plays",
+  "subtitles.um.music.herald_p1": "Conflict of the Ages plays",
+  "subtitles.um.music.herald_p2": "Echoes of the Apocalypse plays",
+  "subtitles.um.music.dungeon": "Halls of Shadow plays"
+
 }

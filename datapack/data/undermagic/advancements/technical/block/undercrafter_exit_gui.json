@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "exit_gui": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"um.inside_undercrafter_gui\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "undermagic:block/undercrafter/interact/exit"
+  },
+  "parent": "undermagic:technical/root"
+}

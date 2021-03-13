@@ -1,3 +1,6 @@
+#Undercrafter
+execute if entity @s[tag=um.inside_undercrafter_gui] as @e[type=armor_stand,tag=um.undercrafter,distance=..12,sort=arbitrary] at @s if block ~ ~ ~ barrel[open=true] run function undermagic:block/undercrafter/tick
+
 #remove iframe
 scoreboard players add @s um.invuln 1
 
