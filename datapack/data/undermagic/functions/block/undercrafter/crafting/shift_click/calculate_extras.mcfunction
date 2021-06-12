@@ -38,5 +38,7 @@ data modify storage um:storage root.temp.item set from block ~ ~ ~ Items[{Slot:1
 data remove block ~ ~ ~ Items[{Slot:16b}]
 
 execute as @p[distance=..12,tag=um.inside_undercrafter_gui,tag=um.shift_clicked] at @s run function undermagic:block/undercrafter/crafting/shift_click/spawn_extra_items
+function undermagic:block/undercrafter/crafting/recipe_checks
+tag @s remove um.undercrafter.assembled_output
 data modify entity @s ArmorItems[3].tag.um.stored_output set value {Slot:16b}
 data modify entity @s ArmorItems[3].tag.um.stored_barrel_data set from block ~ ~ ~ Items
