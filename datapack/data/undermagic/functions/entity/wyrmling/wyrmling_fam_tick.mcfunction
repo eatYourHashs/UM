@@ -10,14 +10,14 @@ scoreboard players remove @s um.dummy_three 1
 scoreboard players operation temp4 um.dummy = @s um.familiar_id
 execute if score temp2 um.dummy matches 7.. run scoreboard players remove @s um.dummy_three 1
 execute if score temp2 um.dummy matches 10 run scoreboard players remove @s um.dummy_three 1
-execute if score @s um.dummy matches 3 if score temp2 um.dummy matches 1..9 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420087}
-execute if score @s um.dummy matches 6 if score temp2 um.dummy matches 1..9 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420088}
-execute if score @s um.dummy matches 9 if score temp2 um.dummy matches 1..9 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420089}
-execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 1..9 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420088}
-execute if score @s um.dummy matches 3 if score temp2 um.dummy matches 10 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420113}
-execute if score @s um.dummy matches 6 if score temp2 um.dummy matches 10 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420114}
-execute if score @s um.dummy matches 9 if score temp2 um.dummy matches 10 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420115}
-execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 10 run replaceitem entity @s armor.head minecraft:carrot_on_a_stick{CustomModelData:420114}
+execute if score @s um.dummy matches 3 if score temp2 um.dummy matches 1..9 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420087}
+execute if score @s um.dummy matches 6 if score temp2 um.dummy matches 1..9 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420088}
+execute if score @s um.dummy matches 9 if score temp2 um.dummy matches 1..9 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420089}
+execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 1..9 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420088}
+execute if score @s um.dummy matches 3 if score temp2 um.dummy matches 10 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420113}
+execute if score @s um.dummy matches 6 if score temp2 um.dummy matches 10 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420114}
+execute if score @s um.dummy matches 9 if score temp2 um.dummy matches 10 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420115}
+execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 10 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420114}
 execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 1..4 run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.5 1.6
 execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 5..9 run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 0.75 1.3
 execute if score @s um.dummy matches 12 if score temp2 um.dummy matches 10 run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 1
