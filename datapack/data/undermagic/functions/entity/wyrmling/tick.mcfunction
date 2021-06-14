@@ -1,9 +1,9 @@
 scoreboard players add @s um.dummy 1
 scoreboard players add @s um.dummy_two 1
-execute if score @s um.dummy matches 3 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420087}
-execute if score @s um.dummy matches 6 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420088}
-execute if score @s um.dummy matches 9 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420089}
-execute if score @s um.dummy matches 12 run item entity @s armor.head replace minecraft:carrot_on_a_stick{CustomModelData:420088}
+execute if score @s um.dummy matches 3 run item replace entity @s armor.head with minecraft:carrot_on_a_stick{CustomModelData:420087}
+execute if score @s um.dummy matches 6 run item replace entity @s armor.head with minecraft:carrot_on_a_stick{CustomModelData:420088}
+execute if score @s um.dummy matches 9 run item replace entity @s armor.head with minecraft:carrot_on_a_stick{CustomModelData:420089}
+execute if score @s um.dummy matches 12 run item replace entity @s armor.head with minecraft:carrot_on_a_stick{CustomModelData:420088}
 execute if score @s um.dummy matches 13 run scoreboard players set @s um.dummy 1
 execute if score @s um.dummy_two matches 800.. run scoreboard players set @s um.dummy_two 0
 execute facing entity @e[tag=um.wyrmling_target,sort=nearest,limit=1,distance=..100] feet unless entity @s[scores={um.dummy_two=660..}] run tp ^ ^ ^0.3
