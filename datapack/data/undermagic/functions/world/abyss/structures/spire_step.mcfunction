@@ -7,17 +7,17 @@ scoreboard players add spiretop_rand um.dummy 1
 execute if score spire_height um.dummy matches 1 if score spiretop_rand um.dummy matches 1..10 run setblock ~7 ~11 ~7 netherite_block
 execute if score spire_height um.dummy matches 1 if score spiretop_rand um.dummy matches 11..100 run setblock ~7 ~11 ~7 diamond_block
 
-execute if score spire_height um.dummy matches 1 run fill ~5 ~ ~5 ~9 ~10 ~9 polished_blackstone_bricks
+execute if score spire_height um.dummy matches 1 run fill ~5 ~ ~5 ~9 ~10 ~9 deepslate_bricks
 execute if score spire_height um.dummy matches 1 run fill ~6 ~1 ~6 ~8 ~9 ~8 air
-execute if score spire_height um.dummy matches 2 run fill ~4 ~ ~4 ~10 ~10 ~10 polished_blackstone_bricks
+execute if score spire_height um.dummy matches 2 run fill ~4 ~ ~4 ~10 ~10 ~10 deepslate_bricks
 execute if score spire_height um.dummy matches 2 run fill ~5 ~1 ~5 ~9 ~9 ~9 air
-execute if score spire_height um.dummy matches 3 run fill ~3 ~ ~3 ~11 ~10 ~11 polished_blackstone_bricks
+execute if score spire_height um.dummy matches 3 run fill ~3 ~ ~3 ~11 ~10 ~11 deepslate_bricks
 execute if score spire_height um.dummy matches 3 run fill ~4 ~1 ~4 ~10 ~9 ~10 air
-execute if score spire_height um.dummy matches 4 run fill ~2 ~ ~2 ~12 ~10 ~12 polished_blackstone_bricks
+execute if score spire_height um.dummy matches 4 run fill ~2 ~ ~2 ~12 ~10 ~12 deepslate_bricks
 execute if score spire_height um.dummy matches 4 run fill ~3 ~1 ~3 ~11 ~9 ~11 air
-execute if score spire_height um.dummy matches 5 run fill ~1 ~ ~1 ~13 ~10 ~13 polished_blackstone_bricks
+execute if score spire_height um.dummy matches 5 run fill ~1 ~ ~1 ~13 ~10 ~13 deepslate_bricks
 execute if score spire_height um.dummy matches 5 run fill ~2 ~1 ~2 ~12 ~9 ~12 air
-execute if score spire_height um.dummy matches 6 run fill ~ ~ ~ ~14 ~10 ~14 polished_blackstone_bricks
+execute if score spire_height um.dummy matches 6 run fill ~ ~ ~ ~14 ~10 ~14 deepslate_bricks
 execute if score spire_height um.dummy matches 6 run fill ~1 ~1 ~1 ~13 ~9 ~13 air
 
 scoreboard players set $math.in_0 um.dummy 100

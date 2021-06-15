@@ -12,6 +12,12 @@
 		"bedrock_roof_position": -10,
 		"bedrock_floor_position": 0,
 		"sea_level": 63,
+		"min_surface_level": 63,
+		"noodle_caves_enabled": false,
+		"deepslate_enabled": false,
+		"ore_veins_enabled": false,
+		"aquifers_enabled": false,
+		"noise_caves_enabled": false,
 		"disable_mob_generation": false,
 		"default_block": {
 		  "Name": "minecraft:bedrock"
@@ -23,6 +29,7 @@
 		  }
 		},
 		"noise": {
+		  "min_y": 16,
 		  "density_factor": 1,
 		  "density_offset": -0.46875,
 		  "simplex_surface_noise": true,

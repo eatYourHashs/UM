@@ -11,10 +11,16 @@
 			"coordinate_scale": 1,
 			"bedrock_roof_position": 0,
 			"bedrock_floor_position": 0,
+			"min_surface_level": 10,
 			"sea_level": 10,
+			"noodle_caves_enabled": false,
+			"deepslate_enabled": false,
+			"ore_veins_enabled": false,
+			"aquifers_enabled": false,
+			"noise_caves_enabled": false,
 			"disable_mob_generation": false,
 			"default_block": {
-			  "Name": "minecraft:obsidian",
+			  "Name": "minecraft:blackstone",
 			  "Properties": {}
 			},
 			"default_fluid": {
@@ -22,6 +28,7 @@
 			    "Properties": {"level":"0"}
 			},
 			"noise": {
+				"min_y": 0,
 			  	"density_factor": 0,
 			  	"density_offset": -0.46875,
 		  		"simplex_surface_noise": true,
