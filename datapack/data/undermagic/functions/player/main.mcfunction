@@ -10,6 +10,8 @@ execute if data entity @s Inventory[{Slot:-106b}].tag.um_id run function underma
 execute unless data entity @s Inventory[{Slot:-106b}].tag.um_id run function undermagic:player/cancel_offhand_effect
 execute if data entity @s Inventory[{Slot:102b}].tag.um_id run function undermagic:player/check_armor
 
+execute if entity @s[tag=um.inside_undercrafter_gui] run function undermagic:player/check_action_scores
+
 #charms
 execute if score @s um.swirl_charms matches 1.. if score @s um.deal_damage matches 1.. run function undermagic:player/charms/swirling
 execute if score @s um.combo_charms matches 1.. run function undermagic:player/charms/combo
@@ -63,6 +65,10 @@ scoreboard players add @s um.since_damaged 1
 scoreboard players add @s um.reviv_cd 1
 scoreboard players add @s um.since_attack 1
 scoreboard players set @s um.sprint 0
+scoreboard players set @s um.elytra 0
+scoreboard players set @s um.fly 0
+scoreboard players set @s um.walk 0
+scoreboard players set @s um.swim 0
 
 #check mana
 scoreboard players add @s um.mana_cd 1

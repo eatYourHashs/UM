@@ -63,7 +63,7 @@
     "predicate": {
       "custom_model_data": 420012
     },
-    "model": "um:item/crusder_helmet"
+    "model": "um:item/crusader_helmet"
   },{
     "predicate": {
       "custom_model_data": 420013
@@ -78,7 +78,7 @@
     "predicate": {
       "custom_model_data": 420015
     },
-    "model": "um:item/fallen_crusder_helmet"
+    "model": "um:item/fallen_crusader_helmet"
   },{
     "predicate": {
       "custom_model_data": 420016

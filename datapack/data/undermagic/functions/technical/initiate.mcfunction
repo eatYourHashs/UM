@@ -13,6 +13,9 @@ scoreboard objectives add um.flame_grasp dummy
 scoreboard objectives add um.orb_cooldown dummy
 scoreboard objectives add um.cstick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add um.sneak minecraft.custom:minecraft.sneak_time
+scoreboard objectives add um.walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add um.elytra minecraft.custom:minecraft.aviate_one_cm
+scoreboard objectives add um.swim minecraft.custom:minecraft.swim_one_cm
 scoreboard objectives add um.jump minecraft.custom:minecraft.jump
 scoreboard objectives add um.health health
 scoreboard objectives add um.reviv_chg dummy
