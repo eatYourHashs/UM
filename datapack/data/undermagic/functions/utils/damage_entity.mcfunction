@@ -35,8 +35,12 @@ execute if score $math.temp_3 um.dummy > $math.temp_2 um.dummy run scoreboard pl
 execute if score $math.temp_2 um.dummy matches 200.. run scoreboard players set $math.temp_2 um.dummy 200
 scoreboard players operation $math.temp_2 um.dummy *= $cons.10 um.dummy
 scoreboard players operation $math.temp_2 um.dummy /= $cons.25 um.dummy
+
+execute if predicate undermagic:armor_sets/apocalypse_champion_great_plate if score @s um.champ_chg matches 1.. run function undermagic:utils/damage/indomitable_will
+
 scoreboard players set $math.out_0 um.dummy 100
 scoreboard players operation $math.out_0 um.dummy -= $math.temp_2 um.dummy
+
 
 execute if score $math.in_1 um.dummy matches 0 run scoreboard players operation $math.out_0 um.dummy *= $math.in_0 um.dummy
 execute if score $math.in_1 um.dummy matches 0 run scoreboard players operation $math.out_0 um.dummy /= $cons.100 um.dummy
@@ -78,6 +82,9 @@ execute if score $math.in_1 um.dummy matches 0..2 run scoreboard players operati
 #apply min dmg
 execute if score $math.in_3 um.dummy > $math.out_0 um.dummy run scoreboard players operation $math.out_0 um.dummy = $math.in_3 um.dummy
 
+#apply entropic ward
+execute if score @s um.ent_ward matches 1.. run function undermagic:utils/damage/entropic_ward
+
 #tellraw @p {"score":{"name":"$math.out_0","objective":"um.dummy"}}
 
 #modify health
@@ -88,8 +95,8 @@ execute store result score $math.temp_1 um.dummy run data get entity @s Health 1
 #execute if data entity @s ActiveEffects[{Id:11b}] run scoreboard players add $math.temp_0 um.dummy 1
 #execute store result score $math.temp_2 um.dummy run data get entity @s ActiveEffects[{Id:11b}].Duration
 #effect give @s minecraft:resistance 1 3 true
-effect give @s[type=!#undermagic:undead] minecraft:instant_damage 1 0 true
-effect give @s[type=#undermagic:undead] minecraft:instant_health 1 0 true
+execute unless score $math.in_0 um.dummy matches 0 run effect give @s[type=!#undermagic:undead] minecraft:instant_damage 1 0 true
+execute unless score $math.in_0 um.dummy matches 0 run effect give @s[type=#undermagic:undead] minecraft:instant_health 1 0 true
 #effect clear @s minecraft:resistance
 #execute if score $math.temp_0 um.dummy matches 1 run function undermagic:utils/damage/reapply_res_1
 #execute if score $math.temp_0 um.dummy matches 2 run function undermagic:utils/damage/reapply_res_2

@@ -94,5 +94,10 @@
       "custom_model_data": 420018
     },
     "model": "um:item/astral_helmet"
+  },{
+    "predicate": {
+      "custom_model_data": 420018
+    },
+    "model": "um:item/apocalypse_champion_helmet"
   }]
 }

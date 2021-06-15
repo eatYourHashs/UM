@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Apocalypse Champion Leggings","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"text":"The armor radiates unstoppable, overwhelming might.","color":"gray","italic":false},
+				{"text":"Set bonus depends on chestplate choice.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420031,um_id:\"apocalypse_champion_leggings\",display:{color:16737792}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.armor",
+				  "attribute":"generic.armor",
+				  "operation":"addition",
+				  "amount":6,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.armor_toughness",
+				  "attribute":"generic.armor_toughness",
+				  "operation":"addition",
+				  "amount":10,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.knockback_resistance",
+				  "attribute":"generic.knockback_resistance",
+				  "operation":"addition",
+				  "amount":0.25,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":4,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.attack_speed",
+				  "attribute":"generic.attack_speed",
+				  "operation":"addition",
+				  "amount":0.1,
+				  "slot":"legs"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

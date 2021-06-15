@@ -1,0 +1,24 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "item": "leather_helmet",
+        "nbt": "{um_id:\"apocalypse_champion_helmet\"}"
+      },
+      "chest": {
+        "item": "leather_chestplate",
+        "nbt": "{um_id:\"apocalypse_champion_scale_mail\"}"
+      },
+      "legs": {
+        "item": "leather_leggings",
+        "nbt": "{um_id:\"apocalypse_champion_leggings\"}"
+      },
+      "feet": {
+        "item": "leather_boots",
+        "nbt": "{um_id:\"apocalypse_champion_boots\"}"
+      }
+    }
+  }
+}

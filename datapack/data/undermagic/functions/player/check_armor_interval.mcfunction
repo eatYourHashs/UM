@@ -13,3 +13,8 @@ execute if score $length um.dummy matches 18 if entity @s[predicate=undermagic:a
 execute if score $length um.dummy matches 16 if entity @s[predicate=undermagic:armor_sets/shade] run effect give @s invisibility 1 0 true
 execute if score $length um.dummy matches 16 if score @s um.shade_invi matches ..0 if entity @s[predicate=undermagic:armor_sets/shade] run effect give @s resistance 1 4 true
 
+execute if score $length um.dummy matches 31 if entity @s[predicate=undermagic:armor_sets/apocalypse_champion_great_plate] run function undermagic:item/armor/apocalypse_champion/great_plate_interval
+execute if score $length um.dummy matches 30 if entity @s[predicate=undermagic:armor_sets/apocalypse_champion_scale_mail] run function undermagic:item/armor/apocalypse_champion/scale_mail_interval
+execute unless score $length um.dummy matches 30 run attribute @s minecraft:generic.attack_damage modifier remove 612f4007-75ce-48c6-9697-55b9ab8fb4af
+execute if score $length um.dummy matches 30 unless entity @s[predicate=undermagic:armor_sets/apocalypse_champion_scale_mail] run attribute @s minecraft:generic.attack_damage modifier remove 612f4007-75ce-48c6-9697-55b9ab8fb4af
+

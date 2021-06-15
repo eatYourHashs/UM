@@ -84,5 +84,15 @@
       "custom_model_data": 420030
     },
     "model": "um:item/dragon_hide"
+  },{
+    "predicate": {
+      "custom_model_data": 420031
+    },
+    "model": "um:item/apocalypse_champion_great_plate"
+  },{
+    "predicate": {
+      "custom_model_data": 420032
+    },
+    "model": "um:item/apocalypse_champion_scale_mail"
   }]
 }

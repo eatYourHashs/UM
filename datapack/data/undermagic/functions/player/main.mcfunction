@@ -35,6 +35,7 @@ execute if score @s um.flame_grasp matches 1.. run function undermagic:player/ch
 execute if score @s um.oblit_prog matches 1.. run function undermagic:item/weapon/obliteration/caster_tick
 execute if score @s um.flare_cd matches ..-1 run function undermagic:item/weapon/flare_runner_tick
 execute if score @s um.deal_damage matches 1.. run attribute @s minecraft:generic.attack_damage modifier remove a5feef90-47e6-4eec-8f23-5ab6d96bfefb
+execute if score @s um.deal_damage matches 1.. if entity @s[predicate=undermagic:armor_sets/apocalypse_champion_scale_mail] if score @s um.champ_chg matches 1.. run scoreboard players remove @s um.champ_chg 1
 
 #damage
 execute as @s[scores={um.take_damage=1..}] run function undermagic:player/take_damage
