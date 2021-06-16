@@ -674,6 +674,12 @@
         "custom_model_data": 420170
       },
       "model": "um:item/blood_rain_staff/4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420171
+      },
+      "model": "um:item/world_splitter"
     }
   ]
 }

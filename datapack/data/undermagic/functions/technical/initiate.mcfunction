@@ -99,6 +99,8 @@ scoreboard objectives add um.ent_ward dummy
 scoreboard objectives add um.ward_cd dummy
 scoreboard objectives add um.champ_chg dummy
 scoreboard objectives add um.dis_cd dummy
+scoreboard objectives add um.ws_combo dummy
+scoreboard objectives add um.ws_cd dummy
 #scoreboard objectives add um.demonomicon trigger
 
 #scoreboard players init
