@@ -212,6 +212,27 @@
         "custom_model_data": 420130
       },
       "model": "um:item/dark_pulsar/pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420131
+      },
+      "model": "um:item/archdrakes_wrath/pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "custom_model_data": 420131
+      },
+      "model": "um:item/archdrakes_wrath/pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9,
+        "custom_model_data": 420131
+      },
+      "model": "um:item/archdrakes_wrath/pulling_2"
     }
 
   ]

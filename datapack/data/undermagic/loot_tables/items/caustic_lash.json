@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Caustic Lash","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+          {"text":"Attack foes with a more powerful acidic whip.","color":"gray","italic":false},
+          {"text":"Acid corrodes foes' armor.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420173,um_id:\"caustic_lash\"}"
+            },
+            {
+              "function":"set_attributes",
+              "modifiers": [
+              {
+                "name":"generic.attack_damage",
+                "attribute":"generic.attack_damage",
+                "operation":"addition",
+                "amount":20,
+                "slot":"mainhand"
+              },
+              {
+                "name":"generic.attack_speed",
+                "attribute":"generic.attack_speed",
+                "operation":"addition",
+                "amount":-10,
+                "slot":"mainhand"
+              }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

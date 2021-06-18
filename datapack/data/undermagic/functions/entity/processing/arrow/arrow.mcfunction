@@ -1,6 +1,7 @@
 
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"bow_demonic_steel"}}}] run function undermagic:entity/processing/arrow/demon_steel_bow
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"dragons_wrath"}}}] run function undermagic:entity/processing/arrow/dragons_wrath
+execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"archdrakes_wrath"}}}] run function undermagic:entity/processing/arrow/archdrakes_wrath
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"dark_pulsar"}}}] run function undermagic:entity/processing/arrow/dark_pulsar
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"entropic_greatbow"}}}] run function undermagic:entity/processing/arrow/greatbow
 execute if entity @p[distance=..2,predicate=undermagic:armor_sets/abyss_ranger_one] run function undermagic:entity/processing/arrow/abyss_ranger

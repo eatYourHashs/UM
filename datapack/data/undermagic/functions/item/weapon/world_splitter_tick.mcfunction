@@ -33,7 +33,7 @@ execute if score @s um.ws_cd matches 0 positioned ~ ~1.8 ~ positioned ^ ^-2 ^3 r
 execute if score @s um.ws_cd matches 0 positioned ~ ~1.8 ~ positioned ^ ^-3 ^2 run tag @e[distance=..4,tag=!global.ignore,tag=!um.wielder] add um.hit
 execute if score @s um.ws_cd matches 0 as @e[tag=um.hit] run function undermagic:utils/damage_entity
 execute if score @s um.ws_cd matches 0 as @e[tag=um.hit] facing entity @a[tag=um.wielder,limit=1] feet run function undermagic:item/weapon/world_splitter_cleave_knockback
-execute if score @s um.ws_cd matches 0 run function undermagic:item/armor/abyss_knight_reset
+execute if score @s um.ws_cd matches 0 run function undermagic:player/reset_melee_effects
 execute if score @s um.ws_cd matches 0 run scoreboard players set @s um.ws_combo 0
 execute if score @s um.ws_cd matches 0 run scoreboard players set @s um.ws_cd 20
 execute if score @s um.ws_cd matches 0 run tag @e remove um.hit

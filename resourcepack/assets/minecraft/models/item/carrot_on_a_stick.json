@@ -680,6 +680,18 @@
         "custom_model_data": 420171
       },
       "model": "um:item/world_splitter"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420172
+      },
+      "model": "um:item/belcher_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420173
+      },
+      "model": "um:item/caustic_lash"
     }
   ]
 }

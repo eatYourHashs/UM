@@ -7,5 +7,7 @@ execute unless score @s um.dis_cd matches 1.. run scoreboard players set $math.i
 execute unless score @s um.dis_cd matches 1.. run scoreboard players set $math.in_1 um.dummy 0
 execute unless score @s um.dis_cd matches 1.. run scoreboard players set $math.in_2 um.dummy 0
 execute unless score @s um.dis_cd matches 1.. run scoreboard players set $math.in_3 um.dummy 0
-execute unless score @s um.dis_cd matches 1.. run execute as @e[type=#undermagic:attackable,tag=!global.ignore,scores={um.invuln=10..},distance=0.1..16] run function undermagic:utils/damage_entity
+tag @s add um.wielder
+execute unless score @s um.dis_cd matches 1.. at @s as @e[tag=!um.wielder,type=#undermagic:attackable,tag=!global.ignore,scores={um.invuln=10..},distance=..16] run function undermagic:utils/damage_entity
 execute unless score @s um.dis_cd matches 1.. run scoreboard players set @s um.dis_cd 240
+tag @s remove um.wielder

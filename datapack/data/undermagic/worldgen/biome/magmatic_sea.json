@@ -1,0 +1,40 @@
+{
+	"surface_builder": "undermagic:magmatic",
+	"depth": -0.125,
+	"scale": 0.2,
+	"temperature": 2.0,
+	"downfall": 0.4,
+	"precipitation": "none",
+	"temperature_modifier": "none",
+	"category": "nether",
+	"effects": {
+	  "sky_color": 0,
+	  "fog_color": 0,
+	  "water_color": 4159204,
+	  "water_fog_color": 0,
+	  "particle": {
+		"options": {
+		  "type": "minecraft:lava"
+		},
+		"probability": 0.003
+	  }
+	},
+	"starts": [],
+	"spawners": {
+	  "monster": [
+		{
+		  "type": "minecraft:magma_cube",
+		  "weight": 1,
+		  "minCount": 2,
+		  "maxCount": 5
+		}
+	  ]
+	},
+	"spawn_costs": {},
+	"carvers": {
+	  "air": [
+		"minecraft:nether_cave"
+	  ]
+	},
+	"features": []
+  }

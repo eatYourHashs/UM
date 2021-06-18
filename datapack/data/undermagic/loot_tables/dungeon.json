@@ -30,7 +30,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Chain of Umbra\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Strike foes with a whip formed from shadows.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420133,um_id:\"chain_of_umbra\"}"
+              "tag": "{display:{Name:'{\"text\":\"Chain of Umbra\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Strike foes with a whip formed from shadows.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420133,um_id:\"chain_of_umbra\",AttributeModifiers:[{AttributeName:'generic.attack_speed',Name:'generic.attack_speed',Amount:-10,Operation:0,UUID:[I;620205680,904351649,-2077786836,-1053575377],Slot:'mainhand'},{AttributeName:'generic.attack_damage',Name:'generic.attack_damage',Amount:22,Operation:0,UUID:[I;943839921,136138349,-1671839839,261045459],Slot:'mainhand'}]}"
             }
           ]
         }

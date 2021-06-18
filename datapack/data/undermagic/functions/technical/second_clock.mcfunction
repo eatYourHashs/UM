@@ -6,3 +6,4 @@ execute if score difficulty_set um.dummy matches 1.. run function undermagic:tec
 execute if score nohit_set um.dummy matches 1.. run function undermagic:technical/nohit_set
 #execute as @a[scores={um.demonomicon=1..}] at @s run function undermagic:technical/give_book
 schedule function undermagic:technical/second_clock 1s replace
+execute as @e[scores={um.corroded=1..}] at @s run function undermagic:entity/generic/corroded_entity_1s

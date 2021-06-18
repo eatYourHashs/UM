@@ -101,6 +101,7 @@ scoreboard objectives add um.champ_chg dummy
 scoreboard objectives add um.dis_cd dummy
 scoreboard objectives add um.ws_combo dummy
 scoreboard objectives add um.ws_cd dummy
+scoreboard objectives add um.corroded dummy
 #scoreboard objectives add um.demonomicon trigger
 
 #scoreboard players init
@@ -193,7 +194,7 @@ bossbar set undermagic:cataclyz color red
 forceload add ~ ~ ~ ~
 execute in minecraft:the_end positioned 700 250 0 run forceload add ~ ~
 execute in minecraft:the_end positioned 700 250 0 run setblock ~ ~ ~ end_portal
-execute in minecraft:undermagic/dungeon positioned 0 100 0 run forceload add ~ ~
+execute in undermagic:dungeon positioned 0 100 0 run forceload add ~ ~
 
 #set load version
 scoreboard players set um.server_version um.dummy 37

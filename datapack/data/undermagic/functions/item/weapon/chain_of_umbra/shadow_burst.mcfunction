@@ -1,4 +1,4 @@
-execute if score @s um.dummy matches 10.. run scoreboard players set $math.in_0 um.dummy 200
+execute if score @s um.dummy matches 10.. as @a[tag=um.wielder] store result score $math.in_0 um.dummy run attribute @s minecraft:generic.attack_damage get 10
 execute if score @s um.dummy matches 10.. run scoreboard players set $math.in_1 um.dummy 0
 execute if score @s um.dummy matches 10.. run scoreboard players set $math.in_2 um.dummy 0
 execute if score @s um.dummy matches 10.. run scoreboard players set $math.in_3 um.dummy 0

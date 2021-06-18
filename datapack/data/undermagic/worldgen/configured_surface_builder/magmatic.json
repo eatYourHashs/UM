@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:default",
+	"config": {
+	  "top_material": {
+		"Name": "minecraft:magma_block"
+	  },
+	  "under_material": {
+		"Name": "minecraft:deepslate",
+		"Properties": {
+		  "axis": "y"
+		}
+	  },
+	  "underwater_material": {
+		"Name": "minecraft:magma_block"
+	  }
+	}
+  }

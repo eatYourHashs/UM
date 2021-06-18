@@ -24,7 +24,7 @@ execute unless score @s um.ws_combo matches 2 positioned ~ ~1.8 ~ positioned ^ ^
 execute unless score @s um.ws_combo matches 2 positioned ~ ~1.8 ~ positioned ^-2 ^ ^3 run tag @e[distance=..3,tag=!global.ignore,tag=!um.wielder] add um.hit
 execute unless score @s um.ws_combo matches 2 as @e[tag=um.hit] run function undermagic:utils/damage_entity
 execute unless score @s um.ws_combo matches 2 as @e[tag=um.hit] facing entity @a[tag=um.wielder,limit=1] feet run function undermagic:item/weapon/world_splitter_knockback
-execute unless score @s um.ws_combo matches 2 run function undermagic:item/armor/abyss_knight_reset
+execute unless score @s um.ws_combo matches 2 run function undermagic:player/reset_melee_effects
 execute unless score @s um.ws_combo matches 2 run playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 1 0.75
 execute unless score @s um.ws_combo matches 2 run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.5
 execute unless score @s um.ws_combo matches 2 run scoreboard players add @s um.ws_combo 1

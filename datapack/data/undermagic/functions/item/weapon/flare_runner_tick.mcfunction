@@ -16,5 +16,5 @@ execute if score @s um.flare_cd matches 0 run scoreboard players set $math.in_3 
 execute if score @s um.flare_cd matches 0 as @e[distance=0.1..8,tag=!global.ignore] run function undermagic:utils/damage_entity
 execute if score @s um.flare_cd matches 0 run particle minecraft:flame ~ ~1.2 ~ 2.6 0 2.6 0.05 200
 execute if score @s um.flare_cd matches 0 run scoreboard players set @s um.flare_cd 60
-execute if score @s um.flare_cd matches 0 run function undermagic:item/armor/abyss_knight_reset
+execute if score @s um.flare_cd matches 0 run function undermagic:player/reset_melee_effects
 execute unless entity @s[nbt={SelectedItem:{tag:{um_id:"flare_runner"}}}] run scoreboard players set @s um.flare_cd 0

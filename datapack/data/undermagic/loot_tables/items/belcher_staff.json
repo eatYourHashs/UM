@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Belcher Staff","color":"aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Belch armor-corroding acid at your foes!","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420172,um_id:\"belcher_staff\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
