@@ -4,7 +4,7 @@
 	  "decorator": {
 		"type": "minecraft:count",
 		"config": {
-		  "count": 128
+		  "count": 2
 		}
 	  },
 	  "feature": {
@@ -21,7 +21,13 @@
 				"type": "minecraft:range",
 				"config": {
 				  "height": {
-					"absolute": 48
+					"type": "minecraft:uniform",
+					"min_inclusive": {
+					  "absolute": 40
+					},
+					"max_inclusive": {
+					  "absolute": 128
+					}
 				  }
 				}
 			  }
@@ -34,15 +40,12 @@
 				"Name": "minecraft:blackstone"
 			  },
 			  "target": {
-				"Name": "minecraft:lava",
-				"Properties": {
-				  "level": "0"
-				}
+				"Name": "minecraft:magma_block"
 			  },
 			  "radius": {
 				"type": "minecraft:uniform",
 				"value": {
-				  "min_inclusive": 3,
+				  "min_inclusive": 2,
 				  "max_inclusive": 4
 				}
 			  }

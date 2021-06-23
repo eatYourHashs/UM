@@ -1,0 +1,15 @@
+{
+  "name": "undermagic:acidic_pit_spire/base",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/base",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    }
+  ]
+}

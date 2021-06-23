@@ -43,8 +43,12 @@
 		[
 		  "undermagic:blackstone_blobs_on_lava"
 		],
-		[],
-		[],
+		[
+		  "undermagic:massive_dripstone"
+		],
+		[
+		  "undermagic:replace_dripstone"
+		],
 		[],
 		[],
 		[],

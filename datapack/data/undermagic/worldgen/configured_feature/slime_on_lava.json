@@ -1,0 +1,54 @@
+{
+	"type": "minecraft:decorated",
+	"config": {
+	  "decorator": {
+		"type": "minecraft:decorated",
+		"config": {
+		  "outer": {
+			"type": "minecraft:decorated",
+			"config": {
+			  "outer": {
+				"type": "minecraft:count",
+				"config": {
+				  "count": 4
+				}
+			  },
+			  "inner": {
+				"type": "minecraft:square",
+				"config": {}
+			  }
+			}
+		  },
+		  "inner": {
+			"type": "minecraft:range",
+			"config": {
+			  "height": {
+				"type": "minecraft:constant",
+				"value": {
+				  "absolute": 47
+				}
+			  }
+			}
+		  }
+		}
+	  },
+	  "feature": {
+		"type": "minecraft:ore",
+		"config": {
+		  "size": 32,
+		  "discard_chance_on_air_exposure": 0,
+		  "targets": [
+			{
+			  "target": {
+				"predicate_type": "minecraft:block_match",
+				"block": "minecraft:lava"
+			  },
+			  "state": {
+				"Name": "minecraft:slime_block"
+			  }
+			}
+		  ]
+		}
+	  }
+	}
+  }

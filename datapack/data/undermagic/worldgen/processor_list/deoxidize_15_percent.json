@@ -1,0 +1,40 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:oxidized_copper",
+            "probability": 0.15
+          },
+          "output_state": {
+            "Name": "minecraft:weathered_copper"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:oxidized_cut_copper",
+            "probability": 0.15
+          },
+          "output_state": {
+            "Name": "minecraft:weathered_cut_copper"
+          }
+        }
+      ]
+    }
+  ]
+}

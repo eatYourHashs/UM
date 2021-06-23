@@ -4,7 +4,7 @@
 	  "decorator": {
 		"type": "minecraft:count",
 		"config": {
-		  "count": 128
+		  "count": 6
 		}
 	  },
 	  "feature": {
@@ -21,7 +21,13 @@
 				"type": "minecraft:range",
 				"config": {
 				  "height": {
-					"absolute": 48
+					"type": "minecraft:uniform",
+					"min_inclusive": {
+					  "absolute": 80
+					},
+					"max_inclusive": {
+					  "absolute": 100
+					}
 				  }
 				}
 			  }
@@ -31,19 +37,16 @@
 			"type": "minecraft:netherrack_replace_blobs",
 			"config": {
 			  "state": {
-				"Name": "minecraft:blackstone"
+				"Name": "minecraft:green_terracotta"
 			  },
 			  "target": {
-				"Name": "minecraft:lava",
-				"Properties": {
-				  "level": "0"
-				}
+				"Name": "minecraft:blackstone"
 			  },
 			  "radius": {
 				"type": "minecraft:uniform",
 				"value": {
 				  "min_inclusive": 3,
-				  "max_inclusive": 4
+				  "max_inclusive": 6
 				}
 			  }
 			}

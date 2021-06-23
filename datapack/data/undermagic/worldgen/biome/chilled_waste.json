@@ -1,5 +1,5 @@
 {
-	"surface_builder": "undermagic:deepslate",
+	"surface_builder": "undermagic:chilled",
 	"depth": 0.375,
 	"scale": 0.2,
 	"temperature": 0.0,
@@ -14,9 +14,9 @@
 	  "water_fog_color": 0,
 	  "particle": {
 		"options": {
-		  "type": "minecraft:smoke"
+		  "type": "minecraft:snowflake"
 		},
-		"probability": 0.05
+		"probability": 0.02
 	  }
 	},
 	"starts": [],
@@ -36,5 +36,24 @@
 		"minecraft:nether_cave"
 	  ]
 	},
-	"features": []
+	"features": [
+		[
+		  "undermagic:lava_to_snow"
+		],
+		[
+		  "undermagic:ice_spines"
+		],
+		[
+		  
+		],
+		[
+		  
+		],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[]
+	]
   }

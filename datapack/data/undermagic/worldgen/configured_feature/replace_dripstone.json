@@ -4,7 +4,7 @@
 	  "decorator": {
 		"type": "minecraft:count",
 		"config": {
-		  "count": 128
+		  "count": 64
 		}
 	  },
 	  "feature": {
@@ -21,7 +21,7 @@
 				"type": "minecraft:range",
 				"config": {
 				  "height": {
-					"absolute": 48
+					"absolute": 110
 				  }
 				}
 			  }
@@ -34,18 +34,9 @@
 				"Name": "minecraft:blackstone"
 			  },
 			  "target": {
-				"Name": "minecraft:lava",
-				"Properties": {
-				  "level": "0"
-				}
+				"Name": "minecraft:dripstone_block"
 			  },
-			  "radius": {
-				"type": "minecraft:uniform",
-				"value": {
-				  "min_inclusive": 3,
-				  "max_inclusive": 4
-				}
-			  }
+			  "radius": 12
 			}
 		  }
 		}

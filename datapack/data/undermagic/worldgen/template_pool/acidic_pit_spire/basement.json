@@ -1,0 +1,24 @@
+{
+  "name": "undermagic:acidic_pit_spire/basement",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/basement_smeltery",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/basement_reactor",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    }
+  ]
+}

@@ -36,5 +36,24 @@
 		"minecraft:nether_cave"
 	  ]
 	},
-	"features": []
+	"features": [
+		[
+		  "undermagic:blackstone_patches"
+		],
+		[
+		  "undermagic:lava_spring_above_sea","undermagic:lava_spring_in_sea"
+		],
+		[
+		  
+		],
+		[
+		  
+		],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[]
+	  ]
   }

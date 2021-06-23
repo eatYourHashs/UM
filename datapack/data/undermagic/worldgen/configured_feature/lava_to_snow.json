@@ -31,7 +31,7 @@
 			"type": "minecraft:netherrack_replace_blobs",
 			"config": {
 			  "state": {
-				"Name": "minecraft:blackstone"
+				"Name": "minecraft:snow_block"
 			  },
 			  "target": {
 				"Name": "minecraft:lava",
@@ -39,13 +39,7 @@
 				  "level": "0"
 				}
 			  },
-			  "radius": {
-				"type": "minecraft:uniform",
-				"value": {
-				  "min_inclusive": 3,
-				  "max_inclusive": 4
-				}
-			  }
+			  "radius": 12
 			}
 		  }
 		}

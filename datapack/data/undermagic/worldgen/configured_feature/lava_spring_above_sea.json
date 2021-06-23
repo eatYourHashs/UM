@@ -4,7 +4,7 @@
 	  "decorator": {
 		"type": "minecraft:count",
 		"config": {
-		  "count": 128
+		  "count": 32
 		}
 	  },
 	  "feature": {
@@ -21,31 +21,36 @@
 				"type": "minecraft:range",
 				"config": {
 				  "height": {
-					"absolute": 48
+					"type": "minecraft:uniform",
+					"min_inclusive": {
+					  "absolute": 80
+					},
+					"max_inclusive": {
+					  "absolute": 128
+					}
 				  }
 				}
 			  }
 			}
 		  },
 		  "feature": {
-			"type": "minecraft:netherrack_replace_blobs",
+			"type": "minecraft:spring_feature",
 			"config": {
 			  "state": {
-				"Name": "minecraft:blackstone"
-			  },
-			  "target": {
 				"Name": "minecraft:lava",
 				"Properties": {
-				  "level": "0"
+				  "level": "0",
+				  "falling": "false"
 				}
 			  },
-			  "radius": {
-				"type": "minecraft:uniform",
-				"value": {
-				  "min_inclusive": 3,
-				  "max_inclusive": 4
-				}
-			  }
+			  "rock_count": 4,
+			  "hole_count": 1,
+			  "requires_block_below": false,
+			  "valid_blocks": [
+				"minecraft:blackstone",
+				"minecraft:deepslate",
+				"minecraft:magma_block"
+			  ]
 			}
 		  }
 		}

@@ -1,0 +1,51 @@
+{
+  "name": "undermagic:acidic_pit_spire/basement",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/bridge_sub",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/bridge_sub_up",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/bridge_sub_split",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/bridge_sub_lightning",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:acidic_pit_spire/bridge_sub_chest",
+        "processors": "undermagic:deoxidize_15_percent"
+      }
+    }
+  ]
+}
