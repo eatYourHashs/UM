@@ -38,7 +38,7 @@
         "functions": [
           {
             "function": "minecraft:set_nbt",
-            "tag": "{display:{Name:'{\"text\":\"Forbidden Oathbow\",\"color\":\"dark_red\",\"italic\":false}',Lore:['{\"text\":\"Cannot fire arrows. Fully charge to fire beams.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Beams deal more damage to mobs previously\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"hit by them.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420127,um_id:\"forbidden_oathbow\"}"
+            "tag": "{display:{Name:'{\"text\":\"Forbidden Oathbow\",\"color\":\"dark_red\",\"italic\":false}',Lore:['{\"text\":\"Cannot fire arrows. Fully charge to fire oathbeams.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Beams deal tremendous damage to mobs previously\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"struck by them.\",\"color\":\"gray\",\"italic\":false}']},Unbreakable:1b,CustomModelData:420127,um_id:\"forbidden_oathbow\"}"
           }
         ]
       }
