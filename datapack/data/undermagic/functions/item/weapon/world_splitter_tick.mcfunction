@@ -38,3 +38,4 @@ execute if score @s um.ws_cd matches 0 run scoreboard players set @s um.ws_combo
 execute if score @s um.ws_cd matches 0 run scoreboard players set @s um.ws_cd 20
 execute if score @s um.ws_cd matches 0 run tag @e remove um.hit
 tag @s remove um.wielder
+execute unless entity @s[nbt={SelectedItem:{tag:{um_id:"world_splitter"}}}] run scoreboard players set @s um.flare_cd 0

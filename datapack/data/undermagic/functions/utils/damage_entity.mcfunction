@@ -15,6 +15,12 @@ execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,nbt={Inv
 execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,tag=um.flame_body] run scoreboard players operation $math.in_0 um.dummy *= $cons.3
 execute if score $math.in_2 um.dummy matches 1 if entity @s[type=player,tag=um.flame_body] run scoreboard players operation $math.in_0 um.dummy /= $cons.4
 
+#gauntlets DR
+execute if score @s um.gaunt_combo matches 1.. run scoreboard players set $math.temp_0 um.dummy 200
+execute if score @s um.gaunt_combo matches 1.. run scoreboard players operation $math.temp_0 um.dummy -= @s um.gaunt_combo
+execute if score @s um.gaunt_combo matches 1.. run scoreboard players operation $math.in_0 um.dummy *= $cons.200 um.dummy
+execute if score @s um.gaunt_combo matches 1.. run scoreboard players operation $math.in_0 um.dummy /= $math.temp_0 um.dummy
+
 
 #calculate armor redux
 execute store result score $math.temp_0 um.dummy run attribute @s minecraft:generic.armor get 10
@@ -84,6 +90,9 @@ execute if score $math.in_3 um.dummy > $math.out_0 um.dummy run scoreboard playe
 
 #apply entropic ward
 execute if score @s um.ent_ward matches 1.. run function undermagic:utils/damage/entropic_ward
+
+#combo recovery for gauntlets
+execute unless score $math.in_0 um.dummy matches 0 if score @s um.gaunt_timer matches 1.. run scoreboard players operation @s um.gaunt_timer += $math.in_0 um.dummy
 
 #tellraw @p {"score":{"name":"$math.out_0","objective":"um.dummy"}}
 

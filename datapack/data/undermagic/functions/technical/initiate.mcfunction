@@ -103,6 +103,7 @@ scoreboard objectives add um.ws_combo dummy
 scoreboard objectives add um.ws_cd dummy
 scoreboard objectives add um.corroded dummy
 scoreboard objectives add um.gaunt_combo dummy
+scoreboard objectives add um.gaunt_timer dummy
 #scoreboard objectives add um.demonomicon trigger
 
 #scoreboard players init
@@ -130,6 +131,7 @@ scoreboard players set $cons.11 um.dummy 11
 scoreboard players set $cons.16 um.dummy 16
 scoreboard players set $cons.25 um.dummy 25
 scoreboard players set $cons.100 um.dummy 100
+scoreboard players set $cons.200 um.dummy 200
 
 # Init Static Region
 execute in minecraft:overworld run forceload add -29999999 1600

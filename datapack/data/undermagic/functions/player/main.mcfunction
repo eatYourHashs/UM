@@ -37,6 +37,8 @@ execute if score @s um.flare_cd matches ..-1 run function undermagic:item/weapon
 execute if score @s um.ws_cd matches ..-1 run function undermagic:item/weapon/world_splitter_tick
 execute if score @s um.deal_damage matches 1.. run attribute @s minecraft:generic.attack_damage modifier remove a5feef90-47e6-4eec-8f23-5ab6d96bfefb
 execute if score @s um.deal_damage matches 1.. if entity @s[predicate=undermagic:armor_sets/apocalypse_champion_scale_mail] if score @s um.champ_chg matches 1.. run scoreboard players remove @s um.champ_chg 1
+execute if score @s um.deal_damage matches 1.. if entity @s[nbt={SelectedItem:{tag:{um_id:"fury_gauntlets"}}}] run function undermagic:item/weapon/fury_gauntlets_hit
+execute if score @s um.gaunt_timer matches 1.. run function undermagic:item/weapon/fury_gauntlets_tick
 
 #damage
 execute as @s[scores={um.take_damage=1..}] run function undermagic:player/take_damage
