@@ -1,7 +1,20 @@
 particle minecraft:end_rod
 playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 0.5 2
 scoreboard players add temp um.dummy 1
-scoreboard players set $math.in_0 um.dummy 500
+scoreboard players set $math.in_0 um.dummy 400
+execute if entity @s[tag=um.ar_helm] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.ar_chest] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.ar_legs] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.ar_boots] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.ar_stealth] run scoreboard players add $math.in_0 um.dummy 200
+execute if entity @s[tag=um.primal] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.primal_spec] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.venom] run scoreboard players add $math.in_0 um.dummy 100
+execute if entity @s[tag=um.acid] run scoreboard players add $math.in_0 um.dummy 200
+execute if entity @s[tag=um.shadow] run scoreboard players add $math.in_0 um.dummy 300
+execute if entity @s[tag=um.impact] run scoreboard players add $math.in_0 um.dummy 350
+execute if entity @s[tag=um.hellfire] run scoreboard players add $math.in_0 um.dummy 250
+execute if entity @s[tag=um.doom] run scoreboard players add $math.in_0 um.dummy 400
 scoreboard players set $math.in_1 um.dummy 0
 scoreboard players set $math.in_2 um.dummy 0
 scoreboard players set $math.in_3 um.dummy 0
