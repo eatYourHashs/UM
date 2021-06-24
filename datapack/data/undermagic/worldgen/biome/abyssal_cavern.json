@@ -19,7 +19,9 @@
 		"probability": 0.05
 	  }
 	},
-	"starts": [],
+	"starts": [
+		"undermagic:abyssal_spire"
+	],
 	"spawners": {
 	  "monster": [
 		{

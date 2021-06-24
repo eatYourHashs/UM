@@ -1,0 +1,15 @@
+{
+  "name": "undermagic:abyssal_spire/basements",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "undermagic:abyssal_spire/basement",
+        "processors": "undermagic:crack_15_percent"
+      }
+    }
+  ]
+}

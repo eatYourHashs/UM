@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Fury Gauntlets","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+          {"text":"Keep attacking to build your combo.","color":"gray","italic":false},
+          {"text":"Combo increases damage and magic resistance each hit.","color":"gray","italic":false},
+          {"text":"Take or deal damage to maintain your combo.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:420178,um_id:\"fury_gauntlets\"}"
+            },
+            {
+              "function":"set_attributes",
+              "modifiers": [
+              {
+                "name":"generic.attack_damage",
+                "attribute":"generic.attack_damage",
+                "operation":"addition",
+                "amount":16,
+                "slot":"mainhand"
+              },
+              {
+                "name":"generic.attack_speed",
+                "attribute":"generic.attack_speed",
+                "operation":"addition",
+                "amount":-2,
+                "slot":"mainhand"
+              }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

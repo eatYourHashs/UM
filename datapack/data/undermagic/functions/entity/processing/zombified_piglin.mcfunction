@@ -1,3 +1,5 @@
 
-execute if block ~ ~-1 ~ minecraft:obsidian if score abyss_spawned um.dummy matches 1 run function undermagic:entity/voidling/summon
-execute if block ~ ~-1 ~ minecraft:obsidian if score abyss_spawned um.dummy matches 1 run tp @s ~ -200 ~
+execute unless predicate undermagic:in_acidic_pit run function undermagic:entity/voidling/summon
+execute if predicate undermagic:in_acidic_pit run function undermagic:entity/acidling/summon
+tp ~ -200 ~
+kill @s

@@ -1,6 +1,6 @@
 {
   "condition": "minecraft:location_check",
   "predicate": {
-    "dimension": "undermagic:abyss"
+    "biome": "undermagic:acidic_pit"
   }
 }

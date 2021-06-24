@@ -70,8 +70,8 @@
 		"structures": {
 		  "structures": {
 			"minecraft:bastion_remnant": {
-			  "spacing": 8,
-			  "separation": 4,
+			  "spacing": 10,
+			  "separation": 5,
 			  "salt": 0
 			}
 		  }

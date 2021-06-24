@@ -16,10 +16,13 @@ execute if entity @s[tag=um.chain_of_umbra] run function undermagic:item/weapon/
 execute if entity @s[tag=um.iron_whip] run function undermagic:item/weapon/iron_whip/tick
 execute if entity @s[tag=um.dragon_lash] run function undermagic:item/weapon/dragon_lash/tick
 execute if entity @s[tag=um.caustic_lash] run function undermagic:item/weapon/caustic_lash/tick
+execute if entity @s[tag=um.lashes_of_light] run function undermagic:item/weapon/lashes_of_light/tick
 execute if entity @s[tag=um.magi_missile] run function undermagic:entity/projectile/magi_missile
 execute if entity @s[tag=um.lucid_star] run function undermagic:entity/projectile/lucid_star
 execute if entity @s[tag=um.armageddon] run function undermagic:entity/projectile/armageddon
 execute if entity @s[tag=um.flare_bolt] run function undermagic:entity/projectile/flare_bolt
+execute if entity @s[tag=um.voidling_bolt] run function undermagic:entity/projectile/voidling_bolt_tick
+execute if entity @s[tag=um.acidling_acid] run function undermagic:entity/projectile/acidling_acid_tick
 
 execute if entity @s[tag=um.fireshot] run scoreboard players add @s um.dummy_three 1
 execute if entity @s[tag=um.fireshot,scores={um.dummy_three=100..}] run kill @s

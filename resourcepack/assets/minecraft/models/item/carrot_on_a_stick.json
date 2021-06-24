@@ -692,6 +692,36 @@
         "custom_model_data": 420173
       },
       "model": "um:item/caustic_lash"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420174
+      },
+      "model": "um:entity/acidling/head"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420175
+      },
+      "model": "um:entity/acidling/left_hand"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420176
+      },
+      "model": "um:entity/acidling/right_hand"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420177
+      },
+      "model": "um:item/lashes_of_light"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420178
+      },
+      "model": "um:item/fury_gauntlets"
     }
   ]
 }

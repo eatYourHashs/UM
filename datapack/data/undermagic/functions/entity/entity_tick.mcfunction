@@ -24,6 +24,7 @@ execute as @s[tag=um.crystal_breath] run function undermagic:entity/ender_dragon
 
 execute as @s[tag=um.wyrmling] run function undermagic:entity/wyrmling/tick
 execute as @s[tag=um.voidling] run function undermagic:entity/voidling/tick
+execute as @s[tag=um.acidling] run function undermagic:entity/acidling/tick
 execute as @s[tag=um.demon_meteor] run function undermagic:world/demon_army/meteor_tick
 
 #execute as @s[tag=um.wyrmling_fam] run function undermagic:entity/wyrmling/wyrmling_fam_tick
