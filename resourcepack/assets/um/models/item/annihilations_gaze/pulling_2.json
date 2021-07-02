@@ -1,0 +1,6 @@
+{
+  "parent": "um:item/annihilations_gaze/pulling_0",
+  "textures": {
+    "layer0": "um:item/annihilations_gaze/pulling_2"
+  }
+}

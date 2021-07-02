@@ -39,6 +39,8 @@ execute if score @s um.deal_damage matches 1.. run attribute @s minecraft:generi
 execute if score @s um.deal_damage matches 1.. if entity @s[predicate=undermagic:armor_sets/apocalypse_champion_scale_mail] if score @s um.champ_chg matches 1.. run scoreboard players remove @s um.champ_chg 1
 execute if score @s um.deal_damage matches 1.. if entity @s[nbt={SelectedItem:{tag:{um_id:"fury_gauntlets"}}}] run function undermagic:item/weapon/fury_gauntlets_hit
 execute if score @s um.gaunt_timer matches 1.. run function undermagic:item/weapon/fury_gauntlets_tick
+scoreboard players add @s um.annih_timer 1
+execute if score @s um.annih_timer matches 2.. run scoreboard players set @s um.annih_draw 0
 
 #damage
 execute as @s[scores={um.take_damage=1..}] run function undermagic:player/take_damage

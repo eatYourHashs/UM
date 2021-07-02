@@ -233,6 +233,27 @@
         "custom_model_data": 420131
       },
       "model": "um:item/archdrakes_wrath/pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420132
+      },
+      "model": "um:item/annihilations_gaze/pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "custom_model_data": 420132
+      },
+      "model": "um:item/annihilations_gaze/pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9,
+        "custom_model_data": 420132
+      },
+      "model": "um:item/annihilations_gaze/pulling_2"
     }
 
   ]

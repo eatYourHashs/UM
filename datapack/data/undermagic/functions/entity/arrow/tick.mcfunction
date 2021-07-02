@@ -35,3 +35,4 @@ execute if entity @s[tag=um.puncture_4_proc] run particle minecraft:dust 1 0 0 1
 execute if entity @a[distance=..3,scores={um.kinet_charms=1..}] if score @s um.dummy matches 4.. unless entity @s[tag=um.kinet_proc] run function undermagic:player/charms/kinetic_field_weak
 
 scoreboard players add @s um.dummy 1
+execute if entity @s[tag=um.crucible_proc,scores={um.dummy=100..}] run kill @s

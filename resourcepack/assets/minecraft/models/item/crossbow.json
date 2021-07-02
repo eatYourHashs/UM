@@ -253,6 +253,19 @@
                 "firework": 1
             },
             "model": "um:item/puncture/4_firework"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420007
+            },
+            "model": "um:item/crucible_cannonade"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420007,
+                "charged": 1
+            },
+            "model": "um:item/crucible_cannonade_charged"
         }
     ]
 }

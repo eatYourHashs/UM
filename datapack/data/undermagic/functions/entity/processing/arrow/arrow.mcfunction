@@ -21,11 +21,17 @@ execute if entity @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_sti
 execute if entity @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"doom_quiver"}}]}] unless score @p[distance=..2,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",Slot:-106b,Count:1b,tag:{um_id:"doom_quiver"}}]}] um.quiver_cd matches 1.. run function undermagic:entity/processing/arrow/doom
 execute as @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"bfc_9000"}}}] at @s run function undermagic:entity/processing/arrow/bfc_9000
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"bfc_9000"}}}] run kill @s
+execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:crossbow",Count:1b,tag:{um_id:"crucible_cannonade"}}}] run function undermagic:entity/processing/arrow/crucible_cannonade
 
 scoreboard players set temp um.dummy 0
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"forbidden_oathbow"}}}] run tag @s add um.oathbow_proc
 execute if entity @s[tag=um.oathbow_proc,nbt={crit:1b}] as @p at @s positioned ^ ^1.8 ^3.1 run function undermagic:entity/processing/arrow/oathbow
 execute if entity @s[tag=um.oathbow_proc] run kill @s
+
+scoreboard players set temp um.dummy 0
+execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"annihilations_gaze"}}}] run tag @s add um.annih_proc
+execute if entity @s[tag=um.annih_proc,nbt={crit:1b}] as @p at @s positioned ^ ^1.8 ^3.1 run function undermagic:entity/processing/arrow/annihilations_gaze
+execute if entity @s[tag=um.annih_proc,nbt={crit:1b}] run kill @s
 
 execute if entity @p[distance=..2,nbt={SelectedItem:{id:"minecraft:bow",Count:1b,tag:{um_id:"bow_ice"}}}] run tag @s add um.icebow_proc
 execute if entity @s[tag=um.icebow_proc] as @p at @s run function undermagic:entity/projectile/shoot_ice_bolt

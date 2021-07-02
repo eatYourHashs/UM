@@ -104,6 +104,8 @@ scoreboard objectives add um.ws_cd dummy
 scoreboard objectives add um.corroded dummy
 scoreboard objectives add um.gaunt_combo dummy
 scoreboard objectives add um.gaunt_timer dummy
+scoreboard objectives add um.annih_draw dummy
+scoreboard objectives add um.annih_timer dummy
 #scoreboard objectives add um.demonomicon trigger
 
 #scoreboard players init

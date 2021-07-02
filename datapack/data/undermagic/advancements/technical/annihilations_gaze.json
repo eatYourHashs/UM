@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "item": "minecraft:bow",
+            "nbt": "{um_id:\"annihilations_gaze\"}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "undermagic:item/weapon/annihilations_gaze/draw"
+    }
+  }
