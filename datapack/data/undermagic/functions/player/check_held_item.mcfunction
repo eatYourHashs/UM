@@ -36,6 +36,7 @@ execute if score $length um.dummy matches 12 if score @s um.sprint matches 1.. r
 execute if score $length um.dummy matches 12 unless score @s um.sprint matches 1.. run attribute @s minecraft:generic.attack_damage modifier remove ab770ca2-a0cc-415c-9518-aa9c68274268
 execute unless score $length um.dummy matches 12 run attribute @s minecraft:generic.attack_damage modifier remove ab770ca2-a0cc-415c-9518-aa9c68274268
 
+execute if score $length um.dummy matches 12 if data entity @s SelectedItem.tag{um_id:"star_piercer"}
 
 #coas function
 execute if score @s um.cstick matches 1.. run function undermagic:player/used_coas

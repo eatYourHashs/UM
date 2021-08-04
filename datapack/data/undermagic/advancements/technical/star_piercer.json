@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "item": "minecraft:crossbow",
+            "nbt": "{um_id:\"star_piercer\"}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "undermagic:item/weapon/star_piercer/draw"
+    }
+  }

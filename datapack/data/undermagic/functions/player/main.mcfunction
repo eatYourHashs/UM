@@ -41,6 +41,8 @@ execute if score @s um.deal_damage matches 1.. if entity @s[nbt={SelectedItem:{t
 execute if score @s um.gaunt_timer matches 1.. run function undermagic:item/weapon/fury_gauntlets_tick
 scoreboard players add @s um.annih_timer 1
 execute if score @s um.annih_timer matches 2.. run scoreboard players set @s um.annih_draw 0
+scoreboard players add @s um.star_timer 1
+execute if score @s um.star_timer matches 2.. run scoreboard players set @s um.star_draw 0
 
 #damage
 execute as @s[scores={um.take_damage=1..}] run function undermagic:player/take_damage

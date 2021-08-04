@@ -266,6 +266,19 @@
                 "charged": 1
             },
             "model": "um:item/crucible_cannonade_charged"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420008
+            },
+            "model": "um:item/star_piercer"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 420008,
+                "charged": 1
+            },
+            "model": "um:item/star_piercer_charged"
         }
     ]
 }
