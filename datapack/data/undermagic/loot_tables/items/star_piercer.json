@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:crossbow",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Star Piercer","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"text":"Slow to draw, but fires a high-powered antigravity bolt.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{HideFlags:1,RepairCost:50,Enchantments:[{id:\"minecraft:aqua_affinity\",lvl:1s}],Unbreakable:1b,CustomModelData:420008,um_id:\"star_piercer\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

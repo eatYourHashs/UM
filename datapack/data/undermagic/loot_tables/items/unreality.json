@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Unreality","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"Fires reality-shredding magic bolts.","color":"gray","italic":false},
+          {"text":"Black bolts are fast and deal huge damage.","color":"gray","italic":false},
+          {"text":"Orange bolts create a blast in a large area.","color":"gray","italic":false},
+          {"text":"Red bolts seek out foes.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420180,um_id:\"unreality\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"text":"Void Excalibur","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"text":"The shadow sword will become whole once more","color":"gray","italic":false},
+          {"text":"in a hero's grasp.","color":"gray","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,CustomModelData:420181,um_id:\"void_excalibur\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
