@@ -1,62 +1,16 @@
 {
 	"type": "minecraft:the_nether",
 	"generator": {
-	  "type": "minecraft:noise",
-	  "seed": 11111,
-	  "biome_source": {
-		"type": "minecraft:fixed",
-		"biome": "minecraft:the_void"
-	  },
+	  "type": "minecraft:flat",
 	  "settings": {
-		"coordinate_scale": 1,
-		"bedrock_roof_position": -10,
-		"bedrock_floor_position": 0,
-		"sea_level": 63,
-		"min_surface_level": 63,
-		"noodle_caves_enabled": false,
-		"deepslate_enabled": false,
-		"ore_veins_enabled": false,
-		"aquifers_enabled": false,
-		"noise_caves_enabled": false,
-		"disable_mob_generation": false,
-		"default_block": {
-		  "Name": "minecraft:bedrock"
-		},
-		"default_fluid": {
-		  "Name": "minecraft:water",
-		  "Properties": {
-			"level": "0"
+		"biome": "minecraft:the_void",
+		"layers": [
+		  {
+			"block": "minecraft:bedrock",
+			"height": 256
 		  }
-		},
-		"noise": {
-		  "min_y": 16,
-		  "density_factor": 1,
-		  "density_offset": -0.46875,
-		  "simplex_surface_noise": true,
-		  "random_density_offset": true,
-		  "island_noise_override": false,
-		  "amplified": false,
-		  "size_horizontal": 1,
-		  "size_vertical": 2,
-		  "height": 256,
-		  "sampling": {
-			"xz_scale": 1,
-			"y_scale": 1,
-			"xz_factor": 80,
-			"y_factor": 160
-		  },
-		  "bottom_slide": {
-			"target": 64,
-			"size": 64,
-			"offset": 0
-		  },
-		  "top_slide": {
-			"target": -10,
-			"size": 32,
-			"offset": 0
-		  }
-		},
-		"structures": {"structures": {}}
+		]
 	  }
 	}
   }
+  
