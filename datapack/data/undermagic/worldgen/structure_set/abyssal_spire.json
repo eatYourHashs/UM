@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "undermagic:acidic_pit_spire",
+      "weight": 2
+    },
+    {
+      "structure": "undermagic:abyssal_spire",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 122804554,
+    "spacing": 10,
+    "separation": 5
+  }
+}
