@@ -25,6 +25,8 @@ execute if entity @s[tag=um.doom_proc,scores={um.dummy=2..},nbt=!{life:0s}] run 
 execute if entity @s[tag=um.greatbow_proc] run function undermagic:entity/arrow/greatbow_shot
 execute if entity @s[tag=um.split_shot] run particle smoke
 
+execute if entity @s[tag=um.star_piercer_proc] run particle flame
+
 execute if entity @s[tag=um.pulsar_proc] run function undermagic:entity/arrow/pulsar_tick
 
 execute if entity @s[tag=um.puncture_1_proc] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1

@@ -64,3 +64,6 @@ execute if score $length um.dummy matches 15 if score @s um.mana matches 12.. if
 execute if score $length um.dummy matches 12 if score @s um.mana matches 100.. unless score @s um.oblit_prog matches 1.. if data entity @s SelectedItem.tag{um_id:"obliteration"} run function undermagic:item/weapon/obliteration/init
 execute if score $length um.dummy matches 12 if score @s um.oblit_prog matches 100.. if data entity @s SelectedItem.tag{um_id:"obliteration"} positioned ~ ~1.8 ~ positioned ^ ^ ^3 run function undermagic:item/weapon/obliteration/cast
 execute if score $length um.dummy matches 10 if score @s um.mana matches 100.. if data entity @s SelectedItem.tag{um_id:"armageddon"} run function undermagic:item/weapon/armageddon/fire
+execute if score $length um.dummy matches 10 if score @s um.mana matches 100.. if data entity @s SelectedItem.tag{um_id:"omen_sigil"} run function undermagic:item/weapon/omen_sigil/use
+execute if score $length um.dummy matches 9 if score @s um.mana matches 10.. if data entity @s SelectedItem.tag{um_id:"unreality"} run function undermagic:item/weapon/unreality/use
+execute if score $length um.dummy matches 14 if data entity @s SelectedItem.tag{um_id:"void_excalibur"} run function undermagic:item/weapon/void_excalibur/use

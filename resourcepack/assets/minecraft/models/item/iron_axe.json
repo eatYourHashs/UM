@@ -13,6 +13,11 @@
         "custom_model_data": 420002
       },
       "model": "um:item/paladin_hammer"
+    },{
+      "predicate": {
+        "custom_model_data": 420003
+      },
+      "model": "um:item/holy_hauteclere"
     }
   ]
 }

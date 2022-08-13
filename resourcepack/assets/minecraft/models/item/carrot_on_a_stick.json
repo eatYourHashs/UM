@@ -722,6 +722,24 @@
         "custom_model_data": 420178
       },
       "model": "um:item/fury_gauntlets"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420179
+      },
+      "model": "um:item/omen_sigil"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420180
+      },
+      "model": "um:item/unreality"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 420181
+      },
+      "model": "um:item/void_excalibur"
     }
   ]
 }
