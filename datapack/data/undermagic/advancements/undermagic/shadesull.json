@@ -5,7 +5,7 @@
       "nbt": "{CustomModelData:420092}"
     },
     "title": "Shadeslayer",
-    "description": "Defeat Shadesull, the final boss of Undermagic.",
+    "description": "Defeat Shadesull, the queen of the Abyss.",
     "frame": "challenge"
   },
   "parent": "undermagic:undermagic/dungeon",
