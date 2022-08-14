@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 7,
-    "description": [{"text":"Undermagic","color":"dark_aqua"},{"text":"\n"},{"text":"Beta 39","color":"#c6fdfe"}]
+    "pack_format": 9,
+    "description": [{"text":"Undermagic","color":"dark_aqua"},{"text":"\n"},{"text":"v1.0","color":"#c6fdfe"}]
   }
 }
